@@ -82,7 +82,9 @@
           "helpText": "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!  Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra.",
           "rulesContent": "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!  Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra.",
           "usageInfo": "52 usados hoje | Vencimento: 30/11/2025",
-          "dropdownText": "Regras e informações"
+          "dropdownText": "Regras e informações",
+          "usageLeft": "Ex: 472 usados hoje",
+          "usageRight": "Vencimento 22/11/25"
         },
         {
           "brand": "Arno",
