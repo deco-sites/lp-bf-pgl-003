@@ -46,6 +46,13 @@ export interface Props {
    * @title Passos
    */
   steps?: Step[];
+
+  /**
+   * @title Cor de Fundo
+   * @format color
+   * @default #000000
+   */
+  backgroundColor?: string;
 }
 
 const DEFAULT_STEPS: Step[] = [
@@ -92,12 +99,13 @@ export default function ComoFunciona({
   mainTitle = "Cupons com nossas marcas parceiras: é hora de parcelar no Pix",
   subtitle = "Compre direto no site e selecione o Pix Parcelado da Pagaleve na hora de pagar.",
   steps = DEFAULT_STEPS,
+  backgroundColor = "#000000",
 }: Props) {
   return (
     <section 
       class="w-full overflow-hidden"
       style={{
-        backgroundColor: "transparent",
+        backgroundColor: backgroundColor,
       }}
     >
       <div 
