@@ -2,8 +2,8 @@ import { ImageWidget } from "apps/admin/widgets.ts";
 
 export interface Props {
   /**
-   * @title Texto do Título
-   * @default Começa em:
+   * @title Texto do Título (opcional)
+   * @description Texto que aparece acima do cronômetro
    */
   title?: string;
 
@@ -28,7 +28,7 @@ export interface Props {
 }
 
 export default function BlackFridayHero({
-  title = "Começa em:",
+  title = "",
   expiresAt = "2024-11-29T23:59:59",
   backgroundImage = "https://assets.decocache.com/lp-bf-pgl-003/c5f3eb53-031b-498e-ab60-323858e53f53/black-friday-hero-bg.png",
   backgroundImageMobile,
@@ -163,10 +163,12 @@ export default function BlackFridayHero({
       `}} />
       
       <div class="hero-content">
-        {/* Título */}
-        <h2 class="hero-title">
-          {title}
-        </h2>
+        {/* Título - Apenas se existir */}
+        {title && (
+          <h2 class="hero-title">
+            {title}
+          </h2>
+        )}
 
         {/* Countdown */}
         <div class="countdown-container">
