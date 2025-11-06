@@ -83,20 +83,69 @@
           "helpText": "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!  Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra."
         },
         {
-          "brand": "Marca 2",
-          "discount": "40% OFF",
-          "description": "Em todos os produtos",
-          "couponCode": "PROMO40",
+          "brand": "Arno",
+          "discount": "50% OFF",
+          "description": "Em compras acima de R$ 199",
+          "couponCode": "BLACK50",
           "buttonText": "Resgatar",
-          "buttonLink": "#"
+          "buttonLink": "#",
+          "brandLogo": "https://black.pagaleve.com.br/wp-content/uploads/2025/10/arno-logo-png-1-1.png",
+          "discountBadge": "50% OFF",
+          "category": "Eletrodoméstico",
+          "dropdownText": "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!  Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra.",
+          "helpText": "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!  Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra."
         },
         {
-          "brand": "Marca 3",
-          "discount": "30% OFF",
-          "description": "Na primeira compra",
-          "couponCode": "FIRST30",
+          "brand": "Arno",
+          "discount": "50% OFF",
+          "description": "Em compras acima de R$ 199",
+          "couponCode": "BLACK50",
           "buttonText": "Resgatar",
-          "buttonLink": "#"
+          "buttonLink": "#",
+          "brandLogo": "https://black.pagaleve.com.br/wp-content/uploads/2025/10/arno-logo-png-1-1.png",
+          "discountBadge": "50% OFF",
+          "category": "Eletrodoméstico",
+          "dropdownText": "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!  Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra.",
+          "helpText": "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!  Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra."
+        },
+        {
+          "brand": "Arno",
+          "discount": "50% OFF",
+          "description": "Em compras acima de R$ 199",
+          "couponCode": "BLACK50",
+          "buttonText": "Resgatar",
+          "buttonLink": "#",
+          "brandLogo": "https://black.pagaleve.com.br/wp-content/uploads/2025/10/arno-logo-png-1-1.png",
+          "discountBadge": "50% OFF",
+          "category": "Eletrodoméstico",
+          "dropdownText": "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!  Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra.",
+          "helpText": "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!  Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra."
+        },
+        {
+          "brand": "Arno",
+          "discount": "50% OFF",
+          "description": "Em compras acima de R$ 199",
+          "couponCode": "BLACK50",
+          "buttonText": "Resgatar",
+          "buttonLink": "#",
+          "brandLogo": "https://black.pagaleve.com.br/wp-content/uploads/2025/10/arno-logo-png-1-1.png",
+          "discountBadge": "50% OFF",
+          "category": "Eletrodoméstico",
+          "dropdownText": "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!  Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra.",
+          "helpText": "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!  Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra."
+        },
+        {
+          "brand": "Arno",
+          "discount": "50% OFF",
+          "description": "Em compras acima de R$ 199",
+          "couponCode": "BLACK50",
+          "buttonText": "Resgatar",
+          "buttonLink": "#",
+          "brandLogo": "https://black.pagaleve.com.br/wp-content/uploads/2025/10/arno-logo-png-1-1.png",
+          "discountBadge": "50% OFF",
+          "category": "Eletrodoméstico",
+          "dropdownText": "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!  Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra.",
+          "helpText": "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!  Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra."
         }
       ]
     },
