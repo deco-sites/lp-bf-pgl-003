@@ -125,7 +125,7 @@ export default function CouponCard({
               class="text-[#DEDEE0]"
               style={{ 
                 fontFamily: "Quicksand, sans-serif",
-                fontWeight: 600,
+                fontWeight: 400,
                 fontSize: "12px",
                 lineHeight: "15px"
               }}
@@ -220,7 +220,7 @@ export default function CouponCard({
                 class="text-[#FCFCFC]"
                 style={{ 
                   fontFamily: "Quicksand, sans-serif",
-                  fontWeight: 600,
+                  fontWeight: 400,
                   fontSize: "12px",
                   lineHeight: "15px"
                 }}
@@ -236,7 +236,7 @@ export default function CouponCard({
                 class="text-[#FCFCFC]"
                 style={{ 
                   fontFamily: "Quicksand, sans-serif",
-                  fontWeight: 600,
+                  fontWeight: 400,
                   fontSize: "12px",
                   lineHeight: "15px"
                 }}
