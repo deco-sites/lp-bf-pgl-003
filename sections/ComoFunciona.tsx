@@ -53,6 +53,20 @@ export interface Props {
    * @default #000000
    */
   backgroundColor?: string;
+
+  /**
+   * @title Cor do Badge (Número)
+   * @format color
+   * @default #FF009B
+   */
+  badgeColor?: string;
+
+  /**
+   * @title Cor da Borda dos Cards
+   * @format color
+   * @default #3B4A54
+   */
+  cardBorderColor?: string;
 }
 
 const DEFAULT_STEPS: Step[] = [
@@ -100,6 +114,8 @@ export default function ComoFunciona({
   subtitle = "Compre direto no site e selecione o Pix Parcelado da Pagaleve na hora de pagar.",
   steps = DEFAULT_STEPS,
   backgroundColor = "#000000",
+  badgeColor = "#FF009B",
+  cardBorderColor = "#3B4A54",
 }: Props) {
   return (
     <section 
@@ -155,7 +171,7 @@ export default function ComoFunciona({
                       style={{
                         width: "32px",
                         height: "30px",
-                        backgroundColor: "#FF009B",
+                        backgroundColor: badgeColor,
                         borderRadius: "20px",
                         top: "0px",
                         left: "0px",
@@ -178,7 +194,7 @@ export default function ComoFunciona({
                       style={{
                         minHeight: "160px",
                         backgroundColor: "rgba(0, 0, 0, 0.05)",
-                        border: "1px solid rgba(59, 74, 84, 1)",
+                        border: `1px solid ${cardBorderColor}`,
                         borderRadius: "12px",
                         padding: "12px",
                         marginTop: "4px",
@@ -240,7 +256,7 @@ export default function ComoFunciona({
                     style={{
                       width: "36px",
                       height: "33px",
-                      backgroundColor: "#FF009B",
+                      backgroundColor: badgeColor,
                       borderRadius: "23px",
                       top: "0px",
                       left: "0px",
@@ -263,7 +279,7 @@ export default function ComoFunciona({
                     style={{
                       minHeight: "184px",
                       backgroundColor: "rgba(0, 0, 0, 0.05)",
-                      border: "1px solid rgba(59, 74, 84, 1)",
+                      border: `1px solid ${cardBorderColor}`,
                       borderRadius: "12px",
                       padding: "16px",
                       marginTop: "4px",

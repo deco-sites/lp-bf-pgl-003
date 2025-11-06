@@ -16,7 +16,8 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/ComoFunciona.tsx",
-        "mainTitle": "Cupons com nossas marcas parceiras: é hora de parcelar no Pix",
+        "mainTitle": "Como funciona o app",
+        "subtitle": "Compre direto no site e selecione o Pix Parcelado da Pagaleve na hora de pagar.",
         "steps": [
           {
             "number": "01",
@@ -206,6 +207,55 @@
       ]
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/ComoFunciona.tsx",
+        "mainTitle": "Como funciona o app",
+        "subtitle": "Compre direto no site e selecione o Pix Parcelado da Pagaleve na hora de pagar.",
+        "steps": [
+          {
+            "number": "01",
+            "icon": "copy",
+            "title": "Copie o cupom",
+            "description": "Copie o cupom exclusivo da sua escolha."
+          },
+          {
+            "number": "02",
+            "icon": "",
+            "title": "Entre no site",
+            "description": "Entre direto no site da loja parceira escolhida.",
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/fed90671-53a4-467c-b9ee-8ff36ff5d7a9/como-funciona-icon.png"
+          },
+          {
+            "number": "03",
+            "icon": "",
+            "title": "Adicione ao carrinho",
+            "description": "Coloque seus produtos favoritos no carrinho.",
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/fed90671-53a4-467c-b9ee-8ff36ff5d7a9/como-funciona-icon.png"
+          },
+          {
+            "number": "04",
+            "icon": "percent",
+            "title": "Aplique o cupom",
+            "description": "Aplique o código de desconto no site da loja no campo de cupom."
+          },
+          {
+            "number": "05",
+            "icon": "",
+            "title": "Pagar com Pix Parcelado",
+            "description": "Como pagamento selecione o Pix Parcelado.",
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/0d2ccde2-9c86-4ea7-83f7-f13997da2f89/pix-icon.png"
+          },
+          {
+            "number": "06",
+            "icon": "check",
+            "title": "Pague a 1ª parcela",
+            "description": "Aguarde a aprovação e pague na hora a 1ª parcela para confirmar o pedido"
+          }
+        ]
+      }
+    },
+    {
       "__resolveType": "site/sections/ProductGrid.tsx",
       "backgroundColor": "#000000",
       "textColor": "#ffffff",
@@ -283,8 +333,8 @@
     {
       "__resolveType": "site/sections/FAQ.tsx",
       "backgroundColor": "#000000",
-      "sectionTitle": "Perguntas Frequentes",
       "textColor": "#ffffff",
+      "sectionTitle": "Perguntas Frequentes",
       "accentColor": "#ff00ff",
       "itemBackgroundColor": "#1a1a1a",
       "items": [
