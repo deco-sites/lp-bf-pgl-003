@@ -10,7 +10,8 @@
       "endDate": "2024-12-01T23:59:59",
       "backgroundColor": "#000000",
       "textColor": "#ffffff",
-      "accentColor": "#ff00ff"
+      "accentColor": "#ff00ff",
+      "expiresAt": "2025-11-28T03:00:00.000Z"
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
