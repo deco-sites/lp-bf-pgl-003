@@ -256,6 +256,47 @@
       }
     },
     {
+      "__resolveType": "site/sections/AppExclusiveCoupons.tsx",
+      "sectionTitle": "Promoções exclusivas no app",
+      "subtitle": "Baixe o app da Pagaleve e aproveite ofertas que só quem tem o app consegue!",
+      "backgroundColor": "#000000",
+      "coupons": [
+        {
+          "brandLogo": "https://placehold.co/120x40/white/red?text=NIKE",
+          "brand": "Nike",
+          "category": "Esportes",
+          "discountBadge": "15% OFF",
+          "description": "Compre no app e ganhe 15% de desconto em toda a loja + frete grátis!",
+          "dropdownText": "Regras e Informações",
+          "rulesContent": "Oferta válida apenas para compras realizadas através do app da Pagaleve. Desconto aplicado automaticamente no checkout.",
+          "buttonText": "Baixar App",
+          "buttonLink": "#"
+        },
+        {
+          "brandLogo": "https://placehold.co/120x40/white/black?text=ADIDAS",
+          "brand": "Adidas",
+          "category": "Esportes",
+          "discountBadge": "Cashback 10%",
+          "description": "Cashback de 10% em compras acima de R$ 200 pelo app!",
+          "dropdownText": "Regras e Informações",
+          "rulesContent": "Cashback creditado em até 7 dias úteis após a confirmação da compra. Válido para primeira compra no app.",
+          "buttonText": "Baixar App",
+          "buttonLink": "#"
+        },
+        {
+          "brandLogo": "https://placehold.co/120x40/white/purple?text=MAGALU",
+          "brand": "Magazine Luiza",
+          "category": "Variedades",
+          "discountBadge": "R$ 50 OFF",
+          "description": "R$ 50 de desconto em compras acima de R$ 300 pelo app da Pagaleve!",
+          "dropdownText": "Regras e Informações",
+          "rulesContent": "Desconto aplicado automaticamente em compras acima de R$ 300. Válido até o final do mês.",
+          "buttonText": "Baixar App",
+          "buttonLink": "#"
+        }
+      ]
+    },
+    {
       "__resolveType": "site/sections/ProductGrid.tsx",
       "backgroundColor": "#000000",
       "textColor": "#ffffff",
@@ -307,8 +348,8 @@
     {
       "__resolveType": "site/sections/Benefits.tsx",
       "backgroundColor": "#000000",
-      "sectionTitle": "É tudo de bom demais da conta. Inacreditável!",
       "textColor": "#ffffff",
+      "sectionTitle": "É tudo de bom demais da conta. Inacreditável!",
       "accentColor": "#ff00ff",
       "cardBackgroundColor": "#1a1a1a",
       "benefits": [
