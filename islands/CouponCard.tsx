@@ -184,7 +184,7 @@ export default function CouponCard({
             class="text-white"
             style={{ 
               fontFamily: "Quicksand, sans-serif",
-              fontWeight: 600,
+              fontWeight: 400,
               fontSize: "14px",
               lineHeight: "17.5px"
             }}
