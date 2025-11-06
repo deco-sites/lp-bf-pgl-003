@@ -13,11 +13,18 @@
       "accentColor": "#ff00ff"
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/ComoFunciona.tsx",
+        "mainTitle": "Cupons com nossas marcas parceiras: é hora de parcelar no Pix"
+      }
+    },
+    {
       "__resolveType": "site/sections/CouponGrid.tsx",
-      "sectionTitle": "Cupom com nossas marcas parceiras é hora de esnobar no Pix",
       "backgroundColor": "#000000",
-      "cardBackgroundColor": "#1a1a1a",
       "textColor": "#ffffff",
+      "sectionTitle": "Cupom com nossas marcas parceiras é hora de esnobar no Pix",
+      "cardBackgroundColor": "#1a1a1a",
       "buttonColor": "#ff00ff",
       "buttonTextColor": "#000000",
       "coupons": [
@@ -49,9 +56,9 @@
     },
     {
       "__resolveType": "site/sections/SectionDivider.tsx",
-      "title": "Marcas exclusivas do App de Pagbank",
       "backgroundColor": "#000000",
       "textColor": "#00ff88",
+      "title": "Marcas exclusivas do App de Pagbank",
       "showLine": true,
       "lineColor": "#333333"
     },
@@ -91,9 +98,9 @@
     },
     {
       "__resolveType": "site/sections/ProductGrid.tsx",
+      "backgroundColor": "#000000",
       "sectionTitle": "Produtos em alta",
       "sectionSubtitle": "Confira os produtos mais procurados",
-      "backgroundColor": "#000000",
       "cardBackgroundColor": "#ffffff",
       "textColor": "#ffffff",
       "badgeColor": "#ff0000",
@@ -121,8 +128,8 @@
     },
     {
       "__resolveType": "site/sections/BrandLogos.tsx",
-      "title": "",
       "backgroundColor": "#000000",
+      "title": "",
       "logos": [
         {
           "image": "https://placehold.co/120x40/png",
@@ -142,9 +149,9 @@
       "__resolveType": "site/sections/Benefits.tsx",
       "sectionTitle": "É tudo de bom demais da conta. Inacreditável!",
       "backgroundColor": "#000000",
-      "cardBackgroundColor": "#1a1a1a",
       "textColor": "#ffffff",
       "accentColor": "#ff00ff",
+      "cardBackgroundColor": "#1a1a1a",
       "benefits": [
         {
           "title": "Cashback",
@@ -166,10 +173,10 @@
     },
     {
       "__resolveType": "site/sections/FAQ.tsx",
-      "sectionTitle": "Perguntas Frequentes",
       "backgroundColor": "#000000",
-      "itemBackgroundColor": "#1a1a1a",
       "textColor": "#ffffff",
+      "sectionTitle": "Perguntas Frequentes",
+      "itemBackgroundColor": "#1a1a1a",
       "accentColor": "#ff00ff",
       "items": [
         {
