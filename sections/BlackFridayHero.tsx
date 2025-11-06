@@ -47,10 +47,10 @@ export default function BlackFridayHero({
       }}
     >
       <style dangerouslySetInnerHTML={{ __html: `
-        /* Estilos base da seção */
+        /* Estilos base da seção - Mobile */
         .hero-section {
           min-height: 375px;
-          padding: 32px 16px;
+          padding: 16px 16px 24px 16px;
           max-width: 100vw;
         }
         
@@ -78,22 +78,22 @@ export default function BlackFridayHero({
         .countdown-container {
           display: flex;
           align-items: center;
-          gap: 10px;
+          gap: 6px;
           flex-wrap: nowrap;
         }
         
-        /* Cards do countdown - Mobile */
+        /* Cards do countdown - Mobile (reduzido) */
         .countdown-card {
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          width: 70px;
-          height: 80px;
+          width: 55px;
+          height: 65px;
           background: rgba(255, 255, 255, 0.1);
           backdrop-filter: blur(68px);
           border-radius: 8px;
-          padding: 8px 10px;
+          padding: 6px 8px;
           box-shadow: 
             0px 11px 31px rgba(0, 0, 0, 0.25),
             inset -33px 33px 33px rgba(255, 255, 255, 0.041),
@@ -103,8 +103,8 @@ export default function BlackFridayHero({
         
         .countdown-number {
           font-family: 'Quicksand', sans-serif;
-          font-size: 40px;
-          line-height: 50px;
+          font-size: 32px;
+          line-height: 40px;
           font-weight: 500;
           color: #FFFFFF;
           text-align: center;
@@ -112,8 +112,8 @@ export default function BlackFridayHero({
         
         .countdown-label {
           font-family: 'Quicksand', sans-serif;
-          font-size: 11px;
-          line-height: 14px;
+          font-size: 9px;
+          line-height: 11px;
           font-weight: 600;
           color: #FFFFFF;
           text-align: center;
@@ -122,7 +122,7 @@ export default function BlackFridayHero({
         
         .countdown-separator {
           font-family: 'Quicksand', sans-serif;
-          font-size: 16px;
+          font-size: 14px;
           color: #FFFFFF;
           flex-shrink: 0;
         }
@@ -132,6 +132,10 @@ export default function BlackFridayHero({
           .hero-section {
             min-height: 698px;
             padding: 64px 16px;
+          }
+          
+          .countdown-container {
+            gap: 10px;
           }
           
           .countdown-card {
@@ -148,6 +152,10 @@ export default function BlackFridayHero({
           .countdown-label {
             font-size: 12px;
             line-height: 15px;
+          }
+          
+          .countdown-separator {
+            font-size: 16px;
           }
         }
         
