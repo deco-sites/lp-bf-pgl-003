@@ -1,185 +1,286 @@
-import { useScript } from "@deco/deco/hooks";
-import type { ImageWidget } from "apps/admin/widgets.ts";
+import { ImageWidget } from "apps/admin/widgets.ts";
 
 export interface Props {
-  /** @title Desconto */
-  /** @description Ex: 50% */
-  discount?: string;
-  
-  /** @title Título */
-  /** @description Texto principal do banner */
+  /**
+   * @title Texto do Título
+   * @default Começa em:
+   */
   title?: string;
-  
-  /** @title Subtítulo */
-  subtitle?: string;
-  
-  /** @title Data Final da Promoção */
-  /** @description Data final no formato ISO (YYYY-MM-DDTHH:mm:ss) */
-  endDate?: string;
-  
-  /** @title Cor de Fundo */
-  backgroundColor?: string;
-  
-  /** @title Cor do Texto */
-  textColor?: string;
-  
-  /** @title Cor de Destaque */
-  accentColor?: string;
-  
-  /** @title Imagem do Produto Esquerdo */
-  leftProductImage?: ImageWidget;
-  
-  /** @title Imagem do Produto Direito */
-  rightProductImage?: ImageWidget;
+
+  /**
+   * @title Data Final do Countdown
+   * @format datetime
+   * @description Data e hora em que o countdown deve terminar
+   */
+  expiresAt?: string;
+
+  /**
+   * @title Imagem de Fundo
+   */
+  backgroundImage?: ImageWidget;
 }
 
-const onLoad = (endDate: string) => {
-  const countDownDate = new Date(endDate).getTime();
-  
-  const updateCountdown = () => {
-    const now = new Date().getTime();
-    const distance = countDownDate - now;
-    
-    if (distance < 0) {
-      return;
-    }
-    
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    const daysEl = document.getElementById("countdown-days");
-    const hoursEl = document.getElementById("countdown-hours");
-    const minutesEl = document.getElementById("countdown-minutes");
-    const secondsEl = document.getElementById("countdown-seconds");
-    
-    if (daysEl) daysEl.textContent = String(days).padStart(2, '0');
-    if (hoursEl) hoursEl.textContent = String(hours).padStart(2, '0');
-    if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, '0');
-    if (secondsEl) secondsEl.textContent = String(seconds).padStart(2, '0');
-  };
-  
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
-};
-
 export default function BlackFridayHero({
-  discount = "50%",
-  title = "a gente leva a sua black além",
-  subtitle = "",
-  endDate = "2024-11-30T23:59:59",
-  backgroundColor = "#000000",
-  textColor = "#ffffff",
-  accentColor = "#ff00ff",
-  leftProductImage,
-  rightProductImage
+  title = "Começa em:",
+  expiresAt = "2024-11-29T23:59:59",
+  backgroundImage = "https://assets.decocache.com/lp-bf-pgl-003/c5f3eb53-031b-498e-ab60-323858e53f53/black-friday-hero-bg.png",
 }: Props) {
   return (
-    <>
-      <section 
-        class="relative py-12 px-4 overflow-hidden"
-        style={{ backgroundColor, color: textColor }}
-      >
-        <div class="container mx-auto max-w-7xl">
-          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-            
-            {/* Produto Esquerdo */}
-            {leftProductImage && (
-              <div class="hidden lg:flex justify-center items-center">
-                <img 
-                  src={leftProductImage} 
-                  alt="Produto" 
-                  class="w-64 h-64 object-contain"
-                />
-              </div>
-            )}
-            
-            {/* Conteúdo Central */}
-            <div class="text-center space-y-6">
-              {/* Badge de Desconto */}
-              <div class="inline-flex items-center gap-2">
-                <span 
-                  class="text-6xl font-bold px-6 py-2 rounded-2xl"
-                  style={{ backgroundColor: accentColor, color: "#000" }}
-                >
-                  {discount}
-                </span>
-                <span class="text-2xl font-bold uppercase">OFF</span>
-              </div>
-              
-              {/* Título */}
-              <h1 class="text-4xl md:text-5xl font-bold leading-tight">
-                {title}
-              </h1>
-              
-              {subtitle && (
-                <p class="text-lg opacity-90">{subtitle}</p>
-              )}
-              
-              {/* Countdown Timer */}
-              <div class="flex justify-center gap-4 mt-8">
-                <div class="text-center">
-                  <div 
-                    class="text-3xl font-bold w-16 h-16 flex items-center justify-center rounded-lg"
-                    style={{ backgroundColor: accentColor, color: "#000" }}
-                    id="countdown-days"
-                  >
-                    00
-                  </div>
-                  <div class="text-xs mt-2 opacity-75">DIAS</div>
-                </div>
-                <div class="text-center">
-                  <div 
-                    class="text-3xl font-bold w-16 h-16 flex items-center justify-center rounded-lg"
-                    style={{ backgroundColor: accentColor, color: "#000" }}
-                    id="countdown-hours"
-                  >
-                    00
-                  </div>
-                  <div class="text-xs mt-2 opacity-75">HORAS</div>
-                </div>
-                <div class="text-center">
-                  <div 
-                    class="text-3xl font-bold w-16 h-16 flex items-center justify-center rounded-lg"
-                    style={{ backgroundColor: accentColor, color: "#000" }}
-                    id="countdown-minutes"
-                  >
-                    00
-                  </div>
-                  <div class="text-xs mt-2 opacity-75">MIN</div>
-                </div>
-                <div class="text-center">
-                  <div 
-                    class="text-3xl font-bold w-16 h-16 flex items-center justify-center rounded-lg"
-                    style={{ backgroundColor: accentColor, color: "#000" }}
-                    id="countdown-seconds"
-                  >
-                    00
-                  </div>
-                  <div class="text-xs mt-2 opacity-75">SEG</div>
-                </div>
-              </div>
+    <div
+      class="relative w-full flex items-end justify-center"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        minHeight: "698px",
+        paddingLeft: "520px",
+        paddingRight: "520px",
+        paddingTop: "64px",
+        paddingBottom: "64px",
+      }}
+    >
+      <div class="flex flex-col items-center gap-3 w-full max-w-[398px]">
+        {/* Título */}
+        <h2
+          class="text-white text-center font-semibold"
+          style={{
+            fontFamily: "Quicksand, sans-serif",
+            fontSize: "20px",
+            lineHeight: "25px",
+          }}
+        >
+          {title}
+        </h2>
+
+        {/* Countdown */}
+        <div class="flex items-center gap-2.5">
+          {/* Dias */}
+          <div
+            class="flex flex-col items-center justify-center gap-0 rounded-lg"
+            style={{
+              width: "80px",
+              height: "90px",
+              backgroundColor: "rgba(255, 255, 255, 0.1)",
+              backdropFilter: "blur(68px)",
+              padding: "8px 12px",
+              boxShadow: `
+                0px 11px 31px rgba(0, 0, 0, 0.25),
+                inset -33px 33px 33px rgba(255, 255, 255, 0.041),
+                inset 33px -33px 33px rgba(149, 149, 149, 0.041)
+              `,
+            }}
+          >
+            <div class="flex flex-col items-center">
+              <span
+                class="text-white text-center"
+                style={{
+                  fontFamily: "Quicksand, sans-serif",
+                  fontSize: "48px",
+                  lineHeight: "60px",
+                  fontWeight: 500,
+                }}
+                data-countdown-days
+              >
+                00
+              </span>
+              <span
+                class="text-white text-center uppercase"
+                style={{
+                  fontFamily: "Quicksand, sans-serif",
+                  fontSize: "12px",
+                  lineHeight: "15px",
+                  fontWeight: 600,
+                }}
+              >
+                Dias
+              </span>
             </div>
-            
-            {/* Produto Direito */}
-            {rightProductImage && (
-              <div class="hidden lg:flex justify-center items-center">
-                <img 
-                  src={rightProductImage} 
-                  alt="Produto" 
-                  class="w-64 h-64 object-contain"
-                />
-              </div>
-            )}
+          </div>
+
+          {/* Separador */}
+          <span class="text-white text-base">:</span>
+
+          {/* Horas */}
+          <div
+            class="flex flex-col items-center justify-center gap-0 rounded-lg"
+            style={{
+              width: "80px",
+              height: "90px",
+              backgroundColor: "rgba(255, 255, 255, 0.1)",
+              backdropFilter: "blur(68px)",
+              padding: "8px 12px",
+              boxShadow: `
+                0px 11px 31px rgba(0, 0, 0, 0.25),
+                inset -33px 33px 33px rgba(255, 255, 255, 0.041),
+                inset 33px -33px 33px rgba(149, 149, 149, 0.041)
+              `,
+            }}
+          >
+            <div class="flex flex-col items-center">
+              <span
+                class="text-white text-center"
+                style={{
+                  fontFamily: "Quicksand, sans-serif",
+                  fontSize: "48px",
+                  lineHeight: "60px",
+                  fontWeight: 500,
+                }}
+                data-countdown-hours
+              >
+                00
+              </span>
+              <span
+                class="text-white text-center uppercase"
+                style={{
+                  fontFamily: "Quicksand, sans-serif",
+                  fontSize: "12px",
+                  lineHeight: "15px",
+                  fontWeight: 600,
+                }}
+              >
+                Horas
+              </span>
+            </div>
+          </div>
+
+          {/* Separador */}
+          <span class="text-white text-base">:</span>
+
+          {/* Minutos */}
+          <div
+            class="flex flex-col items-center justify-center gap-0 rounded-lg"
+            style={{
+              width: "80px",
+              height: "90px",
+              backgroundColor: "rgba(255, 255, 255, 0.1)",
+              backdropFilter: "blur(68px)",
+              padding: "8px 12px",
+              boxShadow: `
+                0px 11px 31px rgba(0, 0, 0, 0.25),
+                inset -33px 33px 33px rgba(255, 255, 255, 0.041),
+                inset 33px -33px 33px rgba(149, 149, 149, 0.041)
+              `,
+            }}
+          >
+            <div class="flex flex-col items-center">
+              <span
+                class="text-white text-center"
+                style={{
+                  fontFamily: "Quicksand, sans-serif",
+                  fontSize: "48px",
+                  lineHeight: "60px",
+                  fontWeight: 500,
+                }}
+                data-countdown-minutes
+              >
+                00
+              </span>
+              <span
+                class="text-white text-center uppercase"
+                style={{
+                  fontFamily: "Quicksand, sans-serif",
+                  fontSize: "12px",
+                  lineHeight: "15px",
+                  fontWeight: 600,
+                }}
+              >
+                Minutos
+              </span>
+            </div>
+          </div>
+
+          {/* Separador */}
+          <span class="text-white text-base">:</span>
+
+          {/* Segundos */}
+          <div
+            class="flex flex-col items-center justify-center gap-0 rounded-lg"
+            style={{
+              width: "80px",
+              height: "90px",
+              backgroundColor: "rgba(255, 255, 255, 0.1)",
+              backdropFilter: "blur(68px)",
+              padding: "8px 12px",
+              boxShadow: `
+                0px 11px 31px rgba(0, 0, 0, 0.25),
+                inset -33px 33px 33px rgba(255, 255, 255, 0.041),
+                inset 33px -33px 33px rgba(149, 149, 149, 0.041)
+              `,
+            }}
+          >
+            <div class="flex flex-col items-center">
+              <span
+                class="text-white text-center"
+                style={{
+                  fontFamily: "Quicksand, sans-serif",
+                  fontSize: "48px",
+                  lineHeight: "60px",
+                  fontWeight: 500,
+                }}
+                data-countdown-seconds
+              >
+                00
+              </span>
+              <span
+                class="text-white text-center uppercase"
+                style={{
+                  fontFamily: "Quicksand, sans-serif",
+                  fontSize: "12px",
+                  lineHeight: "15px",
+                  fontWeight: 600,
+                }}
+              >
+                Segundos
+              </span>
+            </div>
           </div>
         </div>
-      </section>
-      
+      </div>
+
+      {/* Script do Countdown */}
       <script
-        type="module"
-        dangerouslySetInnerHTML={{ __html: useScript(onLoad, endDate) }}
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              const expiresAt = new Date("${expiresAt}").getTime();
+              
+              function updateCountdown() {
+                const now = new Date().getTime();
+                const distance = expiresAt - now;
+                
+                if (distance < 0) {
+                  document.querySelectorAll('[data-countdown-days]').forEach(el => el.textContent = '00');
+                  document.querySelectorAll('[data-countdown-hours]').forEach(el => el.textContent = '00');
+                  document.querySelectorAll('[data-countdown-minutes]').forEach(el => el.textContent = '00');
+                  document.querySelectorAll('[data-countdown-seconds]').forEach(el => el.textContent = '00');
+                  return;
+                }
+                
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.querySelectorAll('[data-countdown-days]').forEach(el => {
+                  el.textContent = String(days).padStart(2, '0');
+                });
+                document.querySelectorAll('[data-countdown-hours]').forEach(el => {
+                  el.textContent = String(hours).padStart(2, '0');
+                });
+                document.querySelectorAll('[data-countdown-minutes]').forEach(el => {
+                  el.textContent = String(minutes).padStart(2, '0');
+                });
+                document.querySelectorAll('[data-countdown-seconds]').forEach(el => {
+                  el.textContent = String(seconds).padStart(2, '0');
+                });
+              }
+              
+              updateCountdown();
+              setInterval(updateCountdown, 1000);
+            })();
+          `,
+        }}
       />
-    </>
+    </div>
   );
 }

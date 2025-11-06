@@ -806,6 +806,25 @@ html {
   border-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-border-opacity)));
   --tw-border-opacity: 0.2;
 }
+:root .countdown {
+  line-height: 1em;
+}
+.countdown {
+  display: inline-flex;
+}
+.countdown > * {
+  height: 1em;
+  display: inline-block;
+  overflow-y: hidden;
+}
+.countdown > *:before {
+  position: relative;
+  content: "00\A 01\A 02\A 03\A 04\A 05\A 06\A 07\A 08\A 09\A 10\A 11\A 12\A 13\A 14\A 15\A 16\A 17\A 18\A 19\A 20\A 21\A 22\A 23\A 24\A 25\A 26\A 27\A 28\A 29\A 30\A 31\A 32\A 33\A 34\A 35\A 36\A 37\A 38\A 39\A 40\A 41\A 42\A 43\A 44\A 45\A 46\A 47\A 48\A 49\A 50\A 51\A 52\A 53\A 54\A 55\A 56\A 57\A 58\A 59\A 60\A 61\A 62\A 63\A 64\A 65\A 66\A 67\A 68\A 69\A 70\A 71\A 72\A 73\A 74\A 75\A 76\A 77\A 78\A 79\A 80\A 81\A 82\A 83\A 84\A 85\A 86\A 87\A 88\A 89\A 90\A 91\A 92\A 93\A 94\A 95\A 96\A 97\A 98\A 99\A";
+  white-space: pre;
+  top: calc(var(--value) * -1em);
+  text-align: center;
+  transition: all 1s cubic-bezier(1, 0, 0, 1);
+}
 .divider {
   display: flex;
   flex-direction: row;
@@ -2394,9 +2413,6 @@ input.tab:checked + .tab-content,
 .mt-4 {
   margin-top: 1rem;
 }
-.mt-8 {
-  margin-top: 2rem;
-}
 .mt-\[5px\] {
   margin-top: 5px;
 }
@@ -2421,9 +2437,6 @@ input.tab:checked + .tab-content,
 .flex {
   display: flex;
 }
-.inline-flex {
-  display: inline-flex;
-}
 .table {
   display: table;
 }
@@ -2444,9 +2457,6 @@ input.tab:checked + .tab-content,
 }
 .h-16 {
   height: 4rem;
-}
-.h-64 {
-  height: 16rem;
 }
 .h-8 {
   height: 2rem;
@@ -2507,9 +2517,6 @@ input.tab:checked + .tab-content,
 }
 .w-16 {
   width: 4rem;
-}
-.w-64 {
-  width: 16rem;
 }
 .w-\[10px\] {
   width: 10px;
@@ -2595,6 +2602,9 @@ input.tab:checked + .tab-content,
 }
 .max-w-\[392px\] {
   max-width: 392px;
+}
+.max-w-\[398px\] {
+  max-width: 398px;
 }
 .max-w-\[400px\] {
   max-width: 400px;
@@ -2690,6 +2700,9 @@ input.tab:checked + .tab-content,
 .justify-between {
   justify-content: space-between;
 }
+.gap-0 {
+  gap: 0px;
+}
 .gap-1 {
   gap: 0.25rem;
 }
@@ -2701,6 +2714,9 @@ input.tab:checked + .tab-content,
 }
 .gap-2 {
   gap: 0.5rem;
+}
+.gap-2\.5 {
+  gap: 0.625rem;
 }
 .gap-3 {
   gap: 0.75rem;
@@ -2733,11 +2749,6 @@ input.tab:checked + .tab-content,
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-.space-y-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 .overflow-hidden {
   overflow: hidden;
@@ -3130,9 +3141,6 @@ input.tab:checked + .tab-content,
 .leading-\[22px\] {
   line-height: 22px;
 }
-.leading-tight {
-  line-height: 1.25;
-}
 .text-\[\#057EB5\] {
   --tw-text-opacity: 1;
   color: rgb(5 126 181 / var(--tw-text-opacity));
@@ -3179,9 +3187,6 @@ input.tab:checked + .tab-content,
 .opacity-70 {
   opacity: 0.7;
 }
-.opacity-75 {
-  opacity: 0.75;
-}
 .opacity-80 {
   opacity: 0.8;
 }
@@ -3195,6 +3200,10 @@ input.tab:checked + .tab-content,
 }
 .outline {
   outline-style: solid;
+}
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .grayscale {
   --tw-grayscale: grayscale(100%);
@@ -3367,10 +3376,6 @@ input.tab:checked + .tab-content,
   }
 }
 @media (min-width: 1024px) {
-
-  .lg\:flex {
-    display: flex;
-  }
 
   .lg\:grid {
     display: grid;
