@@ -11,6 +11,15 @@ export interface AppExclusiveCardProps {
   rulesContent?: string;
   buttonText?: string;
   buttonLink?: string;
+  // Cores editáveis
+  exclusiveBadgeColor?: string;
+  exclusiveBadgeTextColor?: string;
+  discountBadgeColor?: string;
+  discountBadgeBorderColor?: string;
+  descriptionBgColor?: string;
+  descriptionBorderColor?: string;
+  buttonColor?: string;
+  buttonTextColor?: string;
 }
 
 export default function AppExclusiveCard({
@@ -22,7 +31,15 @@ export default function AppExclusiveCard({
   dropdownText = "Regras e Informações",
   rulesContent,
   buttonText = "Baixar App",
-  buttonLink = "#"
+  buttonLink = "#",
+  exclusiveBadgeColor = "#F77ACF",
+  exclusiveBadgeTextColor = "#000000",
+  discountBadgeColor = "rgba(255, 0, 155, 0.1)",
+  discountBadgeBorderColor = "#FF009B",
+  descriptionBgColor = "rgba(247, 122, 207, 0.05)",
+  descriptionBorderColor = "rgba(247, 122, 207, 0.2)",
+  buttonColor = "#F77ACF",
+  buttonTextColor = "#000000"
 }: AppExclusiveCardProps) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -30,30 +47,15 @@ export default function AppExclusiveCard({
     <div 
       class="rounded-2xl p-[22px] flex flex-col gap-5 relative overflow-hidden"
       style={{ 
-        backgroundColor: "#171A1E",
+        backgroundColor: "#0D0F11",
         boxShadow: "0px 4px 4px rgba(222, 222, 224, 0.15)"
       }}
     >
-      {/* Badge "Exclusivo App" - Canto superior direito */}
-      <div 
-        class="absolute top-0 right-0 px-4 py-2 rounded-bl-xl"
-        style={{ 
-          backgroundColor: "#FF009B",
-          fontFamily: "Quicksand, sans-serif",
-          fontWeight: 600,
-          fontSize: "12px",
-          lineHeight: "15px",
-          color: "#FFFFFF"
-        }}
-      >
-        EXCLUSIVO APP
-      </div>
-
-      {/* Header: Logo, Marca e Badge de Desconto */}
-      <div class="flex items-start justify-between gap-5 mt-2">
-        <div class="flex items-center gap-3">
+      {/* Header: Logo, Marca e Badges */}
+      <div class="flex items-start justify-between gap-3">
+        <div class="flex items-center gap-3 flex-1 min-w-0">
           {brandLogo && (
-            <div class="bg-white rounded-lg p-2.5 flex items-center justify-center w-[92px] h-[60px]">
+            <div class="bg-white rounded-lg p-2.5 flex items-center justify-center w-[92px] h-[60px] shrink-0">
               <img 
                 src={brandLogo} 
                 alt={brand}
@@ -62,7 +64,7 @@ export default function AppExclusiveCard({
               />
             </div>
           )}
-          <div class="flex flex-col gap-1">
+          <div class="flex flex-col gap-1 min-w-0">
             <h3 
               class="text-white leading-tight"
               style={{ 
@@ -90,25 +92,43 @@ export default function AppExclusiveCard({
           </div>
         </div>
         
-        {/* Badge de Desconto */}
-        <div 
-          class="rounded-lg px-2 py-2 whitespace-nowrap flex items-center justify-center shrink-0"
-          style={{ 
-            backgroundColor: "rgba(255, 0, 155, 0.1)",
-            border: "1px solid #FF009B"
-          }}
-        >
-          <span 
-            class="text-white"
+        {/* Badges no canto direito */}
+        <div class="flex flex-col gap-2 items-end shrink-0">
+          {/* Badge "Exclusivo App" */}
+          <div 
+            class="rounded-lg px-2 py-1 whitespace-nowrap flex items-center justify-center"
             style={{ 
-              fontFamily: "Sora, sans-serif",
-              fontWeight: 500,
-              fontSize: "16px",
-              lineHeight: "20.16px"
+              backgroundColor: exclusiveBadgeColor,
+              fontFamily: "Quicksand, sans-serif",
+              fontWeight: 600,
+              fontSize: "12px",
+              lineHeight: "15px",
+              color: exclusiveBadgeTextColor
             }}
           >
-            {discountBadge}
-          </span>
+            EXCLUSIVO APP
+          </div>
+          
+          {/* Badge de Desconto */}
+          <div 
+            class="rounded-lg px-2 py-2 whitespace-nowrap flex items-center justify-center"
+            style={{ 
+              backgroundColor: discountBadgeColor,
+              border: `1px solid ${discountBadgeBorderColor}`
+            }}
+          >
+            <span 
+              class="text-white"
+              style={{ 
+                fontFamily: "Sora, sans-serif",
+                fontWeight: 500,
+                fontSize: "16px",
+                lineHeight: "20.16px"
+              }}
+            >
+              {discountBadge}
+            </span>
+          </div>
         </div>
       </div>
       
@@ -116,8 +136,8 @@ export default function AppExclusiveCard({
       <div 
         class="rounded-xl p-4"
         style={{ 
-          backgroundColor: "rgba(255, 0, 155, 0.05)",
-          border: "1px solid rgba(255, 0, 155, 0.2)"
+          backgroundColor: descriptionBgColor,
+          border: `1px solid ${descriptionBorderColor}`
         }}
       >
         <p 
@@ -177,28 +197,20 @@ export default function AppExclusiveCard({
           </div>
         )}
         
-        {/* Botão com ícone de download */}
+        {/* Botão sem ícone */}
         <a 
           href={buttonLink}
-          class="block text-center rounded-2xl transition-all hover:opacity-90 px-3 py-3 flex items-center justify-center gap-2"
+          class="block text-center rounded-2xl transition-all hover:opacity-90 px-3 py-3"
           style={{ 
-            backgroundColor: "#FF009B",
+            backgroundColor: buttonColor,
             fontFamily: "Quicksand, sans-serif",
             fontWeight: 600,
             fontSize: "18px",
             lineHeight: "22.5px",
-            color: "#FCFCFC"
+            color: buttonTextColor
           }}
         >
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 13.75L6.25 10M10 13.75L13.75 10M10 13.75V3.75M3.75 13.75V15.625C3.75 16.6605 4.58947 17.5 5.625 17.5H14.375C15.4105 17.5 16.25 16.6605 16.25 15.625V13.75" 
-              stroke="currentColor" 
-              stroke-width="1.5" 
-              stroke-linecap="round" 
-              stroke-linejoin="round"
-            />
-          </svg>
-          <span>{buttonText}</span>
+          {buttonText}
         </a>
       </div>
     </div>

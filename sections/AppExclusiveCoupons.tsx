@@ -53,12 +53,60 @@ export interface Props {
   /** @title Cor de Fundo */
   /** @format color */
   backgroundColor?: string;
+
+  /** @title Cor do Badge "EXCLUSIVO APP" */
+  /** @format color */
+  /** @default #F77ACF */
+  exclusiveBadgeColor?: string;
+
+  /** @title Cor do Texto do Badge "EXCLUSIVO APP" */
+  /** @format color */
+  /** @default #000000 */
+  exclusiveBadgeTextColor?: string;
+
+  /** @title Cor de Fundo do Badge de Desconto */
+  /** @format color */
+  /** @default rgba(255, 0, 155, 0.1) */
+  discountBadgeColor?: string;
+
+  /** @title Cor da Borda do Badge de Desconto */
+  /** @format color */
+  /** @default #FF009B */
+  discountBadgeBorderColor?: string;
+
+  /** @title Cor de Fundo da Descrição */
+  /** @format color */
+  /** @default rgba(247, 122, 207, 0.05) */
+  descriptionBgColor?: string;
+
+  /** @title Cor da Borda da Descrição */
+  /** @format color */
+  /** @default rgba(247, 122, 207, 0.2) */
+  descriptionBorderColor?: string;
+
+  /** @title Cor do Botão */
+  /** @format color */
+  /** @default #F77ACF */
+  buttonColor?: string;
+
+  /** @title Cor do Texto do Botão */
+  /** @format color */
+  /** @default #000000 */
+  buttonTextColor?: string;
 }
 
 export default function AppExclusiveCoupons({
   sectionTitle = "Promoções exclusivas no app",
   subtitle = "Baixe o app da Pagaleve e aproveite ofertas que só quem tem o app consegue!",
   backgroundColor = "#000000",
+  exclusiveBadgeColor = "#F77ACF",
+  exclusiveBadgeTextColor = "#000000",
+  discountBadgeColor = "rgba(255, 0, 155, 0.1)",
+  discountBadgeBorderColor = "#FF009B",
+  descriptionBgColor = "rgba(247, 122, 207, 0.05)",
+  descriptionBorderColor = "rgba(247, 122, 207, 0.2)",
+  buttonColor = "#F77ACF",
+  buttonTextColor = "#000000",
   coupons = [
     {
       brandLogo: "https://placehold.co/120x40/white/red?text=NIKE",
@@ -101,42 +149,8 @@ export default function AppExclusiveCoupons({
       style={{ backgroundColor }}
     >
       <div class="container mx-auto max-w-7xl">
-        {/* Header com Badge */}
+        {/* Header */}
         <div class="flex flex-col items-center mb-12 gap-4">
-          {/* Badge "Exclusivo App" */}
-          <div 
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full"
-            style={{ 
-              backgroundColor: "rgba(255, 0, 155, 0.15)",
-              border: "1px solid #FF009B"
-            }}
-          >
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 2.5L2.5 6.25V10C2.5 14.1421 5.35786 17 10 17.5C14.6421 17 17.5 14.1421 17.5 10V6.25L10 2.5Z" 
-                stroke="#FF009B" 
-                stroke-width="1.5" 
-                stroke-linecap="round" 
-                stroke-linejoin="round"
-              />
-              <path d="M7.5 10L9.16667 11.6667L12.5 8.33333" 
-                stroke="#FF009B" 
-                stroke-width="1.5" 
-                stroke-linecap="round" 
-                stroke-linejoin="round"
-              />
-            </svg>
-            <span 
-              style={{ 
-                fontFamily: "Quicksand, sans-serif",
-                fontWeight: 600,
-                fontSize: "14px",
-                color: "#FF009B"
-              }}
-            >
-              OFERTAS EXCLUSIVAS
-            </span>
-          </div>
-          
           {/* Título */}
           <h2 
             class="text-center"
@@ -170,46 +184,19 @@ export default function AppExclusiveCoupons({
         {/* Grid de Cupons Exclusivos */}
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {coupons.map((coupon, index) => (
-            <AppExclusiveCard key={index} {...coupon} />
+            <AppExclusiveCard 
+              key={index} 
+              {...coupon}
+              exclusiveBadgeColor={exclusiveBadgeColor}
+              exclusiveBadgeTextColor={exclusiveBadgeTextColor}
+              discountBadgeColor={discountBadgeColor}
+              discountBadgeBorderColor={discountBadgeBorderColor}
+              descriptionBgColor={descriptionBgColor}
+              descriptionBorderColor={descriptionBorderColor}
+              buttonColor={buttonColor}
+              buttonTextColor={buttonTextColor}
+            />
           ))}
-        </div>
-
-        {/* CTA Footer */}
-        <div class="mt-12 text-center">
-          <p 
-            class="text-[#DEDEE0] mb-4"
-            style={{ 
-              fontFamily: "Quicksand, sans-serif",
-              fontWeight: 400,
-              fontSize: "16px"
-            }}
-          >
-            Ainda não tem o app?
-          </p>
-          <div class="flex items-center justify-center gap-4 flex-wrap">
-            <a 
-              href="#"
-              class="inline-block transition-all hover:opacity-80"
-              aria-label="Baixar na App Store"
-            >
-              <img 
-                src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/pt-br?size=250x83&amp;releaseDate=1376438400" 
-                alt="Baixar na App Store"
-                class="h-12"
-              />
-            </a>
-            <a 
-              href="#"
-              class="inline-block transition-all hover:opacity-80"
-              aria-label="Disponível no Google Play"
-            >
-              <img 
-                src="https://play.google.com/intl/pt-BR/badges/static/images/badges/pt-br_badge_web_generic.png" 
-                alt="Disponível no Google Play"
-                class="h-[72px]"
-              />
-            </a>
-          </div>
         </div>
       </div>
     </section>

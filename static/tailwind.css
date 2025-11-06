@@ -2559,17 +2559,11 @@ input.tab:checked + .tab-content,
 .left-4 {
   left: 1rem;
 }
-.right-0 {
-  right: 0px;
-}
 .right-1 {
   right: 0.25rem;
 }
 .right-4 {
   right: 1rem;
-}
-.top-0 {
-  top: 0px;
 }
 .top-1\/2 {
   top: 50%;
@@ -2648,9 +2642,6 @@ input.tab:checked + .tab-content,
 .mt-10 {
   margin-top: 2.5rem;
 }
-.mt-12 {
-  margin-top: 3rem;
-}
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -2683,9 +2674,6 @@ input.tab:checked + .tab-content,
 }
 .flex {
   display: flex;
-}
-.inline-flex {
-  display: inline-flex;
 }
 .table {
   display: table;
@@ -2734,9 +2722,6 @@ input.tab:checked + .tab-content,
 }
 .h-\[60px\] {
   height: 60px;
-}
-.h-\[72px\] {
-  height: 72px;
 }
 .h-full {
   height: 100%;
@@ -2828,6 +2813,9 @@ input.tab:checked + .tab-content,
 }
 .w-px {
   width: 1px;
+}
+.min-w-0 {
+  min-width: 0px;
 }
 .min-w-\[100px\] {
   min-width: 100px;
@@ -3130,9 +3118,6 @@ input.tab:checked + .tab-content,
 }
 .rounded-bl-none {
   border-bottom-left-radius: 0px;
-}
-.rounded-bl-xl {
-  border-bottom-left-radius: 0.75rem;
 }
 .border {
   border-width: 1px;
