@@ -70,12 +70,13 @@
       "buttonTextColor": "#000000",
       "coupons": [
         {
-          "brand": "Marca 1",
+          "brand": "Arno",
           "discount": "50% OFF",
           "description": "Em compras acima de R$ 199",
           "couponCode": "BLACK50",
           "buttonText": "Resgatar",
-          "buttonLink": "#"
+          "buttonLink": "#",
+          "brandLogo": "https://black.pagaleve.com.br/wp-content/uploads/2025/10/arno-logo-png-1-1.png"
         },
         {
           "brand": "Marca 2",
