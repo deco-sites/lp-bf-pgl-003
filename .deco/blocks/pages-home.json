@@ -209,56 +209,14 @@
       ]
     },
     {
-      "__resolveType": "site/sections/SectionDivider.tsx",
-      "backgroundColor": "#000000",
-      "textColor": "#00ff88",
-      "title": "Marcas exclusivas do App de Pagbank",
-      "showLine": true,
-      "lineColor": "#333333"
-    },
-    {
-      "__resolveType": "site/sections/CouponGrid.tsx",
-      "backgroundColor": "#000000",
-      "cardBackgroundColor": "#1a1a1a",
-      "textColor": "#ffffff",
-      "buttonColor": "#00ff88",
-      "buttonTextColor": "#000000",
-      "coupons": [
-        {
-          "brand": "Loja Verde 1",
-          "discount": "60% OFF",
-          "description": "Exclusivo para usuários do app",
-          "couponCode": "APP60",
-          "buttonText": "Resgatar",
-          "buttonLink": "#"
-        },
-        {
-          "brand": "Loja Verde 2",
-          "discount": "45% OFF",
-          "description": "Em produtos selecionados",
-          "couponCode": "VERDE45",
-          "buttonText": "Resgatar",
-          "buttonLink": "#"
-        },
-        {
-          "brand": "Loja Verde 3",
-          "discount": "35% OFF",
-          "description": "Válido para todo o site",
-          "couponCode": "TOTAL35",
-          "buttonText": "Resgatar",
-          "buttonLink": "#"
-        }
-      ]
-    },
-    {
       "__resolveType": "site/sections/ProductGrid.tsx",
       "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "cardBackgroundColor": "#ffffff",
+      "buttonColor": "#000000",
       "sectionTitle": "Produtos em alta",
       "sectionSubtitle": "Confira os produtos mais procurados",
-      "cardBackgroundColor": "#ffffff",
-      "textColor": "#ffffff",
       "badgeColor": "#ff0000",
-      "buttonColor": "#000000",
       "products": [
         {
           "name": "Produto Exemplo 1",
@@ -283,7 +241,7 @@
     {
       "__resolveType": "site/sections/BrandLogos.tsx",
       "backgroundColor": "#000000",
-      "title": "",
+      "title": "+de 10 mil lojas já oferecem o Pix Parcelado da Pagaleve",
       "logos": [
         {
           "image": "https://placehold.co/120x40/png",
@@ -301,8 +259,8 @@
     },
     {
       "__resolveType": "site/sections/Benefits.tsx",
-      "sectionTitle": "É tudo de bom demais da conta. Inacreditável!",
       "backgroundColor": "#000000",
+      "sectionTitle": "É tudo de bom demais da conta. Inacreditável!",
       "textColor": "#ffffff",
       "accentColor": "#ff00ff",
       "cardBackgroundColor": "#1a1a1a",
@@ -328,10 +286,10 @@
     {
       "__resolveType": "site/sections/FAQ.tsx",
       "backgroundColor": "#000000",
-      "textColor": "#ffffff",
       "sectionTitle": "Perguntas Frequentes",
-      "itemBackgroundColor": "#1a1a1a",
+      "textColor": "#ffffff",
       "accentColor": "#ff00ff",
+      "itemBackgroundColor": "#1a1a1a",
       "items": [
         {
           "question": "Como funciona a Black Friday?",
@@ -353,12 +311,12 @@
     },
     {
       "__resolveType": "site/sections/CTABanner.tsx",
+      "backgroundColor": "#ff00ff",
+      "textColor": "#ffffff",
       "title": "Pix Parcelado na palma da sua mão",
       "subtitle": "Baixe o app e aproveite todas as vantagens!",
       "buttonText": "Baixar agora",
       "buttonLink": "#",
-      "backgroundColor": "#ff00ff",
-      "textColor": "#ffffff",
       "buttonColor": "#000000",
       "buttonTextColor": "#ffffff"
     },
