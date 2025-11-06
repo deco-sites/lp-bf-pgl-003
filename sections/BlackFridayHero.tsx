@@ -15,52 +15,120 @@ export interface Props {
   expiresAt?: string;
 
   /**
-   * @title Imagem de Fundo
+   * @title Imagem de Fundo Desktop
+   * @description Imagem de fundo para desktop (1440px)
    */
   backgroundImage?: ImageWidget;
+
+  /**
+   * @title Imagem de Fundo Mobile
+   * @description Imagem de fundo para mobile (opcional, se não informada usa a mesma do desktop)
+   */
+  backgroundImageMobile?: ImageWidget;
 }
 
 export default function BlackFridayHero({
   title = "Começa em:",
   expiresAt = "2024-11-29T23:59:59",
   backgroundImage = "https://assets.decocache.com/lp-bf-pgl-003/c5f3eb53-031b-498e-ab60-323858e53f53/black-friday-hero-bg.png",
+  backgroundImageMobile,
 }: Props) {
+  const bgMobile = backgroundImageMobile || backgroundImage;
+
   return (
-    <div
-      class="relative w-full flex items-end justify-center px-4 py-8 md:py-16 lg:px-[520px] lg:py-16"
+    <section
+      class="relative w-full flex items-end justify-center overflow-hidden hero-section"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        minHeight: "400px",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <style dangerouslySetInnerHTML={{ __html: `
-        @media (min-width: 1024px) {
-          .hero-bg {
-            min-height: 698px !important;
-          }
+        /* Estilos base da seção */
+        .hero-section {
+          min-height: 375px;
+          padding: 32px 16px;
         }
         
-        /* Estilos base para mobile */
+        /* Container do conteúdo */
+        .hero-content {
+          width: 100%;
+          max-width: 398px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+        }
+        
+        /* Título */
+        .hero-title {
+          font-family: 'Quicksand', sans-serif;
+          font-size: 20px;
+          line-height: 25px;
+          font-weight: 600;
+          color: #FFFFFF;
+          text-align: center;
+        }
+        
+        /* Container do countdown */
+        .countdown-container {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+        
+        /* Cards do countdown - Mobile */
         .countdown-card {
-          width: 60px;
-          height: 70px;
-          padding: 6px 8px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 70px;
+          height: 80px;
+          background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(68px);
+          border-radius: 8px;
+          padding: 8px 10px;
+          box-shadow: 
+            0px 11px 31px rgba(0, 0, 0, 0.25),
+            inset -33px 33px 33px rgba(255, 255, 255, 0.041),
+            inset 33px -33px 33px rgba(149, 149, 149, 0.041);
         }
         
         .countdown-number {
-          font-size: 32px;
-          line-height: 40px;
+          font-family: 'Quicksand', sans-serif;
+          font-size: 40px;
+          line-height: 50px;
+          font-weight: 500;
+          color: #FFFFFF;
+          text-align: center;
         }
         
         .countdown-label {
-          font-size: 10px;
-          line-height: 12px;
+          font-family: 'Quicksand', sans-serif;
+          font-size: 11px;
+          line-height: 14px;
+          font-weight: 600;
+          color: #FFFFFF;
+          text-align: center;
+          text-transform: uppercase;
         }
         
-        /* Estilos para tablet e desktop */
-        @media (min-width: 768px) {
+        .countdown-separator {
+          font-family: 'Quicksand', sans-serif;
+          font-size: 16px;
+          color: #FFFFFF;
+        }
+        
+        /* Tablet e Desktop - Acima de 740px */
+        @media (min-width: 740px) {
+          .hero-section {
+            min-height: 698px;
+            padding: 64px 52px;
+          }
+          
           .countdown-card {
             width: 80px;
             height: 90px;
@@ -77,162 +145,76 @@ export default function BlackFridayHero({
             line-height: 15px;
           }
         }
+        
+        /* Desktop grande - Acima de 1024px */
+        @media (min-width: 1024px) {
+          .hero-section {
+            padding-left: 520px;
+            padding-right: 520px;
+          }
+        }
+        
+        /* Background mobile */
+        @media (max-width: 739px) {
+          .hero-section {
+            background-image: url(${bgMobile}) !important;
+          }
+        }
       `}} />
       
-      <div class="hero-bg w-full flex flex-col items-center gap-3 max-w-[398px]">
+      <div class="hero-content">
         {/* Título */}
-        <h2
-          class="text-white text-center font-semibold text-base md:text-xl"
-          style={{
-            fontFamily: "Quicksand, sans-serif",
-          }}
-        >
+        <h2 class="hero-title">
           {title}
         </h2>
 
         {/* Countdown */}
-        <div class="flex items-center gap-2 md:gap-2.5">
+        <div class="countdown-container">
           {/* Dias */}
-          <div
-            class="countdown-card flex flex-col items-center justify-center rounded-lg"
-            style={{
-              backgroundColor: "rgba(255, 255, 255, 0.1)",
-              backdropFilter: "blur(68px)",
-              boxShadow: `
-                0px 11px 31px rgba(0, 0, 0, 0.25),
-                inset -33px 33px 33px rgba(255, 255, 255, 0.041),
-                inset 33px -33px 33px rgba(149, 149, 149, 0.041)
-              `,
-            }}
-          >
-            <span
-              class="countdown-number text-white text-center"
-              style={{
-                fontFamily: "Quicksand, sans-serif",
-                fontWeight: 500,
-              }}
-              data-countdown-days
-            >
+          <div class="countdown-card">
+            <span class="countdown-number" data-countdown-days>
               00
             </span>
-            <span
-              class="countdown-label text-white text-center uppercase"
-              style={{
-                fontFamily: "Quicksand, sans-serif",
-                fontWeight: 600,
-              }}
-            >
+            <span class="countdown-label">
               Dias
             </span>
           </div>
 
           {/* Separador */}
-          <span class="text-white text-sm md:text-base">:</span>
+          <span class="countdown-separator">:</span>
 
           {/* Horas */}
-          <div
-            class="countdown-card flex flex-col items-center justify-center rounded-lg"
-            style={{
-              backgroundColor: "rgba(255, 255, 255, 0.1)",
-              backdropFilter: "blur(68px)",
-              boxShadow: `
-                0px 11px 31px rgba(0, 0, 0, 0.25),
-                inset -33px 33px 33px rgba(255, 255, 255, 0.041),
-                inset 33px -33px 33px rgba(149, 149, 149, 0.041)
-              `,
-            }}
-          >
-            <span
-              class="countdown-number text-white text-center"
-              style={{
-                fontFamily: "Quicksand, sans-serif",
-                fontWeight: 500,
-              }}
-              data-countdown-hours
-            >
+          <div class="countdown-card">
+            <span class="countdown-number" data-countdown-hours>
               00
             </span>
-            <span
-              class="countdown-label text-white text-center uppercase"
-              style={{
-                fontFamily: "Quicksand, sans-serif",
-                fontWeight: 600,
-              }}
-            >
+            <span class="countdown-label">
               Horas
             </span>
           </div>
 
           {/* Separador */}
-          <span class="text-white text-sm md:text-base">:</span>
+          <span class="countdown-separator">:</span>
 
           {/* Minutos */}
-          <div
-            class="countdown-card flex flex-col items-center justify-center rounded-lg"
-            style={{
-              backgroundColor: "rgba(255, 255, 255, 0.1)",
-              backdropFilter: "blur(68px)",
-              boxShadow: `
-                0px 11px 31px rgba(0, 0, 0, 0.25),
-                inset -33px 33px 33px rgba(255, 255, 255, 0.041),
-                inset 33px -33px 33px rgba(149, 149, 149, 0.041)
-              `,
-            }}
-          >
-            <span
-              class="countdown-number text-white text-center"
-              style={{
-                fontFamily: "Quicksand, sans-serif",
-                fontWeight: 500,
-              }}
-              data-countdown-minutes
-            >
+          <div class="countdown-card">
+            <span class="countdown-number" data-countdown-minutes>
               00
             </span>
-            <span
-              class="countdown-label text-white text-center uppercase"
-              style={{
-                fontFamily: "Quicksand, sans-serif",
-                fontWeight: 600,
-              }}
-            >
+            <span class="countdown-label">
               Min
             </span>
           </div>
 
           {/* Separador */}
-          <span class="text-white text-sm md:text-base">:</span>
+          <span class="countdown-separator">:</span>
 
           {/* Segundos */}
-          <div
-            class="countdown-card flex flex-col items-center justify-center rounded-lg"
-            style={{
-              backgroundColor: "rgba(255, 255, 255, 0.1)",
-              backdropFilter: "blur(68px)",
-              boxShadow: `
-                0px 11px 31px rgba(0, 0, 0, 0.25),
-                inset -33px 33px 33px rgba(255, 255, 255, 0.041),
-                inset 33px -33px 33px rgba(149, 149, 149, 0.041)
-              `,
-            }}
-          >
-            <span
-              class="countdown-number text-white text-center"
-              style={{
-                fontFamily: "Quicksand, sans-serif",
-                fontWeight: 500,
-              }}
-              data-countdown-seconds
-            >
+          <div class="countdown-card">
+            <span class="countdown-number" data-countdown-seconds>
               00
             </span>
-            <span
-              class="countdown-label text-white text-center uppercase"
-              style={{
-                fontFamily: "Quicksand, sans-serif",
-                fontWeight: 600,
-              }}
-            >
+            <span class="countdown-label">
               Seg
             </span>
           </div>
@@ -283,6 +265,6 @@ export default function BlackFridayHero({
           `,
         }}
       />
-    </div>
+    </section>
   );
 }
