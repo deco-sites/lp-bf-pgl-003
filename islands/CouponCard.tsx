@@ -6,8 +6,9 @@ export interface CouponCardProps {
   brand: string;
   category?: string;
   discountBadge: string;
-  couponCode: string;
-  description: string;
+  couponCode?: string;
+  description?: string;
+  alternativeText?: string;
   dropdownText?: string;
   rulesContent?: string;
   usageLeft?: string;
@@ -23,6 +24,7 @@ export default function CouponCard({
   discountBadge,
   couponCode,
   description,
+  alternativeText,
   dropdownText = "Regras e Informações",
   rulesContent,
   usageLeft,
@@ -34,9 +36,11 @@ export default function CouponCard({
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(couponCode);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    if (couponCode) {
+      navigator.clipboard.writeText(couponCode);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
   };
 
   return (
@@ -110,65 +114,85 @@ export default function CouponCard({
         </div>
       </div>
       
-      {/* Área do Código com borda tracejada */}
-      <div 
-        class="rounded-2xl flex flex-col gap-[26px] p-8"
-        style={{ 
-          backgroundColor: "#141619",
-          border: "0.5px dashed #FF009B"
-        }}
-      >
-        {/* Descrição e Código */}
-        <div class="flex items-center justify-between gap-2">
-          <div class="flex flex-col gap-4">
-            <p 
-              class="text-[#DEDEE0]"
+      {/* Condicional: Com cupom ou sem cupom */}
+      {couponCode ? (
+        /* Área do Código com borda tracejada */
+        <div 
+          class="rounded-2xl flex flex-col gap-[26px] p-8"
+          style={{ 
+            backgroundColor: "#141619",
+            border: "0.5px dashed #FF009B"
+          }}
+        >
+          {/* Descrição e Código */}
+          <div class="flex items-center justify-between gap-2">
+            <div class="flex flex-col gap-4">
+              {description && (
+                <p 
+                  class="text-[#DEDEE0]"
+                  style={{ 
+                    fontFamily: "Quicksand, sans-serif",
+                    fontWeight: 400,
+                    fontSize: "12px",
+                    lineHeight: "15px"
+                  }}
+                >
+                  {description}
+                </p>
+              )}
+              <span 
+                class="text-white"
+                style={{ 
+                  fontFamily: "Quicksand, sans-serif",
+                  fontWeight: 700,
+                  fontSize: "20px",
+                  lineHeight: "25px",
+                  textTransform: "uppercase"
+                }}
+              >
+                {couponCode}
+              </span>
+            </div>
+            
+            {/* Botão de Copiar */}
+            <button 
+              onClick={handleCopy}
+              class="rounded-lg p-2.5 transition-all hover:opacity-80 flex items-center justify-center"
               style={{ 
-                fontFamily: "Quicksand, sans-serif",
-                fontWeight: 400,
-                fontSize: "12px",
-                lineHeight: "15px"
+                backgroundColor: "rgba(247, 122, 207, 0.1)",
+                width: "34px",
+                height: "36px"
               }}
+              aria-label="Copiar código"
             >
-              {description}
-            </p>
-            <span 
-              class="text-white"
-              style={{ 
-                fontFamily: "Quicksand, sans-serif",
-                fontWeight: 700,
-                fontSize: "20px",
-                lineHeight: "25px",
-                textTransform: "uppercase"
-              }}
-            >
-              {couponCode}
-            </span>
+              {copied ? (
+                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 8L7 10L13 4" stroke="#FF009B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              ) : (
+                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.66667 4.66667V2.66667C4.66667 1.93029 5.26362 1.33333 6 1.33333H11.3333C12.0697 1.33333 12.6667 1.93029 12.6667 2.66667V10.6667C12.6667 11.403 12.0697 12 11.3333 12H9.33333M2.66667 14.6667H8C8.73638 14.6667 9.33333 14.0697 9.33333 13.3333V6.66667C9.33333 5.93029 8.73638 5.33333 8 5.33333H2.66667C1.93029 5.33333 1.33333 5.93029 1.33333 6.66667V13.3333C1.33333 14.0697 1.93029 14.6667 2.66667 14.6667Z" stroke="#FF009B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              )}
+            </button>
           </div>
-          
-          {/* Botão de Copiar */}
-          <button 
-            onClick={handleCopy}
-            class="rounded-lg p-2.5 transition-all hover:opacity-80 flex items-center justify-center"
-            style={{ 
-              backgroundColor: "rgba(247, 122, 207, 0.1)",
-              width: "34px",
-              height: "36px"
-            }}
-            aria-label="Copiar código"
-          >
-            {copied ? (
-              <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 8L7 10L13 4" stroke="#FF009B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            ) : (
-              <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.66667 4.66667V2.66667C4.66667 1.93029 5.26362 1.33333 6 1.33333H11.3333C12.0697 1.33333 12.6667 1.93029 12.6667 2.66667V10.6667C12.6667 11.403 12.0697 12 11.3333 12H9.33333M2.66667 14.6667H8C8.73638 14.6667 9.33333 14.0697 9.33333 13.3333V6.66667C9.33333 5.93029 8.73638 5.33333 8 5.33333H2.66667C1.93029 5.33333 1.33333 5.93029 1.33333 6.66667V13.3333C1.33333 14.0697 1.93029 14.6667 2.66667 14.6667Z" stroke="#FF009B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            )}
-          </button>
         </div>
-      </div>
+      ) : alternativeText ? (
+        /* Texto alternativo quando não há cupom */
+        <div>
+          <p 
+            class="text-white"
+            style={{ 
+              fontFamily: "Quicksand, sans-serif",
+              fontWeight: 600,
+              fontSize: "14px",
+              lineHeight: "17.5px"
+            }}
+          >
+            {alternativeText}
+          </p>
+        </div>
+      ) : null}
       
       {/* Dropdown e Info de Uso */}
       <div class="flex flex-col gap-[18px]">

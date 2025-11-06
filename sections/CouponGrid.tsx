@@ -19,12 +19,16 @@ export interface Coupon {
   discountBadge: string;
   
   /** @title Código do Cupom */
-  /** @description Ex: PAGALEVE500, PAGALEVE10 */
-  couponCode: string;
+  /** @description Ex: PAGALEVE500, PAGALEVE10 (deixe vazio se não tiver cupom) */
+  couponCode?: string;
   
-  /** @title Descrição */
-  /** @description Texto sobre onde/como usar o cupom */
-  description: string;
+  /** @title Descrição do Cupom */
+  /** @description Texto sobre onde/como usar o cupom (usado quando há código) */
+  description?: string;
+  
+  /** @title Texto Alternativo */
+  /** @description Texto exibido quando NÃO há código de cupom. Ex: Ícones da Farm com até 30%OFF para você aproveitar! */
+  alternativeText?: string;
   
   /** @title Texto do Dropdown */
   /** @description Ex: Regras e Informações */
@@ -90,16 +94,15 @@ export default function CouponGrid({
       buttonLink: "#"
     },
     {
-      brandLogo: "https://placehold.co/120x40/white/red?text=AliExpress",
-      brand: "AliExpress",
-      category: "Variedades",
-      discountBadge: "R$ 12 OFF",
-      couponCode: "PAGALEVEA",
-      description: "Cole este código no campo de cupom do site da loja",
+      brandLogo: "https://placehold.co/120x40/white/red?text=FARM",
+      brand: "Farm",
+      category: "Moda",
+      discountBadge: "30%OFF",
+      alternativeText: "Ícones da Farm com até 30%OFF para você aproveitar!",
       dropdownText: "Regras e Informações",
-      rulesContent: "R$12,00 de desconto em compras a partir de R$85,00",
-      usageLeft: "72 usados hoje",
-      usageRight: "Vencimento: 07/11/2025",
+      rulesContent: "Aproveite até 30% de desconto em peças selecionadas da Farm!",
+      usageLeft: "472 usados hoje",
+      usageRight: "Expira Hoje!",
       buttonText: "Usar Cupom",
       buttonLink: "#"
     }
