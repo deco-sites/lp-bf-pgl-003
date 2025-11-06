@@ -133,7 +133,7 @@ export default function ComoFunciona({
             }}
           >
             <h2
-              class="text-white text-center"
+              class="text-center"
               style={{
                 fontFamily: "Sora, sans-serif",
                 fontSize: "36px",
@@ -142,6 +142,8 @@ export default function ComoFunciona({
                 letterSpacing: "0px",
                 margin: "0",
                 padding: "0",
+                color: "#FFFFFF",
+                textAlign: "center",
               }}
             >
               {mainTitle}
@@ -154,10 +156,11 @@ export default function ComoFunciona({
                 fontWeight: 400,
                 lineHeight: "30px",
                 letterSpacing: "0px",
-                color: "rgba(252, 252, 252, 1)",
+                color: "#FCFCFC",
                 margin: "0",
                 padding: "0",
                 width: "100%",
+                textAlign: "center",
               }}
             >
               {subtitle}
@@ -204,7 +207,7 @@ export default function ComoFunciona({
                       fontWeight: 600,
                       lineHeight: "25px",
                       letterSpacing: "0px",
-                      color: "rgba(252, 252, 252, 1)",
+                      color: "#FCFCFC",
                       textAlign: "center",
                     }}
                   >
@@ -259,7 +262,7 @@ export default function ComoFunciona({
                             style={{
                               fontSize: "28px",
                               lineHeight: "28px",
-                              color: "white",
+                              color: "#FFFFFF",
                             }}
                           />
                         ) : null}
@@ -273,7 +276,7 @@ export default function ComoFunciona({
                         }}
                       >
                         <h3
-                          class="text-white text-center"
+                          class="text-center"
                           style={{
                             fontFamily: "Quicksand, sans-serif",
                             fontSize: "18px",
@@ -282,6 +285,8 @@ export default function ComoFunciona({
                             letterSpacing: "0px",
                             margin: "0",
                             padding: "0",
+                            color: "#FFFFFF",
+                            textAlign: "center",
                           }}
                         >
                           {step.title}
@@ -294,10 +299,11 @@ export default function ComoFunciona({
                             fontWeight: 400,
                             lineHeight: "17.5px",
                             letterSpacing: "0px",
-                            color: "rgba(252, 252, 252, 1)",
+                            color: "#FCFCFC",
                             margin: "0",
                             padding: "0",
                             width: "100%",
+                            textAlign: "center",
                           }}
                         >
                           {step.description}
