@@ -10,7 +10,8 @@ export interface CouponCardProps {
   description: string;
   dropdownText?: string;
   rulesContent?: string;
-  usageInfo?: string;
+  usageLeft?: string;
+  usageRight?: string;
   buttonText?: string;
   buttonLink?: string;
 }
@@ -24,7 +25,8 @@ export default function CouponCard({
   description,
   dropdownText = "Regras e Informações",
   rulesContent,
-  usageInfo,
+  usageLeft,
+  usageRight,
   buttonText = "Usar Cupom",
   buttonLink = "#"
 }: CouponCardProps) {
@@ -38,101 +40,229 @@ export default function CouponCard({
   };
 
   return (
-    <div class="bg-[#1a1a1a] rounded-2xl p-6 flex flex-col h-full border border-gray-800">
+    <div 
+      class="rounded-2xl p-[22px] flex flex-col gap-[18px]"
+      style={{ 
+        backgroundColor: "#171A1E",
+        boxShadow: "0px 4px 4px rgba(222, 222, 224, 0.15)"
+      }}
+    >
       {/* Header: Logo, Marca e Badge */}
-      <div class="flex items-start justify-between mb-6">
+      <div class="flex items-start justify-between gap-5">
         <div class="flex items-center gap-3">
           {brandLogo && (
-            <div class="bg-white rounded-lg p-2.5 flex items-center justify-center min-w-[64px] h-[48px]">
+            <div class="bg-white rounded-lg p-2.5 flex items-center justify-center w-[92px] h-[60px]">
               <img 
                 src={brandLogo} 
                 alt={brand}
                 class="max-w-full max-h-full object-contain"
+                style={{ objectFit: "contain" }}
               />
             </div>
           )}
-          <div>
-            <h3 class="font-bold text-white text-lg leading-tight">{brand}</h3>
+          <div class="flex flex-col gap-1">
+            <h3 
+              class="text-white leading-tight"
+              style={{ 
+                fontFamily: "Sora, sans-serif",
+                fontWeight: 600,
+                fontSize: "20px",
+                lineHeight: "25.2px"
+              }}
+            >
+              {brand}
+            </h3>
             {category && (
-              <p class="text-gray-400 text-sm mt-0.5">{category}</p>
+              <p 
+                class="text-[#999999] leading-tight"
+                style={{ 
+                  fontFamily: "Quicksand, sans-serif",
+                  fontWeight: 500,
+                  fontSize: "16px",
+                  lineHeight: "20px"
+                }}
+              >
+                {category}
+              </p>
             )}
           </div>
         </div>
         
-        {/* Badge de Desconto */}
-        <div class="bg-gradient-to-r from-pink-600 to-purple-600 rounded-full px-3 py-1.5 text-xs font-bold text-white whitespace-nowrap">
-          {discountBadge}
+        {/* Badge de Desconto - estilo Figma */}
+        <div 
+          class="rounded-lg px-2 py-2 whitespace-nowrap flex items-center justify-center"
+          style={{ 
+            backgroundColor: "rgba(255, 0, 155, 0.1)",
+            border: "1px solid #FF009B"
+          }}
+        >
+          <span 
+            class="text-white"
+            style={{ 
+              fontFamily: "Sora, sans-serif",
+              fontWeight: 500,
+              fontSize: "16px",
+              lineHeight: "20.16px"
+            }}
+          >
+            {discountBadge}
+          </span>
         </div>
       </div>
       
-      {/* Descrição */}
-      <p class="text-gray-300 text-sm mb-4 leading-relaxed">
-        {description}
-      </p>
-      
-      {/* Código do Cupom com borda tracejada rosa */}
-      <div class="relative mb-4">
-        <div class="border-2 border-dashed border-pink-600 rounded-lg p-4 bg-[#0a0a0a] flex items-center justify-between">
-          <span class="font-bold text-white text-lg tracking-wider">
-            {couponCode}
-          </span>
+      {/* Área do Código com borda tracejada */}
+      <div 
+        class="rounded-2xl flex flex-col gap-[26px] p-8"
+        style={{ 
+          backgroundColor: "#141619",
+          border: "0.5px dashed #FF009B"
+        }}
+      >
+        {/* Descrição e Código */}
+        <div class="flex items-center justify-between gap-2">
+          <div class="flex flex-col gap-4">
+            <p 
+              class="text-[#DEDEE0]"
+              style={{ 
+                fontFamily: "Quicksand, sans-serif",
+                fontWeight: 600,
+                fontSize: "12px",
+                lineHeight: "15px"
+              }}
+            >
+              {description}
+            </p>
+            <span 
+              class="text-white"
+              style={{ 
+                fontFamily: "Quicksand, sans-serif",
+                fontWeight: 700,
+                fontSize: "20px",
+                lineHeight: "25px",
+                textTransform: "uppercase"
+              }}
+            >
+              {couponCode}
+            </span>
+          </div>
+          
+          {/* Botão de Copiar */}
           <button 
             onClick={handleCopy}
-            class="text-pink-600 hover:text-pink-500 transition-colors p-1"
+            class="rounded-lg p-2.5 transition-all hover:opacity-80 flex items-center justify-center"
+            style={{ 
+              backgroundColor: "rgba(247, 122, 207, 0.1)",
+              width: "34px",
+              height: "36px"
+            }}
             aria-label="Copiar código"
           >
             {copied ? (
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"></polyline>
+              <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 8L7 10L13 4" stroke="#FF009B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             ) : (
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.66667 4.66667V2.66667C4.66667 1.93029 5.26362 1.33333 6 1.33333H11.3333C12.0697 1.33333 12.6667 1.93029 12.6667 2.66667V10.6667C12.6667 11.403 12.0697 12 11.3333 12H9.33333M2.66667 14.6667H8C8.73638 14.6667 9.33333 14.0697 9.33333 13.3333V6.66667C9.33333 5.93029 8.73638 5.33333 8 5.33333H2.66667C1.93029 5.33333 1.33333 5.93029 1.33333 6.66667V13.3333C1.33333 14.0697 1.93029 14.6667 2.66667 14.6667Z" stroke="#FF009B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             )}
           </button>
         </div>
       </div>
       
-      {/* Dropdown Funcional */}
-      <div class="mb-4">
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          class="flex items-center justify-between w-full text-left text-white text-sm font-medium hover:text-pink-500 transition-colors"
-        >
-          <span>{dropdownText}</span>
-          <svg 
-            class={`w-5 h-5 transition-transform ${isOpen ? 'rotate-180' : ''}`}
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24"
+      {/* Dropdown e Info de Uso */}
+      <div class="flex flex-col gap-[18px]">
+        {/* Dropdown Funcional */}
+        <div>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            class="flex items-center justify-center gap-2 text-white transition-all hover:opacity-80"
+            style={{ 
+              fontFamily: "Quicksand, sans-serif",
+              fontWeight: 600,
+              fontSize: "14px",
+              lineHeight: "17.5px"
+            }}
           >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </button>
+            <span>{dropdownText}</span>
+            <svg 
+              class={`transition-transform ${isOpen ? 'rotate-180' : ''}`}
+              width="13" 
+              height="14" 
+              viewBox="0 0 13 14" 
+              fill="none" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M3.25 5.75L6.5 9L9.75 5.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          
+          {isOpen && rulesContent && (
+            <div 
+              class="mt-3 text-[#DEDEE0] leading-relaxed"
+              style={{ 
+                fontFamily: "Quicksand, sans-serif",
+                fontWeight: 600,
+                fontSize: "12px",
+                lineHeight: "15px"
+              }}
+            >
+              {rulesContent}
+            </div>
+          )}
+        </div>
         
-        {isOpen && rulesContent && (
-          <div class="mt-3 text-gray-300 text-sm leading-relaxed bg-[#0a0a0a] p-4 rounded-lg border border-gray-800">
-            <p>{rulesContent}</p>
+        {/* Informações de Uso com linha divisória */}
+        {(usageLeft || usageRight) && (
+          <div class="flex items-center gap-3">
+            {usageLeft && (
+              <span 
+                class="text-[#FCFCFC]"
+                style={{ 
+                  fontFamily: "Quicksand, sans-serif",
+                  fontWeight: 600,
+                  fontSize: "12px",
+                  lineHeight: "15px"
+                }}
+              >
+                {usageLeft}
+              </span>
+            )}
+            {usageLeft && usageRight && (
+              <div class="w-px h-4 bg-[#FCFCFC]"></div>
+            )}
+            {usageRight && (
+              <span 
+                class="text-[#FCFCFC]"
+                style={{ 
+                  fontFamily: "Quicksand, sans-serif",
+                  fontWeight: 600,
+                  fontSize: "12px",
+                  lineHeight: "15px"
+                }}
+              >
+                {usageRight}
+              </span>
+            )}
           </div>
         )}
+        
+        {/* Botão */}
+        <a 
+          href={buttonLink}
+          class="block text-center rounded-2xl transition-all hover:opacity-90 px-3 py-2"
+          style={{ 
+            backgroundColor: "#FF009B",
+            fontFamily: "Quicksand, sans-serif",
+            fontWeight: 600,
+            fontSize: "18px",
+            lineHeight: "22.5px",
+            color: "#FCFCFC"
+          }}
+        >
+          {buttonText}
+        </a>
       </div>
-      
-      {/* Informações de Uso */}
-      {usageInfo && (
-        <p class="text-gray-500 text-xs mb-4">
-          {usageInfo}
-        </p>
-      )}
-      
-      {/* Botão */}
-      <a 
-        href={buttonLink}
-        class="block text-center bg-gradient-to-r from-pink-600 to-pink-500 hover:from-pink-500 hover:to-pink-600 text-white font-bold py-3.5 px-6 rounded-full transition-all hover:scale-105 mt-auto text-base"
-      >
-        {buttonText}
-      </a>
     </div>
   );
 }

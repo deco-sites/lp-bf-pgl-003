@@ -34,9 +34,13 @@ export interface Coupon {
   /** @description Texto detalhado das regras do cupom */
   rulesContent?: string;
   
-  /** @title Informações de Uso */
-  /** @description Ex: 52 usados hoje | Vencimento: 30/11/2025 */
-  usageInfo?: string;
+  /** @title Info de Uso (Esquerda) */
+  /** @description Ex: 472 usados hoje */
+  usageLeft?: string;
+  
+  /** @title Info de Uso (Direita) */
+  /** @description Ex: Expira Hoje! */
+  usageRight?: string;
   
   /** @title Texto do Botão */
   buttonText?: string;
@@ -66,7 +70,8 @@ export default function CouponGrid({
       description: "Cole este código no campo de cupom do site da loja",
       dropdownText: "Regras e Informações",
       rulesContent: "Use o cupom da Pagaleve e ganhe R$100 de desconto em compras acima de R$500 no site da Arno! Regras do cupom: desconto de R$100 válido para pedidos acima de R$500.",
-      usageInfo: "52 usados hoje | Vencimento: 30/11/2025",
+      usageLeft: "52 usados hoje",
+      usageRight: "Vencimento: 30/11/2025",
       buttonText: "Usar Cupom",
       buttonLink: "#"
     },
@@ -74,12 +79,13 @@ export default function CouponGrid({
       brandLogo: "https://placehold.co/120x40/white/black?text=HERING",
       brand: "Hering",
       category: "Moda",
-      discountBadge: "10% OFF",
+      discountBadge: "10%OFF",
       couponCode: "PAGALEVE10",
       description: "Cole este código no campo de cupom do site da loja",
       dropdownText: "Regras e Informações",
-      rulesContent: "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado! Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra.",
-      usageInfo: "105 usados hoje | Vencimento: 30/11/2025",
+      rulesContent: "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!",
+      usageLeft: "472 usados hoje",
+      usageRight: "Expira Hoje!",
       buttonText: "Usar Cupom",
       buttonLink: "#"
     },
@@ -92,7 +98,8 @@ export default function CouponGrid({
       description: "Cole este código no campo de cupom do site da loja",
       dropdownText: "Regras e Informações",
       rulesContent: "R$12,00 de desconto em compras a partir de R$85,00",
-      usageInfo: "72 usados hoje | Vencimento: 07/11/2025",
+      usageLeft: "72 usados hoje",
+      usageRight: "Vencimento: 07/11/2025",
       buttonText: "Usar Cupom",
       buttonLink: "#"
     }
@@ -102,7 +109,15 @@ export default function CouponGrid({
     <section class="bg-black text-white py-12 px-4">
       <div class="container mx-auto max-w-7xl">
         {/* Título */}
-        <h2 class="text-2xl md:text-4xl font-bold text-center mb-12">
+        <h2 
+          class="text-center mb-12"
+          style={{ 
+            fontFamily: "Sora, sans-serif",
+            fontWeight: 700,
+            fontSize: "clamp(24px, 4vw, 36px)",
+            lineHeight: "1.2"
+          }}
+        >
           {sectionTitle}
         </h2>
         
