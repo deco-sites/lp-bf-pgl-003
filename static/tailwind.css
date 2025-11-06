@@ -2752,11 +2752,14 @@ input.tab:checked + .tab-content,
 .max-w-7xl {
   max-width: 80rem;
 }
+.max-w-\[1336px\] {
+  max-width: 1336px;
+}
 .max-w-\[139px\] {
   max-width: 139px;
 }
-.max-w-\[200px\] {
-  max-width: 200px;
+.max-w-\[1440px\] {
+  max-width: 1440px;
 }
 .max-w-\[2px\] {
   max-width: 2px;
@@ -2906,14 +2909,8 @@ input.tab:checked + .tab-content,
 .gap-8 {
   gap: 2rem;
 }
-.gap-\[10px\] {
-  gap: 10px;
-}
 .gap-\[16px\] {
   gap: 16px;
-}
-.gap-\[26px\] {
-  gap: 26px;
 }
 .gap-\[2px\] {
   gap: 2px;
@@ -3067,9 +3064,6 @@ input.tab:checked + .tab-content,
 .bg-slate-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-.bg-transparent {
-  background-color: transparent;
 }
 .bg-white {
   --tw-bg-opacity: 1;

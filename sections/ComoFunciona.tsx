@@ -94,12 +94,15 @@ export default function ComoFunciona({
   steps = DEFAULT_STEPS,
 }: Props) {
   return (
-    <section class="w-full bg-transparent overflow-hidden">
+    <section 
+      class="w-full overflow-hidden"
+      style={{
+        backgroundColor: "transparent",
+      }}
+    >
       <div 
-        class="w-full flex flex-col items-center justify-center"
+        class="w-full max-w-[1440px] mx-auto flex flex-col items-center"
         style={{
-          maxWidth: "1440px",
-          margin: "0 auto",
           paddingLeft: "52px",
           paddingRight: "52px",
           paddingTop: "52px",
@@ -107,135 +110,197 @@ export default function ComoFunciona({
         }}
       >
         {/* Header */}
-        <div class="w-full flex flex-col items-center gap-[10px] mb-6">
-          <h2
-            class="text-white text-center"
-            style={{
-              fontFamily: "Sora, sans-serif",
-              fontSize: "36px",
-              fontWeight: 600,
-              lineHeight: "45.36px",
-              maxWidth: "1182px",
-            }}
-          >
-            {mainTitle}
-          </h2>
-          <p
-            class="text-center w-full"
-            style={{
-              fontFamily: "Quicksand, sans-serif",
-              fontSize: "24px",
-              fontWeight: 400,
-              lineHeight: "30px",
-              color: "#FCFCFC",
-            }}
-          >
-            {subtitle}
-          </p>
-        </div>
-
-        {/* Steps Grid */}
         <div 
-          class="w-full flex items-center justify-between gap-[26px]"
+          class="w-full max-w-[1336px] flex flex-col items-center"
           style={{
-            maxWidth: "1336px",
-            height: "200px",
+            gap: "24px",
+            marginBottom: "24px",
           }}
         >
-          {steps.map((step) => (
-            <div key={step.number} class="relative flex-1 max-w-[200px]">
-              {/* Badge com número */}
-              <div
-                class="absolute flex items-center justify-center"
-                style={{
-                  width: "36px",
-                  height: "33px",
-                  backgroundColor: "#FF009B",
-                  borderRadius: "23px",
-                  top: "-8px",
-                  left: "-5px",
-                  zIndex: 10,
-                }}
-              >
-                <span
-                  class="text-white text-center"
-                  style={{
-                    fontFamily: "Quicksand, sans-serif",
-                    fontSize: "20px",
-                    fontWeight: 600,
-                    lineHeight: "25px",
-                    color: "#FCFCFC",
-                  }}
-                >
-                  {step.number}
-                </span>
-              </div>
+          {/* Títulos */}
+          <div 
+            class="w-full flex flex-col items-center"
+            style={{
+              gap: "10px",
+            }}
+          >
+            <h2
+              class="text-white text-center"
+              style={{
+                fontFamily: "Sora, sans-serif",
+                fontSize: "36px",
+                fontWeight: 600,
+                lineHeight: "45.36px",
+                letterSpacing: "0px",
+                margin: "0",
+                padding: "0",
+              }}
+            >
+              {mainTitle}
+            </h2>
+            <p
+              class="text-center"
+              style={{
+                fontFamily: "Quicksand, sans-serif",
+                fontSize: "24px",
+                fontWeight: 400,
+                lineHeight: "30px",
+                letterSpacing: "0px",
+                color: "rgba(252, 252, 252, 1)",
+                margin: "0",
+                padding: "0",
+                width: "100%",
+              }}
+            >
+              {subtitle}
+            </p>
+          </div>
 
-              {/* Card */}
-              <div
-                class="flex flex-col items-center justify-center p-4 h-full"
+          {/* Steps Grid */}
+          <div 
+            class="w-full flex items-center"
+            style={{
+              gap: "26px",
+              height: "200px",
+              justifyContent: "space-between",
+            }}
+          >
+            {steps.map((step, index) => (
+              <div 
+                key={step.number} 
+                class="relative"
                 style={{
                   width: "200px",
                   height: "184px",
-                  backgroundColor: "rgba(0, 0, 0, 0.05)",
-                  border: "1px solid rgba(59, 74, 84, 1)",
-                  borderRadius: "12px",
+                  flex: "0 0 200px",
                 }}
               >
-                <div class="flex flex-col items-center gap-4 flex-1 justify-center">
-                  {/* Ícone */}
-                  <div class="flex items-center justify-center">
-                    {step.iconImage ? (
-                      <img 
-                        src={step.iconImage} 
-                        alt={step.title}
-                        style={{
-                          width: "28px",
-                          height: "25px",
-                          objectFit: "contain",
-                        }}
-                      />
-                    ) : step.icon ? (
-                      <i
-                        class={`fa-regular fa-${step.icon} text-white`}
-                        style={{
-                          fontSize: "28px",
-                          lineHeight: "28px",
-                        }}
-                      />
-                    ) : null}
-                  </div>
+                {/* Badge com número */}
+                <div
+                  class="absolute flex items-center justify-center"
+                  style={{
+                    width: "36px",
+                    height: "33px",
+                    backgroundColor: "#FF009B",
+                    borderRadius: "23px",
+                    top: "-8px",
+                    left: "-5px",
+                    zIndex: 10,
+                    padding: "4px 8px",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontFamily: "Quicksand, sans-serif",
+                      fontSize: "20px",
+                      fontWeight: 600,
+                      lineHeight: "25px",
+                      letterSpacing: "0px",
+                      color: "rgba(252, 252, 252, 1)",
+                      textAlign: "center",
+                    }}
+                  >
+                    {step.number}
+                  </span>
+                </div>
 
-                  {/* Content */}
-                  <div class="flex flex-col items-center gap-[6px] w-full">
-                    <h3
-                      class="text-white text-center"
+                {/* Card */}
+                <div
+                  class="w-full h-full flex items-center justify-center"
+                  style={{
+                    backgroundColor: "rgba(0, 0, 0, 0.05)",
+                    border: "1px solid rgba(59, 74, 84, 1)",
+                    borderRadius: "12px",
+                    padding: "16px",
+                  }}
+                >
+                  <div 
+                    class="flex flex-col items-center justify-center w-full"
+                    style={{
+                      gap: "16px",
+                    }}
+                  >
+                    {/* Conteúdo vertical */}
+                    <div 
+                      class="flex flex-col items-center w-full"
                       style={{
-                        fontFamily: "Quicksand, sans-serif",
-                        fontSize: "18px",
-                        fontWeight: 600,
-                        lineHeight: "22.5px",
+                        gap: "6px",
                       }}
                     >
-                      {step.title}
-                    </h3>
-                    <p
-                      class="text-center w-full"
-                      style={{
-                        fontFamily: "Quicksand, sans-serif",
-                        fontSize: "14px",
-                        fontWeight: 400,
-                        lineHeight: "17.5px",
-                        color: "#FCFCFC",
-                      }}
-                    >
-                      {step.description}
-                    </p>
+                      {/* Ícone */}
+                      <div 
+                        class="flex items-center justify-center"
+                        style={{
+                          padding: "10px",
+                          borderRadius: "8px",
+                        }}
+                      >
+                        {step.iconImage ? (
+                          <img 
+                            src={step.iconImage} 
+                            alt={step.title}
+                            style={{
+                              width: "28px",
+                              height: "25px",
+                              objectFit: "contain",
+                            }}
+                          />
+                        ) : step.icon ? (
+                          <i
+                            class={`fa-regular fa-${step.icon}`}
+                            style={{
+                              fontSize: "28px",
+                              lineHeight: "28px",
+                              color: "white",
+                            }}
+                          />
+                        ) : null}
+                      </div>
+
+                      {/* Texto */}
+                      <div 
+                        class="flex flex-col items-center w-full"
+                        style={{
+                          gap: "6px",
+                        }}
+                      >
+                        <h3
+                          class="text-white text-center"
+                          style={{
+                            fontFamily: "Quicksand, sans-serif",
+                            fontSize: "18px",
+                            fontWeight: 600,
+                            lineHeight: "22.5px",
+                            letterSpacing: "0px",
+                            margin: "0",
+                            padding: "0",
+                          }}
+                        >
+                          {step.title}
+                        </h3>
+                        <p
+                          class="text-center"
+                          style={{
+                            fontFamily: "Quicksand, sans-serif",
+                            fontSize: "14px",
+                            fontWeight: 400,
+                            lineHeight: "17.5px",
+                            letterSpacing: "0px",
+                            color: "rgba(252, 252, 252, 1)",
+                            margin: "0",
+                            padding: "0",
+                            width: "100%",
+                          }}
+                        >
+                          {step.description}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
 
