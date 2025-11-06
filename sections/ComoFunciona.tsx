@@ -135,16 +135,19 @@ export default function ComoFunciona({
           {/* Steps Grid */}
           <div class="w-full">
             {/* Container com scroll horizontal no mobile */}
-            <div class="lg:hidden w-full overflow-x-auto pb-4" style={{ 
+            <div class="lg:hidden w-full overflow-x-auto overflow-y-visible pb-4" style={{ 
               scrollbarWidth: "thin",
               WebkitOverflowScrolling: "touch"
             }}>
-              <div class="flex gap-4 px-4" style={{ minWidth: "min-content" }}>
+              <div class="flex gap-4 px-4 pt-4" style={{ minWidth: "min-content" }}>
                 {steps.map((step) => (
                   <div 
                     key={step.number} 
                     class="relative flex-shrink-0"
-                    style={{ width: "160px" }}
+                    style={{ 
+                      width: "160px",
+                      paddingTop: "4px"
+                    }}
                   >
                     {/* Badge com número */}
                     <div
@@ -154,8 +157,8 @@ export default function ComoFunciona({
                         height: "30px",
                         backgroundColor: "#FF009B",
                         borderRadius: "20px",
-                        top: "-8px",
-                        left: "-5px",
+                        top: "0px",
+                        left: "0px",
                         zIndex: 10,
                       }}
                     >
@@ -178,6 +181,7 @@ export default function ComoFunciona({
                         border: "1px solid rgba(59, 74, 84, 1)",
                         borderRadius: "12px",
                         padding: "12px",
+                        marginTop: "4px",
                       }}
                     >
                       <div class="flex flex-col items-center justify-center w-full gap-3">
@@ -221,11 +225,14 @@ export default function ComoFunciona({
             </div>
 
             {/* Grid para desktop */}
-            <div class="hidden lg:grid lg:grid-cols-6 gap-6">
+            <div class="hidden lg:grid lg:grid-cols-6 gap-6 pt-4">
               {steps.map((step) => (
                 <div 
                   key={step.number} 
                   class="relative"
+                  style={{
+                    paddingTop: "4px"
+                  }}
                 >
                   {/* Badge com número */}
                   <div
@@ -235,8 +242,8 @@ export default function ComoFunciona({
                       height: "33px",
                       backgroundColor: "#FF009B",
                       borderRadius: "23px",
-                      top: "-8px",
-                      left: "-5px",
+                      top: "0px",
+                      left: "0px",
                       zIndex: 10,
                     }}
                   >
@@ -259,6 +266,7 @@ export default function ComoFunciona({
                       border: "1px solid rgba(59, 74, 84, 1)",
                       borderRadius: "12px",
                       padding: "16px",
+                      marginTop: "4px",
                     }}
                   >
                     <div class="flex flex-col items-center justify-center w-full gap-4">
