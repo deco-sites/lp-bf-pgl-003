@@ -37,12 +37,13 @@ export default function BlackFridayHero({
 
   return (
     <section
-      class="relative w-full flex items-end justify-center overflow-hidden hero-section"
+      class="relative w-full flex items-end justify-center hero-section"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
+        overflow: "hidden",
       }}
     >
       <style dangerouslySetInnerHTML={{ __html: `
@@ -50,6 +51,7 @@ export default function BlackFridayHero({
         .hero-section {
           min-height: 375px;
           padding: 32px 16px;
+          max-width: 100vw;
         }
         
         /* Container do conteúdo */
@@ -77,6 +79,7 @@ export default function BlackFridayHero({
           display: flex;
           align-items: center;
           gap: 10px;
+          flex-wrap: nowrap;
         }
         
         /* Cards do countdown - Mobile */
@@ -95,6 +98,7 @@ export default function BlackFridayHero({
             0px 11px 31px rgba(0, 0, 0, 0.25),
             inset -33px 33px 33px rgba(255, 255, 255, 0.041),
             inset 33px -33px 33px rgba(149, 149, 149, 0.041);
+          flex-shrink: 0;
         }
         
         .countdown-number {
@@ -120,13 +124,14 @@ export default function BlackFridayHero({
           font-family: 'Quicksand', sans-serif;
           font-size: 16px;
           color: #FFFFFF;
+          flex-shrink: 0;
         }
         
         /* Tablet e Desktop - Acima de 740px */
         @media (min-width: 740px) {
           .hero-section {
             min-height: 698px;
-            padding: 64px 52px;
+            padding: 64px 16px;
           }
           
           .countdown-card {
@@ -149,8 +154,8 @@ export default function BlackFridayHero({
         /* Desktop grande - Acima de 1024px */
         @media (min-width: 1024px) {
           .hero-section {
-            padding-left: 520px;
-            padding-right: 520px;
+            padding-left: clamp(16px, 10vw, 520px);
+            padding-right: clamp(16px, 10vw, 520px);
           }
         }
         

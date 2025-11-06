@@ -103,9 +103,10 @@ export default function ComoFunciona({
 }: Props) {
   return (
     <section 
-      class="w-full overflow-hidden"
+      class="w-full"
       style={{
         backgroundColor: backgroundColor,
+        overflowX: "hidden",
       }}
     >
       <div class="w-full max-w-[1440px] mx-auto flex flex-col items-center px-4 md:px-8 lg:px-[52px] py-8 md:py-12 lg:py-[52px]">
@@ -132,28 +133,115 @@ export default function ComoFunciona({
           </div>
 
           {/* Steps Grid */}
-          <div class="w-full overflow-x-auto lg:overflow-x-visible -mx-4 px-4 md:mx-0 md:px-0">
-            <div class="flex lg:grid lg:grid-cols-6 gap-4 lg:gap-6 min-w-max lg:min-w-0">
-              {steps.map((step, index) => (
+          <div class="w-full">
+            {/* Container com scroll horizontal no mobile */}
+            <div class="lg:hidden w-full overflow-x-auto pb-4" style={{ 
+              scrollbarWidth: "thin",
+              WebkitOverflowScrolling: "touch"
+            }}>
+              <div class="flex gap-4 px-4" style={{ minWidth: "min-content" }}>
+                {steps.map((step) => (
+                  <div 
+                    key={step.number} 
+                    class="relative flex-shrink-0"
+                    style={{ width: "160px" }}
+                  >
+                    {/* Badge com número */}
+                    <div
+                      class="absolute flex items-center justify-center"
+                      style={{
+                        width: "32px",
+                        height: "30px",
+                        backgroundColor: "#FF009B",
+                        borderRadius: "20px",
+                        top: "-8px",
+                        left: "-5px",
+                        zIndex: 10,
+                      }}
+                    >
+                      <span
+                        class="text-sm font-semibold text-white"
+                        style={{
+                          fontFamily: "Quicksand, sans-serif",
+                        }}
+                      >
+                        {step.number}
+                      </span>
+                    </div>
+
+                    {/* Card */}
+                    <div
+                      class="w-full flex items-center justify-center"
+                      style={{
+                        minHeight: "160px",
+                        backgroundColor: "rgba(0, 0, 0, 0.05)",
+                        border: "1px solid rgba(59, 74, 84, 1)",
+                        borderRadius: "12px",
+                        padding: "12px",
+                      }}
+                    >
+                      <div class="flex flex-col items-center justify-center w-full gap-3">
+                        {/* Ícone */}
+                        <div class="flex items-center justify-center p-2">
+                          {step.iconImage ? (
+                            <img 
+                              src={step.iconImage} 
+                              alt={step.title}
+                              class="w-6 h-6 object-contain"
+                            />
+                          ) : step.icon ? (
+                            <i class={`fa-regular fa-${step.icon} text-white text-2xl`} />
+                          ) : null}
+                        </div>
+
+                        {/* Texto */}
+                        <div class="flex flex-col items-center w-full gap-1">
+                          <h3
+                            class="text-center text-sm font-semibold text-white"
+                            style={{
+                              fontFamily: "Quicksand, sans-serif",
+                            }}
+                          >
+                            {step.title}
+                          </h3>
+                          <p
+                            class="text-center text-xs text-white/90"
+                            style={{
+                              fontFamily: "Quicksand, sans-serif",
+                            }}
+                          >
+                            {step.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Grid para desktop */}
+            <div class="hidden lg:grid lg:grid-cols-6 gap-6">
+              {steps.map((step) => (
                 <div 
                   key={step.number} 
-                  class="relative flex-shrink-0 w-[160px] md:w-[180px] lg:w-auto"
+                  class="relative"
                 >
                   {/* Badge com número */}
                   <div
                     class="absolute flex items-center justify-center"
                     style={{
-                      width: "32px",
-                      height: "30px",
+                      width: "36px",
+                      height: "33px",
                       backgroundColor: "#FF009B",
-                      borderRadius: "20px",
+                      borderRadius: "23px",
                       top: "-8px",
                       left: "-5px",
                       zIndex: 10,
                     }}
                   >
                     <span
-                      class="text-sm font-semibold text-white"
+                      class="text-base font-semibold text-white"
                       style={{
                         fontFamily: "Quicksand, sans-serif",
                       }}
@@ -164,34 +252,33 @@ export default function ComoFunciona({
 
                   {/* Card */}
                   <div
-                    class="w-full h-full flex items-center justify-center min-h-[160px] lg:min-h-[184px]"
+                    class="w-full flex items-center justify-center"
                     style={{
+                      minHeight: "184px",
                       backgroundColor: "rgba(0, 0, 0, 0.05)",
                       border: "1px solid rgba(59, 74, 84, 1)",
                       borderRadius: "12px",
-                      padding: "12px",
+                      padding: "16px",
                     }}
                   >
-                    <div class="flex flex-col items-center justify-center w-full gap-3">
+                    <div class="flex flex-col items-center justify-center w-full gap-4">
                       {/* Ícone */}
                       <div class="flex items-center justify-center p-2">
                         {step.iconImage ? (
                           <img 
                             src={step.iconImage} 
                             alt={step.title}
-                            class="w-6 h-6 object-contain"
+                            class="w-7 h-7 object-contain"
                           />
                         ) : step.icon ? (
-                          <i
-                            class={`fa-regular fa-${step.icon} text-white text-2xl`}
-                          />
+                          <i class={`fa-regular fa-${step.icon} text-white text-3xl`} />
                         ) : null}
                       </div>
 
                       {/* Texto */}
-                      <div class="flex flex-col items-center w-full gap-1">
+                      <div class="flex flex-col items-center w-full gap-2">
                         <h3
-                          class="text-center text-sm md:text-base font-semibold text-white"
+                          class="text-center text-base font-semibold text-white"
                           style={{
                             fontFamily: "Quicksand, sans-serif",
                           }}
@@ -199,7 +286,7 @@ export default function ComoFunciona({
                           {step.title}
                         </h3>
                         <p
-                          class="text-center text-xs text-white/90"
+                          class="text-center text-sm text-white/90"
                           style={{
                             fontFamily: "Quicksand, sans-serif",
                           }}
