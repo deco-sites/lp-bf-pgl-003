@@ -297,6 +297,20 @@
       ]
     },
     {
+      "__resolveType": "site/sections/DownloadAppCTA.tsx",
+      "backgroundColor": "#131618",
+      "buttonColor": "#FF009B",
+      "icon": "📱",
+      "title": "Baixe agora o nosso app!",
+      "description": "Descubra lojas exclusivas e acompanhe todas as suas parcelas em um só lugar.",
+      "buttonText": "Baixe o App",
+      "buttonLink": "#",
+      "iconColor": "#00E16C",
+      "titleColor": "#FCFCFC",
+      "descriptionColor": "#DEDEE0",
+      "buttonTextColor": "#FCFCFC"
+    },
+    {
       "__resolveType": "site/sections/ProductGrid.tsx",
       "backgroundColor": "#000000",
       "textColor": "#ffffff",
