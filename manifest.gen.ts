@@ -4,15 +4,31 @@
 
 import * as $$$$$$$$$$$0 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
-import * as $$$$$$0 from "./sections/Footer.tsx";
-import * as $$$$$$1 from "./sections/ItWorks.tsx";
-import * as $$$$$$2 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$0 from "./sections/Benefits.tsx";
+import * as $$$$$$1 from "./sections/BlackFridayHero.tsx";
+import * as $$$$$$2 from "./sections/BrandLogos.tsx";
+import * as $$$$$$4 from "./sections/CouponGrid.tsx";
+import * as $$$$$$3 from "./sections/CTABanner.tsx";
+import * as $$$$$$5 from "./sections/FAQ.tsx";
+import * as $$$$$$6 from "./sections/Footer.tsx";
+import * as $$$$$$7 from "./sections/ItWorks.tsx";
+import * as $$$$$$8 from "./sections/ProductGrid.tsx";
+import * as $$$$$$9 from "./sections/SectionDivider.tsx";
+import * as $$$$$$10 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
-    "site/sections/Footer.tsx": $$$$$$0,
-    "site/sections/ItWorks.tsx": $$$$$$1,
-    "site/sections/Theme/Theme.tsx": $$$$$$2,
+    "site/sections/Benefits.tsx": $$$$$$0,
+    "site/sections/BlackFridayHero.tsx": $$$$$$1,
+    "site/sections/BrandLogos.tsx": $$$$$$2,
+    "site/sections/CouponGrid.tsx": $$$$$$4,
+    "site/sections/CTABanner.tsx": $$$$$$3,
+    "site/sections/FAQ.tsx": $$$$$$5,
+    "site/sections/Footer.tsx": $$$$$$6,
+    "site/sections/ItWorks.tsx": $$$$$$7,
+    "site/sections/ProductGrid.tsx": $$$$$$8,
+    "site/sections/SectionDivider.tsx": $$$$$$9,
+    "site/sections/Theme/Theme.tsx": $$$$$$10,
   },
   "apps": {
     "site/apps/deco/htmx.ts": $$$$$$$$$$$0,

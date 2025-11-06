@@ -3,9 +3,203 @@
   "path": "/",
   "sections": [
     {
-      "__resolveType": "site/sections/ItWorks.tsx",
-      "name": "<p>It Works!</p>",
-      "count": 1
+      "__resolveType": "site/sections/BlackFridayHero.tsx",
+      "discount": "50%",
+      "title": "a gente leva a sua black além",
+      "subtitle": "",
+      "endDate": "2024-12-01T23:59:59",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "accentColor": "#ff00ff"
+    },
+    {
+      "__resolveType": "site/sections/CouponGrid.tsx",
+      "sectionTitle": "Cupom com nossas marcas parceiras é hora de esnobar no Pix",
+      "backgroundColor": "#000000",
+      "cardBackgroundColor": "#1a1a1a",
+      "textColor": "#ffffff",
+      "buttonColor": "#ff00ff",
+      "buttonTextColor": "#000000",
+      "coupons": [
+        {
+          "brand": "Marca 1",
+          "discount": "50% OFF",
+          "description": "Em compras acima de R$ 199",
+          "couponCode": "BLACK50",
+          "buttonText": "Resgatar",
+          "buttonLink": "#"
+        },
+        {
+          "brand": "Marca 2",
+          "discount": "40% OFF",
+          "description": "Em todos os produtos",
+          "couponCode": "PROMO40",
+          "buttonText": "Resgatar",
+          "buttonLink": "#"
+        },
+        {
+          "brand": "Marca 3",
+          "discount": "30% OFF",
+          "description": "Na primeira compra",
+          "couponCode": "FIRST30",
+          "buttonText": "Resgatar",
+          "buttonLink": "#"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/SectionDivider.tsx",
+      "title": "Marcas exclusivas do App de Pagbank",
+      "backgroundColor": "#000000",
+      "textColor": "#00ff88",
+      "showLine": true,
+      "lineColor": "#333333"
+    },
+    {
+      "__resolveType": "site/sections/CouponGrid.tsx",
+      "backgroundColor": "#000000",
+      "cardBackgroundColor": "#1a1a1a",
+      "textColor": "#ffffff",
+      "buttonColor": "#00ff88",
+      "buttonTextColor": "#000000",
+      "coupons": [
+        {
+          "brand": "Loja Verde 1",
+          "discount": "60% OFF",
+          "description": "Exclusivo para usuários do app",
+          "couponCode": "APP60",
+          "buttonText": "Resgatar",
+          "buttonLink": "#"
+        },
+        {
+          "brand": "Loja Verde 2",
+          "discount": "45% OFF",
+          "description": "Em produtos selecionados",
+          "couponCode": "VERDE45",
+          "buttonText": "Resgatar",
+          "buttonLink": "#"
+        },
+        {
+          "brand": "Loja Verde 3",
+          "discount": "35% OFF",
+          "description": "Válido para todo o site",
+          "couponCode": "TOTAL35",
+          "buttonText": "Resgatar",
+          "buttonLink": "#"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/ProductGrid.tsx",
+      "sectionTitle": "Produtos em alta",
+      "sectionSubtitle": "Confira os produtos mais procurados",
+      "backgroundColor": "#000000",
+      "cardBackgroundColor": "#ffffff",
+      "textColor": "#ffffff",
+      "badgeColor": "#ff0000",
+      "buttonColor": "#000000",
+      "products": [
+        {
+          "name": "Produto Exemplo 1",
+          "image": "https://placehold.co/400x400/png",
+          "originalPrice": "R$ 199,90",
+          "discountPrice": "R$ 99,90",
+          "badge": "50% OFF",
+          "buttonText": "Ver produto",
+          "buttonLink": "#"
+        },
+        {
+          "name": "Produto Exemplo 2",
+          "image": "https://placehold.co/400x400/png",
+          "originalPrice": "R$ 299,90",
+          "discountPrice": "R$ 149,90",
+          "badge": "NOVO",
+          "buttonText": "Ver produto",
+          "buttonLink": "#"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/BrandLogos.tsx",
+      "title": "",
+      "backgroundColor": "#000000",
+      "logos": [
+        {
+          "image": "https://placehold.co/120x40/png",
+          "alt": "Marca 1"
+        },
+        {
+          "image": "https://placehold.co/120x40/png",
+          "alt": "Marca 2"
+        },
+        {
+          "image": "https://placehold.co/120x40/png",
+          "alt": "Marca 3"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Benefits.tsx",
+      "sectionTitle": "É tudo de bom demais da conta. Inacreditável!",
+      "backgroundColor": "#000000",
+      "cardBackgroundColor": "#1a1a1a",
+      "textColor": "#ffffff",
+      "accentColor": "#ff00ff",
+      "benefits": [
+        {
+          "title": "Cashback",
+          "description": "Ganhe dinheiro de volta em suas compras"
+        },
+        {
+          "title": "Sem Taxa",
+          "description": "Zero taxas em transações"
+        },
+        {
+          "title": "Rápido",
+          "description": "Pagamento instantâneo"
+        },
+        {
+          "title": "Seguro",
+          "description": "Proteção total nas suas transações"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/FAQ.tsx",
+      "sectionTitle": "Perguntas Frequentes",
+      "backgroundColor": "#000000",
+      "itemBackgroundColor": "#1a1a1a",
+      "textColor": "#ffffff",
+      "accentColor": "#ff00ff",
+      "items": [
+        {
+          "question": "Como funciona a Black Friday?",
+          "answer": "<p>A Black Friday é um evento anual com descontos incríveis em diversos produtos e serviços.</p>"
+        },
+        {
+          "question": "Como usar os cupons?",
+          "answer": "<p>Basta copiar o código do cupom e aplicar no checkout da loja parceira.</p>"
+        },
+        {
+          "question": "Os cupons têm data de validade?",
+          "answer": "<p>Sim, verifique a data de validade de cada cupom na descrição.</p>"
+        },
+        {
+          "question": "Posso usar mais de um cupom?",
+          "answer": "<p>Depende das regras de cada loja. Consulte os termos e condições.</p>"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/CTABanner.tsx",
+      "title": "Pix Parcelado na palma da sua mão",
+      "subtitle": "Baixe o app e aproveite todas as vantagens!",
+      "buttonText": "Baixar agora",
+      "buttonLink": "#",
+      "backgroundColor": "#ff00ff",
+      "textColor": "#ffffff",
+      "buttonColor": "#000000",
+      "buttonTextColor": "#ffffff"
     },
     {
       "__resolveType": "Footer"
