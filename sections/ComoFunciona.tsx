@@ -108,59 +108,23 @@ export default function ComoFunciona({
         backgroundColor: backgroundColor,
       }}
     >
-      <div 
-        class="w-full max-w-[1440px] mx-auto flex flex-col items-center"
-        style={{
-          paddingLeft: "52px",
-          paddingRight: "52px",
-          paddingTop: "52px",
-          paddingBottom: "26px",
-        }}
-      >
+      <div class="w-full max-w-[1440px] mx-auto flex flex-col items-center px-4 md:px-8 lg:px-[52px] py-8 md:py-12 lg:py-[52px]">
         {/* Header */}
-        <div 
-          class="w-full max-w-[1336px] flex flex-col items-center"
-          style={{
-            gap: "24px",
-            marginBottom: "24px",
-          }}
-        >
+        <div class="w-full max-w-[1336px] flex flex-col items-center gap-4 md:gap-6 mb-6 md:mb-8">
           {/* Títulos */}
-          <div 
-            class="w-full flex flex-col items-center"
-            style={{
-              gap: "10px",
-            }}
-          >
+          <div class="w-full flex flex-col items-center gap-2 md:gap-3">
             <h2
-              class="text-center"
+              class="text-center text-xl md:text-2xl lg:text-4xl font-semibold text-white px-4"
               style={{
                 fontFamily: "Sora, sans-serif",
-                fontSize: "36px",
-                fontWeight: 600,
-                lineHeight: "45.36px",
-                letterSpacing: "0px",
-                margin: "0",
-                padding: "0",
-                color: "#FFFFFF",
-                textAlign: "center",
               }}
             >
               {mainTitle}
             </h2>
             <p
-              class="text-center"
+              class="text-center text-sm md:text-base lg:text-xl text-white/95 px-4"
               style={{
                 fontFamily: "Quicksand, sans-serif",
-                fontSize: "24px",
-                fontWeight: 400,
-                lineHeight: "30px",
-                letterSpacing: "0px",
-                color: "#FCFCFC",
-                margin: "0",
-                padding: "0",
-                width: "100%",
-                textAlign: "center",
               }}
             >
               {subtitle}
@@ -168,142 +132,76 @@ export default function ComoFunciona({
           </div>
 
           {/* Steps Grid */}
-          <div 
-            class="w-full flex items-center"
-            style={{
-              gap: "26px",
-              height: "200px",
-              justifyContent: "space-between",
-            }}
-          >
-            {steps.map((step, index) => (
-              <div 
-                key={step.number} 
-                class="relative"
-                style={{
-                  width: "200px",
-                  height: "184px",
-                  flex: "0 0 200px",
-                }}
-              >
-                {/* Badge com número */}
-                <div
-                  class="absolute flex items-center justify-center"
-                  style={{
-                    width: "36px",
-                    height: "33px",
-                    backgroundColor: "#FF009B",
-                    borderRadius: "23px",
-                    top: "-8px",
-                    left: "-5px",
-                    zIndex: 10,
-                    padding: "4px 8px",
-                  }}
+          <div class="w-full overflow-x-auto lg:overflow-x-visible -mx-4 px-4 md:mx-0 md:px-0">
+            <div class="flex lg:grid lg:grid-cols-6 gap-4 lg:gap-6 min-w-max lg:min-w-0">
+              {steps.map((step, index) => (
+                <div 
+                  key={step.number} 
+                  class="relative flex-shrink-0 w-[160px] md:w-[180px] lg:w-auto"
                 >
-                  <span
+                  {/* Badge com número */}
+                  <div
+                    class="absolute flex items-center justify-center"
                     style={{
-                      fontFamily: "Quicksand, sans-serif",
-                      fontSize: "20px",
-                      fontWeight: 600,
-                      lineHeight: "25px",
-                      letterSpacing: "0px",
-                      color: "#FCFCFC",
-                      textAlign: "center",
+                      width: "32px",
+                      height: "30px",
+                      backgroundColor: "#FF009B",
+                      borderRadius: "20px",
+                      top: "-8px",
+                      left: "-5px",
+                      zIndex: 10,
                     }}
                   >
-                    {step.number}
-                  </span>
-                </div>
-
-                {/* Card */}
-                <div
-                  class="w-full h-full flex items-center justify-center"
-                  style={{
-                    backgroundColor: "rgba(0, 0, 0, 0.05)",
-                    border: "1px solid rgba(59, 74, 84, 1)",
-                    borderRadius: "12px",
-                    padding: "16px",
-                  }}
-                >
-                  <div 
-                    class="flex flex-col items-center justify-center w-full"
-                    style={{
-                      gap: "16px",
-                    }}
-                  >
-                    {/* Conteúdo vertical */}
-                    <div 
-                      class="flex flex-col items-center w-full"
+                    <span
+                      class="text-sm font-semibold text-white"
                       style={{
-                        gap: "6px",
+                        fontFamily: "Quicksand, sans-serif",
                       }}
                     >
+                      {step.number}
+                    </span>
+                  </div>
+
+                  {/* Card */}
+                  <div
+                    class="w-full h-full flex items-center justify-center min-h-[160px] lg:min-h-[184px]"
+                    style={{
+                      backgroundColor: "rgba(0, 0, 0, 0.05)",
+                      border: "1px solid rgba(59, 74, 84, 1)",
+                      borderRadius: "12px",
+                      padding: "12px",
+                    }}
+                  >
+                    <div class="flex flex-col items-center justify-center w-full gap-3">
                       {/* Ícone */}
-                      <div 
-                        class="flex items-center justify-center"
-                        style={{
-                          padding: "10px",
-                          borderRadius: "8px",
-                        }}
-                      >
+                      <div class="flex items-center justify-center p-2">
                         {step.iconImage ? (
                           <img 
                             src={step.iconImage} 
                             alt={step.title}
-                            style={{
-                              width: "28px",
-                              height: "25px",
-                              objectFit: "contain",
-                            }}
+                            class="w-6 h-6 object-contain"
                           />
                         ) : step.icon ? (
                           <i
-                            class={`fa-regular fa-${step.icon}`}
-                            style={{
-                              fontSize: "28px",
-                              lineHeight: "28px",
-                              color: "#FFFFFF",
-                            }}
+                            class={`fa-regular fa-${step.icon} text-white text-2xl`}
                           />
                         ) : null}
                       </div>
 
                       {/* Texto */}
-                      <div 
-                        class="flex flex-col items-center w-full"
-                        style={{
-                          gap: "6px",
-                        }}
-                      >
+                      <div class="flex flex-col items-center w-full gap-1">
                         <h3
-                          class="text-center"
+                          class="text-center text-sm md:text-base font-semibold text-white"
                           style={{
                             fontFamily: "Quicksand, sans-serif",
-                            fontSize: "18px",
-                            fontWeight: 600,
-                            lineHeight: "22.5px",
-                            letterSpacing: "0px",
-                            margin: "0",
-                            padding: "0",
-                            color: "#FFFFFF",
-                            textAlign: "center",
                           }}
                         >
                           {step.title}
                         </h3>
                         <p
-                          class="text-center"
+                          class="text-center text-xs text-white/90"
                           style={{
                             fontFamily: "Quicksand, sans-serif",
-                            fontSize: "14px",
-                            fontWeight: 400,
-                            lineHeight: "17.5px",
-                            letterSpacing: "0px",
-                            color: "#FCFCFC",
-                            margin: "0",
-                            padding: "0",
-                            width: "100%",
-                            textAlign: "center",
                           }}
                         >
                           {step.description}
@@ -312,8 +210,8 @@ export default function ComoFunciona({
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
