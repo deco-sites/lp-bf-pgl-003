@@ -2649,6 +2649,9 @@ input.tab:checked + .tab-content,
 .relative {
   position: relative;
 }
+.inset-0 {
+  inset: 0px;
+}
 .bottom-0 {
   bottom: 0px;
 }
@@ -2840,6 +2843,9 @@ input.tab:checked + .tab-content,
 .h-\[66px\] {
   height: 66px;
 }
+.h-\[700px\] {
+  height: 700px;
+}
 .h-full {
   height: 100%;
 }
@@ -2999,6 +3005,9 @@ input.tab:checked + .tab-content,
 }
 .max-w-\[360px\] {
   max-width: 360px;
+}
+.max-w-\[375px\] {
+  max-width: 375px;
 }
 .max-w-\[380px\] {
   max-width: 380px;
@@ -3856,6 +3865,14 @@ input.tab:checked + .tab-content,
 
   .md\:mb-8 {
     margin-bottom: 2rem;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:max-w-md {

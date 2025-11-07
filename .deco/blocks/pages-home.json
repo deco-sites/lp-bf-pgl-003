@@ -508,20 +508,6 @@
       ]
     },
     {
-      "__resolveType": "site/sections/CTABanner.tsx",
-      "title": "Pix Parcelado na palma da sua mão",
-      "subtitle": "Baixe o app e aproveite todas as vantagens!",
-      "backgroundColor": "#ff00ff",
-      "textColor": "#ffffff",
-      "buttonText": "Baixar agora",
-      "buttonLink": "#",
-      "buttonColor": "#000000",
-      "buttonTextColor": "#ffffff"
-    },
-    {
-      "__resolveType": "Footer"
-    },
-    {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/BannerPix.tsx",
@@ -529,6 +515,9 @@
         "buttonLink": "www.te4udigital.com",
         "image": "https://assets.decocache.com/lp-bf-pgl-003/c7e5934f-aacc-4aeb-8a71-480228641d32/Imagem-do-WhatsApp-de-2025-11-07-a(s)-12.54.07_5d955876.jpg"
       }
+    },
+    {
+      "__resolveType": "Footer"
     }
   ],
   "__resolveType": "website/pages/Page.tsx"
