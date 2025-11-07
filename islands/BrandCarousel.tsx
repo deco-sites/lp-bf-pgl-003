@@ -54,7 +54,11 @@ export default function BrandCarousel({ logos, speed = 30 }: Props) {
     <div 
       ref={scrollerRef}
       class="overflow-hidden relative w-full"
-      style={{ scrollBehavior: 'unset' }}
+      style={{ 
+        scrollBehavior: 'unset',
+        display: 'flex',
+        alignItems: 'center'
+      }}
     >
       <div 
         data-scroll-content
@@ -62,7 +66,8 @@ export default function BrandCarousel({ logos, speed = 30 }: Props) {
         style={{ 
           flexWrap: 'nowrap',
           whiteSpace: 'nowrap',
-          display: 'inline-flex'
+          display: 'inline-flex',
+          minWidth: 'max-content'
         }}
       >
         {logos.map((logo, index) => (
@@ -70,27 +75,43 @@ export default function BrandCarousel({ logos, speed = 30 }: Props) {
             <a 
               key={index}
               href={logo.link}
-              class="grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 flex-shrink-0 inline-block"
+              class="grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100"
               target="_blank"
               rel="noopener noreferrer"
+              style={{
+                flexShrink: 0,
+                display: 'inline-flex',
+                alignItems: 'center'
+              }}
             >
               <img 
                 src={logo.image} 
                 alt={logo.alt}
                 class="h-[66px] w-auto object-contain"
-                style={{ display: 'block' }}
+                style={{ 
+                  display: 'block',
+                  maxWidth: 'none'
+                }}
               />
             </a>
           ) : (
             <div
               key={index}
-              class="grayscale opacity-70 flex-shrink-0 inline-block"
+              class="grayscale opacity-70"
+              style={{
+                flexShrink: 0,
+                display: 'inline-flex',
+                alignItems: 'center'
+              }}
             >
               <img 
                 src={logo.image} 
                 alt={logo.alt}
                 class="h-[66px] w-auto object-contain"
-                style={{ display: 'block' }}
+                style={{ 
+                  display: 'block',
+                  maxWidth: 'none'
+                }}
               />
             </div>
           )
