@@ -26,19 +26,20 @@ export default function BannerPix({
   link,
 }: Props) {
   const BannerContent = () => (
-    <>
+    <div class="w-full">
       {/* Banner Desktop */}
-      <div class="hidden md:block relative w-full max-w-[1440px] mx-auto h-[486px] bg-gradient-to-r from-purple-900 via-pink-800 to-pink-600">
+      <div class="hidden md:block relative w-full bg-gradient-to-r from-purple-900 via-pink-800 to-pink-600">
         {imageDesktop ? (
           <img
             src={imageDesktop}
             alt="Banner Desktop"
-            class="w-full h-full object-cover"
+            class="w-full h-auto object-cover"
             loading="lazy"
+            style="aspect-ratio: 1440 / 486;"
           />
         ) : (
-          <div class="w-full h-full flex items-center justify-center">
-            <p class="text-white text-2xl font-bold opacity-50">
+          <div class="w-full flex items-center justify-center" style="aspect-ratio: 1440 / 486;">
+            <p class="text-white text-xl md:text-2xl font-bold opacity-50 text-center px-4">
               Adicione uma imagem desktop no admin
             </p>
           </div>
@@ -46,23 +47,31 @@ export default function BannerPix({
       </div>
 
       {/* Banner Mobile */}
-      <div class="md:hidden relative w-full max-w-[375px] mx-auto h-[700px] bg-gradient-to-r from-purple-900 via-pink-800 to-pink-600">
-        <div class="w-full h-full flex flex-col justify-center items-center gap-2" style="padding: 58px 54px 220px 54px;">
-          {imageMobile ? (
+      <div class="md:hidden relative w-full bg-gradient-to-r from-purple-900 via-pink-800 to-pink-600">
+        {imageMobile ? (
+          <div class="relative w-full" style="aspect-ratio: 375 / 700;">
             <img
               src={imageMobile}
               alt="Banner Mobile"
               class="w-full h-full object-cover absolute inset-0"
               loading="lazy"
             />
-          ) : (
-            <p class="text-white text-xl font-bold opacity-50 text-center relative z-10">
+            <div class="relative flex flex-col justify-center items-center gap-2 h-full" style="padding: 15.47% 14.4% 58.67% 14.4%;">
+              {/* Conteúdo opcional sobre a imagem */}
+            </div>
+          </div>
+        ) : (
+          <div 
+            class="w-full flex flex-col justify-center items-center gap-2"
+            style="aspect-ratio: 375 / 700; padding: 15.47% 14.4% 58.67% 14.4%;"
+          >
+            <p class="text-white text-lg font-bold opacity-50 text-center px-4">
               Adicione uma imagem mobile no admin
             </p>
-          )}
-        </div>
+          </div>
+        )}
       </div>
-    </>
+    </div>
   );
 
   if (link) {
