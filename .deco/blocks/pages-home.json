@@ -495,7 +495,8 @@
     },
     {
       "__resolveType": "site/sections/FooterPagaleve.tsx",
-      "logo": "https://assets.decocache.com/lp-bf-pgl-003/71d0a7ed-de54-4d37-a99b-c9322ec6bc22/f3cca343e9c2ace62a73c7aab99ff14b95bc8d17.png"
+      "logo": "https://assets.decocache.com/lp-bf-pgl-003/71d0a7ed-de54-4d37-a99b-c9322ec6bc22/f3cca343e9c2ace62a73c7aab99ff14b95bc8d17.png",
+      "socialMedia": []
     }
   ],
   "__resolveType": "website/pages/Page.tsx"

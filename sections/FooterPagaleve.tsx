@@ -40,16 +40,12 @@ export interface Props {
   
   /** @title Informações Adicionais */
   additionalInfo?: string;
-  
-  /** @title Desenvolvido Por */
-  developedBy?: string;
-  developedByLink?: string;
 }
 
 const SOCIAL_ICONS = {
   instagram: "\uf16d",
-  facebook: "\uf09a",
-  linkedin: "\uf0e1",
+  facebook: "\uf39e",
+  linkedin: "\uf08c",
   tiktok: "\ue07b",
 };
 
@@ -85,8 +81,6 @@ export default function FooterPagaleve({
   ],
   copyright = "© 2025, Pagaleve Instituicao de Pagamento Ltda. Todos os direitos reservados.",
   additionalInfo = "Atendimento de segunda a sexta-feira, das 9h00 às 18h00. - CNPJ: 42.563.672/0001-55",
-  developedBy = "TEC4U",
-  developedByLink = "https://tec4u.com.br",
 }: Props) {
   return (
     <footer class="bg-black text-white py-12">
@@ -273,19 +267,17 @@ export default function FooterPagaleve({
             </p>
           </div>
           
-          {developedBy && (
-            <div class="flex items-center gap-2 px-1.5">
-              <span class="text-xs font-normal opacity-70">Desenvolvido por</span>
-              <a
-                href={developedByLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-xs font-normal underline hover:opacity-70 transition-opacity"
-              >
-                {developedBy}
-              </a>
-            </div>
-          )}
+          <div class="flex items-center gap-2 px-1.5">
+            <span class="text-xs font-normal opacity-70">Desenvolvido por</span>
+            <a
+              href="https://www.tec4udigital.com/?utm_source=pagaleve&utm_medium=rodape"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-xs font-normal underline hover:opacity-70 transition-opacity"
+            >
+              TEC4U
+            </a>
+          </div>
         </div>
       </div>
     </footer>
