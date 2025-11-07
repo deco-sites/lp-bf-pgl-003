@@ -492,23 +492,6 @@
         "imageMobile": "https://assets.decocache.com/lp-bf-pgl-003/96ac3821-26dd-43be-8bfc-1e0adbbd9b56/Imagem-do-WhatsApp-de-2025-11-07-a(s)-13.27.20_9d15a1cf.jpg",
         "link": "www.tec4udigital.com"
       }
-    },
-    {
-      "__resolveType": "site/sections/DownloadApp.tsx",
-      "appStoreUrl": "https://apps.apple.com/br/app/pagaleve/id1613630995",
-      "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.pagaleve.app"
-    },
-    {
-      "__resolveType": "Footer"
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/DownloadAppJustMobile.tsx",
-        "titleText": "Pagaleve App disponível em",
-        "appStoreUrl": "www.tec4udigital.com",
-        "googlePlayUrl": "www.tec4udigital.com"
-      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx"
