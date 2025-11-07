@@ -2705,9 +2705,6 @@ input.tab:checked + .tab-content,
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -3462,9 +3459,6 @@ input.tab:checked + .tab-content,
 .text-center {
   text-align: center;
 }
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -3585,9 +3579,6 @@ input.tab:checked + .tab-content,
 }
 .leading-tight {
   line-height: 1.25;
-}
-.tracking-wider {
-  letter-spacing: 0.05em;
 }
 .text-\[\#00E5CC\] {
   --tw-text-opacity: 1;
