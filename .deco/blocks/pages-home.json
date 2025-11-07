@@ -415,6 +415,94 @@
           "rulesContent": "Disponível no App da Pagaleve.",
           "buttonLink": "https://link-to.app/cC1EkxQY0j",
           "buttonText": "Ir para o App"
+        },
+        {
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/2802417e-8ca7-4eff-b102-81a7c53473ee/karsten.png",
+          "brand": "Karsten",
+          "category": "Cama, Mesa e Banho",
+          "discountBadge": "OFERTA",
+          "description": "Aproveite até 40% OFF na linha de banho!",
+          "dropdownText": "Regras e Informações",
+          "rulesContent": "Disponível no App da Pagaleve.",
+          "buttonLink": "https://link-to.app/cC1EkxQY0j",
+          "buttonText": "Ir para o App"
+        },
+        {
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/983d4342-d77f-43ed-9681-e737ee76c5b1/riachuelo.png",
+          "brand": "Riachuelo",
+          "category": "Moda",
+          "discountBadge": "OFERTA",
+          "description": "Começou o Esquenta Black Friday da Riachuelo! Aproveite até 70% OFF em moda, beleza e muito mais!",
+          "dropdownText": "Regras e Informações",
+          "rulesContent": "Disponível no App da Pagaleve.",
+          "buttonLink": "https://link-to.app/cC1EkxQY0j",
+          "buttonText": "Ir para o App"
+        },
+        {
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/a4ed7ead-5482-4f75-aca4-d23c12b8cdbb/ortobom.png",
+          "brand": "Ortobom",
+          "category": "Colchões",
+          "discountBadge": "OFERTA",
+          "description": "Chegou a Black Friday Ortobom! Descontos de até 60% OFF para você dormir melhor pagando menos.",
+          "dropdownText": "Regras e Informações",
+          "rulesContent": "Disponível no App da Pagaleve.",
+          "buttonLink": "https://link-to.app/cC1EkxQY0j",
+          "buttonText": "Ir para o App"
+        },
+        {
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/937af6d6-6d2a-4c87-8fca-14d548ebc4a2/biscoite.png",
+          "brand": "Biscoitê",
+          "category": "Biscoiteria",
+          "discountBadge": "OFERTA",
+          "description": "Prepare-se para o Natal! Na compra de um panettone Biscoitê, ganhe 10% OFF na sua próxima compra!",
+          "dropdownText": "Regras e Informações",
+          "rulesContent": "Disponível no App da Pagaleve.",
+          "buttonLink": "https://link-to.app/cC1EkxQY0j",
+          "buttonText": "Ir para o App"
+        },
+        {
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/f824f6ae-7ecf-466e-b310-7eb24b5bc6c9/descorcha.png",
+          "brand": "Descorcha",
+          "category": "Vinhos",
+          "discountBadge": "OFERTA",
+          "description": "Já começou a Black November! Seus vinhos favoritos com até 40% OFF.",
+          "dropdownText": "Regras e Informações",
+          "rulesContent": "Disponível no App da Pagaleve.",
+          "buttonLink": "https://link-to.app/cC1EkxQY0j",
+          "buttonText": "Ir para o App"
+        },
+        {
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/c392bcd8-b3eb-46c2-ac76-e222fec50ac9/mercado-livre.png",
+          "brand": "Mercado Livre",
+          "category": "Variedades",
+          "discountBadge": "OFERTA",
+          "description": "O 11/11 do Mercado Livre já começou! Aproveite até 50% OFF em diversas categorias!",
+          "dropdownText": "Regras e Informações",
+          "rulesContent": "Disponível no App da Pagaleve.",
+          "buttonLink": "https://link-to.app/cC1EkxQY0j",
+          "buttonText": "Ir para o App"
+        },
+        {
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/648ea698-d7f3-4f01-9b6c-6c7f60ea48f1/dafiti.png",
+          "category": "Moda",
+          "discountBadge": "OFERTA",
+          "description": "A moda nunca foi tão acessível e divertida como na Black Friday! Ofertas exclusivas com até 50%OFF!",
+          "dropdownText": "Regras e Informações",
+          "rulesContent": "Disponível no App da Pagaleve.",
+          "buttonLink": "https://link-to.app/cC1EkxQY0j",
+          "buttonText": "Ir para o App",
+          "brand": "Dafiti"
+        },
+        {
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/bb14cff6-d6ca-4143-bc6c-2cdef61464f8/oceane.png",
+          "brand": "Océane",
+          "category": "Cosméticos",
+          "discountBadge": "OFERTA",
+          "description": "Mais de 200 makes com até 60%OFF e preços de até R$49,90 só na Océane!",
+          "dropdownText": "Regras e Informações",
+          "rulesContent": "Disponível no App da Pagaleve.",
+          "buttonLink": "https://link-to.app/cC1EkxQY0j",
+          "buttonText": "Ir para o App"
         }
       ],
       "exclusiveBadgeColor": "#00e16c",
