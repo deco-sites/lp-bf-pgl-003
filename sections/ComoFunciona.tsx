@@ -199,9 +199,9 @@ export default function ComoFunciona({
 
                     {/* Card */}
                     <div
-                      class="w-full flex items-center justify-center"
+                      class="w-full h-full flex items-center justify-center"
                       style={{
-                        minHeight: "160px",
+                        height: "160px",
                         backgroundColor: "rgba(0, 0, 0, 0.05)",
                         border: `1px solid ${cardBorderColor}`,
                         borderRadius: "12px",
@@ -254,7 +254,7 @@ export default function ComoFunciona({
               {steps.map((step) => (
                 <div 
                   key={step.number} 
-                  class="relative"
+                  class="relative h-full"
                   style={{
                     paddingTop: "4px"
                   }}
@@ -285,9 +285,8 @@ export default function ComoFunciona({
 
                   {/* Card */}
                   <div
-                    class="w-full flex items-center justify-center"
+                    class="w-full h-full flex flex-col"
                     style={{
-                      minHeight: "184px",
                       backgroundColor: "rgba(0, 0, 0, 0.05)",
                       border: `1px solid ${cardBorderColor}`,
                       borderRadius: "12px",
@@ -295,7 +294,7 @@ export default function ComoFunciona({
                       marginTop: "4px",
                     }}
                   >
-                    <div class="flex flex-col items-center justify-center w-full gap-4">
+                    <div class="flex flex-col items-center justify-center flex-1 w-full gap-4">
                       {/* Ícone */}
                       <div class="flex items-center justify-center p-2">
                         {step.iconImage ? (
