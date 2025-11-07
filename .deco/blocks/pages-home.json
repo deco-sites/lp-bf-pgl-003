@@ -280,10 +280,10 @@
       "coupons": [
         {
           "brandLogo": "https://placehold.co/120x40/white/red?text=NIKE",
-          "brand": "Nike",
-          "category": "Esportes",
-          "discountBadge": "15% OFF",
-          "description": "Compre no app e ganhe 15% de desconto em toda a loja + frete grátis!",
+          "brand": "LIVE!",
+          "category": "Moda Fitness",
+          "discountBadge": "10% OFF",
+          "description": "Cole este código no campo de cupom do site da loja",
           "dropdownText": "Regras e Informações",
           "rulesContent": "Oferta válida apenas para compras realizadas através do app da Pagaleve. Desconto aplicado automaticamente no checkout.",
           "buttonText": "Baixar App",
@@ -310,7 +310,8 @@
           "rulesContent": "Desconto aplicado automaticamente em compras acima de R$ 300. Válido até o final do mês.",
           "buttonText": "Baixar App",
           "buttonLink": "#"
-        }
+        },
+        {}
       ],
       "exclusiveBadgeColor": "#00e16c",
       "discountBadgeColor": "#00e16c",
