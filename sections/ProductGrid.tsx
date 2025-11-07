@@ -8,15 +8,29 @@ export interface Product {
   /** @title Nome do Produto */
   name: string;
   
+  /** @title Categoria */
+  category?: string;
+  
   /** @title Preço Original */
   originalPrice?: string;
   
   /** @title Preço com Desconto */
   discountPrice: string;
   
-  /** @title Badge */
-  /** @description Ex: "NOVO", "50% OFF" */
-  badge?: string;
+  /** @title Badge de Desconto */
+  /** @description Ex: "-30%", "-50%" */
+  badgeDiscount?: string;
+  
+  /** @title Avaliação (estrelas) */
+  /** @description Número de 0 a 5 */
+  rating?: number;
+  
+  /** @title Número de Avaliações */
+  ratingCount?: number;
+  
+  /** @title Texto Parcelamento */
+  /** @description Ex: "ou 12x de R$ 5.24 no Pix Parcelado" */
+  installmentText?: string;
   
   /** @title Link do Produto */
   link?: string;
@@ -38,101 +52,217 @@ export interface Props {
   /** @title Cor de Fundo */
   backgroundColor?: string;
   
-  /** @title Cor do Card */
-  cardBackgroundColor?: string;
-  
-  /** @title Cor do Texto */
-  textColor?: string;
-  
-  /** @title Cor do Badge */
-  badgeColor?: string;
-  
-  /** @title Cor do Botão */
-  buttonColor?: string;
+  /** @title Logo Pagaleve (opcional) */
+  pagaleveLogo?: ImageWidget;
 }
 
 export default function ProductGrid({
   sectionTitle = "Produtos em alta",
-  sectionSubtitle = "Confira os produtos mais procurados",
+  sectionSubtitle = "Aproveite as melhores ofertas e pague com o Pix Parcelado",
   products = [],
   backgroundColor = "#000000",
-  cardBackgroundColor = "#ffffff",
-  textColor = "#ffffff",
-  badgeColor = "#ff0000",
-  buttonColor = "#000000"
+  pagaleveLogo,
 }: Props) {
   return (
     <section 
-      class="py-16 px-4"
-      style={{ backgroundColor, color: textColor }}
+      class="py-[52px] px-[52px]"
+      style={{ backgroundColor }}
     >
-      <div class="container mx-auto max-w-7xl">
+      <div class="max-w-[1336px] mx-auto">
         {/* Cabeçalho */}
-        <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        <div class="flex flex-col items-center mb-9">
+          <h2 
+            class="text-white font-bold text-4xl leading-[45.36px] mb-2.5"
+            style={{ fontFamily: 'Sora, sans-serif' }}
+          >
             {sectionTitle}
           </h2>
-          {sectionSubtitle && (
-            <p class="text-lg opacity-80">{sectionSubtitle}</p>
-          )}
+          <p 
+            class="text-[#FCFCFC] text-2xl text-center"
+            style={{ fontFamily: 'Quicksand, sans-serif', fontWeight: 400, lineHeight: '30px' }}
+          >
+            {sectionSubtitle}
+          </p>
         </div>
         
         {/* Grid de Produtos */}
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[63px]">
           {products.map((product, index) => (
             <div 
               key={index}
-              class="rounded-2xl overflow-hidden"
-              style={{ backgroundColor: cardBackgroundColor }}
+              class="bg-[#FCFCFC] rounded-2xl overflow-hidden"
+              style={{ 
+                border: '1px solid rgba(0, 0, 0, 0.12)',
+              }}
             >
-              {/* Imagem do Produto */}
-              <div class="relative aspect-square">
-                <img 
-                  src={product.image} 
-                  alt={product.name}
-                  class="w-full h-full object-cover"
-                />
-                
-                {/* Badge */}
-                {product.badge && (
-                  <div 
-                    class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold text-white"
-                    style={{ backgroundColor: badgeColor }}
-                  >
-                    {product.badge}
-                  </div>
-                )}
-              </div>
-              
-              {/* Informações do Produto */}
-              <div class="p-4 text-black">
-                <h3 class="font-semibold mb-2 line-clamp-2">
-                  {product.name}
-                </h3>
-                
-                {/* Preços */}
-                <div class="mb-4">
-                  {product.originalPrice && (
-                    <span class="text-sm line-through opacity-50 mr-2">
-                      {product.originalPrice}
-                    </span>
+              {/* Container do Card */}
+              <div class="p-6 flex flex-col gap-4">
+                {/* Imagem do Produto */}
+                <div class="relative w-[272px] h-[272px] rounded-md overflow-hidden">
+                  <img 
+                    src={product.image} 
+                    alt={product.name}
+                    class="w-full h-full object-cover"
+                  />
+                  
+                  {/* Badge de Desconto */}
+                  {product.badgeDiscount && (
+                    <div 
+                      class="absolute top-2 left-2 px-3 py-1 rounded-full"
+                      style={{ backgroundColor: '#FA3246' }}
+                    >
+                      <span 
+                        class="text-white text-xs font-bold uppercase"
+                        style={{ 
+                          fontFamily: 'Quicksand, sans-serif',
+                          fontWeight: 700,
+                          fontSize: '12px',
+                          lineHeight: '15px'
+                        }}
+                      >
+                        {product.badgeDiscount}
+                      </span>
+                    </div>
                   )}
-                  <span class="text-lg font-bold">
-                    {product.discountPrice}
-                  </span>
                 </div>
                 
-                {/* Botão */}
-                {product.link && (
+                {/* Informações do Produto */}
+                <div class="flex flex-col gap-3">
+                  {/* Categoria e Logo */}
+                  {product.category && (
+                    <div class="flex items-center gap-2">
+                      <div 
+                        class="px-2 py-0.5 rounded-lg"
+                        style={{ border: '0.5px solid #1A2B38' }}
+                      >
+                        <span 
+                          class="text-black text-[10px] font-medium capitalize"
+                          style={{ 
+                            fontFamily: 'Quicksand, sans-serif',
+                            fontWeight: 500,
+                            lineHeight: '12.5px'
+                          }}
+                        >
+                          {product.category}
+                        </span>
+                      </div>
+                      {pagaleveLogo && (
+                        <img 
+                          src={pagaleveLogo} 
+                          alt="Pagaleve"
+                          class="h-[22px] w-[42px]"
+                        />
+                      )}
+                    </div>
+                  )}
+                  
+                  {/* Nome do Produto */}
+                  <h3 
+                    class="text-black capitalize font-medium"
+                    style={{ 
+                      fontFamily: 'Quicksand, sans-serif',
+                      fontWeight: 500,
+                      fontSize: '16px',
+                      lineHeight: '20px'
+                    }}
+                  >
+                    {product.name}
+                  </h3>
+                  
+                  {/* Avaliação */}
+                  {product.rating !== undefined && (
+                    <div class="flex items-center gap-1.5">
+                      <div class="flex items-center gap-0.5">
+                        {[...Array(5)].map((_, i) => (
+                          <span 
+                            key={i}
+                            class="text-[#FDDD32]"
+                            style={{ fontSize: '12px' }}
+                          >
+                            {i < Math.floor(product.rating || 0) ? '★' : '☆'}
+                          </span>
+                        ))}
+                      </div>
+                      {product.ratingCount && (
+                        <span 
+                          class="text-black opacity-60"
+                          style={{ 
+                            fontFamily: 'Quicksand, sans-serif',
+                            fontWeight: 500,
+                            fontSize: '12px',
+                            lineHeight: '15px'
+                          }}
+                        >
+                          ({product.ratingCount})
+                        </span>
+                      )}
+                    </div>
+                  )}
+                  
+                  {/* Preços */}
+                  <div class="flex items-center gap-1">
+                    <span 
+                      class="text-black uppercase font-semibold"
+                      style={{ 
+                        fontFamily: 'Quicksand, sans-serif',
+                        fontWeight: 600,
+                        fontSize: '16px',
+                        lineHeight: '20px',
+                        letterSpacing: '0.8px'
+                      }}
+                    >
+                      {product.discountPrice}
+                    </span>
+                    {product.originalPrice && (
+                      <span 
+                        class="text-black opacity-60 line-through uppercase"
+                        style={{ 
+                          fontFamily: 'Quicksand, sans-serif',
+                          fontWeight: 400,
+                          fontSize: '12px',
+                          lineHeight: '15px'
+                        }}
+                      >
+                        {product.originalPrice}
+                      </span>
+                    )}
+                  </div>
+                  
+                  {/* Texto de Parcelamento */}
+                  {product.installmentText && (
+                    <p 
+                      style={{ 
+                        fontFamily: 'Arial, sans-serif',
+                        fontWeight: 400,
+                        fontSize: '10px',
+                        lineHeight: '11.5px',
+                        color: '#3B4A54'
+                      }}
+                    >
+                      {product.installmentText}
+                    </p>
+                  )}
+                </div>
+              </div>
+              
+              {/* Botão */}
+              {product.link && (
+                <div class="px-6 pb-6">
                   <a 
                     href={product.link}
-                    class="block text-center py-2 px-4 rounded-full font-semibold text-white transition-transform hover:scale-105"
-                    style={{ backgroundColor: buttonColor }}
+                    class="w-full flex items-center justify-center py-3 px-5 rounded-2xl font-bold text-white transition-transform hover:scale-[1.02]"
+                    style={{ 
+                      backgroundColor: '#14242E',
+                      fontFamily: 'Quicksand, sans-serif',
+                      fontWeight: 700,
+                      fontSize: '20px',
+                      lineHeight: '20px'
+                    }}
                   >
-                    {product.buttonText || "Ver produto"}
+                    {product.buttonText || "Comprar com Cupom"}
                   </a>
-                )}
-              </div>
+                </div>
+              )}
             </div>
           ))}
         </div>
