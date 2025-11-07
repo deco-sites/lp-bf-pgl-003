@@ -10,7 +10,9 @@
       "backgroundColor": "#000000",
       "textColor": "#ffffff",
       "accentColor": "#ff00ff",
-      "expiresAt": "2025-11-28T23:59:59.000Z"
+      "expiresAt": "2025-11-28T23:59:59.000Z",
+      "backgroundImage": "https://assets.decocache.com/lp-bf-pgl-003/b77ee4fb-0820-4f57-a1c2-a760ce4a86cc/bf-lp-final-(2).png",
+      "backgroundImageMobile": "https://assets.decocache.com/lp-bf-pgl-003/32b5dcbb-8d7b-4410-85b0-db631fae846b/Frame-427322666-(1).png"
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
