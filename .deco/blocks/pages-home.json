@@ -275,8 +275,7 @@
     },
     {
       "__resolveType": "site/sections/AppExclusiveCoupons.tsx",
-      "sectionTitle": "Promoções exclusivas no app",
-      "subtitle": "Baixe o app da Pagaleve e aproveite ofertas que só quem tem o app consegue!",
+      "sectionTitle": "Confira os cupons das marcas parceiras e aproveite!",
       "backgroundColor": "#000000",
       "coupons": [
         {
@@ -312,7 +311,13 @@
           "buttonText": "Baixar App",
           "buttonLink": "#"
         }
-      ]
+      ],
+      "exclusiveBadgeColor": "#00e16c",
+      "discountBadgeColor": "#00e16c",
+      "discountBadgeBorderColor": "#00e16c",
+      "descriptionBgColor": "#141619",
+      "descriptionBorderColor": "#00e16c",
+      "buttonColor": "#00e16c"
     },
     {
       "__resolveType": "site/sections/DownloadAppCTA.tsx",
