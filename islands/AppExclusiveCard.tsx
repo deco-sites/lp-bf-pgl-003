@@ -19,6 +19,10 @@ export interface AppExclusiveCardProps {
   discountBadgeBorderColor?: string;
   descriptionBgColor?: string;
   descriptionBorderColor?: string;
+  couponAreaBgColor?: string;
+  couponBorderColor?: string;
+  copyButtonBgColor?: string;
+  copyButtonIconColor?: string;
   buttonColor?: string;
   buttonTextColor?: string;
 }
@@ -40,6 +44,10 @@ export default function AppExclusiveCard({
   discountBadgeBorderColor = "#FF009B",
   descriptionBgColor = "rgba(247, 122, 207, 0.05)",
   descriptionBorderColor = "rgba(247, 122, 207, 0.2)",
+  couponAreaBgColor = "#141619",
+  couponBorderColor = "#FF009B",
+  copyButtonBgColor = "rgba(247, 122, 207, 0.1)",
+  copyButtonIconColor = "#FF009B",
   buttonColor = "#F77ACF",
   buttonTextColor = "#000000"
 }: AppExclusiveCardProps) {
@@ -145,12 +153,12 @@ export default function AppExclusiveCard({
       
       {/* Condicional: Com cupom ou sem cupom */}
       {couponCode ? (
-        /* Área do Código com borda tracejada - IGUAL ao CouponCard */
+        /* Área do Código com borda tracejada - PERSONALIZÁVEL */
         <div 
           class="rounded-2xl flex flex-col gap-[26px] p-8"
           style={{ 
-            backgroundColor: "#141619",
-            border: "0.5px dashed #FF009B"
+            backgroundColor: couponAreaBgColor,
+            border: `0.5px dashed ${couponBorderColor}`
           }}
         >
           {/* Descrição e Código */}
@@ -183,12 +191,12 @@ export default function AppExclusiveCard({
               </span>
             </div>
             
-            {/* Botão de Copiar - EXATAMENTE igual ao CouponCard */}
+            {/* Botão de Copiar - PERSONALIZÁVEL */}
             <button 
               onClick={handleCopy}
               class="rounded-lg p-2.5 transition-all hover:opacity-80 flex items-center justify-center"
               style={{ 
-                backgroundColor: "rgba(247, 122, 207, 0.1)",
+                backgroundColor: copyButtonBgColor,
                 width: "34px",
                 height: "36px"
               }}
@@ -196,11 +204,11 @@ export default function AppExclusiveCard({
             >
               {copied ? (
                 <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 8L7 10L13 4" stroke="#FF009B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M5 8L7 10L13 4" stroke={copyButtonIconColor} stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               ) : (
                 <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4.66667 4.66667V2.66667C4.66667 1.93029 5.26362 1.33333 6 1.33333H11.3333C12.0697 1.33333 12.6667 1.93029 12.6667 2.66667V10.6667C12.6667 11.403 12.0697 12 11.3333 12H9.33333M2.66667 14.6667H8C8.73638 14.6667 9.33333 14.0697 9.33333 13.3333V6.66667C9.33333 5.93029 8.73638 5.33333 8 5.33333H2.66667C1.93029 5.33333 1.33333 5.93029 1.33333 6.66667V13.3333C1.33333 14.0697 1.93029 14.6667 2.66667 14.6667Z" stroke="#FF009B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M4.66667 4.66667V2.66667C4.66667 1.93029 5.26362 1.33333 6 1.33333H11.3333C12.0697 1.33333 12.6667 1.93029 12.6667 2.66667V10.6667C12.6667 11.403 12.0697 12 11.3333 12H9.33333M2.66667 14.6667H8C8.73638 14.6667 9.33333 14.0697 9.33333 13.3333V6.66667C9.33333 5.93029 8.73638 5.33333 8 5.33333H2.66667C1.93029 5.33333 1.33333 5.93029 1.33333 6.66667V13.3333C1.33333 14.0697 1.93029 14.6667 2.66667 14.6667Z" stroke={copyButtonIconColor} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               )}
             </button>

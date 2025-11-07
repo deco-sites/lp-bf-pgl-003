@@ -78,15 +78,35 @@ export interface Props {
   /** @default #FF009B */
   discountBadgeBorderColor?: string;
 
-  /** @title Cor de Fundo da Descrição */
+  /** @title Cor de Fundo da Descrição (sem cupom) */
   /** @format color */
   /** @default rgba(247, 122, 207, 0.05) */
   descriptionBgColor?: string;
 
-  /** @title Cor da Borda da Descrição */
+  /** @title Cor da Borda da Descrição (sem cupom) */
   /** @format color */
   /** @default rgba(247, 122, 207, 0.2) */
   descriptionBorderColor?: string;
+
+  /** @title Cor de Fundo da Área do Cupom */
+  /** @format color */
+  /** @default #141619 */
+  couponAreaBgColor?: string;
+
+  /** @title Cor da Borda Tracejada do Cupom */
+  /** @format color */
+  /** @default #FF009B */
+  couponBorderColor?: string;
+
+  /** @title Cor de Fundo do Botão Copiar */
+  /** @format color */
+  /** @default rgba(247, 122, 207, 0.1) */
+  copyButtonBgColor?: string;
+
+  /** @title Cor do Ícone do Botão Copiar */
+  /** @format color */
+  /** @default #FF009B */
+  copyButtonIconColor?: string;
 
   /** @title Cor do Botão */
   /** @format color */
@@ -109,6 +129,10 @@ export default function AppExclusiveCoupons({
   discountBadgeBorderColor = "#FF009B",
   descriptionBgColor = "rgba(247, 122, 207, 0.05)",
   descriptionBorderColor = "rgba(247, 122, 207, 0.2)",
+  couponAreaBgColor = "#141619",
+  couponBorderColor = "#FF009B",
+  copyButtonBgColor = "rgba(247, 122, 207, 0.1)",
+  copyButtonIconColor = "#FF009B",
   buttonColor = "#F77ACF",
   buttonTextColor = "#000000",
   coupons = [
@@ -200,6 +224,10 @@ export default function AppExclusiveCoupons({
               discountBadgeBorderColor={discountBadgeBorderColor}
               descriptionBgColor={descriptionBgColor}
               descriptionBorderColor={descriptionBorderColor}
+              couponAreaBgColor={couponAreaBgColor}
+              couponBorderColor={couponBorderColor}
+              copyButtonBgColor={copyButtonBgColor}
+              copyButtonIconColor={copyButtonIconColor}
               buttonColor={buttonColor}
               buttonTextColor={buttonTextColor}
             />

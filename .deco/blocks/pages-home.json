@@ -324,7 +324,10 @@
       "discountBadgeBorderColor": "#00e16c",
       "descriptionBgColor": "#141619",
       "descriptionBorderColor": "#00e16c",
-      "buttonColor": "#00e16c"
+      "buttonColor": "#00e16c",
+      "couponBorderColor": "#00e16c",
+      "copyButtonIconColor": "#00e16c",
+      "copyButtonBgColor": "#000000"
     },
     {
       "__resolveType": "site/sections/DownloadAppCTA.tsx",
