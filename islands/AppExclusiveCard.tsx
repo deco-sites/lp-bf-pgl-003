@@ -219,17 +219,16 @@ export default function AppExclusiveCard({
         <div 
           class="rounded-xl p-4"
           style={{ 
-            backgroundColor: descriptionBgColor,
-            border: `1px solid ${descriptionBorderColor}`
+            backgroundColor: descriptionBgColor
           }}
         >
           <p 
-            class="text-white text-center"
+            class="text-white text-left"
             style={{ 
               fontFamily: "Quicksand, sans-serif",
               fontWeight: 600,
-              fontSize: "16px",
-              lineHeight: "20px"
+              fontSize: "14px",
+              lineHeight: "17.5px"
             }}
           >
             {description}
@@ -242,7 +241,7 @@ export default function AppExclusiveCard({
           <div>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              class="flex items-center justify-center gap-2 text-white transition-all hover:opacity-80 w-full"
+              class="flex items-center justify-start gap-2 text-white transition-all hover:opacity-80 w-full"
               style={{ 
                 fontFamily: "Quicksand, sans-serif",
                 fontWeight: 600,
@@ -265,7 +264,7 @@ export default function AppExclusiveCard({
             
             {isOpen && (
               <div 
-                class="mt-3 text-[#DEDEE0] leading-relaxed"
+                class="mt-3 text-[#DEDEE0] leading-relaxed text-left"
                 style={{ 
                   fontFamily: "Quicksand, sans-serif",
                   fontWeight: 400,

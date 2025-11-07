@@ -3142,6 +3142,9 @@ input.tab:checked + .tab-content,
 .items-center {
   align-items: center;
 }
+.justify-start {
+  justify-content: flex-start;
+}
 .justify-end {
   justify-content: flex-end;
 }
