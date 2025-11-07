@@ -63,7 +63,7 @@ export default function FAQ({
   return (
     <>
       <section 
-        class="w-full py-[52px] px-[52px]"
+        class="w-full py-[52px] px-4 md:px-[52px]"
         style={{ 
           backgroundColor: '#000000',
           minHeight: 'auto'
@@ -75,11 +75,10 @@ export default function FAQ({
             {/* Título */}
             <div class="flex items-center justify-center gap-2">
               <h2 
-                class="font-semibold text-center"
+                class="font-semibold text-center text-[24px] md:text-[36px]"
                 style={{
                   fontFamily: 'Sora, sans-serif',
-                  fontSize: '36px',
-                  lineHeight: '45.36px',
+                  lineHeight: '1.26',
                   color: '#FFFFFF',
                   fontWeight: 600
                 }}
@@ -90,11 +89,10 @@ export default function FAQ({
             
             {/* Subtítulo */}
             <p 
-              class="text-center w-full"
+              class="text-center w-full text-[16px] md:text-[20px] px-4 md:px-0"
               style={{
                 fontFamily: 'Quicksand, sans-serif',
-                fontSize: '20px',
-                lineHeight: '25px',
+                lineHeight: '1.25',
                 color: '#FCFCFC',
                 fontWeight: 400
               }}
@@ -104,7 +102,7 @@ export default function FAQ({
           </div>
           
           {/* FAQ Items */}
-          <div class="w-full flex flex-col items-center gap-6">
+          <div class="w-full flex flex-col items-center gap-4 md:gap-6">
             {items.map((item, index) => (
               <div 
                 key={index}
@@ -121,17 +119,16 @@ export default function FAQ({
                   }}
                 >
                   <button 
-                    class="faq-item-button w-full text-left p-8 flex justify-between items-center gap-[150px]"
+                    class="faq-item-button w-full text-left p-4 md:p-8 flex justify-between items-center gap-4 md:gap-[150px]"
                     style={{
                       transition: 'all 0.3s ease'
                     }}
                   >
                     <span 
-                      class="font-medium"
+                      class="font-medium text-[16px] md:text-[22px] pr-2"
                       style={{
                         fontFamily: 'Instrument Sans, sans-serif',
-                        fontSize: '22px',
-                        lineHeight: '26.84px',
+                        lineHeight: '1.22',
                         color: '#FFFFFF',
                         opacity: 0.8,
                         fontWeight: 500
@@ -160,11 +157,10 @@ export default function FAQ({
                     }}
                   >
                     <div 
-                      class="px-8 pb-8 pt-[14px]"
+                      class="px-4 md:px-8 pb-4 md:pb-8 pt-[14px] text-[14px] md:text-[16px]"
                       style={{
                         fontFamily: 'Quicksand, sans-serif',
-                        fontSize: '16px',
-                        lineHeight: '20px',
+                        lineHeight: '1.25',
                         letterSpacing: '0.8px',
                         color: '#FCFCFC',
                         opacity: 0.5,
