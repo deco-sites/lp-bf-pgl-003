@@ -627,7 +627,7 @@
           "initials": "AS",
           "badge": "Embaixadora",
           "rating": 5,
-          "testimonial": "Facilita muito quem não quer usar o crédito que tem e pode. Ótimo app para quem quer parcelar e recebe pagamentos menores todos os dias."
+          "testimonial": "Facilita muito quem não quer usar o cartão ou não pode. Ótimo app para quem quer parcelar e recebe valores menores todos os dias."
         },
         {
           "name": "Débora Maria",
@@ -652,7 +652,7 @@
         }
       ],
       "ctaText": "Baixe o App e experimente você também",
-      "ctaLink": "#"
+      "ctaLink": "https://linktr.ee/appPagaleve"
     },
     {
       "__resolveType": "site/sections/FAQ.tsx",
