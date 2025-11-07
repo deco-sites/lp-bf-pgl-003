@@ -1092,15 +1092,6 @@ html {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.hero-content {
-  z-index: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 80rem;
-  gap: 1rem;
-  padding: 1rem;
-}
 .input {
   flex-shrink: 1;
   -webkit-appearance: none;

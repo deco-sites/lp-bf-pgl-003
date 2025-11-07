@@ -33,29 +33,30 @@ export default function BlackFridayHero({
   backgroundImage,
   backgroundImageMobile,
 }: Props) {
-  const bgDesktop = backgroundImage;
-  const bgMobile = backgroundImageMobile;
+  // Se não tiver mobile, usa a desktop. Se não tiver nenhuma, usa placeholder
+  const bgDesktop = backgroundImage || "https://via.placeholder.com/1440x698/000000/ffffff?text=Background+Desktop";
+  const bgMobile = backgroundImageMobile || backgroundImage || "https://via.placeholder.com/375x375/000000/ffffff?text=Background+Mobile";
 
   return (
-    <section
-      class="relative w-full flex items-end justify-center hero-section"
-      data-bg-desktop={bgDesktop}
-      data-bg-mobile={bgMobile}
-    >
+    <>
       <style dangerouslySetInnerHTML={{ __html: `
         /* Estilos base da seção - Mobile */
-        .hero-section {
+        .bf-hero-section {
           min-height: 375px;
           padding: 16px 16px 24px 16px;
           max-width: 100vw;
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
-          background-image: url(${bgMobile});
+          position: relative;
+          width: 100%;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
         }
         
         /* Container do conteúdo */
-        .hero-content {
+        .bf-hero-content {
           width: 100%;
           max-width: 398px;
           display: flex;
@@ -63,10 +64,11 @@ export default function BlackFridayHero({
           align-items: center;
           gap: 12px;
           z-index: 10;
+          position: relative;
         }
         
         /* Título */
-        .hero-title {
+        .bf-hero-title {
           font-family: 'Quicksand', sans-serif;
           font-size: 20px;
           line-height: 25px;
@@ -77,7 +79,7 @@ export default function BlackFridayHero({
         }
         
         /* Container do countdown */
-        .countdown-container {
+        .bf-countdown-container {
           display: flex;
           align-items: center;
           gap: 6px;
@@ -85,7 +87,7 @@ export default function BlackFridayHero({
         }
         
         /* Cards do countdown - Mobile */
-        .countdown-card {
+        .bf-countdown-card {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -104,7 +106,7 @@ export default function BlackFridayHero({
           flex-shrink: 0;
         }
         
-        .countdown-number {
+        .bf-countdown-number {
           font-family: 'Quicksand', sans-serif;
           font-size: 32px;
           line-height: 40px;
@@ -113,7 +115,7 @@ export default function BlackFridayHero({
           text-align: center;
         }
         
-        .countdown-label {
+        .bf-countdown-label {
           font-family: 'Quicksand', sans-serif;
           font-size: 9px;
           line-height: 11px;
@@ -123,7 +125,7 @@ export default function BlackFridayHero({
           text-transform: uppercase;
         }
         
-        .countdown-separator {
+        .bf-countdown-separator {
           font-family: 'Quicksand', sans-serif;
           font-size: 14px;
           color: #FFFFFF;
@@ -133,156 +135,171 @@ export default function BlackFridayHero({
         
         /* Tablet e Desktop - Acima de 740px */
         @media (min-width: 740px) {
-          .hero-section {
+          .bf-hero-section {
             min-height: 698px;
             padding: 64px 16px;
-            background-image: url(${bgDesktop});
           }
           
-          .hero-title {
+          .bf-hero-title {
             font-size: 24px;
             line-height: 30px;
           }
           
-          .countdown-container {
+          .bf-countdown-container {
             gap: 10px;
           }
           
-          .countdown-card {
+          .bf-countdown-card {
             width: 80px;
             height: 90px;
             padding: 8px 12px;
           }
           
-          .countdown-number {
+          .bf-countdown-number {
             font-size: 48px;
             line-height: 60px;
           }
           
-          .countdown-label {
+          .bf-countdown-label {
             font-size: 12px;
             line-height: 15px;
           }
           
-          .countdown-separator {
+          .bf-countdown-separator {
             font-size: 16px;
           }
         }
         
         /* Desktop grande - Acima de 1024px */
         @media (min-width: 1024px) {
-          .hero-section {
+          .bf-hero-section {
             padding-left: clamp(16px, 10vw, 520px);
             padding-right: clamp(16px, 10vw, 520px);
           }
         }
       `}} />
       
-      <div class="hero-content">
-        {/* Título - Apenas se existir */}
-        {title && (
-          <h2 class="hero-title">
-            {title}
-          </h2>
-        )}
+      <section
+        class="bf-hero-section"
+        style={{
+          backgroundImage: `url(${bgDesktop})`,
+        }}
+      >
+        {/* Media query para mobile via style tag */}
+        <style dangerouslySetInnerHTML={{ __html: `
+          @media (max-width: 739px) {
+            .bf-hero-section {
+              background-image: url(${bgMobile}) !important;
+            }
+          }
+        `}} />
 
-        {/* Countdown */}
-        <div class="countdown-container">
-          {/* Dias */}
-          <div class="countdown-card">
-            <span class="countdown-number" data-countdown-days>
-              00
-            </span>
-            <span class="countdown-label">
-              Dias
-            </span>
-          </div>
+        <div class="bf-hero-content">
+          {/* Título - Apenas se existir */}
+          {title && (
+            <h2 class="bf-hero-title">
+              {title}
+            </h2>
+          )}
 
-          {/* Separador */}
-          <span class="countdown-separator">:</span>
+          {/* Countdown */}
+          <div class="bf-countdown-container">
+            {/* Dias */}
+            <div class="bf-countdown-card">
+              <span class="bf-countdown-number" data-countdown-days>
+                00
+              </span>
+              <span class="bf-countdown-label">
+                Dias
+              </span>
+            </div>
 
-          {/* Horas */}
-          <div class="countdown-card">
-            <span class="countdown-number" data-countdown-hours>
-              00
-            </span>
-            <span class="countdown-label">
-              Horas
-            </span>
-          </div>
+            {/* Separador */}
+            <span class="bf-countdown-separator">:</span>
 
-          {/* Separador */}
-          <span class="countdown-separator">:</span>
+            {/* Horas */}
+            <div class="bf-countdown-card">
+              <span class="bf-countdown-number" data-countdown-hours>
+                00
+              </span>
+              <span class="bf-countdown-label">
+                Horas
+              </span>
+            </div>
 
-          {/* Minutos */}
-          <div class="countdown-card">
-            <span class="countdown-number" data-countdown-minutes>
-              00
-            </span>
-            <span class="countdown-label">
-              Min
-            </span>
-          </div>
+            {/* Separador */}
+            <span class="bf-countdown-separator">:</span>
 
-          {/* Separador */}
-          <span class="countdown-separator">:</span>
+            {/* Minutos */}
+            <div class="bf-countdown-card">
+              <span class="bf-countdown-number" data-countdown-minutes>
+                00
+              </span>
+              <span class="bf-countdown-label">
+                Min
+              </span>
+            </div>
 
-          {/* Segundos */}
-          <div class="countdown-card">
-            <span class="countdown-number" data-countdown-seconds>
-              00
-            </span>
-            <span class="countdown-label">
-              Seg
-            </span>
+            {/* Separador */}
+            <span class="bf-countdown-separator">:</span>
+
+            {/* Segundos */}
+            <div class="bf-countdown-card">
+              <span class="bf-countdown-number" data-countdown-seconds>
+                00
+              </span>
+              <span class="bf-countdown-label">
+                Seg
+              </span>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Script do Countdown */}
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function() {
-              const expiresAt = new Date("${expiresAt}").getTime();
-              
-              function updateCountdown() {
-                const now = new Date().getTime();
-                const distance = expiresAt - now;
+        {/* Script do Countdown */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const expiresAt = new Date("${expiresAt}").getTime();
                 
-                if (distance < 0) {
-                  document.querySelectorAll('[data-countdown-days]').forEach(el => el.textContent = '00');
-                  document.querySelectorAll('[data-countdown-hours]').forEach(el => el.textContent = '00');
-                  document.querySelectorAll('[data-countdown-minutes]').forEach(el => el.textContent = '00');
-                  document.querySelectorAll('[data-countdown-seconds]').forEach(el => el.textContent = '00');
-                  return;
+                function updateCountdown() {
+                  const now = new Date().getTime();
+                  const distance = expiresAt - now;
+                  
+                  if (distance < 0) {
+                    document.querySelectorAll('[data-countdown-days]').forEach(el => el.textContent = '00');
+                    document.querySelectorAll('[data-countdown-hours]').forEach(el => el.textContent = '00');
+                    document.querySelectorAll('[data-countdown-minutes]').forEach(el => el.textContent = '00');
+                    document.querySelectorAll('[data-countdown-seconds]').forEach(el => el.textContent = '00');
+                    return;
+                  }
+                  
+                  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                  
+                  document.querySelectorAll('[data-countdown-days]').forEach(el => {
+                    el.textContent = String(days).padStart(2, '0');
+                  });
+                  document.querySelectorAll('[data-countdown-hours]').forEach(el => {
+                    el.textContent = String(hours).padStart(2, '0');
+                  });
+                  document.querySelectorAll('[data-countdown-minutes]').forEach(el => {
+                    el.textContent = String(minutes).padStart(2, '0');
+                  });
+                  document.querySelectorAll('[data-countdown-seconds]').forEach(el => {
+                    el.textContent = String(seconds).padStart(2, '0');
+                  });
                 }
                 
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                
-                document.querySelectorAll('[data-countdown-days]').forEach(el => {
-                  el.textContent = String(days).padStart(2, '0');
-                });
-                document.querySelectorAll('[data-countdown-hours]').forEach(el => {
-                  el.textContent = String(hours).padStart(2, '0');
-                });
-                document.querySelectorAll('[data-countdown-minutes]').forEach(el => {
-                  el.textContent = String(minutes).padStart(2, '0');
-                });
-                document.querySelectorAll('[data-countdown-seconds]').forEach(el => {
-                  el.textContent = String(seconds).padStart(2, '0');
-                });
-              }
-              
-              updateCountdown();
-              setInterval(updateCountdown, 1000);
-            })();
-          `,
-        }}
-      />
-    </section>
+                updateCountdown();
+                setInterval(updateCountdown, 1000);
+              })();
+            `,
+          }}
+        />
+      </section>
+    </>
   );
 }
