@@ -500,6 +500,15 @@
     },
     {
       "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/DownloadAppJustMobile.tsx",
+        "titleText": "Pagaleve App disponível em",
+        "appStoreUrl": "www.tec4udigital.com",
+        "googlePlayUrl": "www.tec4udigital.com"
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx"
