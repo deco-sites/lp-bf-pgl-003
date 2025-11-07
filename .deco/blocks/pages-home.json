@@ -270,7 +270,8 @@
           }
         ],
         "badgeColor": "#00e16c",
-        "backgroundColor": "#000000"
+        "backgroundColor": "#000000",
+        "badgeTextColor": "#000000"
       }
     },
     {

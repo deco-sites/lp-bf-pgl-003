@@ -62,6 +62,13 @@ export interface Props {
   badgeColor?: string;
 
   /**
+   * @title Cor do Texto do Badge
+   * @format color
+   * @default #FFFFFF
+   */
+  badgeTextColor?: string;
+
+  /**
    * @title Cor da Borda dos Cards
    * @format color
    * @default #3B4A54
@@ -115,6 +122,7 @@ export default function ComoFunciona({
   steps = DEFAULT_STEPS,
   backgroundColor = "#000000",
   badgeColor = "#FF009B",
+  badgeTextColor = "#FFFFFF",
   cardBorderColor = "#3B4A54",
 }: Props) {
   return (
@@ -179,9 +187,10 @@ export default function ComoFunciona({
                       }}
                     >
                       <span
-                        class="text-sm font-semibold text-white"
+                        class="text-sm font-semibold"
                         style={{
                           fontFamily: "Quicksand, sans-serif",
+                          color: badgeTextColor,
                         }}
                       >
                         {step.number}
@@ -264,9 +273,10 @@ export default function ComoFunciona({
                     }}
                   >
                     <span
-                      class="text-base font-semibold text-white"
+                      class="text-base font-semibold"
                       style={{
                         fontFamily: "Quicksand, sans-serif",
+                        color: badgeTextColor,
                       }}
                     >
                       {step.number}
