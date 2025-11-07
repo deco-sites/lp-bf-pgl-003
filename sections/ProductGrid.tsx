@@ -65,47 +65,46 @@ export default function ProductGrid({
 }: Props) {
   return (
     <section 
-      class="py-[52px] px-[52px]"
+      class="py-8 px-4 md:py-[52px] md:px-[52px]"
       style={{ backgroundColor }}
     >
       <div class="max-w-[1336px] mx-auto">
-        {/* Cabeçalho */}
-        <div class="flex flex-col items-center mb-9">
+        <div class="flex flex-col items-center mb-8 md:mb-9">
           <h2 
-            class="text-white font-bold text-4xl leading-[45.36px] mb-2.5"
+            class="text-white font-bold text-2xl leading-[30.24px] md:text-4xl md:leading-[45.36px] mb-2.5 text-center"
             style={{ fontFamily: 'Sora, sans-serif' }}
           >
             {sectionTitle}
           </h2>
           <p 
-            class="text-[#FCFCFC] text-2xl text-center"
-            style={{ fontFamily: 'Quicksand, sans-serif', fontWeight: 400, lineHeight: '30px' }}
+            class="text-[#FCFCFC] text-sm md:text-2xl text-center max-w-[343px] md:max-w-none"
+            style={{ 
+              fontFamily: 'Quicksand, sans-serif', 
+              fontWeight: 500, 
+              lineHeight: '17.5px',
+            }}
           >
             {sectionSubtitle}
           </p>
         </div>
         
-        {/* Grid de Produtos */}
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[63px]">
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-[25px] md:gap-[63px]">
           {products.map((product, index) => (
             <div 
               key={index}
-              class="bg-[#FCFCFC] rounded-2xl overflow-hidden"
+              class="bg-[#FCFCFC] rounded-lg md:rounded-2xl overflow-hidden"
               style={{ 
                 border: '1px solid rgba(0, 0, 0, 0.12)',
               }}
             >
-              {/* Container do Card */}
-              <div class="p-6 flex flex-col gap-4">
-                {/* Imagem do Produto */}
-                <div class="relative w-[272px] h-[272px] rounded-md overflow-hidden">
+              <div class="p-2 md:p-6 flex flex-col gap-3 md:gap-4">
+                <div class="relative w-full aspect-square rounded-md overflow-hidden">
                   <img 
                     src={product.image} 
                     alt={product.name}
                     class="w-full h-full object-cover"
                   />
                   
-                  {/* Badge de Desconto */}
                   {product.badgeDiscount && (
                     <div 
                       class="absolute top-2 left-2 px-3 py-1 rounded-full"
@@ -126,11 +125,9 @@ export default function ProductGrid({
                   )}
                 </div>
                 
-                {/* Informações do Produto */}
-                <div class="flex flex-col gap-3">
-                  {/* Categoria e Logo */}
+                <div class="flex flex-col gap-2 md:gap-3">
                   {product.category && (
-                    <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-1 md:gap-2">
                       <div 
                         class="px-2 py-0.5 rounded-lg"
                         style={{ border: '0.5px solid #1A2B38' }}
@@ -156,20 +153,16 @@ export default function ProductGrid({
                     </div>
                   )}
                   
-                  {/* Nome do Produto */}
                   <h3 
-                    class="text-black capitalize font-medium"
+                    class="text-black capitalize font-medium text-sm md:text-base leading-[17.5px] md:leading-[20px]"
                     style={{ 
                       fontFamily: 'Quicksand, sans-serif',
                       fontWeight: 500,
-                      fontSize: '16px',
-                      lineHeight: '20px'
                     }}
                   >
                     {product.name}
                   </h3>
                   
-                  {/* Avaliação */}
                   {product.rating !== undefined && (
                     <div class="flex items-center gap-1.5">
                       <div class="flex items-center gap-0.5">
@@ -199,16 +192,14 @@ export default function ProductGrid({
                     </div>
                   )}
                   
-                  {/* Preços */}
                   <div class="flex items-center gap-1">
                     <span 
-                      class="text-black uppercase font-semibold"
+                      class="text-black uppercase font-semibold text-sm md:text-base"
                       style={{ 
                         fontFamily: 'Quicksand, sans-serif',
                         fontWeight: 600,
-                        fontSize: '16px',
-                        lineHeight: '20px',
-                        letterSpacing: '0.8px'
+                        letterSpacing: '0.7px',
+                        lineHeight: '17.5px',
                       }}
                     >
                       {product.discountPrice}
@@ -219,8 +210,8 @@ export default function ProductGrid({
                         style={{ 
                           fontFamily: 'Quicksand, sans-serif',
                           fontWeight: 400,
-                          fontSize: '12px',
-                          lineHeight: '15px'
+                          fontSize: '10px',
+                          lineHeight: '12.5px'
                         }}
                       >
                         {product.originalPrice}
@@ -228,14 +219,12 @@ export default function ProductGrid({
                     )}
                   </div>
                   
-                  {/* Texto de Parcelamento */}
                   {product.installmentText && (
                     <p 
+                      class="text-[10px] leading-[11.5px]"
                       style={{ 
                         fontFamily: 'Arial, sans-serif',
                         fontWeight: 400,
-                        fontSize: '10px',
-                        lineHeight: '11.5px',
                         color: '#3B4A54'
                       }}
                     >
@@ -245,18 +234,16 @@ export default function ProductGrid({
                 </div>
               </div>
               
-              {/* Botão */}
               {product.link && (
-                <div class="px-6 pb-6">
+                <div class="px-2 pb-2 md:px-6 md:pb-6">
                   <a 
                     href={product.link}
-                    class="w-full flex items-center justify-center py-3 px-5 rounded-2xl font-bold text-white transition-transform hover:scale-[1.02]"
+                    class="w-full flex items-center justify-center py-2 px-4 md:py-3 md:px-5 rounded-2xl font-bold text-white transition-transform hover:scale-[1.02] text-xs md:text-xl"
                     style={{ 
                       backgroundColor: '#14242E',
                       fontFamily: 'Quicksand, sans-serif',
-                      fontWeight: 700,
-                      fontSize: '20px',
-                      lineHeight: '20px'
+                      fontWeight: 600,
+                      lineHeight: '15px',
                     }}
                   >
                     {product.buttonText || "Comprar com Cupom"}
