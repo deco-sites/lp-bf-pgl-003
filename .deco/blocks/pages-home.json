@@ -332,7 +332,9 @@
       "buttonColor": "#00e16c",
       "couponBorderColor": "#00e16c",
       "copyButtonIconColor": "#00e16c",
-      "copyButtonBgColor": "#000000"
+      "copyButtonBgColor": "#000000",
+      "exclusiveBadgeBold": false,
+      "exclusiveBadgeText": "EXCLUSIVO APP"
     },
     {
       "__resolveType": "site/sections/DownloadAppCTA.tsx",
