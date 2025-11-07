@@ -178,8 +178,8 @@
         {
           "brand": "Insider",
           "discount": "50% OFF",
-          "buttonText": "Resgatar",
-          "buttonLink": "#",
+          "buttonText": "Conferir Oferta",
+          "buttonLink": "https://www.insiderstore.com.br/?utm_source=rakuten&utm_medium=4109468&utm_content=Fm6xynLNJdQ-2T.ZJYQ8AfBfjF.A3_dahw&ranMID=50056&ranEAID=Fm6xynLNJdQ&ranSiteID=Fm6xynLNJdQ-2T.ZJYQ8AfBfjF.A3_dahw",
           "brandLogo": "https://storage.googleapis.com/uploads-wordpress/insider.png",
           "discountBadge": "OFERTA",
           "category": "Moda",
@@ -190,32 +190,32 @@
           "alternativeText": "Black November Insider! Descontos de até 50% OFF + brinde exclusivo em compras acima de R$399"
         },
         {
-          "brand": "Insider",
+          "brand": "Temu",
           "discount": "50% OFF",
-          "buttonText": "Resgatar",
-          "buttonLink": "#",
-          "brandLogo": "https://storage.googleapis.com/uploads-wordpress/insider.png",
+          "buttonText": "Usar Cupom",
+          "buttonLink": "https://www.temu.com/br/kuiper/uk1.html?subj=bundle-un&_bg_fs=1&_p_mat2_type=a1001&_p_jump_id=875&_x_vst_scene=adg&_p_rfs=1&_x_ads_channel=kol_affiliate&_x_campaign=affiliate&_x_cid=2104542840kol_affiliate&_x_ads_csite=tmid7000075402&g_site=132&g_lg=pt&g_region=29&g_ccy=&is_refresh_page=1",
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/e7e3bd06-f214-47ea-9333-1f3ccc86a639/temu.png",
           "discountBadge": "OFERTA",
-          "category": "Moda",
+          "category": "Variedades",
           "dropdownText": "Regras e informações",
           "helpText": "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!  Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra.",
           "rulesContent": "Disponível direto no site.",
           "usageInfo": "52 usados hoje | Vencimento: 30/11/2025",
-          "alternativeText": "Black November Insider! Descontos de até 50% OFF + brinde exclusivo em compras acima de R$399"
+          "alternativeText": "Ofertas de Black Friday com até 90% OFF na Temu! E aproveite para parcelar no Pix."
         },
         {
-          "brand": "Insider",
+          "brand": "Reserva",
           "discount": "50% OFF",
-          "buttonText": "Resgatar",
-          "buttonLink": "#",
-          "brandLogo": "https://storage.googleapis.com/uploads-wordpress/insider.png",
+          "buttonText": "Usar Cupom",
+          "buttonLink": "https://www.usereserva.com/?utm_source=awin&utm_id=1340039_&utm_content=afiliados&sv1=affiliate&sv_campaign_id=1340039&awc=61287_1762366641_db4752ea607bd4b7b570eee395d9e45b%20",
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/88dbae37-88de-4add-889f-90b64d6f59b2/reserva.png",
           "discountBadge": "OFERTA",
           "category": "Moda",
           "dropdownText": "Regras e informações",
           "helpText": "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!  Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra.",
           "rulesContent": "Disponível direto no site.",
           "usageInfo": "52 usados hoje | Vencimento: 30/11/2025",
-          "alternativeText": "Black November Insider! Descontos de até 50% OFF + brinde exclusivo em compras acima de R$399"
+          "alternativeText": "Ofertas de Black Friday imperdíveis: até 60% OFF + desconto extra na compra de 2 ou mais peças!"
         }
       ]
     },
