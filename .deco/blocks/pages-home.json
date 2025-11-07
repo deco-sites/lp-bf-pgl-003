@@ -207,7 +207,7 @@
           "brand": "Reserva",
           "discount": "50% OFF",
           "buttonText": "Usar Cupom",
-          "buttonLink": "https://www.usereserva.com/?utm_source=awin&utm_id=1340039_&utm_content=afiliados&sv1=affiliate&sv_campaign_id=1340039&awc=61287_1762366641_db4752ea607bd4b7b570eee395d9e45b%20",
+          "buttonLink": "https://www.usereserva.com/?utm_source=awin&utm_id=1340039_&utm_content=afiliados&sv1=affiliate&sv_campaign_id=1340039&awc=61287_1762366641_db4752ea607bd4b7b570eee395d9e45b ",
           "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/88dbae37-88de-4add-889f-90b64d6f59b2/reserva.png",
           "discountBadge": "OFERTA",
           "category": "Moda",
@@ -492,6 +492,11 @@
         "imageMobile": "https://assets.decocache.com/lp-bf-pgl-003/96ac3821-26dd-43be-8bfc-1e0adbbd9b56/Imagem-do-WhatsApp-de-2025-11-07-a(s)-13.27.20_9d15a1cf.jpg",
         "link": "www.tec4udigital.com"
       }
+    },
+    {
+      "__resolveType": "site/sections/DownloadApp.tsx",
+      "appStoreUrl": "https://apps.apple.com/br/app/pagaleve/id1613630995",
+      "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.pagaleve.app"
     },
     {
       "__resolveType": "Footer"

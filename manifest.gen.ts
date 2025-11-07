@@ -13,13 +13,14 @@ import * as $$$$$$6 from "./sections/ComoFunciona.tsx";
 import * as $$$$$$7 from "./sections/CouponGrid.tsx";
 import * as $$$$$$5 from "./sections/CTABanner.tsx";
 import * as $$$$$$8 from "./sections/CustomerReviews.tsx";
-import * as $$$$$$9 from "./sections/DownloadAppCTA.tsx";
-import * as $$$$$$10 from "./sections/FAQ.tsx";
-import * as $$$$$$11 from "./sections/Footer.tsx";
-import * as $$$$$$12 from "./sections/ItWorks.tsx";
-import * as $$$$$$13 from "./sections/ProductGrid.tsx";
-import * as $$$$$$14 from "./sections/SectionDivider.tsx";
-import * as $$$$$$15 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$9 from "./sections/DownloadApp.tsx";
+import * as $$$$$$10 from "./sections/DownloadAppCTA.tsx";
+import * as $$$$$$11 from "./sections/FAQ.tsx";
+import * as $$$$$$12 from "./sections/Footer.tsx";
+import * as $$$$$$13 from "./sections/ItWorks.tsx";
+import * as $$$$$$14 from "./sections/ProductGrid.tsx";
+import * as $$$$$$15 from "./sections/SectionDivider.tsx";
+import * as $$$$$$16 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
@@ -32,13 +33,14 @@ const manifest = {
     "site/sections/CouponGrid.tsx": $$$$$$7,
     "site/sections/CTABanner.tsx": $$$$$$5,
     "site/sections/CustomerReviews.tsx": $$$$$$8,
-    "site/sections/DownloadAppCTA.tsx": $$$$$$9,
-    "site/sections/FAQ.tsx": $$$$$$10,
-    "site/sections/Footer.tsx": $$$$$$11,
-    "site/sections/ItWorks.tsx": $$$$$$12,
-    "site/sections/ProductGrid.tsx": $$$$$$13,
-    "site/sections/SectionDivider.tsx": $$$$$$14,
-    "site/sections/Theme/Theme.tsx": $$$$$$15,
+    "site/sections/DownloadApp.tsx": $$$$$$9,
+    "site/sections/DownloadAppCTA.tsx": $$$$$$10,
+    "site/sections/FAQ.tsx": $$$$$$11,
+    "site/sections/Footer.tsx": $$$$$$12,
+    "site/sections/ItWorks.tsx": $$$$$$13,
+    "site/sections/ProductGrid.tsx": $$$$$$14,
+    "site/sections/SectionDivider.tsx": $$$$$$15,
+    "site/sections/Theme/Theme.tsx": $$$$$$16,
   },
   "apps": {
     "site/apps/deco/htmx.ts": $$$$$$$$$$$0,
