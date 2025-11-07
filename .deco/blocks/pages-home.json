@@ -223,8 +223,8 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/ComoFunciona.tsx",
-        "mainTitle": "Como funciona o app",
-        "subtitle": "Compre direto no site e selecione o Pix Parcelado da Pagaleve na hora de pagar.",
+        "mainTitle": "Marcas exclusivas do App da Pagaleve",
+        "subtitle": "Confira as promoções que estão rolando nas nossas marcas exclusivas no aplicativo.",
         "steps": [
           {
             "number": "01",

@@ -57,7 +57,7 @@ export interface Props {
   /**
    * @title Cor do Badge (Número)
    * @format color
-   * @default #FF009B
+   * @default #00e16c
    */
   badgeColor?: string;
 
