@@ -33,8 +33,8 @@ export default function BlackFridayHero({
   backgroundImage,
   backgroundImageMobile,
 }: Props) {
-  const bgDesktop = backgroundImage || "https://via.placeholder.com/1440x698/9333ea/ffffff?text=Desktop+Background";
-  const bgMobile = backgroundImageMobile || backgroundImage || "https://via.placeholder.com/375x375/9333ea/ffffff?text=Mobile+Background";
+  const bgDesktop = backgroundImage;
+  const bgMobile = backgroundImageMobile;
 
   return (
     <section
