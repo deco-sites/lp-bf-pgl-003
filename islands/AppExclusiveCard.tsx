@@ -14,7 +14,8 @@ export interface AppExclusiveCardProps {
   usageRight?: string;
   buttonText?: string;
   buttonLink?: string;
-  // Cores editáveis
+  exclusiveBadgeText?: string;
+  exclusiveBadgeBold?: boolean;
   exclusiveBadgeColor?: string;
   exclusiveBadgeTextColor?: string;
   discountBadgeColor?: string;
@@ -42,6 +43,8 @@ export default function AppExclusiveCard({
   usageRight,
   buttonText = "Baixar App",
   buttonLink = "#",
+  exclusiveBadgeText = "EXCLUSIVO APP",
+  exclusiveBadgeBold = false,
   exclusiveBadgeColor = "#F77ACF",
   exclusiveBadgeTextColor = "#000000",
   discountBadgeColor = "rgba(255, 0, 155, 0.1)",
@@ -74,7 +77,6 @@ export default function AppExclusiveCard({
         boxShadow: "0px 4px 4px rgba(222, 222, 224, 0.15)"
       }}
     >
-      {/* Header: Logo, Marca e Badges */}
       <div class="flex items-start justify-between gap-3">
         <div class="flex items-center gap-3 flex-1 min-w-0">
           {brandLogo && (
@@ -115,24 +117,23 @@ export default function AppExclusiveCard({
           </div>
         </div>
         
-        {/* Badges no canto direito */}
         <div class="flex flex-col gap-2 items-end shrink-0">
-          {/* Badge "Exclusivo App" */}
-          <div 
-            class="rounded-lg px-2 py-1 whitespace-nowrap flex items-center justify-center"
-            style={{ 
-              backgroundColor: exclusiveBadgeColor,
-              fontFamily: "Quicksand, sans-serif",
-              fontWeight: 600,
-              fontSize: "12px",
-              lineHeight: "15px",
-              color: exclusiveBadgeTextColor
-            }}
-          >
-            EXCLUSIVO APP
-          </div>
+          {exclusiveBadgeText && (
+            <div 
+              class="rounded-lg px-2 py-1 whitespace-nowrap flex items-center justify-center"
+              style={{ 
+                backgroundColor: exclusiveBadgeColor,
+                fontFamily: "Quicksand, sans-serif",
+                fontWeight: exclusiveBadgeBold ? 600 : 400,
+                fontSize: "12px",
+                lineHeight: "15px",
+                color: exclusiveBadgeTextColor
+              }}
+            >
+              {exclusiveBadgeText}
+            </div>
+          )}
           
-          {/* Badge de Desconto */}
           <div 
             class="rounded-lg px-2 py-2 whitespace-nowrap flex items-center justify-center"
             style={{ 
@@ -155,9 +156,7 @@ export default function AppExclusiveCard({
         </div>
       </div>
       
-      {/* Condicional: Com cupom ou sem cupom */}
       {couponCode ? (
-        /* Área do Código com borda tracejada - PERSONALIZÁVEL */
         <div 
           class="rounded-2xl flex flex-col gap-[26px] p-8"
           style={{ 
@@ -165,7 +164,6 @@ export default function AppExclusiveCard({
             border: `0.5px dashed ${couponBorderColor}`
           }}
         >
-          {/* Descrição e Código */}
           <div class="flex items-center justify-between gap-2">
             <div class="flex flex-col gap-4">
               {description && (
@@ -195,7 +193,6 @@ export default function AppExclusiveCard({
               </span>
             </div>
             
-            {/* Botão de Copiar - PERSONALIZÁVEL */}
             <button 
               onClick={handleCopy}
               class="rounded-lg p-2.5 transition-all hover:opacity-80 flex items-center justify-center"
@@ -219,7 +216,6 @@ export default function AppExclusiveCard({
           </div>
         </div>
       ) : (
-        /* Descrição quando NÃO tem cupom - com destaque maior */
         <div 
           class="rounded-xl p-4"
           style={{ 
@@ -241,9 +237,7 @@ export default function AppExclusiveCard({
         </div>
       )}
       
-      {/* Dropdown, Info de Uso e Botão */}
       <div class="flex flex-col gap-[18px]">
-        {/* Dropdown Funcional */}
         {rulesContent && (
           <div>
             <button
@@ -285,7 +279,6 @@ export default function AppExclusiveCard({
           </div>
         )}
         
-        {/* Informações de Uso com linha divisória */}
         {(usageLeft || usageRight) && (
           <div class="flex items-center gap-3">
             {usageLeft && (
@@ -320,7 +313,6 @@ export default function AppExclusiveCard({
           </div>
         )}
         
-        {/* Botão */}
         <a 
           href={buttonLink}
           class="block text-center rounded-2xl transition-all hover:opacity-90 px-3 py-3"

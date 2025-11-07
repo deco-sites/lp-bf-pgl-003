@@ -58,6 +58,14 @@ export interface Props {
   /** @description Texto de apoio abaixo do título */
   subtitle?: string;
   
+  /** @title Texto da Tag de Exclusividade */
+  /** @description Texto que aparece na tag rosa (ex: EXCLUSIVO APP, SOMENTE APP, APP EXCLUSIVE) */
+  exclusiveBadgeText?: string;
+  
+  /** @title Tag de Exclusividade em Negrito */
+  /** @description Deixar o texto da tag em negrito (bold) */
+  exclusiveBadgeBold?: boolean;
+  
   /** @title Cupons Exclusivos */
   /** @description Lista de cupons/promoções exclusivas do app */
   coupons?: AppExclusiveCoupon[];
@@ -66,12 +74,12 @@ export interface Props {
   /** @format color */
   backgroundColor?: string;
 
-  /** @title Cor do Badge "EXCLUSIVO APP" */
+  /** @title Cor do Badge de Exclusividade */
   /** @format color */
   /** @default #F77ACF */
   exclusiveBadgeColor?: string;
 
-  /** @title Cor do Texto do Badge "EXCLUSIVO APP" */
+  /** @title Cor do Texto do Badge de Exclusividade */
   /** @format color */
   /** @default #000000 */
   exclusiveBadgeTextColor?: string;
@@ -130,6 +138,8 @@ export interface Props {
 export default function AppExclusiveCoupons({
   sectionTitle = "Promoções exclusivas no app",
   subtitle = "Baixe o app da Pagaleve e aproveite ofertas que só quem tem o app consegue!",
+  exclusiveBadgeText = "EXCLUSIVO APP",
+  exclusiveBadgeBold = false,
   backgroundColor = "#000000",
   exclusiveBadgeColor = "#F77ACF",
   exclusiveBadgeTextColor = "#000000",
@@ -194,9 +204,7 @@ export default function AppExclusiveCoupons({
       style={{ backgroundColor }}
     >
       <div class="container mx-auto max-w-7xl">
-        {/* Header */}
         <div class="flex flex-col items-center mb-12 gap-4">
-          {/* Título */}
           <h2 
             class="text-center"
             style={{ 
@@ -209,7 +217,6 @@ export default function AppExclusiveCoupons({
             {sectionTitle}
           </h2>
           
-          {/* Subtítulo */}
           {subtitle && (
             <p 
               class="text-center max-w-3xl"
@@ -226,12 +233,13 @@ export default function AppExclusiveCoupons({
           )}
         </div>
         
-        {/* Grid de Cupons Exclusivos */}
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {coupons.map((coupon, index) => (
             <AppExclusiveCard 
               key={index} 
               {...coupon}
+              exclusiveBadgeText={exclusiveBadgeText}
+              exclusiveBadgeBold={exclusiveBadgeBold}
               exclusiveBadgeColor={exclusiveBadgeColor}
               exclusiveBadgeTextColor={exclusiveBadgeTextColor}
               discountBadgeColor={discountBadgeColor}
