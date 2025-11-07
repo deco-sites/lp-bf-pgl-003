@@ -317,7 +317,10 @@
           "description": "descrição da oferta",
           "discountBadge": "cupom",
           "brand": "TEC4U",
-          "category": "categoria"
+          "category": "categoria",
+          "usageLeft": "472 usados hoje",
+          "usageRight": "Vencimento: 31/12/2024",
+          "buttonText": "XAMA BB"
         }
       ],
       "exclusiveBadgeColor": "#00e16c",

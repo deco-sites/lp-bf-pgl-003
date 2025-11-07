@@ -3272,6 +3272,10 @@ input.tab:checked + .tab-content,
   --tw-bg-opacity: 1;
   background-color: rgb(201 207 207 / var(--tw-bg-opacity));
 }
+.bg-\[\#DEDEE0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(222 222 224 / var(--tw-bg-opacity));
+}
 .bg-\[\#FCFCFC\] {
   --tw-bg-opacity: 1;
   background-color: rgb(252 252 252 / var(--tw-bg-opacity));

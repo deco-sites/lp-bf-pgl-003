@@ -34,6 +34,14 @@ export interface AppExclusiveCoupon {
   /** @description Texto detalhado das regras da promoção */
   rulesContent?: string;
   
+  /** @title Info de Uso (Esquerda) */
+  /** @description Ex: 472 usados hoje */
+  usageLeft?: string;
+  
+  /** @title Info de Uso (Direita) */
+  /** @description Ex: Expira Hoje! ou Vencimento: 31/12/2024 */
+  usageRight?: string;
+  
   /** @title Texto do Botão */
   buttonText?: string;
   
@@ -145,6 +153,8 @@ export default function AppExclusiveCoupons({
       couponCode: "PAGALEVE15",
       dropdownText: "Regras e Informações",
       rulesContent: "Oferta válida apenas para compras realizadas através do app da Pagaleve. Desconto aplicado automaticamente no checkout.",
+      usageLeft: "235 usados hoje",
+      usageRight: "Vencimento: 31/12/2024",
       buttonText: "Baixar App",
       buttonLink: "#"
     },
@@ -157,6 +167,8 @@ export default function AppExclusiveCoupons({
       couponCode: "APP10CASH",
       dropdownText: "Regras e Informações",
       rulesContent: "Cashback creditado em até 7 dias úteis após a confirmação da compra. Válido para primeira compra no app.",
+      usageLeft: "89 usados hoje",
+      usageRight: "Expira Hoje!",
       buttonText: "Baixar App",
       buttonLink: "#"
     },
@@ -169,6 +181,8 @@ export default function AppExclusiveCoupons({
       couponCode: "PAGALEVE50",
       dropdownText: "Regras e Informações",
       rulesContent: "Desconto aplicado automaticamente em compras acima de R$ 300. Válido até o final do mês.",
+      usageLeft: "412 usados hoje",
+      usageRight: "Vencimento: 15/01/2025",
       buttonText: "Baixar App",
       buttonLink: "#"
     }

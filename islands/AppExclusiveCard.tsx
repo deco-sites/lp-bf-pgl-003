@@ -10,6 +10,8 @@ export interface AppExclusiveCardProps {
   couponCode?: string;
   dropdownText?: string;
   rulesContent?: string;
+  usageLeft?: string;
+  usageRight?: string;
   buttonText?: string;
   buttonLink?: string;
   // Cores editáveis
@@ -36,6 +38,8 @@ export default function AppExclusiveCard({
   couponCode,
   dropdownText = "Regras e Informações",
   rulesContent,
+  usageLeft,
+  usageRight,
   buttonText = "Baixar App",
   buttonLink = "#",
   exclusiveBadgeColor = "#F77ACF",
@@ -237,7 +241,7 @@ export default function AppExclusiveCard({
         </div>
       )}
       
-      {/* Dropdown e Botão */}
+      {/* Dropdown, Info de Uso e Botão */}
       <div class="flex flex-col gap-[18px]">
         {/* Dropdown Funcional */}
         {rulesContent && (
@@ -277,6 +281,41 @@ export default function AppExclusiveCard({
               >
                 {rulesContent}
               </div>
+            )}
+          </div>
+        )}
+        
+        {/* Informações de Uso com linha divisória */}
+        {(usageLeft || usageRight) && (
+          <div class="flex items-center gap-3">
+            {usageLeft && (
+              <span 
+                class="text-[#999999]"
+                style={{ 
+                  fontFamily: "Quicksand, sans-serif",
+                  fontWeight: 400,
+                  fontSize: "12px",
+                  lineHeight: "15px"
+                }}
+              >
+                {usageLeft}
+              </span>
+            )}
+            {usageLeft && usageRight && (
+              <div class="w-px h-4 bg-[#DEDEE0]"></div>
+            )}
+            {usageRight && (
+              <span 
+                class="text-white"
+                style={{ 
+                  fontFamily: "Quicksand, sans-serif",
+                  fontWeight: 600,
+                  fontSize: "12px",
+                  lineHeight: "15px"
+                }}
+              >
+                {usageRight}
+              </span>
             )}
           </div>
         )}
