@@ -520,6 +520,14 @@
     },
     {
       "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/BannerPix.tsx",
+        "backgroundImage": "https://assets.decocache.com/lp-bf-pgl-003/c7e5934f-aacc-4aeb-8a71-480228641d32/Imagem-do-WhatsApp-de-2025-11-07-a(s)-12.54.07_5d955876.jpg",
+        "buttonLink": "www.te4udigital.com"
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx"
