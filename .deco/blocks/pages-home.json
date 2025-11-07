@@ -749,7 +749,57 @@
       "appStoreTitle": "https://apps.apple.com/br/app/pagaleve/id1610181738?l=en-GB",
       "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.pagaleve",
       "appStoreUrl": "https://apps.apple.com/br/app/pagaleve/id1610181738?l=en-GB",
-      "copyright": "© 2025, Pagaleve Instituicao de Pagamento Ltda. Todos os direitos reservados. Atendimento de segunda a sexta-feira, das 9h00 às 18h00. - CNPJ: 42.563.672/0001-55"
+      "copyright": "© 2025, Pagaleve Instituicao de Pagamento Ltda. Todos os direitos reservados. Atendimento de segunda a sexta-feira, das 9h00 às 18h00. - CNPJ: 42.563.672/0001-55",
+      "institutionalLinks": [
+        {
+          "label": "Sobre Nós",
+          "href": "https://www.pagaleve.com.br/sobre-nos/"
+        },
+        {
+          "label": "Blog",
+          "href": "https://www.pagaleve.com.br/blog/"
+        },
+        {
+          "label": "Trabalhe Conosco",
+          "href": "https://pagaleve.gupy.io/"
+        },
+        {
+          "label": "Mapa do Site",
+          "href": "https://www.pagaleve.com.br/mapa-do-site/"
+        }
+      ],
+      "helpLinks": [
+        {
+          "label": "Como Funciona",
+          "href": "https://www.pagaleve.com.br/como-funciona/"
+        },
+        {
+          "label": "Ajuda",
+          "href": "https://www.pagaleve.com.br/ajuda/"
+        },
+        {
+          "label": "Onde Comprar",
+          "href": "https://www.pagaleve.com.br/lojas-parceiras/"
+        }
+      ],
+      "partnershipsLinks": [
+        {
+          "label": "Programa de Parcerias",
+          "href": "https://home.pagaleve.com.br/parceiros-pagaleve"
+        },
+        {
+          "label": "Varejista",
+          "href": "https://www.pagaleve.com.br/varejistas/"
+        },
+        {
+          "label": "Termos de Uso",
+          "href": "https://www.pagaleve.com.br/termos-de-uso/"
+        },
+        {
+          "label": "Política de Privacidade",
+          "href": "https://www.pagaleve.com.br/politica-de-privacidade/"
+        }
+      ]
     }
   ],
   "__resolveType": "website/pages/Page.tsx"
