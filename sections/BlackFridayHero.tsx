@@ -29,8 +29,8 @@ export interface Props {
 }
 
 function BlackFridayHero({
-  desktopBanner = "https://assets.decocache.com/lp-bf-pgl-003/b77ee4fb-0820-4f57-a1c2-a760ce4a86cc/bf-lp-final-(2).png",
-  mobileBanner = "https://assets.decocache.com/lp-bf-pgl-003/32b5dcbb-8d7b-4410-85b0-db631fae846b/Frame-427322666-(1).png",
+  desktopBanner = "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/5462/23ea4c8f-9517-4a18-b3ac-1afbf6e1a04b",
+  mobileBanner = "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/5462/a7a8f3fd-b7fb-4646-ba6a-3ccddac8cfaf",
   endDate = "2025-11-30T23:59:59",
   timerTitle = "Faltam apenas:",
 }: Props) {
@@ -62,10 +62,9 @@ function BlackFridayHero({
   }, [endDate]);
 
   return (
-    <section class="relative w-full min-h-[500px] lg:min-h-[600px] bg-gradient-to-b from-black to-gray-900 overflow-hidden">
+    <section class="relative w-full min-h-[500px] md:min-h-[600px] bg-black overflow-hidden">
       {/* Banner de Fundo */}
       <div class="absolute inset-0 w-full h-full">
-        {/* Desktop Banner */}
         <picture>
           <source
             media="(min-width: 768px)"
@@ -83,65 +82,89 @@ function BlackFridayHero({
         </picture>
 
         {/* Overlay escuro para melhor legibilidade */}
-        <div class="absolute inset-0 bg-black/40" />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/50" />
       </div>
 
       {/* Conteúdo */}
-      <div class="relative z-10 container mx-auto px-4 py-12 lg:py-20 flex flex-col items-center justify-center min-h-[500px] lg:min-h-[600px]">
+      <div class="relative z-10 container mx-auto px-4 py-12 md:py-20 flex flex-col items-center justify-center min-h-[500px] md:min-h-[600px]">
 
         {/* Cronômetro */}
-        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 lg:p-8 shadow-2xl border border-white/20 max-w-2xl w-full">
-          <h2 class="text-white text-2xl lg:text-3xl font-bold text-center mb-6">
+        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 md:p-8 shadow-2xl border border-white/20 max-w-2xl w-full">
+          <h2 
+            class="text-white text-2xl md:text-3xl font-bold text-center mb-6"
+            style={{ fontFamily: 'Sora, sans-serif' }}
+          >
             {timerTitle}
           </h2>
 
-          <div class="grid grid-cols-4 gap-3 lg:gap-6">
+          <div class="grid grid-cols-4 gap-3 md:gap-6">
             {/* Dias */}
             <div class="flex flex-col items-center">
-              <div class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl p-3 lg:p-6 shadow-lg w-full">
-                <span class="text-3xl lg:text-5xl font-bold text-black block text-center">
+              <div class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl p-3 md:p-6 shadow-lg w-full">
+                <span class="text-3xl md:text-5xl font-bold text-black block text-center">
                   {String(timeLeft.days).padStart(2, '0')}
                 </span>
               </div>
-              <span class="text-white text-sm lg:text-base mt-2 font-semibold">Dias</span>
+              <span 
+                class="text-white text-sm md:text-base mt-2 font-semibold"
+                style={{ fontFamily: 'Quicksand, sans-serif' }}
+              >
+                Dias
+              </span>
             </div>
 
             {/* Horas */}
             <div class="flex flex-col items-center">
-              <div class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl p-3 lg:p-6 shadow-lg w-full">
-                <span class="text-3xl lg:text-5xl font-bold text-black block text-center">
+              <div class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl p-3 md:p-6 shadow-lg w-full">
+                <span class="text-3xl md:text-5xl font-bold text-black block text-center">
                   {String(timeLeft.hours).padStart(2, '0')}
                 </span>
               </div>
-              <span class="text-white text-sm lg:text-base mt-2 font-semibold">Horas</span>
+              <span 
+                class="text-white text-sm md:text-base mt-2 font-semibold"
+                style={{ fontFamily: 'Quicksand, sans-serif' }}
+              >
+                Horas
+              </span>
             </div>
 
             {/* Minutos */}
             <div class="flex flex-col items-center">
-              <div class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl p-3 lg:p-6 shadow-lg w-full">
-                <span class="text-3xl lg:text-5xl font-bold text-black block text-center">
+              <div class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl p-3 md:p-6 shadow-lg w-full">
+                <span class="text-3xl md:text-5xl font-bold text-black block text-center">
                   {String(timeLeft.minutes).padStart(2, '0')}
                 </span>
               </div>
-              <span class="text-white text-sm lg:text-base mt-2 font-semibold">Minutos</span>
+              <span 
+                class="text-white text-sm md:text-base mt-2 font-semibold"
+                style={{ fontFamily: 'Quicksand, sans-serif' }}
+              >
+                Minutos
+              </span>
             </div>
 
             {/* Segundos */}
             <div class="flex flex-col items-center">
-              <div class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl p-3 lg:p-6 shadow-lg w-full">
-                <span class="text-3xl lg:text-5xl font-bold text-black block text-center">
+              <div class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl p-3 md:p-6 shadow-lg w-full">
+                <span class="text-3xl md:text-5xl font-bold text-black block text-center">
                   {String(timeLeft.seconds).padStart(2, '0')}
                 </span>
               </div>
-              <span class="text-white text-sm lg:text-base mt-2 font-semibold">Segundos</span>
+              <span 
+                class="text-white text-sm md:text-base mt-2 font-semibold"
+                style={{ fontFamily: 'Quicksand, sans-serif' }}
+              >
+                Segundos
+              </span>
             </div>
           </div>
         </div>
 
-        {/* CTA Button (opcional) */}
+        {/* CTA Button */}
         <a
           href="#ofertas"
-          class="mt-8 bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-black font-bold text-lg lg:text-xl px-8 py-4 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+          class="mt-8 bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-black font-bold text-lg md:text-xl px-8 py-4 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+          style={{ fontFamily: 'Quicksand, sans-serif' }}
         >
           Ver Ofertas 🔥
         </a>
