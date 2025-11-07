@@ -311,7 +311,13 @@
           "buttonText": "Baixar App",
           "buttonLink": "#"
         },
-        {}
+        {
+          "couponCode": "CUPOMTESTE",
+          "description": "descrição da oferta",
+          "discountBadge": "cupom",
+          "brand": "TEC4U",
+          "category": "categoria"
+        }
       ],
       "exclusiveBadgeColor": "#00e16c",
       "discountBadgeColor": "#00e16c",

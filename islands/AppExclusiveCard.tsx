@@ -7,6 +7,7 @@ export interface AppExclusiveCardProps {
   category?: string;
   discountBadge: string;
   description: string;
+  couponCode?: string; // NOVO: código do cupom opcional
   dropdownText?: string;
   rulesContent?: string;
   buttonText?: string;
@@ -28,6 +29,7 @@ export default function AppExclusiveCard({
   category,
   discountBadge,
   description,
+  couponCode, // NOVO
   dropdownText = "Regras e Informações",
   rulesContent,
   buttonText = "Baixar App",
@@ -42,6 +44,20 @@ export default function AppExclusiveCard({
   buttonTextColor = "#000000"
 }: AppExclusiveCardProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [copied, setCopied] = useState(false); // NOVO: estado para feedback de cópia
+
+  // NOVO: função para copiar cupom
+  const handleCopyCoupon = async () => {
+    if (!couponCode) return;
+    
+    try {
+      await navigator.clipboard.writeText(couponCode);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Erro ao copiar cupom:', err);
+    }
+  };
 
   return (
     <div 
@@ -153,6 +169,54 @@ export default function AppExclusiveCard({
         </p>
       </div>
       
+      {/* NOVO: Área do Cupom (se existir código) */}
+      {couponCode && (
+        <div 
+          class="rounded-xl p-4 flex items-center justify-between gap-3"
+          style={{ 
+            backgroundColor: "rgba(255, 0, 155, 0.05)",
+            border: "1px dashed #FF009B"
+          }}
+        >
+          <div class="flex-1 min-w-0">
+            <p 
+              class="text-[#999999] mb-1"
+              style={{ 
+                fontFamily: "Quicksand, sans-serif",
+                fontWeight: 500,
+                fontSize: "12px",
+                lineHeight: "15px"
+              }}
+            >
+              Código do cupom
+            </p>
+            <code 
+              class="text-white font-mono text-lg tracking-wider"
+              style={{ 
+                fontFamily: "'Courier New', monospace",
+                fontWeight: 700,
+                fontSize: "18px"
+              }}
+            >
+              {couponCode}
+            </code>
+          </div>
+          <button
+            onClick={handleCopyCoupon}
+            class="shrink-0 rounded-lg px-4 py-2 transition-all hover:opacity-90"
+            style={{ 
+              backgroundColor: copied ? "#10B981" : buttonColor,
+              fontFamily: "Quicksand, sans-serif",
+              fontWeight: 600,
+              fontSize: "14px",
+              color: buttonTextColor
+            }}
+          >
+            {copied ? "✓ Copiado!" : "Copiar"}
+          </button>
+        </div>
+      )}
+      
       {/* Dropdown e Botão */}
       <div class="flex flex-col gap-[18px]">
         {/* Dropdown Funcional */}
@@ -197,7 +261,7 @@ export default function AppExclusiveCard({
           </div>
         )}
         
-        {/* Botão sem ícone */}
+        {/* Botão */}
         <a 
           href={buttonLink}
           class="block text-center rounded-2xl transition-all hover:opacity-90 px-3 py-3"

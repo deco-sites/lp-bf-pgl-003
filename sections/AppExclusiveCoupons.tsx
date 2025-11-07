@@ -22,6 +22,10 @@ export interface AppExclusiveCoupon {
   /** @description Texto principal da oferta exclusiva do app */
   description: string;
   
+  /** @title Código do Cupom */
+  /** @description Código do cupom para copiar (opcional) - Ex: PAGALEVE15, APP2024 */
+  couponCode?: string;
+  
   /** @title Texto do Dropdown */
   /** @description Ex: Regras e Informações */
   dropdownText?: string;
@@ -114,6 +118,7 @@ export default function AppExclusiveCoupons({
       category: "Esportes",
       discountBadge: "15% OFF",
       description: "Compre no app e ganhe 15% de desconto em toda a loja + frete grátis!",
+      couponCode: "PAGALEVE15",
       dropdownText: "Regras e Informações",
       rulesContent: "Oferta válida apenas para compras realizadas através do app da Pagaleve. Desconto aplicado automaticamente no checkout.",
       buttonText: "Baixar App",
@@ -125,6 +130,7 @@ export default function AppExclusiveCoupons({
       category: "Esportes",
       discountBadge: "Cashback 10%",
       description: "Cashback de 10% em compras acima de R$ 200 pelo app!",
+      couponCode: "APP10CASH",
       dropdownText: "Regras e Informações",
       rulesContent: "Cashback creditado em até 7 dias úteis após a confirmação da compra. Válido para primeira compra no app.",
       buttonText: "Baixar App",
@@ -136,6 +142,7 @@ export default function AppExclusiveCoupons({
       category: "Variedades",
       discountBadge: "R$ 50 OFF",
       description: "R$ 50 de desconto em compras acima de R$ 300 pelo app da Pagaleve!",
+      couponCode: "PAGALEVE50",
       dropdownText: "Regras e Informações",
       rulesContent: "Desconto aplicado automaticamente em compras acima de R$ 300. Válido até o final do mês.",
       buttonText: "Baixar App",
