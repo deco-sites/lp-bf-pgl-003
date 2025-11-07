@@ -806,6 +806,15 @@
         }
       ],
       "appStoreUrl": "https://apps.apple.com/br/app/pagaleve/id1610181738?l=en-GB"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/BannerFull.tsx",
+        "backgroundImage": "https://assets.decocache.com/lp-bf-pgl-003/b77ee4fb-0820-4f57-a1c2-a760ce4a86cc/bf-lp-final-(2).png",
+        "backgroundImageMobile": "https://assets.decocache.com/lp-bf-pgl-003/32b5dcbb-8d7b-4410-85b0-db631fae846b/Frame-427322666-(1).png",
+        "endDate": "2025-11-23T02:59:00.000Z"
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx"
