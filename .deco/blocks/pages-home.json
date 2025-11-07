@@ -8,7 +8,10 @@
         "__resolveType": "site/sections/BlackFridayHero.tsx",
         "desktopBanner": "https://assets.decocache.com/lp-bf-pgl-003/b77ee4fb-0820-4f57-a1c2-a760ce4a86cc/bf-lp-final-(2).png",
         "mobileBanner": "https://assets.decocache.com/lp-bf-pgl-003/32b5dcbb-8d7b-4410-85b0-db631fae846b/Frame-427322666-(1).png",
-        "endDate": "2025-11-2800:00:00"
+        "endDate": "2025-11-2800:00:00",
+        "backgroundImage": "https://assets.decocache.com/lp-bf-pgl-003/b77ee4fb-0820-4f57-a1c2-a760ce4a86cc/bf-lp-final-(2).png",
+        "backgroundImageMobile": "https://assets.decocache.com/lp-bf-pgl-003/32b5dcbb-8d7b-4410-85b0-db631fae846b/Frame-427322666-(1).png",
+        "expiresAt": "2025-11-23T02:59:00.000Z"
       }
     },
     {
