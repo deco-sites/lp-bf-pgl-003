@@ -58,14 +58,19 @@ export default function BrandCarousel({ logos, speed = 30 }: Props) {
     >
       <div 
         data-scroll-content
-        class="flex items-center gap-12 whitespace-nowrap"
+        class="flex items-center gap-12"
+        style={{ 
+          flexWrap: 'nowrap',
+          whiteSpace: 'nowrap',
+          display: 'inline-flex'
+        }}
       >
         {logos.map((logo, index) => (
           logo.link ? (
             <a 
               key={index}
               href={logo.link}
-              class="grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 flex-shrink-0"
+              class="grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 flex-shrink-0 inline-block"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -73,17 +78,19 @@ export default function BrandCarousel({ logos, speed = 30 }: Props) {
                 src={logo.image} 
                 alt={logo.alt}
                 class="h-[66px] w-auto object-contain"
+                style={{ display: 'block' }}
               />
             </a>
           ) : (
             <div
               key={index}
-              class="grayscale opacity-70 flex-shrink-0"
+              class="grayscale opacity-70 flex-shrink-0 inline-block"
             >
               <img 
                 src={logo.image} 
                 alt={logo.alt}
                 class="h-[66px] w-auto object-contain"
+                style={{ display: 'block' }}
               />
             </div>
           )
