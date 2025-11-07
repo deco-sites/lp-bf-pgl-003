@@ -3,18 +3,13 @@
   "path": "/",
   "sections": [
     {
-      "__resolveType": "site/sections/BlackFridayHero.tsx",
-      "discount": "50%",
-      "subtitle": "",
-      "endDate": "2024-12-01T23:59:59",
-      "backgroundColor": "#000000",
-      "textColor": "#ffffff",
-      "accentColor": "#ff00ff",
-      "expiresAt": "2025-11-28T23:59:59.000Z",
-      "backgroundImage": "https://assets.decocache.com/lp-bf-pgl-003/b77ee4fb-0820-4f57-a1c2-a760ce4a86cc/bf-lp-final-(2).png",
-      "backgroundImageMobile": "https://assets.decocache.com/lp-bf-pgl-003/32b5dcbb-8d7b-4410-85b0-db631fae846b/Frame-427322666-(1).png",
-      "desktopBanner": "https://assets.decocache.com/lp-bf-pgl-003/b77ee4fb-0820-4f57-a1c2-a760ce4a86cc/bf-lp-final-(2).png",
-      "mobileBanner": "https://assets.decocache.com/lp-bf-pgl-003/32b5dcbb-8d7b-4410-85b0-db631fae846b/Frame-427322666-(1).png"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/BlackFridayHero.tsx",
+        "desktopBanner": "https://assets.decocache.com/lp-bf-pgl-003/b77ee4fb-0820-4f57-a1c2-a760ce4a86cc/bf-lp-final-(2).png",
+        "mobileBanner": "https://assets.decocache.com/lp-bf-pgl-003/32b5dcbb-8d7b-4410-85b0-db631fae846b/Frame-427322666-(1).png",
+        "endDate": "2025-11-2800:00:00"
+      }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -280,8 +275,9 @@
     },
     {
       "__resolveType": "site/sections/AppExclusiveCoupons.tsx",
-      "sectionTitle": "Confira os cupons das marcas parceiras e aproveite!",
       "backgroundColor": "#000000",
+      "buttonColor": "#00e16c",
+      "sectionTitle": "Confira os cupons das marcas parceiras e aproveite!",
       "coupons": [
         {
           "category": "Moda Fitness",
@@ -514,7 +510,6 @@
       "discountBadgeBorderColor": "#00e16c",
       "descriptionBgColor": "#141619",
       "descriptionBorderColor": "#00e16c",
-      "buttonColor": "#00e16c",
       "couponBorderColor": "#00e16c",
       "copyButtonIconColor": "#00e16c",
       "copyButtonBgColor": "#000000",
