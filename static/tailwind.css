@@ -2705,9 +2705,6 @@ input.tab:checked + .tab-content,
 .h-7 {
   height: 1.75rem;
 }
-.h-8 {
-  height: 2rem;
-}
 .h-\[10px\] {
   height: 10px;
 }
@@ -2722,6 +2719,9 @@ input.tab:checked + .tab-content,
 }
 .h-\[60px\] {
   height: 60px;
+}
+.h-\[66px\] {
+  height: 66px;
 }
 .h-full {
   height: 100%;
@@ -2803,6 +2803,9 @@ input.tab:checked + .tab-content,
 }
 .w-\[92px\] {
   width: 92px;
+}
+.w-auto {
+  width: auto;
 }
 .w-full {
   width: 100%;

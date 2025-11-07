@@ -1,4 +1,5 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
+import BrandCarousel from "../islands/BrandCarousel.tsx";
 
 /** @titleBy alt */
 export interface Logo {
@@ -21,12 +22,17 @@ export interface Props {
   
   /** @title Cor de Fundo */
   backgroundColor?: string;
+  
+  /** @title Velocidade do Carrossel */
+  /** @description Velocidade da animação (padrão: 30) */
+  carouselSpeed?: number;
 }
 
 export default function BrandLogos({
   title = "Marcas Parceiras",
   logos = [],
-  backgroundColor = "#000000"
+  backgroundColor = "#000000",
+  carouselSpeed = 30
 }: Props) {
   return (
     <section 
@@ -40,30 +46,7 @@ export default function BrandLogos({
           </h2>
         )}
         
-        <div class="flex flex-wrap justify-center items-center gap-8">
-          {logos.map((logo, index) => (
-            logo.link ? (
-              <a 
-                key={index}
-                href={logo.link}
-                class="grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100"
-              >
-                <img 
-                  src={logo.image} 
-                  alt={logo.alt}
-                  class="h-8 object-contain"
-                />
-              </a>
-            ) : (
-              <img 
-                key={index}
-                src={logo.image} 
-                alt={logo.alt}
-                class="h-8 object-contain grayscale opacity-70"
-              />
-            )
-          ))}
-        </div>
+        <BrandCarousel logos={logos} speed={carouselSpeed} />
       </div>
     </section>
   );
