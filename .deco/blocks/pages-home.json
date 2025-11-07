@@ -68,7 +68,7 @@
       "__resolveType": "site/sections/CouponGrid.tsx",
       "backgroundColor": "#000000",
       "textColor": "#ffffff",
-      "sectionTitle": "Cupom com nossas marcas parceiras é hora de esnobar no Pix",
+      "sectionTitle": "Confira os cupons das marcas parceiras e aproveite!",
       "cardBackgroundColor": "#1a1a1a",
       "buttonColor": "#ff00ff",
       "buttonTextColor": "#000000",
@@ -265,7 +265,9 @@
             "title": "Pague a 1ª parcela",
             "description": "Aguarde a aprovação e pague na hora a 1ª parcela para confirmar o pedido"
           }
-        ]
+        ],
+        "badgeColor": "#00e16c",
+        "backgroundColor": "#000000"
       }
     },
     {
