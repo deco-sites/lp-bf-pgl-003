@@ -456,32 +456,6 @@
       "ctaLink": "#"
     },
     {
-      "__resolveType": "site/sections/Benefits.tsx",
-      "backgroundColor": "#000000",
-      "textColor": "#ffffff",
-      "sectionTitle": "É tudo de bom demais da conta. Inacreditável!",
-      "accentColor": "#ff00ff",
-      "cardBackgroundColor": "#1a1a1a",
-      "benefits": [
-        {
-          "title": "Cashback",
-          "description": "Ganhe dinheiro de volta em suas compras"
-        },
-        {
-          "title": "Sem Taxa",
-          "description": "Zero taxas em transações"
-        },
-        {
-          "title": "Rápido",
-          "description": "Pagamento instantâneo"
-        },
-        {
-          "title": "Seguro",
-          "description": "Proteção total nas suas transações"
-        }
-      ]
-    },
-    {
       "__resolveType": "site/sections/FAQ.tsx",
       "backgroundColor": "#000000",
       "textColor": "#ffffff",
