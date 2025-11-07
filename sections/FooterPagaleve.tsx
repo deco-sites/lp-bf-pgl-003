@@ -96,7 +96,7 @@ export default function FooterPagaleve({
                 class="h-[30px] w-auto"
               />
             </div>
-            <p class="text-sm font-normal text-white leading-[17.5px] tracking-[0.7px] uppercase">
+            <p class="font-quicksand text-sm font-normal text-white leading-[17.5px] tracking-[0.7px] uppercase">
               {tagline}
             </p>
           </div>
@@ -104,7 +104,7 @@ export default function FooterPagaleve({
           {/* Column 2: Produto */}
           <div class="flex flex-col gap-4">
             <div class="pb-2 border-b border-[#1F1F1F]">
-              <h3 class="text-base font-semibold uppercase tracking-[0.8px] leading-[20px]">
+              <h3 class="font-sora text-base font-semibold uppercase tracking-[0.8px] leading-[20px]">
                 Produto
               </h3>
             </div>
@@ -113,7 +113,7 @@ export default function FooterPagaleve({
                 <a
                   key={link.label}
                   href={link.href}
-                  class="text-sm font-normal uppercase tracking-[0.7px] leading-[17.5px] hover:opacity-70 transition-opacity"
+                  class="font-quicksand text-sm font-normal uppercase tracking-[0.7px] leading-[17.5px] hover:opacity-70 transition-opacity"
                 >
                   {link.label}
                 </a>
@@ -124,7 +124,7 @@ export default function FooterPagaleve({
           {/* Column 3: Empresa */}
           <div class="flex flex-col gap-4">
             <div class="pb-2 border-b border-[#1F1F1F]">
-              <h3 class="text-base font-semibold uppercase tracking-[0.8px] leading-[20px]">
+              <h3 class="font-sora text-base font-semibold uppercase tracking-[0.8px] leading-[20px]">
                 Empresa
               </h3>
             </div>
@@ -133,7 +133,7 @@ export default function FooterPagaleve({
                 <a
                   key={link.label}
                   href={link.href}
-                  class="text-sm font-normal uppercase tracking-[0.7px] leading-[17.5px] hover:opacity-70 transition-opacity"
+                  class="font-quicksand text-sm font-normal uppercase tracking-[0.7px] leading-[17.5px] hover:opacity-70 transition-opacity"
                 >
                   {link.label}
                 </a>
@@ -144,7 +144,7 @@ export default function FooterPagaleve({
           {/* Column 4: Suporte */}
           <div class="flex flex-col gap-4">
             <div class="pb-2 border-b border-[#1F1F1F]">
-              <h3 class="text-base font-semibold uppercase tracking-[0.8px] leading-[20px]">
+              <h3 class="font-sora text-base font-semibold uppercase tracking-[0.8px] leading-[20px]">
                 Suporte
               </h3>
             </div>
@@ -153,7 +153,7 @@ export default function FooterPagaleve({
                 <a
                   key={link.label}
                   href={link.href}
-                  class="text-sm font-normal uppercase tracking-[0.7px] leading-[17.5px] hover:opacity-70 transition-opacity"
+                  class="font-quicksand text-sm font-normal uppercase tracking-[0.7px] leading-[17.5px] hover:opacity-70 transition-opacity"
                 >
                   {link.label}
                 </a>
@@ -163,7 +163,7 @@ export default function FooterPagaleve({
 
           {/* Column 5: App Download & Social Media */}
           <div class="flex flex-col items-center gap-4">
-            <p class="text-base font-medium tracking-normal leading-5 text-center">
+            <p class="font-quicksand text-base font-medium tracking-normal leading-5 text-center">
               {appStoreTitle}
             </p>
             
@@ -178,7 +178,7 @@ export default function FooterPagaleve({
                 <svg class="w-9 h-9" viewBox="0 0 36 43" fill="none">
                   <path d="M29.3 21.5c0-4.5 3.7-6.7 3.9-6.8-2.1-3.1-5.4-3.5-6.6-3.6-2.8-.3-5.4 1.6-6.8 1.6-1.4 0-3.6-1.6-5.9-1.5-3 0-5.8 1.7-7.4 4.4-3.1 5.4-.8 13.4 2.2 17.8 1.5 2.2 3.3 4.6 5.7 4.5 2.2-.1 3.1-1.4 5.8-1.4 2.7 0 3.5 1.4 5.9 1.4 2.4-.1 4-2.1 5.5-4.3 1.8-2.6 2.5-5.1 2.5-5.2-.1 0-4.8-1.8-4.8-7.1zM24.9 7.5c1.2-1.5 2-3.6 1.8-5.7-1.7.1-3.8 1.1-5 2.6-1.1 1.3-2.1 3.4-1.8 5.4 1.9.1 3.9-.9 5-2.3z" fill="white"/>
                 </svg>
-                <div class="flex flex-col">
+                <div class="flex flex-col font-quicksand">
                   <span class="text-sm font-medium leading-[17px]">Disponível na</span>
                   <span class="text-2xl font-medium leading-[29px]">App Store</span>
                 </div>
@@ -224,7 +224,7 @@ export default function FooterPagaleve({
                     </linearGradient>
                   </defs>
                 </svg>
-                <div class="flex flex-col">
+                <div class="flex flex-col font-quicksand">
                   <span class="text-sm font-medium leading-[17px]">Disponível no</span>
                   <span class="text-2xl font-medium leading-[29px]">Google Play</span>
                 </div>
@@ -259,15 +259,15 @@ export default function FooterPagaleve({
         {/* Bottom Footer */}
         <div class="flex flex-col md:flex-row justify-between items-center gap-4">
           <div class="flex flex-col items-center md:items-start gap-3">
-            <p class="text-xs font-medium opacity-70 text-center md:text-left">
+            <p class="font-quicksand text-xs font-medium opacity-70 text-center md:text-left">
               {copyright}
             </p>
-            <p class="text-xs font-medium opacity-70 text-center md:text-left">
+            <p class="font-quicksand text-xs font-medium opacity-70 text-center md:text-left">
               {additionalInfo}
             </p>
           </div>
           
-          <div class="flex items-center gap-2 px-1.5">
+          <div class="flex items-center gap-2 px-1.5 font-quicksand">
             <span class="text-xs font-normal opacity-70">Desenvolvido por</span>
             <a
               href="https://www.tec4udigital.com/?utm_source=pagaleve&utm_medium=rodape"
