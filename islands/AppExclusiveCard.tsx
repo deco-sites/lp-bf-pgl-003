@@ -216,14 +216,9 @@ export default function AppExclusiveCard({
           </div>
         </div>
       ) : (
-        <div 
-          class="rounded-xl p-4"
-          style={{ 
-            backgroundColor: descriptionBgColor
-          }}
-        >
+        <div>
           <p 
-            class="text-white text-left"
+            class="text-white"
             style={{ 
               fontFamily: "Quicksand, sans-serif",
               fontWeight: 600,
