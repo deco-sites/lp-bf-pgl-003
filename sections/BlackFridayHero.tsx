@@ -29,8 +29,8 @@ export interface Props {
 }
 
 function BlackFridayHero({
-  desktopBanner = "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/5462/23ea4c8f-9517-4a18-b3ac-1afbf6e1a04b",
-  mobileBanner = "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/5462/a7a8f3fd-b7fb-4646-ba6a-3ccddac8cfaf",
+  desktopBanner = "https://assets.decocache.com/lp-bf-pgl-003/b77ee4fb-0820-4f57-a1c2-a760ce4a86cc/bf-lp-final-(2).png",
+  mobileBanner = "https://assets.decocache.com/lp-bf-pgl-003/32b5dcbb-8d7b-4410-85b0-db631fae846b/Frame-427322666-(1).png",
   endDate = "2025-11-30T23:59:59",
   timerTitle = "Faltam apenas:",
 }: Props) {
@@ -64,7 +64,7 @@ function BlackFridayHero({
   return (
     <section class="relative w-full min-h-[500px] md:min-h-[600px] bg-black overflow-hidden">
       {/* Banner de Fundo */}
-      <div class="absolute inset-0 w-full h-full">
+      <div class="absolute inset-0 w-full h-full z-0">
         <picture>
           <source
             media="(min-width: 768px)"
