@@ -1,4 +1,5 @@
-import { useEffect, useState } from "preact/hooks";
+import { useSignal } from "@preact/signals";
+import { useEffect } from "preact/hooks";
 import { ImageWidget } from "apps/admin/widgets.ts";
 
 export interface Props {
@@ -34,24 +35,20 @@ function BlackFridayHero({
   endDate = "2025-11-30T23:59:59",
   timerTitle = "Faltam apenas:",
 }: Props) {
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  });
+  const days = useSignal(0);
+  const hours = useSignal(0);
+  const minutes = useSignal(0);
+  const seconds = useSignal(0);
 
   useEffect(() => {
     const calculateTimeLeft = () => {
       const difference = +new Date(endDate) - +new Date();
 
       if (difference > 0) {
-        setTimeLeft({
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-          minutes: Math.floor((difference / 1000 / 60) % 60),
-          seconds: Math.floor((difference / 1000) % 60),
-        });
+        days.value = Math.floor(difference / (1000 * 60 * 60 * 24));
+        hours.value = Math.floor((difference / (1000 * 60 * 60)) % 24);
+        minutes.value = Math.floor((difference / 1000 / 60) % 60);
+        seconds.value = Math.floor((difference / 1000) % 60);
       }
     };
 
@@ -102,7 +99,7 @@ function BlackFridayHero({
             <div class="flex flex-col items-center">
               <div class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl p-3 md:p-6 shadow-lg w-full">
                 <span class="text-3xl md:text-5xl font-bold text-black block text-center">
-                  {String(timeLeft.days).padStart(2, '0')}
+                  {String(days.value).padStart(2, '0')}
                 </span>
               </div>
               <span 
@@ -117,7 +114,7 @@ function BlackFridayHero({
             <div class="flex flex-col items-center">
               <div class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl p-3 md:p-6 shadow-lg w-full">
                 <span class="text-3xl md:text-5xl font-bold text-black block text-center">
-                  {String(timeLeft.hours).padStart(2, '0')}
+                  {String(hours.value).padStart(2, '0')}
                 </span>
               </div>
               <span 
@@ -132,7 +129,7 @@ function BlackFridayHero({
             <div class="flex flex-col items-center">
               <div class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl p-3 md:p-6 shadow-lg w-full">
                 <span class="text-3xl md:text-5xl font-bold text-black block text-center">
-                  {String(timeLeft.minutes).padStart(2, '0')}
+                  {String(minutes.value).padStart(2, '0')}
                 </span>
               </div>
               <span 
@@ -147,7 +144,7 @@ function BlackFridayHero({
             <div class="flex flex-col items-center">
               <div class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl p-3 md:p-6 shadow-lg w-full">
                 <span class="text-3xl md:text-5xl font-bold text-black block text-center">
-                  {String(timeLeft.seconds).padStart(2, '0')}
+                  {String(seconds.value).padStart(2, '0')}
                 </span>
               </div>
               <span 
