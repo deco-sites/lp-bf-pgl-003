@@ -2688,6 +2688,9 @@ input.tab:checked + .tab-content,
 .z-\[-2\] {
   z-index: -2;
 }
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
 .col-span-full {
   grid-column: 1 / -1;
 }
@@ -3115,6 +3118,12 @@ input.tab:checked + .tab-content,
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
 .flex-row {
   flex-direction: row;
 }
@@ -3198,6 +3207,13 @@ input.tab:checked + .tab-content,
 }
 .gap-\[9px\] {
   gap: 9px;
+}
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.gap-y-12 {
+  row-gap: 3rem;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -3293,6 +3309,9 @@ input.tab:checked + .tab-content,
 }
 .border-2 {
   border-width: 2px;
+}
+.border-b {
+  border-bottom-width: 1px;
 }
 .border-t {
   border-top-width: 1px;
@@ -3499,8 +3518,14 @@ input.tab:checked + .tab-content,
   padding-top: 52px;
   padding-bottom: 52px;
 }
+.pb-12 {
+  padding-bottom: 3rem;
+}
 .pb-4 {
   padding-bottom: 1rem;
+}
+.pb-8 {
+  padding-bottom: 2rem;
 }
 .pb-\[15px\] {
   padding-bottom: 15px;
@@ -3955,14 +3980,6 @@ input.tab:checked + .tab-content,
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:flex-row {
-    flex-direction: row;
-  }
-
-  .md\:items-start {
-    align-items: flex-start;
-  }
-
   .md\:gap-3 {
     gap: 0.75rem;
   }
@@ -4001,10 +4018,6 @@ input.tab:checked + .tab-content,
 
   .md\:pb-8 {
     padding-bottom: 2rem;
-  }
-
-  .md\:text-left {
-    text-align: left;
   }
 
   .md\:text-2xl {
@@ -4063,6 +4076,10 @@ input.tab:checked + .tab-content,
     margin-bottom: 4rem;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:grid {
     display: grid;
   }
@@ -4099,16 +4116,8 @@ input.tab:checked + .tab-content,
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-
-  .lg\:items-end {
-    align-items: flex-end;
   }
 
   .lg\:justify-end {
@@ -4117,10 +4126,6 @@ input.tab:checked + .tab-content,
 
   .lg\:justify-center {
     justify-content: center;
-  }
-
-  .lg\:gap-12 {
-    gap: 3rem;
   }
 
   .lg\:gap-6 {
