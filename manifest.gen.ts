@@ -15,12 +15,13 @@ import * as $$$$$$5 from "./sections/CTABanner.tsx";
 import * as $$$$$$8 from "./sections/CustomerReviews.tsx";
 import * as $$$$$$9 from "./sections/DownloadApp.tsx";
 import * as $$$$$$10 from "./sections/DownloadAppCTA.tsx";
-import * as $$$$$$11 from "./sections/FAQ.tsx";
-import * as $$$$$$12 from "./sections/Footer.tsx";
-import * as $$$$$$13 from "./sections/ItWorks.tsx";
-import * as $$$$$$14 from "./sections/ProductGrid.tsx";
-import * as $$$$$$15 from "./sections/SectionDivider.tsx";
-import * as $$$$$$16 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$11 from "./sections/DownloadAppJustMobile.tsx";
+import * as $$$$$$12 from "./sections/FAQ.tsx";
+import * as $$$$$$13 from "./sections/Footer.tsx";
+import * as $$$$$$14 from "./sections/ItWorks.tsx";
+import * as $$$$$$15 from "./sections/ProductGrid.tsx";
+import * as $$$$$$16 from "./sections/SectionDivider.tsx";
+import * as $$$$$$17 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
@@ -35,12 +36,13 @@ const manifest = {
     "site/sections/CustomerReviews.tsx": $$$$$$8,
     "site/sections/DownloadApp.tsx": $$$$$$9,
     "site/sections/DownloadAppCTA.tsx": $$$$$$10,
-    "site/sections/FAQ.tsx": $$$$$$11,
-    "site/sections/Footer.tsx": $$$$$$12,
-    "site/sections/ItWorks.tsx": $$$$$$13,
-    "site/sections/ProductGrid.tsx": $$$$$$14,
-    "site/sections/SectionDivider.tsx": $$$$$$15,
-    "site/sections/Theme/Theme.tsx": $$$$$$16,
+    "site/sections/DownloadAppJustMobile.tsx": $$$$$$11,
+    "site/sections/FAQ.tsx": $$$$$$12,
+    "site/sections/Footer.tsx": $$$$$$13,
+    "site/sections/ItWorks.tsx": $$$$$$14,
+    "site/sections/ProductGrid.tsx": $$$$$$15,
+    "site/sections/SectionDivider.tsx": $$$$$$16,
+    "site/sections/Theme/Theme.tsx": $$$$$$17,
   },
   "apps": {
     "site/apps/deco/htmx.ts": $$$$$$$$$$$0,

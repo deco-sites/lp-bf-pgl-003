@@ -500,7 +500,12 @@
     },
     {
       "__resolveType": "Footer"
-    }
+    },
+    null,
+    null,
+    null,
+    null,
+    null
   ],
   "__resolveType": "website/pages/Page.tsx"
 }
