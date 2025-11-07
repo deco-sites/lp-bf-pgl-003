@@ -11,13 +11,14 @@ import * as $$$$$$3 from "./sections/BrandLogos.tsx";
 import * as $$$$$$5 from "./sections/ComoFunciona.tsx";
 import * as $$$$$$6 from "./sections/CouponGrid.tsx";
 import * as $$$$$$4 from "./sections/CTABanner.tsx";
-import * as $$$$$$7 from "./sections/DownloadAppCTA.tsx";
-import * as $$$$$$8 from "./sections/FAQ.tsx";
-import * as $$$$$$9 from "./sections/Footer.tsx";
-import * as $$$$$$10 from "./sections/ItWorks.tsx";
-import * as $$$$$$11 from "./sections/ProductGrid.tsx";
-import * as $$$$$$12 from "./sections/SectionDivider.tsx";
-import * as $$$$$$13 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$7 from "./sections/CustomerReviews.tsx";
+import * as $$$$$$8 from "./sections/DownloadAppCTA.tsx";
+import * as $$$$$$9 from "./sections/FAQ.tsx";
+import * as $$$$$$10 from "./sections/Footer.tsx";
+import * as $$$$$$11 from "./sections/ItWorks.tsx";
+import * as $$$$$$12 from "./sections/ProductGrid.tsx";
+import * as $$$$$$13 from "./sections/SectionDivider.tsx";
+import * as $$$$$$14 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
@@ -28,13 +29,14 @@ const manifest = {
     "site/sections/ComoFunciona.tsx": $$$$$$5,
     "site/sections/CouponGrid.tsx": $$$$$$6,
     "site/sections/CTABanner.tsx": $$$$$$4,
-    "site/sections/DownloadAppCTA.tsx": $$$$$$7,
-    "site/sections/FAQ.tsx": $$$$$$8,
-    "site/sections/Footer.tsx": $$$$$$9,
-    "site/sections/ItWorks.tsx": $$$$$$10,
-    "site/sections/ProductGrid.tsx": $$$$$$11,
-    "site/sections/SectionDivider.tsx": $$$$$$12,
-    "site/sections/Theme/Theme.tsx": $$$$$$13,
+    "site/sections/CustomerReviews.tsx": $$$$$$7,
+    "site/sections/DownloadAppCTA.tsx": $$$$$$8,
+    "site/sections/FAQ.tsx": $$$$$$9,
+    "site/sections/Footer.tsx": $$$$$$10,
+    "site/sections/ItWorks.tsx": $$$$$$11,
+    "site/sections/ProductGrid.tsx": $$$$$$12,
+    "site/sections/SectionDivider.tsx": $$$$$$13,
+    "site/sections/Theme/Theme.tsx": $$$$$$14,
   },
   "apps": {
     "site/apps/deco/htmx.ts": $$$$$$$$$$$0,

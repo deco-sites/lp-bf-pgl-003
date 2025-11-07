@@ -439,6 +439,46 @@
       "buttonTextColor": "#ffffff"
     },
     {
+      "__resolveType": "site/sections/CustomerReviews.tsx",
+      "showIcon": true,
+      "title": "O que os nossos consumidores estão falando?",
+      "subtitle": "Milhões de consumidores já parcelaram suas compras no Pix com a Pagaleve",
+      "reviews": [
+        {
+          "name": "Ana Santos",
+          "initials": "AS",
+          "badge": "Embaixadora",
+          "rating": 5,
+          "testimonial": "Facilita muito quem não quer usar o crédito que tem e pode. Ótimo app para quem quer parcelar e recebe pagamentos menores todos os dias."
+        },
+        {
+          "name": "Débora Maria",
+          "initials": "DM",
+          "badge": "Embaixadora",
+          "rating": 5,
+          "testimonial": "Excelente! Gostei muito. Uma opção alternativa àquelas opções que já estamos com pouco limite, ou o vencimento do cartão muito próximo."
+        },
+        {
+          "name": "Lucas Rodrigues",
+          "initials": "LR",
+          "badge": "Embaixador",
+          "rating": 5,
+          "testimonial": "Muito Prático e com Juros justo. Facilita demais quem precisa comprar com pix parcelado com pagamento de 15/15 dias. O limite vai sobre na medida que vai usando o serviço."
+        },
+        {
+          "name": "Anderson Lima",
+          "initials": "AL",
+          "badge": "Embaixador",
+          "rating": 5,
+          "testimonial": "O maior quebra galho da minhas compras que não consigo pagar a vista, podendo parcelar sem cartão."
+        }
+      ],
+      "ctaText": "Baixe o App e experimente você também",
+      "ctaLink": "#",
+      "backgroundColor": "#000000",
+      "accentColor": "#E91E8C"
+    },
+    {
       "__resolveType": "Footer"
     }
   ],
