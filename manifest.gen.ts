@@ -5,46 +5,48 @@
 import * as $$$$$$$$$$$0 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 import * as $$$$$$0 from "./sections/AppExclusiveCoupons.tsx";
-import * as $$$$$$1 from "./sections/BannerPix.tsx";
-import * as $$$$$$2 from "./sections/Benefits.tsx";
-import * as $$$$$$3 from "./sections/BlackFridayHero.tsx";
-import * as $$$$$$4 from "./sections/BrandLogos.tsx";
-import * as $$$$$$6 from "./sections/ComoFunciona.tsx";
-import * as $$$$$$7 from "./sections/CouponGrid.tsx";
-import * as $$$$$$5 from "./sections/CTABanner.tsx";
-import * as $$$$$$8 from "./sections/CustomerReviews.tsx";
-import * as $$$$$$9 from "./sections/DownloadApp.tsx";
-import * as $$$$$$10 from "./sections/DownloadAppCTA.tsx";
-import * as $$$$$$11 from "./sections/DownloadAppJustMobile.tsx";
-import * as $$$$$$12 from "./sections/FAQ.tsx";
-import * as $$$$$$13 from "./sections/Footer.tsx";
-import * as $$$$$$14 from "./sections/FooterPagaleve.tsx";
-import * as $$$$$$15 from "./sections/ItWorks.tsx";
-import * as $$$$$$16 from "./sections/ProductGrid.tsx";
-import * as $$$$$$17 from "./sections/SectionDivider.tsx";
-import * as $$$$$$18 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$1 from "./sections/BannerFull.tsx";
+import * as $$$$$$2 from "./sections/BannerPix.tsx";
+import * as $$$$$$3 from "./sections/Benefits.tsx";
+import * as $$$$$$4 from "./sections/BlackFridayHero.tsx";
+import * as $$$$$$5 from "./sections/BrandLogos.tsx";
+import * as $$$$$$7 from "./sections/ComoFunciona.tsx";
+import * as $$$$$$8 from "./sections/CouponGrid.tsx";
+import * as $$$$$$6 from "./sections/CTABanner.tsx";
+import * as $$$$$$9 from "./sections/CustomerReviews.tsx";
+import * as $$$$$$10 from "./sections/DownloadApp.tsx";
+import * as $$$$$$11 from "./sections/DownloadAppCTA.tsx";
+import * as $$$$$$12 from "./sections/DownloadAppJustMobile.tsx";
+import * as $$$$$$13 from "./sections/FAQ.tsx";
+import * as $$$$$$14 from "./sections/Footer.tsx";
+import * as $$$$$$15 from "./sections/FooterPagaleve.tsx";
+import * as $$$$$$16 from "./sections/ItWorks.tsx";
+import * as $$$$$$17 from "./sections/ProductGrid.tsx";
+import * as $$$$$$18 from "./sections/SectionDivider.tsx";
+import * as $$$$$$19 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
     "site/sections/AppExclusiveCoupons.tsx": $$$$$$0,
-    "site/sections/BannerPix.tsx": $$$$$$1,
-    "site/sections/Benefits.tsx": $$$$$$2,
-    "site/sections/BlackFridayHero.tsx": $$$$$$3,
-    "site/sections/BrandLogos.tsx": $$$$$$4,
-    "site/sections/ComoFunciona.tsx": $$$$$$6,
-    "site/sections/CouponGrid.tsx": $$$$$$7,
-    "site/sections/CTABanner.tsx": $$$$$$5,
-    "site/sections/CustomerReviews.tsx": $$$$$$8,
-    "site/sections/DownloadApp.tsx": $$$$$$9,
-    "site/sections/DownloadAppCTA.tsx": $$$$$$10,
-    "site/sections/DownloadAppJustMobile.tsx": $$$$$$11,
-    "site/sections/FAQ.tsx": $$$$$$12,
-    "site/sections/Footer.tsx": $$$$$$13,
-    "site/sections/FooterPagaleve.tsx": $$$$$$14,
-    "site/sections/ItWorks.tsx": $$$$$$15,
-    "site/sections/ProductGrid.tsx": $$$$$$16,
-    "site/sections/SectionDivider.tsx": $$$$$$17,
-    "site/sections/Theme/Theme.tsx": $$$$$$18,
+    "site/sections/BannerFull.tsx": $$$$$$1,
+    "site/sections/BannerPix.tsx": $$$$$$2,
+    "site/sections/Benefits.tsx": $$$$$$3,
+    "site/sections/BlackFridayHero.tsx": $$$$$$4,
+    "site/sections/BrandLogos.tsx": $$$$$$5,
+    "site/sections/ComoFunciona.tsx": $$$$$$7,
+    "site/sections/CouponGrid.tsx": $$$$$$8,
+    "site/sections/CTABanner.tsx": $$$$$$6,
+    "site/sections/CustomerReviews.tsx": $$$$$$9,
+    "site/sections/DownloadApp.tsx": $$$$$$10,
+    "site/sections/DownloadAppCTA.tsx": $$$$$$11,
+    "site/sections/DownloadAppJustMobile.tsx": $$$$$$12,
+    "site/sections/FAQ.tsx": $$$$$$13,
+    "site/sections/Footer.tsx": $$$$$$14,
+    "site/sections/FooterPagaleve.tsx": $$$$$$15,
+    "site/sections/ItWorks.tsx": $$$$$$16,
+    "site/sections/ProductGrid.tsx": $$$$$$17,
+    "site/sections/SectionDivider.tsx": $$$$$$18,
+    "site/sections/Theme/Theme.tsx": $$$$$$19,
   },
   "apps": {
     "site/apps/deco/htmx.ts": $$$$$$$$$$$0,
