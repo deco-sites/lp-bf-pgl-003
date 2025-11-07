@@ -524,7 +524,7 @@
       "title": "Baixe agora o nosso app!",
       "description": "Descubra lojas exclusivas e acompanhe todas as suas parcelas em um só lugar.",
       "buttonText": "Baixe o App",
-      "buttonLink": "#",
+      "buttonLink": "https://linktr.ee/appPagaleve",
       "iconColor": "#00E16C",
       "titleColor": "#FCFCFC",
       "descriptionColor": "#DEDEE0",
@@ -541,22 +541,13 @@
       "badgeColor": "#ff0000",
       "products": [
         {
-          "name": "Produto Exemplo 1",
-          "image": "https://placehold.co/400x400/png",
-          "originalPrice": "R$ 199,90",
-          "discountPrice": "R$ 99,90",
-          "badge": "50% OFF",
-          "buttonText": "Ver produto",
-          "buttonLink": "#"
-        },
-        {
-          "name": "Produto Exemplo 2",
-          "image": "https://placehold.co/400x400/png",
-          "originalPrice": "R$ 299,90",
-          "discountPrice": "R$ 149,90",
-          "badge": "NOVO",
-          "buttonText": "Ver produto",
-          "buttonLink": "#"
+          "name": "Top Estampado Borbolina",
+          "image": "https://assets.decocache.com/lp-bf-pgl-003/5d1e1dc2-1623-4b98-8f3b-4751b13c42b6/produto1.png",
+          "originalPrice": "R$ 198,00",
+          "discountPrice": "R$ 99,00",
+          "buttonText": "Conferir Oferta",
+          "buttonLink": "#",
+          "link": "https://www.farmrio.com.br/top-estampado-borbolina-borbolina_bege-ambrosia-344429-50385/p?brand=farm&utm_source=rakuten&utm_medium=afiliados&utm_campaign=rakuten&utm_term=Pagaleve&utm_content=Fm6xynLNJdQ-9Cs3xQNLmm5CEIWUuUz_HQ&ranMID=46760&ranEAID=Fm6xynLNJdQ&ranSiteID=Fm6xynLNJdQ-9Cs3xQNLmm5CEIWUuUz_HQ"
         }
       ]
     },
