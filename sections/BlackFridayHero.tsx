@@ -30,21 +30,17 @@ export interface Props {
 export default function BlackFridayHero({
   title = "",
   expiresAt = "2024-11-29T23:59:59",
-  backgroundImage = "https://assets.decocache.com/lp-bf-pgl-003/c5f3eb53-031b-498e-ab60-323858e53f53/black-friday-hero-bg.png",
+  backgroundImage,
   backgroundImageMobile,
 }: Props) {
-  const bgMobile = backgroundImageMobile || backgroundImage;
+  const bgDesktop = backgroundImage || "https://via.placeholder.com/1440x698/9333ea/ffffff?text=Desktop+Background";
+  const bgMobile = backgroundImageMobile || backgroundImage || "https://via.placeholder.com/375x375/9333ea/ffffff?text=Mobile+Background";
 
   return (
     <section
       class="relative w-full flex items-end justify-center hero-section"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        overflow: "hidden",
-      }}
+      data-bg-desktop={bgDesktop}
+      data-bg-mobile={bgMobile}
     >
       <style dangerouslySetInnerHTML={{ __html: `
         /* Estilos base da seção - Mobile */
@@ -52,6 +48,10 @@ export default function BlackFridayHero({
           min-height: 375px;
           padding: 16px 16px 24px 16px;
           max-width: 100vw;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-image: url(${bgMobile});
         }
         
         /* Container do conteúdo */
@@ -62,6 +62,7 @@ export default function BlackFridayHero({
           flex-direction: column;
           align-items: center;
           gap: 12px;
+          z-index: 10;
         }
         
         /* Título */
@@ -72,6 +73,7 @@ export default function BlackFridayHero({
           font-weight: 600;
           color: #FFFFFF;
           text-align: center;
+          text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
         }
         
         /* Container do countdown */
@@ -82,7 +84,7 @@ export default function BlackFridayHero({
           flex-wrap: nowrap;
         }
         
-        /* Cards do countdown - Mobile (reduzido) */
+        /* Cards do countdown - Mobile */
         .countdown-card {
           display: flex;
           flex-direction: column;
@@ -92,6 +94,7 @@ export default function BlackFridayHero({
           height: 65px;
           background: rgba(255, 255, 255, 0.1);
           backdrop-filter: blur(68px);
+          -webkit-backdrop-filter: blur(68px);
           border-radius: 8px;
           padding: 6px 8px;
           box-shadow: 
@@ -125,6 +128,7 @@ export default function BlackFridayHero({
           font-size: 14px;
           color: #FFFFFF;
           flex-shrink: 0;
+          text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
         }
         
         /* Tablet e Desktop - Acima de 740px */
@@ -132,6 +136,12 @@ export default function BlackFridayHero({
           .hero-section {
             min-height: 698px;
             padding: 64px 16px;
+            background-image: url(${bgDesktop});
+          }
+          
+          .hero-title {
+            font-size: 24px;
+            line-height: 30px;
           }
           
           .countdown-container {
@@ -164,13 +174,6 @@ export default function BlackFridayHero({
           .hero-section {
             padding-left: clamp(16px, 10vw, 520px);
             padding-right: clamp(16px, 10vw, 520px);
-          }
-        }
-        
-        /* Background mobile */
-        @media (max-width: 739px) {
-          .hero-section {
-            background-image: url(${bgMobile}) !important;
           }
         }
       `}} />
