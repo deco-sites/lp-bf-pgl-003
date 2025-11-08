@@ -42,7 +42,7 @@ export default function BlackFridayHero({
       <style dangerouslySetInnerHTML={{ __html: `
         /* Estilos base da seção - Mobile */
         .bf-hero-section {
-          min-height: 375px;
+          min-height: 700px;
           padding: 16px 16px 24px 16px;
           max-width: 100vw;
           background-size: cover;
