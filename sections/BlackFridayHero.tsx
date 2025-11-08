@@ -30,12 +30,11 @@ export interface Props {
 export default function BlackFridayHero({
   title = "",
   expiresAt = "2024-11-29T23:59:59",
-  backgroundImage,
+  backgroundImage = "https://via.placeholder.com/1440x698/000000/ffffff?text=Background+Desktop",
   backgroundImageMobile,
 }: Props) {
-  // Se não tiver mobile, usa a desktop. Se não tiver nenhuma, usa placeholder
-  const bgDesktop = backgroundImage || "https://via.placeholder.com/1440x698/000000/ffffff?text=Background+Desktop";
-  const bgMobile = backgroundImageMobile || backgroundImage || "https://via.placeholder.com/375x375/000000/ffffff?text=Background+Mobile";
+  // Se não tiver mobile, usa a desktop
+  const bgMobile = backgroundImageMobile || backgroundImage;
 
   return (
     <>
@@ -182,7 +181,7 @@ export default function BlackFridayHero({
       <section
         class="bf-hero-section"
         style={{
-          backgroundImage: `url(${bgDesktop})`,
+          backgroundImage: `url(${backgroundImage})`,
         }}
       >
         {/* Media query para mobile via style tag */}
