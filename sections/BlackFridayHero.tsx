@@ -65,6 +65,7 @@ export default function BlackFridayHero({
           gap: 12px;
           z-index: 10;
           position: relative;
+          margin-bottom: 175px;
         }
         
         /* Título */
@@ -138,6 +139,10 @@ export default function BlackFridayHero({
           .bf-hero-section {
             min-height: 698px;
             padding: 64px 16px;
+          }
+          
+          .bf-hero-content {
+            margin-bottom: 0;
           }
           
           .bf-hero-title {
