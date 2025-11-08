@@ -30,7 +30,7 @@ export interface Props {
 export default function BlackFridayHero({
   title = "",
   expiresAt = "2024-11-29T23:59:59",
-  backgroundImage = "https://via.placeholder.com/1440x698/000000/ffffff?text=Background+Desktop",
+  backgroundImage,
   backgroundImageMobile,
 }: Props) {
   // Se não tiver mobile, usa a desktop
@@ -176,23 +176,21 @@ export default function BlackFridayHero({
             padding-right: clamp(16px, 10vw, 520px);
           }
         }
+        
+        /* Media query para mobile */
+        @media (max-width: 739px) {
+          .bf-hero-section {
+            background-image: url('${bgMobile}') !important;
+          }
+        }
       `}} />
       
       <section
         class="bf-hero-section"
         style={{
-          backgroundImage: `url(${backgroundImage})`,
+          backgroundImage: `url('${backgroundImage}')`,
         }}
       >
-        {/* Media query para mobile via style tag */}
-        <style dangerouslySetInnerHTML={{ __html: `
-          @media (max-width: 739px) {
-            .bf-hero-section {
-              background-image: url(${bgMobile}) !important;
-            }
-          }
-        `}} />
-
         <div class="bf-hero-content">
           {/* Título - Apenas se existir */}
           {title && (
