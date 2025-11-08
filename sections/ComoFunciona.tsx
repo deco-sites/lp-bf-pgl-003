@@ -216,7 +216,7 @@ export default function ComoFunciona({
                             <img 
                               src={step.iconImage} 
                               alt={step.title}
-                              class="w-6 h-6 object-contain"
+                              class="w-[30px] h-[30px] object-contain"
                             />
                           ) : step.icon ? (
                             <i class={`fa-regular fa-${step.icon} text-white text-2xl`} />
@@ -301,7 +301,7 @@ export default function ComoFunciona({
                           <img 
                             src={step.iconImage} 
                             alt={step.title}
-                            class="w-7 h-7 object-contain"
+                            class="w-[30px] h-[30px] object-contain"
                           />
                         ) : step.icon ? (
                           <i class={`fa-regular fa-${step.icon} text-white text-3xl`} />
