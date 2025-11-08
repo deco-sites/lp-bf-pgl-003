@@ -1,4 +1,5 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
+import CountdownTimer from "../islands/CountdownTimer.tsx";
 
 export interface Props {
   /**
@@ -29,7 +30,7 @@ export interface Props {
 
 export default function BlackFridayHero({
   title = "",
-  expiresAt = "2024-11-29T23:59:59",
+  expiresAt = "2025-11-29T23:59:59",
   backgroundImage,
   backgroundImageMobile,
 }: Props) {
@@ -199,103 +200,9 @@ export default function BlackFridayHero({
             </h2>
           )}
 
-          {/* Countdown */}
-          <div class="bf-countdown-container">
-            {/* Dias */}
-            <div class="bf-countdown-card">
-              <span class="bf-countdown-number" data-countdown-days>
-                00
-              </span>
-              <span class="bf-countdown-label">
-                Dias
-              </span>
-            </div>
-
-            {/* Separador */}
-            <span class="bf-countdown-separator">:</span>
-
-            {/* Horas */}
-            <div class="bf-countdown-card">
-              <span class="bf-countdown-number" data-countdown-hours>
-                00
-              </span>
-              <span class="bf-countdown-label">
-                Horas
-              </span>
-            </div>
-
-            {/* Separador */}
-            <span class="bf-countdown-separator">:</span>
-
-            {/* Minutos */}
-            <div class="bf-countdown-card">
-              <span class="bf-countdown-number" data-countdown-minutes>
-                00
-              </span>
-              <span class="bf-countdown-label">
-                Min
-              </span>
-            </div>
-
-            {/* Separador */}
-            <span class="bf-countdown-separator">:</span>
-
-            {/* Segundos */}
-            <div class="bf-countdown-card">
-              <span class="bf-countdown-number" data-countdown-seconds>
-                00
-              </span>
-              <span class="bf-countdown-label">
-                Seg
-              </span>
-            </div>
-          </div>
+          {/* Countdown - Island interativo */}
+          <CountdownTimer expiresAt={expiresAt} />
         </div>
-
-        {/* Script do Countdown */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                const expiresAt = new Date("${expiresAt}").getTime();
-                
-                function updateCountdown() {
-                  const now = new Date().getTime();
-                  const distance = expiresAt - now;
-                  
-                  if (distance < 0) {
-                    document.querySelectorAll('[data-countdown-days]').forEach(el => el.textContent = '00');
-                    document.querySelectorAll('[data-countdown-hours]').forEach(el => el.textContent = '00');
-                    document.querySelectorAll('[data-countdown-minutes]').forEach(el => el.textContent = '00');
-                    document.querySelectorAll('[data-countdown-seconds]').forEach(el => el.textContent = '00');
-                    return;
-                  }
-                  
-                  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                  
-                  document.querySelectorAll('[data-countdown-days]').forEach(el => {
-                    el.textContent = String(days).padStart(2, '0');
-                  });
-                  document.querySelectorAll('[data-countdown-hours]').forEach(el => {
-                    el.textContent = String(hours).padStart(2, '0');
-                  });
-                  document.querySelectorAll('[data-countdown-minutes]').forEach(el => {
-                    el.textContent = String(minutes).padStart(2, '0');
-                  });
-                  document.querySelectorAll('[data-countdown-seconds]').forEach(el => {
-                    el.textContent = String(seconds).padStart(2, '0');
-                  });
-                }
-                
-                updateCountdown();
-                setInterval(updateCountdown, 1000);
-              })();
-            `,
-          }}
-        />
       </section>
     </>
   );

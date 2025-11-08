@@ -5,6 +5,7 @@
 import * as $_app from "./routes/_app.tsx";
 import * as $AppExclusiveCard from "./islands/AppExclusiveCard.tsx";
 import * as $BrandCarousel from "./islands/BrandCarousel.tsx";
+import * as $CountdownTimer from "./islands/CountdownTimer.tsx";
 import * as $CouponCard from "./islands/CouponCard.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
@@ -15,6 +16,7 @@ const manifest = {
   islands: {
     "./islands/AppExclusiveCard.tsx": $AppExclusiveCard,
     "./islands/BrandCarousel.tsx": $BrandCarousel,
+    "./islands/CountdownTimer.tsx": $CountdownTimer,
     "./islands/CouponCard.tsx": $CouponCard,
   },
   baseUrl: import.meta.url,
