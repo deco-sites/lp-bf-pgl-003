@@ -72,7 +72,7 @@ export default function AppExclusiveCard({
 
   return (
     <div
-      class="rounded-2xl p-[22px] flex flex-col relative overflow-hidden"
+      class="rounded-2xl p-3 flex flex-col relative overflow-hidden"
       style={{
         backgroundColor: "#0D0F11",
         boxShadow: "0px 4px 4px rgba(222, 222, 224, 0.15)"
@@ -111,11 +111,10 @@ export default function AppExclusiveCard({
             )}
             <div class="flex flex-col gap-1 min-w-0">
               <h3
-                class="text-white leading-tight"
+                class="text-white leading-tight text-lg"
                 style={{
                   fontFamily: "Sora, sans-serif",
                   fontWeight: 600,
-                  fontSize: "20px",
                   lineHeight: "25.2px"
                 }}
               >
@@ -123,11 +122,10 @@ export default function AppExclusiveCard({
               </h3>
               {category && (
                 <p
-                  class="text-[#999999] leading-tight"
+                  class="text-[#999999] leading-tight text-base"
                   style={{
                     fontFamily: "Quicksand, sans-serif",
                     fontWeight: 500,
-                    fontSize: "16px",
                     lineHeight: "20px"
                   }}
                 >
@@ -163,21 +161,20 @@ export default function AppExclusiveCard({
 
         {couponCode ? (
           <div
-            class="rounded-2xl flex flex-col gap-[26px] p-8"
+            class="rounded-2xl flex flex-col gap-[26px] px-[10px] py-[28px]"
             style={{
               backgroundColor: couponAreaBgColor,
               border: `0.5px dashed ${couponBorderColor}`
             }}
           >
             <div class="flex items-center justify-between gap-2">
-              <div class="flex flex-col gap-4">
+              <div class="flex flex-col gap-4 text-[10px]">
                 {description && (
                   <p
-                    class="text-[#DEDEE0]"
+                    class="text-[#999]"
                     style={{
                       fontFamily: "Quicksand, sans-serif",
                       fontWeight: 400,
-                      fontSize: "12px",
                       lineHeight: "15px"
                     }}
                   >
@@ -202,7 +199,7 @@ export default function AppExclusiveCard({
                 onClick={handleCopy}
                 class="rounded-lg p-2.5 transition-all hover:opacity-80 flex items-center justify-center"
                 style={{
-                  backgroundColor: copyButtonBgColor,
+                  backgroundColor: "#00DE761A",
                   width: "34px",
                   height: "36px"
                 }}
@@ -241,7 +238,7 @@ export default function AppExclusiveCard({
             <div>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                class="flex items-center justify-start gap-2 text-white transition-all hover:opacity-80 w-full"
+                class="flex items-center justify-start gap-2 text-[#FCFCFC] transition-all hover:opacity-80 w-full"
                 style={{
                   fontFamily: "Quicksand, sans-serif",
                   fontWeight: 400,
@@ -264,7 +261,7 @@ export default function AppExclusiveCard({
 
               {isOpen && (
                 <div
-                  class="mt-3 text-[#DEDEE0] leading-relaxed text-left"
+                  class="mt-3 text-[#999] leading-relaxed text-left"
                   style={{
                     fontFamily: "Quicksand, sans-serif",
                     fontWeight: 400,
@@ -282,7 +279,7 @@ export default function AppExclusiveCard({
             <div class="flex items-center gap-3 flex-wrap">
               {usageLeft && (
                 <span
-                  class="text-[#999999]"
+                  class="text-[#DEDEE0]"
                   style={{
                     fontFamily: "Quicksand, sans-serif",
                     fontWeight: 400,
@@ -298,7 +295,7 @@ export default function AppExclusiveCard({
               )}
               {usageRight && (
                 <span
-                  class="text-white"
+                  class="text-[#DEDEE0]"
                   style={{
                     fontFamily: "Quicksand, sans-serif",
                     fontWeight: 600,
@@ -318,7 +315,6 @@ export default function AppExclusiveCard({
             style={{
               backgroundColor: buttonColor,
               fontFamily: "Quicksand, sans-serif",
-              fontWeight: 600,
               fontSize: "18px",
               lineHeight: "22.5px",
               color: buttonTextColor

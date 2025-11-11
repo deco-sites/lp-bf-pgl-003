@@ -162,7 +162,7 @@ export default function CustomerReviews({
               {title}
             </h2>
           </div>
-          <p class="text-base lg:text-lg text-[#FCFCFC] font-light max-w-3xl mx-auto">
+          <p class="text-xl text-[#FCFCFC] font-light max-w-3xl mx-auto">
             {subtitle}
           </p>
         </div>

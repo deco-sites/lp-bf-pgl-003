@@ -62,7 +62,7 @@ export default function BrandCarousel({ logos, speed = 30 }: Props) {
     >
       <div 
         data-scroll-content
-        class="flex items-center gap-12"
+        class="flex items-center gap-12 pr-12"
         style={{ 
           flexWrap: 'nowrap',
           whiteSpace: 'nowrap',

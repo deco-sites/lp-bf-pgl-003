@@ -63,11 +63,11 @@ export default function DownloadAppCTA({
             </svg>
             
             <h2 
+              class="text-lg"
               style={{ 
                 fontFamily: "Quicksand, sans-serif",
+                lineHeight: "18px",
                 fontWeight: 600,
-                fontSize: "24px",
-                lineHeight: "30px",
                 color: titleColor
               }}
             >
@@ -77,12 +77,9 @@ export default function DownloadAppCTA({
           
           {description && (
             <p 
-              class="max-w-[739px]"
+              class="max-w-[739px] text-sm"
               style={{ 
                 fontFamily: "Quicksand, sans-serif",
-                fontWeight: 400,
-                fontSize: "20px",
-                lineHeight: "25px",
                 color: descriptionColor
               }}
             >
@@ -92,13 +89,11 @@ export default function DownloadAppCTA({
           
           <a 
             href={buttonLink}
-            class="inline-block rounded-2xl transition-all hover:opacity-90"
+            class="inline-block rounded-2xl transition-all hover:opacity-90 text-lg"
             style={{ 
               backgroundColor: buttonColor,
               padding: "12px 40px",
               fontFamily: "Quicksand, sans-serif",
-              fontWeight: 600,
-              fontSize: "20px",
               lineHeight: "25px",
               color: buttonTextColor
             }}

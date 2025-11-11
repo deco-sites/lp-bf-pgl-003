@@ -45,7 +45,7 @@ export default function CouponCard({
 
   return (
     <div 
-      class="rounded-2xl p-[22px] flex flex-col gap-[18px]"
+      class="rounded-2xl p-3 flex flex-col gap-[18px]"
       style={{ 
         backgroundColor: "#171A1E",
         boxShadow: "0px 4px 4px rgba(222, 222, 224, 0.15)"
@@ -66,11 +66,10 @@ export default function CouponCard({
           )}
           <div class="flex flex-col gap-1">
             <h3 
-              class="text-white leading-tight"
+              class="text-white leading-tight text-lg"
               style={{ 
                 fontFamily: "Sora, sans-serif",
                 fontWeight: 600,
-                fontSize: "20px",
                 lineHeight: "25.2px"
               }}
             >
@@ -78,11 +77,10 @@ export default function CouponCard({
             </h3>
             {category && (
               <p 
-                class="text-[#999999] leading-tight"
+                class="text-[#999999] leading-tight text-base"
                 style={{ 
                   fontFamily: "Quicksand, sans-serif",
                   fontWeight: 500,
-                  fontSize: "16px",
                   lineHeight: "20px"
                 }}
               >
@@ -118,7 +116,7 @@ export default function CouponCard({
       {couponCode ? (
         /* Área do Código com borda tracejada */
         <div 
-          class="rounded-2xl flex flex-col gap-[26px] p-8"
+          class="rounded-2xl flex flex-col gap-[26px] px-[10px] py-[28px]"
           style={{ 
             backgroundColor: "#141619",
             border: "0.5px dashed #FF009B"
@@ -126,14 +124,13 @@ export default function CouponCard({
         >
           {/* Descrição e Código */}
           <div class="flex items-center justify-between gap-2">
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4 text-[10px]">
               {description && (
                 <p 
-                  class="text-[#DEDEE0]"
+                  class="text-[#999]"
                   style={{ 
                     fontFamily: "Quicksand, sans-serif",
                     fontWeight: 400,
-                    fontSize: "12px",
                     lineHeight: "15px"
                   }}
                 >
@@ -200,11 +197,10 @@ export default function CouponCard({
         <div>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            class="flex items-center justify-center gap-2 text-white transition-all hover:opacity-80"
+            class="flex items-center justify-center gap-2 text-[#DEDEE0] transition-all hover:opacity-80 text-xs"
             style={{ 
               fontFamily: "Quicksand, sans-serif",
               fontWeight: 400,
-              fontSize: "14px",
               lineHeight: "17.5px"
             }}
           >
@@ -223,7 +219,7 @@ export default function CouponCard({
           
           {isOpen && rulesContent && (
             <div 
-              class="mt-3 text-[#DEDEE0] leading-relaxed"
+              class="mt-3 text-[#999] leading-relaxed"
               style={{ 
                 fontFamily: "Quicksand, sans-serif",
                 fontWeight: 600,
@@ -241,7 +237,7 @@ export default function CouponCard({
           <div class="flex items-center gap-3">
             {usageLeft && (
               <span 
-                class="text-[#FCFCFC]"
+                class="text-[#DEDEE0]"
                 style={{ 
                   fontFamily: "Quicksand, sans-serif",
                   fontWeight: 400,
@@ -253,11 +249,11 @@ export default function CouponCard({
               </span>
             )}
             {usageLeft && usageRight && (
-              <div class="w-px h-4 bg-[#FCFCFC]"></div>
+              <div class="w-px h-4 bg-[#DEDEE0]"></div>
             )}
             {usageRight && (
               <span 
-                class="text-[#FCFCFC]"
+                class="text-[#DEDEE0]"
                 style={{ 
                   fontFamily: "Quicksand, sans-serif",
                   fontWeight: 400,
@@ -274,12 +270,10 @@ export default function CouponCard({
         {/* Botão */}
         <a 
           href={buttonLink}
-          class="block text-center rounded-2xl transition-all hover:opacity-90 px-3 py-2"
+          class="block text-center rounded-2xl transition-all hover:opacity-90 px-3 py-2 text-base"
           style={{ 
             backgroundColor: "#FF009B",
             fontFamily: "Quicksand, sans-serif",
-            fontWeight: 600,
-            fontSize: "18px",
             lineHeight: "22.5px",
             color: "#FCFCFC"
           }}

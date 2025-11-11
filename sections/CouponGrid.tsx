@@ -109,15 +109,14 @@ export default function CouponGrid({
   ]
 }: Props) {
   return (
-    <section class="bg-black text-white py-12 px-4">
+    <section class="bg-black text-white py-8">
       <div class="container mx-auto max-w-7xl">
         {/* Título */}
         <h2 
-          class="text-center mb-12"
+          class="text-center mb-8 text-[22px]"
           style={{ 
             fontFamily: "Sora, sans-serif",
             fontWeight: 700,
-            fontSize: "clamp(24px, 4vw, 36px)",
             lineHeight: "1.2"
           }}
         >

@@ -133,13 +133,13 @@ export default function ComoFunciona({
         overflowX: "hidden",
       }}
     >
-      <div class="w-full max-w-[1440px] mx-auto flex flex-col items-center px-4 md:px-8 lg:px-[52px] py-8 md:py-12 lg:py-[52px]">
+      <div class="w-full max-w-[1440px] mx-auto flex flex-col items-center px-4 md:px-8 lg:px-[52px] py-6 md:py-12 lg:py-[52px]">
         {/* Header */}
-        <div class="w-full max-w-[1336px] flex flex-col items-center gap-4 md:gap-6 mb-6 md:mb-8">
+        <div class="w-full max-w-[1336px] flex flex-col items-center gap-4 md:gap-6">
           {/* Títulos */}
           <div class="w-full flex flex-col items-center gap-2 md:gap-3">
             <h2
-              class="text-center text-xl md:text-2xl lg:text-4xl font-semibold text-white px-4"
+              class="text-center text-[22px] md:text-2xl lg:text-4xl font-semibold text-white px-4"
               style={{
                 fontFamily: "Sora, sans-serif",
               }}
@@ -167,18 +167,15 @@ export default function ComoFunciona({
                 {steps.map((step) => (
                   <div
                     key={step.number}
-                    class="relative flex-shrink-0"
+                    class="relative flex-shrink-0 w-2/4 max-w-[200px]"
                     style={{
-                      width: "160px",
                       paddingTop: "4px"
                     }}
                   >
                     {/* Badge com número */}
                     <div
-                      class="absolute flex items-center justify-center"
+                      class="absolute flex items-center justify-center p-2 "
                       style={{
-                        width: "32px",
-                        height: "30px",
                         backgroundColor: badgeColor,
                         borderRadius: "20px",
                         top: "0px",
@@ -187,7 +184,7 @@ export default function ComoFunciona({
                       }}
                     >
                       <span
-                        class="text-sm font-semibold"
+                        class="text-lg font-semibold leading-4"
                         style={{
                           fontFamily: "Quicksand, sans-serif",
                           color: badgeTextColor,
@@ -211,7 +208,7 @@ export default function ComoFunciona({
                     >
                       <div class="flex flex-col items-center justify-center w-full gap-3">
                         {/* Ícone */}
-                        <div class="flex items-center justify-center p-2">
+                        <div class="flex items-center justify-center">
                           {step.iconImage ? (
                             <Image
                               width={35}
@@ -228,7 +225,7 @@ export default function ComoFunciona({
                         {/* Texto */}
                         <div class="flex flex-col items-center w-full gap-1">
                           <h3
-                            class="text-center text-sm font-semibold text-white"
+                            class="text-center text-lg font-semibold text-white"
                             style={{
                               fontFamily: "Quicksand, sans-serif",
                             }}
@@ -236,7 +233,7 @@ export default function ComoFunciona({
                             {step.title}
                           </h3>
                           <p
-                            class="text-center text-xs text-white/90"
+                            class="text-center text-sm text-white/90"
                             style={{
                               fontFamily: "Quicksand, sans-serif",
                             }}
@@ -298,7 +295,7 @@ export default function ComoFunciona({
                   >
                     <div class="flex flex-col items-center justify-center flex-1 w-full gap-4">
                       {/* Ícone */}
-                      <div class="flex items-center justify-center p-2">
+                      <div class="flex items-center justify-center">
                         {step.iconImage ? (
                           <Image
                             width={35}

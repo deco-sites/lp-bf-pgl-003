@@ -200,7 +200,7 @@ export default function AppExclusiveCoupons({
 }: Props) {
   return (
     <section 
-      class="text-white py-12 px-4"
+      class="text-white py-8"
       style={{ backgroundColor }}
     >
       <div class="container mx-auto max-w-7xl">
