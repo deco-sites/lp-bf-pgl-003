@@ -68,7 +68,7 @@ export default function ProductGrid({
       class="py-8 px-4 md:py-[52px] md:px-[52px]"
       style={{ backgroundColor }}
     >
-      <div class="max-w-[1336px] mx-auto">
+      <div class="max-w-[1440px] mx-auto">
         <div class="flex flex-col items-center mb-8 md:mb-9">
           <h2 
             class="text-white font-bold text-2xl leading-[30.24px] md:text-4xl md:leading-[45.36px] mb-2.5 text-center"

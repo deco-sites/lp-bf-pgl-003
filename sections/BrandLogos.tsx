@@ -18,10 +18,6 @@ export interface Props {
   /** @title Título da Seção */
   title?: string;
   
-  /** @title Tamanho da Fonte do Título (px) */
-  /** @description Tamanho da fonte em pixels (padrão: 24) */
-  titleFontSize?: number;
-  
   /** @title Ícone Personalizado */
   /** @description Faça upload de um ícone personalizado (deixe vazio para usar o padrão) */
   customIcon?: ImageWidget;
@@ -60,7 +56,6 @@ const DefaultIcon = ({ size = 24 }: { size?: number }) => (
 
 export default function BrandLogos({
   title = "Marcas Parceiras",
-  titleFontSize = 24,
   customIcon,
   iconSize = 24,
   logos = [],
@@ -74,7 +69,7 @@ export default function BrandLogos({
     >
       <div class="container mx-auto max-w-7xl">
         {title && (
-          <div class="flex items-center justify-center gap-3 mb-8">
+          <div class="flex flex-col lg:flex-row items-center justify-center gap-3 mb-8">
             {customIcon ? (
               <Image
                 src={customIcon}
@@ -87,8 +82,7 @@ export default function BrandLogos({
               <DefaultIcon size={iconSize} />
             )}
             <h2 
-              class="font-bold text-white"
-              style={{ fontSize: `${titleFontSize}px` }}
+              class="font-bold text-white text-lg lg:text-2xl text-center"
             >
               {title}
             </h2>

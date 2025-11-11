@@ -1,22 +1,22 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
-
+import Image from "apps/website/components/Image.tsx";
 interface Step {
   /**
    * @title Número do passo
    */
   number: string;
-  
+
   /**
    * @title Ícone
    * @description Nome do ícone Font Awesome (ex: copy, globe-pointer, cart-circle-plus, percent, check)
    */
   icon: string;
-  
+
   /**
    * @title Título
    */
   title: string;
-  
+
   /**
    * @title Descrição
    */
@@ -126,7 +126,7 @@ export default function ComoFunciona({
   cardBorderColor = "#3B4A54",
 }: Props) {
   return (
-    <section 
+    <section
       class="w-full"
       style={{
         backgroundColor: backgroundColor,
@@ -159,16 +159,16 @@ export default function ComoFunciona({
           {/* Steps Grid */}
           <div class="w-full">
             {/* Container com scroll horizontal no mobile */}
-            <div class="lg:hidden w-full overflow-x-auto overflow-y-visible pb-4" style={{ 
+            <div class="lg:hidden w-full overflow-x-auto overflow-y-visible pb-4" style={{
               scrollbarWidth: "thin",
               WebkitOverflowScrolling: "touch"
             }}>
               <div class="flex gap-4 px-4 pt-4" style={{ minWidth: "min-content" }}>
                 {steps.map((step) => (
-                  <div 
-                    key={step.number} 
+                  <div
+                    key={step.number}
                     class="relative flex-shrink-0"
-                    style={{ 
+                    style={{
                       width: "160px",
                       paddingTop: "4px"
                     }}
@@ -213,10 +213,12 @@ export default function ComoFunciona({
                         {/* Ícone */}
                         <div class="flex items-center justify-center p-2">
                           {step.iconImage ? (
-                            <img 
-                              src={step.iconImage} 
+                            <Image
+                              width={35}
+                              height={35}
+                              src={step.iconImage}
                               alt={step.title}
-                              class="w-[30px] h-[30px] object-contain"
+                              class="w-full h-auto object-contain max-w-[35px]"
                             />
                           ) : step.icon ? (
                             <i class={`fa-regular fa-${step.icon} text-white text-2xl`} />
@@ -252,8 +254,8 @@ export default function ComoFunciona({
             {/* Grid para desktop */}
             <div class="hidden lg:grid lg:grid-cols-6 gap-6 pt-4">
               {steps.map((step) => (
-                <div 
-                  key={step.number} 
+                <div
+                  key={step.number}
                   class="relative h-full"
                   style={{
                     paddingTop: "4px"
@@ -298,10 +300,12 @@ export default function ComoFunciona({
                       {/* Ícone */}
                       <div class="flex items-center justify-center p-2">
                         {step.iconImage ? (
-                          <img 
-                            src={step.iconImage} 
+                          <Image
+                            width={35}
+                            height={35}
+                            src={step.iconImage}
                             alt={step.title}
-                            class="w-[30px] h-[30px] object-contain"
+                            class="w-full h-auto object-contain max-w-[35px]"
                           />
                         ) : step.icon ? (
                           <i class={`fa-regular fa-${step.icon} text-white text-3xl`} />
@@ -337,8 +341,8 @@ export default function ComoFunciona({
       </div>
 
       {/* Font Awesome CSS */}
-      <link 
-        rel="stylesheet" 
+      <link
+        rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       />
     </section>

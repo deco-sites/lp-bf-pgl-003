@@ -52,8 +52,8 @@ export default function CouponCard({
       }}
     >
       {/* Header: Logo, Marca e Badge */}
-      <div class="flex items-start justify-between gap-5">
-        <div class="flex items-center gap-3">
+      <div class="flex items-center justify-between gap-5">
+        <div class="flex items-center gap-3 flex-wrap">
           {brandLogo && (
             <div class="bg-white rounded-lg p-2.5 flex items-center justify-center w-[92px] h-[60px]">
               <img 
@@ -203,7 +203,7 @@ export default function CouponCard({
             class="flex items-center justify-center gap-2 text-white transition-all hover:opacity-80"
             style={{ 
               fontFamily: "Quicksand, sans-serif",
-              fontWeight: 600,
+              fontWeight: 400,
               fontSize: "14px",
               lineHeight: "17.5px"
             }}

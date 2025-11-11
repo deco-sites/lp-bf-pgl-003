@@ -1,4 +1,6 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
+import Icon from "../components/ui/Icon.tsx";
+import Image from "apps/website/components/Image.tsx";
 
 export interface Link {
   label: string;
@@ -50,10 +52,10 @@ export interface Props {
 }
 
 const SOCIAL_ICONS = {
-  instagram: "\uf16d",
-  facebook: "\uf39e",
-  linkedin: "\uf08c",
-  tiktok: "\ue07b",
+  instagram: <Icon id="Instagram" size={14} />,
+  facebook: <Icon id="Facebook" size={16} />,
+  linkedin: <Icon id="Linkedin" size={14} />,
+  tiktok: <Icon id="Tiktok" size={16} />,
 };
 
 export default function FooterPagaleve({
@@ -185,10 +187,12 @@ export default function FooterPagaleve({
 
           {/* Section 2: Logo, Tagline & Social Media */}
           <div class="flex flex-col gap-6 mb-12 pb-12 border-b border-[#1F1F1F]">
-            <img
+            <Image
+              width={196}
+              height={37}
               src={logo}
               alt="Pagaleve"
-              class="h-[30px] w-auto"
+              class="w-full h-auto object-contain max-w-[140px]"
             />
             <p class="font-quicksand text-sm font-normal text-white leading-relaxed">
               {tagline}
@@ -214,7 +218,6 @@ export default function FooterPagaleve({
               ))}
             </div>
           </div>
-
           {/* Section 3: Links Grid (2 columns) */}
           <div class="grid grid-cols-2 gap-x-8 gap-y-12 mb-12">
             {/* Column 1: Produto */}
@@ -302,11 +305,15 @@ export default function FooterPagaleve({
           <div class="grid grid-cols-5 gap-12 mb-12">
             {/* Column 1: Logo & Tagline */}
             <div class="flex flex-col gap-6">
-              <img
-                src={logo}
-                alt="Pagaleve"
-                class="h-[30px] w-auto"
-              />
+            <Image
+              width={196}
+              height={37}
+              src={logo}
+              alt="Pagaleve"
+              class="w-full h-auto object-contain max-w-[140px]"
+            />
+            <span class="w-full h-[1px] bg-[#1F1F1F]">
+            </span>
               <p class="font-quicksand text-sm font-normal text-[#737373] leading-relaxed max-w-[280px]">
                 {tagline}
               </p>
@@ -317,6 +324,7 @@ export default function FooterPagaleve({
               <h3 class="font-sora text-base font-semibold text-white">
                 Institucional
               </h3>
+              <span class="w-full h-[1px] bg-[#1F1F1F]"></span>
               <nav class="flex flex-col gap-4">
                 {institutionalLinks?.map((link) => (
                   <a
@@ -335,6 +343,7 @@ export default function FooterPagaleve({
               <h3 class="font-sora text-base font-semibold text-white">
                 Ajuda
               </h3>
+              <span class="w-full h-[1px] bg-[#1F1F1F]"></span>
               <nav class="flex flex-col gap-4">
                 {helpLinks?.map((link) => (
                   <a
@@ -353,6 +362,7 @@ export default function FooterPagaleve({
               <h3 class="font-sora text-base font-semibold text-white">
                 Parcerias e Políticas
               </h3>
+              <span class="w-full h-[1px] bg-[#1F1F1F]"></span>
               <nav class="flex flex-col gap-4">
                 {partnershipsLinks?.map((link) => (
                   <a
@@ -367,7 +377,7 @@ export default function FooterPagaleve({
             </div>
 
             {/* Column 5: App Download & Social Media */}
-            <div class="flex flex-col items-end gap-6">
+            <div class="flex flex-col items-center gap-6">
               <p class="font-quicksand text-sm font-normal text-[#737373]">
                 {appStoreTitle}
               </p>
