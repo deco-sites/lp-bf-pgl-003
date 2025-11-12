@@ -328,7 +328,7 @@
           "discountBadge": "10% OFF",
           "description": "Cole este código no campo de cupom do site da loja",
           "dropdownText": "Regras e Informações",
-          "rulesContent": "Roupas fitness com até 10%OFF! Aproveite o cupom exclusivo no App da Pagaleve e pague com Pix Parcelado para garantir roupas de alta performance sem pesar no bolso.  Regras: Cupom é válido apenas para produtos de preço cheio, não é cumulativo com outros cupons, resgate de cashback e produtos da categoria Outlet.",
+          "rulesContent": "A Sallve está com 10% OFF em compras acima de R$149 - exclusivo no App Pagaleve! Renove sua rotina de skincare com produtos incríveis e ainda economize.  Regras do cupom: Cupom é válido para compras acima de R$149.",
           "buttonText": "Usar Cupom",
           "buttonLink": "https://link-to.app/cC1EkxQY0j",
           "couponCode": "PAGALEVE10",
@@ -336,7 +336,7 @@
           "usageRight": "Vencimento: 30/11/2025"
         },
         {
-          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/b6bf3c10-4709-412c-93e8-6668cdad7f89/image-12.png",
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/df80a3a6-a049-4b8f-a973-d963fcf50d68/image-16-(1).png",
           "brand": "Max Titanium",
           "category": "Suplementos",
           "discountBadge": "10% OFF",
@@ -370,7 +370,7 @@
           "discountBadge": "40% OFF",
           "description": "Cole este código no campo de cupom do site da loja",
           "dropdownText": "Regras e Informações",
-          "rulesContent": "40% de desconto em cursos avulsos (exceto Câmara dos Deputados, PRF e Banco do Brasil).",
+          "rulesContent": "40% de desconto em cursos selecionados. Disponível no App da Pagaleve.",
           "buttonText": "Usar Cupom",
           "buttonLink": "https://link-to.app/cC1EkxQY0j",
           "couponCode": "PAGALEVE40",
@@ -378,17 +378,17 @@
           "usageRight": "Vencimento: 01/12/2025"
         },
         {
-          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/b6bf3c10-4709-412c-93e8-6668cdad7f89/image-12.png",
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/4e2a6f7e-a1f7-4e96-8c41-a4e831f41c61/mascavo.png",
           "category": "Cosméticos",
           "discountBadge": "BRINDE",
           "description": "Cole este código no campo de cupom do site da loja",
           "dropdownText": "Regras e Informações",
-          "rulesContent": "Nas compras acima de R$299, você ganha um Flush Stick de brinde! Regras: Válido para compras acima de R$299 e mediante aplicação do cupom.",
+          "rulesContent": "Válido para compras acima de R$299 e mediante aplicação do cupom. Disponível no App da Pagaleve",
           "buttonText": "Usar Cupom",
           "buttonLink": "https://link-to.app/cC1EkxQY0j",
           "couponCode": "PAGALEVE10",
           "usageLeft": "246 usados hoje",
-          "usageRight": "Vencimento: 07/11/2025",
+          "usageRight": "Vencimento: 15/11/2025",
           "brand": "Mascavo"
         },
         {
@@ -397,13 +397,55 @@
           "discountBadge": "R$ 15 OFF",
           "description": "Cole este código no campo de cupom do site da loja",
           "dropdownText": "Regras e Informações",
-          "rulesContent": "Desconto de R$15 em compras acima de R$150. Válido apenas na primeira compra.",
+          "rulesContent": "Desconto de R$15 em compras acima de R$150. Válido apenas na primeira compra. Disponível no App da Pagaleve.",
           "buttonText": "Usar Cupom",
           "buttonLink": "https://link-to.app/cC1EkxQY0j",
           "couponCode": "PAGALEVE15",
           "usageLeft": "165 usados hoje",
           "usageRight": "Vencimento: 31/12/2025",
           "brand": "Drogaria Pacheco"
+        },
+        {
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/cabecb8b-508e-4535-bed9-50baaba7bc4c/osklen.png",
+          "brand": "Osklen",
+          "category": "Moda",
+          "discountBadge": "12% OFF",
+          "description": "Cole este código no campo de cupom do site da loja",
+          "dropdownText": "Regras e Informações",
+          "rulesContent": "Não cumulativo com outras ações. 12% OFF Válido em todos os produtos. Disponível no App da Pagaleve.",
+          "buttonLink": "https://link-to.app/cC1EkxQY0j",
+          "buttonText": "Usar Cupom",
+          "couponCode": "PAGALEVE12",
+          "usageLeft": "142 usados hoje",
+          "usageRight": "Vencimento: 30/11/2025"
+        },
+        {
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/950f5dab-8e11-4fe7-a486-fdbc9845e1ed/buser.png",
+          "brand": "Buser",
+          "category": "Transportes",
+          "discountBadge": "20% OFF",
+          "description": "Cole este código no campo de cupom do site da loja",
+          "dropdownText": "Regras e Informações",
+          "rulesContent": "Válido apenas para primeira viagem; Uso único por CPF; Exclui marketplace; Datas para viagem sujeitas a disponibilidade. Disponível no App da Pagaleve.",
+          "buttonLink": "https://link-to.app/cC1EkxQY0j",
+          "buttonText": "Usar Cupom",
+          "couponCode": "20BUSERAF",
+          "usageLeft": "88 usados hoje",
+          "usageRight": "Vencimento: 30/11/2025"
+        },
+        {
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/cd34ba29-05d3-4242-800a-ae059e7d242a/natura.png",
+          "brand": "Natura",
+          "category": "Cosméticos",
+          "discountBadge": "10% OFF",
+          "description": "Cole este código no campo de cupom do site da loja",
+          "dropdownText": "Regras e Informações",
+          "rulesContent": "10%OFF no site da Natura!Válido apenas na primeira compra. Disponível no App da Pagaleve.",
+          "buttonLink": "https://link-to.app/cC1EkxQY0j",
+          "buttonText": "Usar Cupom",
+          "couponCode": "PRIMEIRACOMPRA",
+          "usageLeft": "165 usados hoje",
+          "usageRight": "Vencimento: 30/11/2025"
         },
         {
           "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/e7ad3abb-cabc-4587-9191-6574a6108249/amazon.png",
@@ -451,14 +493,14 @@
         },
         {
           "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/937af6d6-6d2a-4c87-8fca-14d548ebc4a2/biscoite.png",
-          "brand": "Biscoitê",
           "category": "Biscoiteria",
           "discountBadge": "OFERTA",
           "description": "Prepare-se para o Natal! Na compra de um panettone Biscoitê, ganhe 10% OFF na sua próxima compra!",
           "dropdownText": "Regras e Informações",
           "rulesContent": "Disponível no App da Pagaleve.",
           "buttonLink": "https://link-to.app/cC1EkxQY0j",
-          "buttonText": "Ir para o App"
+          "buttonText": "Ir para o App",
+          "brand": "Biscoitê"
         },
         {
           "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/f824f6ae-7ecf-466e-b310-7eb24b5bc6c9/descorcha.png",
@@ -484,14 +526,14 @@
         },
         {
           "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/648ea698-d7f3-4f01-9b6c-6c7f60ea48f1/dafiti.png",
+          "brand": "Dafiti",
           "category": "Moda",
           "discountBadge": "OFERTA",
           "description": "A moda nunca foi tão acessível e divertida como na Black Friday! Ofertas exclusivas com até 50%OFF!",
           "dropdownText": "Regras e Informações",
           "rulesContent": "Disponível no App da Pagaleve.",
           "buttonLink": "https://link-to.app/cC1EkxQY0j",
-          "buttonText": "Ir para o App",
-          "brand": "Dafiti"
+          "buttonText": "Ir para o App"
         },
         {
           "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/bb14cff6-d6ca-4143-bc6c-2cdef61464f8/oceane.png",
