@@ -1,5 +1,7 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import CountdownTimer from "../islands/CountdownTimer.tsx";
+import Image from "apps/website/components/Image.tsx";
+import { useDevice } from "@deco/deco/hooks";
 
 export interface Props {
   /**
@@ -19,13 +21,13 @@ export interface Props {
    * @title Imagem de Fundo Desktop
    * @description Imagem de fundo para desktop (1440px)
    */
-  backgroundImage?: ImageWidget;
+  backgroundImage: ImageWidget;
 
   /**
    * @title Imagem de Fundo Mobile
    * @description Imagem de fundo para mobile (opcional, se não informada usa a mesma do desktop)
    */
-  backgroundImageMobile?: ImageWidget;
+  backgroundImageMobile: ImageWidget;
 }
 
 export default function BlackFridayHero({
@@ -36,6 +38,8 @@ export default function BlackFridayHero({
 }: Props) {
   // Se não tiver mobile, usa a desktop
   const bgMobile = backgroundImageMobile || backgroundImage;
+  const device = useDevice();
+  const isMobile = device === "mobile";
 
   return (
     <>
@@ -191,13 +195,17 @@ export default function BlackFridayHero({
         }
       `}} />
       
-      <section
-        class="bf-hero-section"
-        style={{
-          backgroundImage: `url('${backgroundImage}')`,
-        }}
+      <div
+        class="w-full h-full relative flex flex-col items-center justify-center"
       >
-        <div class="bf-hero-content">
+        <Image
+          width={isMobile ? 375 : 1440}
+          height={isMobile ? 700 : 698}
+          src={isMobile ? backgroundImageMobile : backgroundImage}
+          alt="Black Friday Hero"
+          class="w-full h-auto object-cover"
+        />
+        <div class="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-center justify-end pb-[40%] lg:pb-[3%]">
           {/* Título - Apenas se existir */}
           {title && (
             <h2 class="bf-hero-title">
@@ -208,7 +216,7 @@ export default function BlackFridayHero({
           {/* Countdown - Island interativo */}
           <CountdownTimer expiresAt={expiresAt} />
         </div>
-      </section>
+      </div>
     </>
   );
 }

@@ -68,7 +68,7 @@ export default function ProductGrid({
       class="py-8 px-4 md:py-[52px] md:px-[52px]"
       style={{ backgroundColor }}
     >
-      <div class="max-w-[1336px] mx-auto">
+      <div class="max-w-[1440px] mx-auto">
         <div class="flex flex-col items-center mb-8 md:mb-9">
           <h2 
             class="text-white font-bold text-2xl leading-[30.24px] md:text-4xl md:leading-[45.36px] mb-2.5 text-center"
@@ -88,11 +88,11 @@ export default function ProductGrid({
           </p>
         </div>
         
-        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-[25px] md:gap-[63px]">
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-9">
           {products.map((product, index) => (
             <div 
               key={index}
-              class="bg-[#FCFCFC] rounded-lg md:rounded-2xl overflow-hidden"
+              class="bg-[#FCFCFC] rounded-lg md:rounded-2xl overflow-hidden flex flex-col justify-between"
               style={{ 
                 border: '1px solid rgba(0, 0, 0, 0.12)',
               }}

@@ -1,22 +1,22 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
-
+import Image from "apps/website/components/Image.tsx";
 interface Step {
   /**
    * @title Número do passo
    */
   number: string;
-  
+
   /**
    * @title Ícone
    * @description Nome do ícone Font Awesome (ex: copy, globe-pointer, cart-circle-plus, percent, check)
    */
   icon: string;
-  
+
   /**
    * @title Título
    */
   title: string;
-  
+
   /**
    * @title Descrição
    */
@@ -126,20 +126,20 @@ export default function ComoFunciona({
   cardBorderColor = "#3B4A54",
 }: Props) {
   return (
-    <section 
+    <section
       class="w-full"
       style={{
         backgroundColor: backgroundColor,
         overflowX: "hidden",
       }}
     >
-      <div class="w-full max-w-[1440px] mx-auto flex flex-col items-center px-4 md:px-8 lg:px-[52px] py-8 md:py-12 lg:py-[52px]">
+      <div class="w-full max-w-[1440px] mx-auto flex flex-col items-center px-4 md:px-8 lg:px-[52px] py-6 md:py-12 lg:py-[52px]">
         {/* Header */}
-        <div class="w-full max-w-[1336px] flex flex-col items-center gap-4 md:gap-6 mb-6 md:mb-8">
+        <div class="w-full max-w-[1336px] flex flex-col items-center gap-4 md:gap-6">
           {/* Títulos */}
           <div class="w-full flex flex-col items-center gap-2 md:gap-3">
             <h2
-              class="text-center text-xl md:text-2xl lg:text-4xl font-semibold text-white px-4"
+              class="text-center text-[22px] md:text-2xl lg:text-4xl font-semibold text-white px-4"
               style={{
                 fontFamily: "Sora, sans-serif",
               }}
@@ -159,26 +159,23 @@ export default function ComoFunciona({
           {/* Steps Grid */}
           <div class="w-full">
             {/* Container com scroll horizontal no mobile */}
-            <div class="lg:hidden w-full overflow-x-auto overflow-y-visible pb-4" style={{ 
+            <div class="lg:hidden w-full overflow-x-auto overflow-y-visible pb-4" style={{
               scrollbarWidth: "thin",
               WebkitOverflowScrolling: "touch"
             }}>
               <div class="flex gap-4 px-4 pt-4" style={{ minWidth: "min-content" }}>
                 {steps.map((step) => (
-                  <div 
-                    key={step.number} 
-                    class="relative flex-shrink-0"
-                    style={{ 
-                      width: "160px",
+                  <div
+                    key={step.number}
+                    class="relative flex-shrink-0 w-2/4 max-w-[200px]"
+                    style={{
                       paddingTop: "4px"
                     }}
                   >
                     {/* Badge com número */}
                     <div
-                      class="absolute flex items-center justify-center"
+                      class="absolute flex items-center justify-center p-2 "
                       style={{
-                        width: "32px",
-                        height: "30px",
                         backgroundColor: badgeColor,
                         borderRadius: "20px",
                         top: "0px",
@@ -187,7 +184,7 @@ export default function ComoFunciona({
                       }}
                     >
                       <span
-                        class="text-sm font-semibold"
+                        class="text-lg font-semibold leading-4"
                         style={{
                           fontFamily: "Quicksand, sans-serif",
                           color: badgeTextColor,
@@ -211,12 +208,14 @@ export default function ComoFunciona({
                     >
                       <div class="flex flex-col items-center justify-center w-full gap-3">
                         {/* Ícone */}
-                        <div class="flex items-center justify-center p-2">
+                        <div class="flex items-center justify-center">
                           {step.iconImage ? (
-                            <img 
-                              src={step.iconImage} 
+                            <Image
+                              width={40}
+                              height={40}
+                              src={step.iconImage}
                               alt={step.title}
-                              class="w-[30px] h-[30px] object-contain"
+                              class="w-full h-auto object-contain max-w-[35px]"
                             />
                           ) : step.icon ? (
                             <i class={`fa-regular fa-${step.icon} text-white text-2xl`} />
@@ -226,7 +225,7 @@ export default function ComoFunciona({
                         {/* Texto */}
                         <div class="flex flex-col items-center w-full gap-1">
                           <h3
-                            class="text-center text-sm font-semibold text-white"
+                            class="text-center text-lg font-semibold text-white"
                             style={{
                               fontFamily: "Quicksand, sans-serif",
                             }}
@@ -234,7 +233,7 @@ export default function ComoFunciona({
                             {step.title}
                           </h3>
                           <p
-                            class="text-center text-xs text-white/90"
+                            class="text-center text-sm text-white/90"
                             style={{
                               fontFamily: "Quicksand, sans-serif",
                             }}
@@ -252,8 +251,8 @@ export default function ComoFunciona({
             {/* Grid para desktop */}
             <div class="hidden lg:grid lg:grid-cols-6 gap-6 pt-4">
               {steps.map((step) => (
-                <div 
-                  key={step.number} 
+                <div
+                  key={step.number}
                   class="relative h-full"
                   style={{
                     paddingTop: "4px"
@@ -294,14 +293,16 @@ export default function ComoFunciona({
                       marginTop: "4px",
                     }}
                   >
-                    <div class="flex flex-col items-center justify-center flex-1 w-full gap-4">
+                    <div class="flex flex-col items-center justify-start pt-2 flex-1 w-full gap-4">
                       {/* Ícone */}
-                      <div class="flex items-center justify-center p-2">
+                      <div class="flex items-center justify-center">
                         {step.iconImage ? (
-                          <img 
-                            src={step.iconImage} 
+                          <Image
+                            width={40}
+                            height={40}
+                            src={step.iconImage}
                             alt={step.title}
-                            class="w-[30px] h-[30px] object-contain"
+                            class="w-full h-auto object-contain max-w-[35px]"
                           />
                         ) : step.icon ? (
                           <i class={`fa-regular fa-${step.icon} text-white text-3xl`} />
@@ -337,8 +338,8 @@ export default function ComoFunciona({
       </div>
 
       {/* Font Awesome CSS */}
-      <link 
-        rel="stylesheet" 
+      <link
+        rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       />
     </section>

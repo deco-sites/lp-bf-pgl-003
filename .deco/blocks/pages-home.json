@@ -23,42 +23,42 @@
             "icon": "copy",
             "title": "Copie o cupom",
             "description": "Copie o cupom exclusivo da sua escolha.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/0b420ced-b98a-48ae-9daa-9cf3786e41b2/card-01.svg"
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/1eb36850-4dc3-49e9-ab89-fa862dcc6aa5/Frame-427322673-(5).svg"
           },
           {
             "number": "02",
             "icon": "",
             "title": "Entre no site",
             "description": "Entre direto no site da loja parceira escolhida.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/93152be0-e281-4cec-8a43-3fea13f03ad4/card-02.svg"
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/3e9d54ba-103b-463b-afa5-2c56048b85f6/Component-4-(1).svg"
           },
           {
             "number": "03",
             "icon": "",
             "title": "Adicione ao carrinho",
             "description": "Coloque seus produtos favoritos no carrinho.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/3faf4e4b-2e6d-4633-999d-ce1d58398c84/card-03.svg"
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/3996d0c0-94ef-47d5-8673-123703f40685/Frame-427322673-(6).svg"
           },
           {
             "number": "04",
             "icon": "percent",
             "title": "Aplique o cupom",
             "description": "Aplique o código de desconto no site da loja no campo de cupom.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/a73438cf-3379-4c7d-9ae7-2656c404b5f8/card-04.svg"
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/2f5a2731-5a56-41a3-b07a-91c0f3ac5bbd/Frame-427322673-(7).svg"
           },
           {
             "number": "05",
             "icon": "",
             "title": "Pagar com Pix Parcelado",
             "description": "Como pagamento selecione o Pix Parcelado.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/2a144e6c-511a-4d7d-be14-753196e3d6a1/card-05.svg"
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/723ce5f0-b044-4a81-8aef-1ee0eb55c39f/Frame-427322673-(8).svg"
           },
           {
             "number": "06",
             "icon": "check",
             "title": "Pague a 1ª parcela",
             "description": "Aguarde a aprovação e pague na hora a 1ª parcela para confirmar o pedido",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/7ede487e-2f79-401c-a685-5e9dfb39b28c/card-06.svg"
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/2642a2ba-e835-48ec-8ce6-e3ab00099bfe/Frame-427322673-(9).svg"
           }
         ]
       }
@@ -506,7 +506,7 @@
         }
       ],
       "exclusiveBadgeColor": "#00e16c",
-      "discountBadgeColor": "#00e16c",
+      "discountBadgeColor": "#0A7D471A",
       "discountBadgeBorderColor": "#00e16c",
       "descriptionBgColor": "#141619",
       "descriptionBorderColor": "#00e16c",
@@ -593,7 +593,7 @@
     },
     {
       "__resolveType": "site/sections/BrandLogos.tsx",
-      "backgroundColor": "#000000",
+      "backgroundColor": "#131618",
       "title": "+de 10 mil lojas já oferecem o Pix Parcelado da Pagaleve",
       "logos": [
         {
