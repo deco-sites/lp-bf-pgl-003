@@ -236,7 +236,7 @@
             "number": "02",
             "icon": "",
             "title": "App da Pagaleve",
-            "description": "Confira os cupons das marcas exclusivas no App!",
+            "description": "Acesse o site da loja através do App da Pagaleve e siga as instruções.",
             "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/0d94d464-e5d8-41ff-b8c1-2e3786637bf5/Component-4-(2).svg"
           },
           {
@@ -256,15 +256,15 @@
           {
             "number": "05",
             "icon": "",
-            "title": "Pagar com Pix Parcelado",
-            "description": "Como pagamento selecione o Pix Parcelado.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/2a144e6c-511a-4d7d-be14-753196e3d6a1/card-05.svg"
+            "title": "Pagar com Pix",
+            "description": "Selecione Pix como forma de pagamento.",
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/497bbe50-4168-4d2f-b2a9-6ae313314d17/PIX.svg"
           },
           {
             "number": "06",
             "icon": "check",
-            "title": "Pague a 1ª parcela",
-            "description": "Aguarde a aprovação e pague na hora a 1ª parcela para confirmar o pedido.",
+            "title": "Parcelar no Pix!",
+            "description": "Copie o código Pix ou ative o botão \"Parcelar no Pix\" para ter sua compra parcelada no App.",
             "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/7ede487e-2f79-401c-a685-5e9dfb39b28c/card-06.svg"
           }
         ],
