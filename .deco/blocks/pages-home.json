@@ -57,7 +57,7 @@
             "number": "06",
             "icon": "check",
             "title": "Pague a 1ª parcela",
-            "description": "Aguarde a aprovação e pague na hora a 1ª parcela para confirmar o pedido",
+            "description": "Aguarde a aprovação e pague na hora a 1ª parcela para confirmar o pedido.",
             "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/2642a2ba-e835-48ec-8ce6-e3ab00099bfe/Frame-427322673-(9).svg"
           }
         ]
@@ -109,19 +109,19 @@
         {
           "discount": "50% OFF",
           "description": "Cole este código no campo de cupom do site da loja",
-          "couponCode": "PAGALEVEA",
+          "couponCode": "PAGALEVE",
           "buttonText": "Usar Cupom",
-          "buttonLink": "https://best.aliexpress.com/?af=4109468&cn=44914&cv=1&dp=Fm6xynLNJdQ-O..59hhc6Xob8DLYWnhQqw&aff_fcid=2977d9b820e9408db00b1c06e29d1bb4-1762516507764-09175-cZl1mOz2&aff_fsk=cZl1mOz2&aff_platform=promotion&sk=cZl1mOz2&aff_trace_key=2977d9b820e9408db00b1c06e29d1bb4-1762516507764-09175-cZl1mOz2&terminal_id=3ff152df8f1d41368b8881a41c3761c7",
-          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/392fafa4-7adf-401c-98a9-b6ada7ffd5d1/aliexpress.png",
-          "discountBadge": "R$ 12 OFF",
-          "category": "Variedades",
+          "buttonLink": "https://lojakings.com.br/kings-snkrs/memorias/?utm_source=igoal&utm_medium=afiliados&utm_campaign=colecao+memorias_3175&transaction_id=102557739ed7cd4ef3a552848cc0e0",
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/39008b25-9d10-4356-b9f9-5b2bfb54e424/kings.png",
+          "discountBadge": "5% OFF",
+          "category": "Moda",
           "dropdownText": "Regras e informações",
           "helpText": "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!  Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra.",
-          "rulesContent": "R$12,00 de desconto em compras a partir de R$85,00",
+          "rulesContent": "5% de desconto aplicado em compras a partir de 100 reais no carrinho. Válido para a primeira compra no site.",
           "usageInfo": "52 usados hoje | Vencimento: 30/11/2025",
-          "brand": "AliExpress",
+          "brand": "Kings Sneakers",
           "usageLeft": "72 usados hoje",
-          "usageRight": "Vencimento: 07/11/2025"
+          "usageRight": "Vencimento: 30/12/2025"
         },
         {
           "brand": "Vivara",
@@ -179,14 +179,14 @@
           "discount": "50% OFF",
           "buttonText": "Conferir Oferta",
           "buttonLink": "https://www.insiderstore.com.br/?utm_source=rakuten&utm_medium=4109468&utm_content=Fm6xynLNJdQ-2T.ZJYQ8AfBfjF.A3_dahw&ranMID=50056&ranEAID=Fm6xynLNJdQ&ranSiteID=Fm6xynLNJdQ-2T.ZJYQ8AfBfjF.A3_dahw",
-          "brandLogo": "https://storage.googleapis.com/uploads-wordpress/insider.png",
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/24ff1e1f-1c10-44ad-9ee9-dcca6b831f21/insider2.png",
           "discountBadge": "OFERTA",
           "category": "Moda",
           "dropdownText": "Regras e informações",
           "helpText": "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!  Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra.",
           "rulesContent": "Disponível direto no site.",
           "usageInfo": "52 usados hoje | Vencimento: 30/11/2025",
-          "alternativeText": "Black November Insider! Descontos de até 50% OFF + brinde exclusivo em compras acima de R$399"
+          "alternativeText": "Black November Insider! Até 50% OFF em produtos selecionados. Preços que não voltam e ainda dá para parcelar no Pix!"
         },
         {
           "brand": "Temu",
@@ -236,7 +236,7 @@
             "number": "02",
             "icon": "",
             "title": "App da Pagaleve",
-            "description": "Confira os cupons das marcas exclusivas no App!",
+            "description": "Acesse o site da loja através do App da Pagaleve e siga as instruções.",
             "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/0d94d464-e5d8-41ff-b8c1-2e3786637bf5/Component-4-(2).svg"
           },
           {
@@ -256,15 +256,15 @@
           {
             "number": "05",
             "icon": "",
-            "title": "Pagar com Pix Parcelado",
-            "description": "Como pagamento selecione o Pix Parcelado.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/2a144e6c-511a-4d7d-be14-753196e3d6a1/card-05.svg"
+            "title": "Pagar com Pix",
+            "description": "Selecione Pix como forma de pagamento.",
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/497bbe50-4168-4d2f-b2a9-6ae313314d17/PIX.svg"
           },
           {
             "number": "06",
             "icon": "check",
-            "title": "Pague a 1ª parcela",
-            "description": "Aguarde a aprovação e pague na hora a 1ª parcela para confirmar o pedido.",
+            "title": "Parcelar no Pix!",
+            "description": "Copie o código Pix ou ative o botão \"Parcelar no Pix\" para ter sua compra parcelada no App.",
             "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/7ede487e-2f79-401c-a685-5e9dfb39b28c/card-06.svg"
           }
         ],
@@ -328,7 +328,7 @@
           "discountBadge": "10% OFF",
           "description": "Cole este código no campo de cupom do site da loja",
           "dropdownText": "Regras e Informações",
-          "rulesContent": "Roupas fitness com até 10%OFF! Aproveite o cupom exclusivo no App da Pagaleve e pague com Pix Parcelado para garantir roupas de alta performance sem pesar no bolso.  Regras: Cupom é válido apenas para produtos de preço cheio, não é cumulativo com outros cupons, resgate de cashback e produtos da categoria Outlet.",
+          "rulesContent": "A Sallve está com 10% OFF em compras acima de R$149 - exclusivo no App Pagaleve! Renove sua rotina de skincare com produtos incríveis e ainda economize.  Regras do cupom: Cupom é válido para compras acima de R$149.",
           "buttonText": "Usar Cupom",
           "buttonLink": "https://link-to.app/cC1EkxQY0j",
           "couponCode": "PAGALEVE10",
@@ -336,7 +336,7 @@
           "usageRight": "Vencimento: 30/11/2025"
         },
         {
-          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/b6bf3c10-4709-412c-93e8-6668cdad7f89/image-12.png",
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/df80a3a6-a049-4b8f-a973-d963fcf50d68/image-16-(1).png",
           "brand": "Max Titanium",
           "category": "Suplementos",
           "discountBadge": "10% OFF",
@@ -370,7 +370,7 @@
           "discountBadge": "40% OFF",
           "description": "Cole este código no campo de cupom do site da loja",
           "dropdownText": "Regras e Informações",
-          "rulesContent": "40% de desconto em cursos avulsos (exceto Câmara dos Deputados, PRF e Banco do Brasil).",
+          "rulesContent": "40% de desconto em cursos selecionados. Disponível no App da Pagaleve.",
           "buttonText": "Usar Cupom",
           "buttonLink": "https://link-to.app/cC1EkxQY0j",
           "couponCode": "PAGALEVE40",
@@ -378,17 +378,17 @@
           "usageRight": "Vencimento: 01/12/2025"
         },
         {
-          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/b6bf3c10-4709-412c-93e8-6668cdad7f89/image-12.png",
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/4e2a6f7e-a1f7-4e96-8c41-a4e831f41c61/mascavo.png",
           "category": "Cosméticos",
           "discountBadge": "BRINDE",
           "description": "Cole este código no campo de cupom do site da loja",
           "dropdownText": "Regras e Informações",
-          "rulesContent": "Nas compras acima de R$299, você ganha um Flush Stick de brinde! Regras: Válido para compras acima de R$299 e mediante aplicação do cupom.",
+          "rulesContent": "Válido para compras acima de R$299 e mediante aplicação do cupom. Disponível no App da Pagaleve",
           "buttonText": "Usar Cupom",
           "buttonLink": "https://link-to.app/cC1EkxQY0j",
           "couponCode": "PAGALEVE10",
           "usageLeft": "246 usados hoje",
-          "usageRight": "Vencimento: 07/11/2025",
+          "usageRight": "Vencimento: 15/11/2025",
           "brand": "Mascavo"
         },
         {
@@ -397,13 +397,55 @@
           "discountBadge": "R$ 15 OFF",
           "description": "Cole este código no campo de cupom do site da loja",
           "dropdownText": "Regras e Informações",
-          "rulesContent": "Desconto de R$15 em compras acima de R$150. Válido apenas na primeira compra.",
+          "rulesContent": "Desconto de R$15 em compras acima de R$150. Válido apenas na primeira compra. Disponível no App da Pagaleve.",
           "buttonText": "Usar Cupom",
           "buttonLink": "https://link-to.app/cC1EkxQY0j",
           "couponCode": "PAGALEVE15",
           "usageLeft": "165 usados hoje",
           "usageRight": "Vencimento: 31/12/2025",
           "brand": "Drogaria Pacheco"
+        },
+        {
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/cabecb8b-508e-4535-bed9-50baaba7bc4c/osklen.png",
+          "brand": "Osklen",
+          "category": "Moda",
+          "discountBadge": "12% OFF",
+          "description": "Cole este código no campo de cupom do site da loja",
+          "dropdownText": "Regras e Informações",
+          "rulesContent": "Não cumulativo com outras ações. 12% OFF Válido em todos os produtos. Disponível no App da Pagaleve.",
+          "buttonLink": "https://link-to.app/cC1EkxQY0j",
+          "buttonText": "Usar Cupom",
+          "couponCode": "PAGALEVE12",
+          "usageLeft": "142 usados hoje",
+          "usageRight": "Vencimento: 30/11/2025"
+        },
+        {
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/950f5dab-8e11-4fe7-a486-fdbc9845e1ed/buser.png",
+          "brand": "Buser",
+          "category": "Transportes",
+          "discountBadge": "20% OFF",
+          "description": "Cole este código no campo de cupom do site da loja",
+          "dropdownText": "Regras e Informações",
+          "rulesContent": "Válido apenas para primeira viagem; Uso único por CPF; Exclui marketplace; Datas para viagem sujeitas a disponibilidade. Disponível no App da Pagaleve.",
+          "buttonLink": "https://link-to.app/cC1EkxQY0j",
+          "buttonText": "Usar Cupom",
+          "couponCode": "20BUSERAF",
+          "usageLeft": "88 usados hoje",
+          "usageRight": "Vencimento: 30/11/2025"
+        },
+        {
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/cd34ba29-05d3-4242-800a-ae059e7d242a/natura.png",
+          "brand": "Natura",
+          "category": "Cosméticos",
+          "discountBadge": "10% OFF",
+          "description": "Cole este código no campo de cupom do site da loja",
+          "dropdownText": "Regras e Informações",
+          "rulesContent": "10%OFF no site da Natura!Válido apenas na primeira compra. Disponível no App da Pagaleve.",
+          "buttonLink": "https://link-to.app/cC1EkxQY0j",
+          "buttonText": "Usar Cupom",
+          "couponCode": "PRIMEIRACOMPRA",
+          "usageLeft": "165 usados hoje",
+          "usageRight": "Vencimento: 30/11/2025"
         },
         {
           "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/e7ad3abb-cabc-4587-9191-6574a6108249/amazon.png",
@@ -451,14 +493,14 @@
         },
         {
           "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/937af6d6-6d2a-4c87-8fca-14d548ebc4a2/biscoite.png",
-          "brand": "Biscoitê",
           "category": "Biscoiteria",
           "discountBadge": "OFERTA",
           "description": "Prepare-se para o Natal! Na compra de um panettone Biscoitê, ganhe 10% OFF na sua próxima compra!",
           "dropdownText": "Regras e Informações",
           "rulesContent": "Disponível no App da Pagaleve.",
           "buttonLink": "https://link-to.app/cC1EkxQY0j",
-          "buttonText": "Ir para o App"
+          "buttonText": "Ir para o App",
+          "brand": "Biscoitê"
         },
         {
           "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/f824f6ae-7ecf-466e-b310-7eb24b5bc6c9/descorcha.png",
@@ -484,14 +526,14 @@
         },
         {
           "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/648ea698-d7f3-4f01-9b6c-6c7f60ea48f1/dafiti.png",
+          "brand": "Dafiti",
           "category": "Moda",
           "discountBadge": "OFERTA",
           "description": "A moda nunca foi tão acessível e divertida como na Black Friday! Ofertas exclusivas com até 50%OFF!",
           "dropdownText": "Regras e Informações",
           "rulesContent": "Disponível no App da Pagaleve.",
           "buttonLink": "https://link-to.app/cC1EkxQY0j",
-          "buttonText": "Ir para o App",
-          "brand": "Dafiti"
+          "buttonText": "Ir para o App"
         },
         {
           "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/bb14cff6-d6ca-4143-bc6c-2cdef61464f8/oceane.png",
@@ -548,10 +590,8 @@
           "buttonLink": "#",
           "link": "https://www.farmrio.com.br/top-estampado-borbolina-borbolina_bege-ambrosia-344429-50385/p?brand=farm&utm_source=rakuten&utm_medium=afiliados&utm_campaign=rakuten&utm_term=Pagaleve&utm_content=Fm6xynLNJdQ-9Cs3xQNLmm5CEIWUuUz_HQ&ranMID=46760&ranEAID=Fm6xynLNJdQ&ranSiteID=Fm6xynLNJdQ-9Cs3xQNLmm5CEIWUuUz_HQ",
           "category": "Moda",
-          "badgeDiscount": "-30%",
           "rating": 5,
-          "ratingCount": 16,
-          "installmentText": "12x de 5,24 no pix parcelado"
+          "ratingCount": 16
         },
         {
           "name": "Tênis Adidas Campus 00s",
@@ -566,13 +606,13 @@
           "ratingCount": 78
         },
         {
-          "name": "Neostrata Minesol Protetor Solar Facial",
+          "name": "Hidratante facial Neutrogena Face Care",
           "image": "https://assets.decocache.com/lp-bf-pgl-003/9ea121d7-6a3a-4c43-9a64-c32f1c750934/produto3.png",
-          "originalPrice": "R$ 105,99",
-          "discountPrice": "R$ 68,49",
+          "originalPrice": "R$ 47,99",
+          "discountPrice": "R$ 19,90",
           "buttonText": "Conferir Oferta",
           "buttonLink": "#",
-          "link": "https://www.paguemenos.com.br/neostrata-minesol-protetor-solar-facial-oil-control-fps70-toque-seco-40g/p?utm_source=awin&utm_id=1340039_&utm_campaign=affiliate&sv1=affiliate&sv_campaign_id=1340039&awc=64086_1762288300_2614ca91f3dd5eef7ffce316307691af",
+          "link": "https://www.paguemenos.com.br/hidratante-facial-neutrogena-face-care-intensive-antissinais-reparador-100g/p?utm_source=awin&utm_id=1340039_&utm_campaign=affiliate&sv1=affiliate&sv_campaign_id=1340039&awc=64086_1762975964_8820ae6fab91687629d212f71e86cae2",
           "category": "Cosméticos",
           "rating": 5,
           "ratingCount": 65
@@ -648,11 +688,11 @@
             "testimonial": "Excelente! Gostei muito. Uma opção alternativa àquelas opções que já estamos com pouco limite, ou o vencimento do cartão muito próximo."
           },
           {
-            "name": "Lucas Rodrigues",
-            "initials": "LR",
+            "name": "Roniel Monteiro",
             "badge": "Embaixador",
             "rating": 5,
-            "testimonial": "Muito Prático e com Juros justo. Facilita demais quem precisa comprar com pix parcelado com pagamento de 15/15 dias. O limite vai sobre na medida que vai usando o serviço."
+            "testimonial": "O aplicativo é excelente! Tem uma grande variedade de parceiros e é super intuitivo de usar.\n",
+            "initials": "RM"
           },
           {
             "name": "Anderson Lima",
@@ -676,11 +716,11 @@
       "items": [
         {
           "question": "O que é a Pagaleve?",
-          "answer": "<p><span style=\"color: #ffffff; font-size: 11pt\">Somos uma nova forma de parcelamento via Pix. Você parcela a sua compra só com o Pix, sem a necessidade de um cartão de crédito. Há duas modalidades de parcelamento: a quinzenal </span><strong><span style=\"color: #ffffff; font-size: 11pt\">que não tem juros</span></strong><span style=\"color: #ffffff; font-size: 11pt\"> e a mensal, </span><strong><span style=\"color: #ffffff; font-size: 11pt\">que tem acréscimo de juros</span></strong><span style=\"color: #ffffff; font-size: 11pt\">. Parcelar com a Pagaleve é rápido e fácil! </span></p>"
+          "answer": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Somos uma nova forma de parcelamento via Pix. Você parcela a sua compra só com o Pix, sem a necessidade de um cartão de crédito. Há duas modalidades de parcelamento: a quinzenal </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">que não tem juros</span></strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\"> e a mensal, </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">que tem acréscimo de juros</span></strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">. Parcelar com a Pagaleve é rápido e fácil!</span></p>"
         },
         {
           "question": "Quais são as lojas parceiras?",
-          "answer": "<p><span style=\"color: #ffffff; font-size: 11pt\">São mais de 10.000 lojas que já aceitam o Pix Parcelado direto em seus e-commerces e milhares de lojas exclusivas no nosso App! Você pode consultar toda a relação de sites parceiros </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.pagaleve.com.br/lojas-parceiras/\"><strong><u><span style=\"color: #ffffff; font-size: 11pt\">clicando aqui</span></u></strong></a><span style=\"color: #ffffff; font-size: 11pt\">.</span></p>"
+          "answer": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">São mais de 10.000 lojas que já aceitam o Pix Parcelado direto em seus e-commerces e milhares de lojas exclusivas no nosso App! Você pode consultar toda a relação de sites parceiros </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.pagaleve.com.br/lojas-parceiras/\"><strong><u><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">clicando aqui</span></u></strong></a><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">.</span></p>"
         },
         {
           "question": "Quais são as lojas disponíveis no Aplicativo?",
@@ -688,15 +728,15 @@
         },
         {
           "question": "Como eu faço o pagamento via Pix?",
-          "answer": "<p><span style=\"color: #ffffff; font-size: 11pt\">É super fácil! Assim que a sua compra for aprovada (leva menos de 3 segundos!), você precisa pagar a </span><strong><span style=\"color: #ffffff; font-size: 11pt\">primeira parcela na hora para a sua compra ser confirmada</span></strong><span style=\"color: #ffffff; font-size: 11pt\">. As demais parcelas você pode acessar no App da Pagaleve - também te mandaremos lembretes quando as parcelas estiverem próximas ao vencimento.&nbsp;&nbsp;</span></p><p><span style=\"color: #ffffff; font-size: 11pt\">Para pagar via Pix, você pode escolher:</span></p><ul><li><p><strong><span style=\"color: #ffffff; font-size: 11pt\">QR Code</span></strong><span style=\"color: #ffffff; font-size: 11pt\">: Abra o aplicativo do seu banco, vá em “Área Pix” → “Ler/Pagar QR Code” → aponte para o QR Code gerado → confirme o valor e a instituição </span><strong><span style=\"color: #ffffff; font-size: 11pt\">PAGALEVE TECNOLOGIA FINANCEIRA LTDA</span></strong><span style=\"color: #ffffff; font-size: 11pt\"> → conclua a transação.<br><br></span></p></li></ul><p><strong><span style=\"color: #ffffff; font-size: 11pt\">Pix Copia e Cola</span></strong><span style=\"color: #ffffff; font-size: 11pt\">: Copie a chave Pix disponível na wallet ou no app Pagaleve → vá em “Área Pix” no app do seu banco → selecione “Pix Copia e Cola” → cole a chave → confirme o valor e a instituição </span><strong><span style=\"color: #ffffff; font-size: 11pt\">PAGALEVE TECNOLOGIA FINANCEIRA LTDA</span></strong><span style=\"color: #ffffff; font-size: 11pt\"> → conclua a transação. <br><br>Fique de olho: </span><strong><span style=\"color: #ffffff; font-size: 11pt\">as parcelas não são debitadas automaticamente! </span></strong><span style=\"color: #ffffff; font-size: 11pt\">A Pagaleve não tem responsabilidade de um agendamento realizado sem a efetivação do pagamento.</span></p>"
+          "answer": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">É super fácil! Assim que a sua compra for aprovada (leva menos de 3 segundos!), você precisa pagar a primeira parcela na hora para a sua compra ser confirmada. As demais parcelas você pode acessar no App da Pagaleve - também te mandaremos lembretes quando as parcelas estiverem próximas ao vencimento.</span></p><p></p><p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Fique de olho: as parcelas não são debitadas automaticamente! A Pagaleve não tem responsabilidade de um agendamento realizado sem a efetivação do pagamento.</span></p>"
         },
         {
           "question": "Como funciona para usar os cupons disponíveis nesta página? ",
-          "answer": "<p><span style=\"color: #ffffff; font-size: 11pt\">- Copie o cupom desejado.<br>- Acesse o site da loja parceira.<br>- No carrinho de compras, cole o código de desconto no campo indicado.</span></p><p><span style=\"color: #ffffff; font-size: 11pt\">- Conclua a sua compra escolhendo Pix Parcelado da Pagaleve para pagar ou utilizando o nosso Aplicativo <br><br></span><strong><span style=\"color: #ffffff; font-size: 11pt\">Você também encontra o passo a passo em nossa página de como utilizar! </span></strong><span style=\"color: #ffffff; font-size: 11pt\"><br><br></span><strong><span style=\"color: #ffffff; font-size: 11pt\">Fique de olho</span></strong><span style=\"color: #ffffff; font-size: 11pt\">: Cada cupom possui regras específicas para sua utilização e só irá funcionar corretamente se aplicadas corretamente. Os cupons podem ser válidos apenas para um tipo de produto ou para algumas marcas. Caso o cupom esteja inválido, verifique as regras novamente e veja se os produtos selecionados se encaixam nas regras. As lojas podem desativar o cupom a qualquer momento e sem aviso prévio.<br></span></p>"
+          "answer": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">- Copie o cupom desejado.<br>- Acesse o site da loja parceira.<br>- No carrinho de compras, cole o código de desconto no campo indicado.</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">- </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Finalize sua compra pagando com o Pix Parcelado da Pagaleve ou direto pelo nosso aplicativo.</span></strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\"><br><br></span><strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Você também encontra o passo a passo em nossa página de como utilizar! </span></strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\"><br><br></span><strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Fique de olho</span></strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">: Cada cupom possui regras específicas para sua utilização e só irá funcionar corretamente se aplicadas corretamente. Os cupons podem ser válidos apenas para um tipo de produto ou para algumas marcas. Caso o cupom esteja inválido, verifique as regras novamente e veja se os produtos selecionados se encaixam nas regras. As lojas podem desativar o cupom a qualquer momento e sem aviso prévio.<br></span></p>"
         },
         {
           "question": "Os descontos da Black Friday são verdadeiros?",
-          "answer": "<p><span style=\"color: #ffffff; font-size: 11pt\">Sim! As lojas aproveitam a data para fazer promoções que realmente valem a pena.&nbsp;</span></p><p><span style=\"color: #ffffff\"><br></span></p><p><span style=\"color: #ffffff; font-size: 11pt\">Muitas lojas já começam com ofertas na pré-Black e algumas oferecem promoções até a Cyber Monday.&nbsp; Aproveite e também acompanhe as promoções no nosso Canal de Instagram e no nosso canal de WhatsApp.</span></p><p><br></p>"
+          "answer": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Sim! As lojas aproveitam a data para fazer promoções que realmente valem a pena.&nbsp;</span></p><p><span style=\"color: rgb(255, 255, 255)\"><br></span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Muitas lojas já começam com ofertas na pré-Black e algumas oferecem promoções até a Cyber Monday.&nbsp; Aproveite e também acompanhe as promoções no nosso Canal de </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.instagram.com/pagaleve/\"><strong><u><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Instagram</span></u></strong></a><span style=\"color: rgb(255, 255, 255); font-size: 11pt\"> e no nosso canal de </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.whatsapp.com/channel/0029VbBrOZf1NCrdHpOvGo1h\"><strong><u><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">WhatsApp</span></u></strong></a><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">.</span></p><p><br></p>"
         },
         {
           "answer": "<p><span style=\"color: #ffffff; font-size: 11pt\">Sim! E com o Pix Parcelado da Pagaleve você consegue parcelar no Pix sem juros - no plano quinzenal -&nbsp; e sem precisar de cartão de crédito.</span></p>",
@@ -708,7 +748,7 @@
         },
         {
           "answer": "<p><span style=\"color: #ffffff; font-size: 11pt\">Há dois tipo de publicações na nossa página: cupons e ofertas.</span></p><p><span style=\"color: #ffffff; font-size: 11pt\">As ofertas não possuem código. Clique na oferta que achou mais interessante e aproveite!</span></p><p><span style=\"color: #ffffff\"><br></span></p>",
-          "question": "Por que alguns cupons não tem código?"
+          "question": "Por que alguns cupons não têm código?"
         },
         {
           "question": "Por que o cupom não funciona? ",
@@ -716,7 +756,7 @@
         },
         {
           "question": "Minha dúvida não foi respondida. O que eu faço?",
-          "answer": "<p><span style=\"color: #ffffff; font-size: 11pt\">Acesse a nossa seção de </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.pagaleve.com.br/ajuda/\"><strong><u><span style=\"color: #ffffff; font-size: 11pt\">Perguntas Frequentes</span></u></strong></a><span style=\"color: #ffffff; font-size: 11pt\"> no site para mais informações sobre reembolso, taxas e outros temas.<br><br>Fique de olho: Aqui na Pagaleve, intermediamos apenas o processo de pagamento entre você e a loja que gerou o seu pedido, ou seja, o pedido não é responsabilidade da Pagaleve. A Pagaleve somente se responsabiliza pela etapa de pagamento da compra. Por isso, em caso de problemas de entrega ou demais problemas relacionados ao produto, recomendamos que você acione diretamente a loja em que realizou a compra.<br><br>É importante também se atentar à Política de Cancelamento de cada loja. Caso tenha algum problema com a entrega ou com a loja, é importante manter o pagamento em dia até que a situação seja regularizada.</span></p>"
+          "answer": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Acesse a nossa seção de </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.pagaleve.com.br/ajuda/\"><strong><u><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Perguntas Frequentes</span></u></strong></a><span style=\"color: rgb(255, 255, 255); font-size: 11pt\"> no site para mais informações sobre reembolso, taxas e outros temas.<br><br>Fique de olho: Aqui na Pagaleve, intermediamos apenas o processo de pagamento entre você e a loja que gerou o seu pedido, ou seja, o pedido não é responsabilidade da Pagaleve. A Pagaleve somente se responsabiliza pela etapa de pagamento da compra. Por isso, em caso de problemas de entrega ou demais problemas relacionados ao produto, recomendamos que você acione diretamente a loja em que realizou a compra.<br><br>É importante também se atentar à Política de Cancelamento de cada loja. Caso tenha algum problema com a entrega ou com a loja, é importante manter o pagamento em dia até que a situação seja regularizada.</span></p>"
         }
       ]
     },
