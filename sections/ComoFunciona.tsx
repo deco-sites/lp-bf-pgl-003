@@ -211,8 +211,8 @@ export default function ComoFunciona({
                         <div class="flex items-center justify-center">
                           {step.iconImage ? (
                             <Image
-                              width={35}
-                              height={35}
+                              width={40}
+                              height={40}
                               src={step.iconImage}
                               alt={step.title}
                               class="w-full h-auto object-contain max-w-[35px]"
@@ -293,13 +293,13 @@ export default function ComoFunciona({
                       marginTop: "4px",
                     }}
                   >
-                    <div class="flex flex-col items-center justify-center flex-1 w-full gap-4">
+                    <div class="flex flex-col items-center justify-start pt-2 flex-1 w-full gap-4">
                       {/* Ícone */}
                       <div class="flex items-center justify-center">
                         {step.iconImage ? (
                           <Image
-                            width={35}
-                            height={35}
+                            width={40}
+                            height={40}
                             src={step.iconImage}
                             alt={step.title}
                             class="w-full h-auto object-contain max-w-[35px]"
