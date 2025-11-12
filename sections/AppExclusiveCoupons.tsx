@@ -218,11 +218,10 @@ export default function AppExclusiveCoupons({
           
           {subtitle && (
             <p 
-              class="text-center max-w-3xl"
+              class="text-center max-w-3xl text-sm lg:text-lg"
               style={{ 
                 fontFamily: "Quicksand, sans-serif",
                 fontWeight: 400,
-                fontSize: "clamp(16px, 2vw, 18px)",
                 lineHeight: "1.5",
                 color: "#DEDEE0"
               }}

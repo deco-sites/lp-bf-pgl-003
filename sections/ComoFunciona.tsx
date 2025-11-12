@@ -133,7 +133,7 @@ export default function ComoFunciona({
         overflowX: "hidden",
       }}
     >
-      <div class="w-full max-w-[1440px] mx-auto flex flex-col items-center px-4 md:px-8 lg:px-[52px] py-6 md:py-12 lg:py-[52px]">
+      <div class="w-full max-w-[1440px] mx-auto flex flex-col items-center px-4 md:px-8 lg:px-[52px] py-6 md:py-12 lg:pb-6 lg:py-[52px]">
         {/* Header */}
         <div class="w-full max-w-[1336px] flex flex-col items-center gap-4 md:gap-6">
           {/* Títulos */}
@@ -147,7 +147,7 @@ export default function ComoFunciona({
               {mainTitle}
             </h2>
             <p
-              class="text-center text-sm md:text-base lg:text-xl text-white/95 px-4"
+              class="text-center text-sm md:text-base lg:text-2xl text-white/95 px-4"
               style={{
                 fontFamily: "Quicksand, sans-serif",
               }}
@@ -272,7 +272,7 @@ export default function ComoFunciona({
                     }}
                   >
                     <span
-                      class="text-base font-semibold"
+                      class="text-base font-semibold lg:text-xl"
                       style={{
                         fontFamily: "Quicksand, sans-serif",
                         color: badgeTextColor,
@@ -293,7 +293,7 @@ export default function ComoFunciona({
                       marginTop: "4px",
                     }}
                   >
-                    <div class="flex flex-col items-center justify-start pt-2 flex-1 w-full gap-4">
+                    <div class="flex flex-col items-center justify-start pt-2 flex-1 w-full gap-1">
                       {/* Ícone */}
                       <div class="flex items-center justify-center">
                         {step.iconImage ? (
@@ -310,9 +310,9 @@ export default function ComoFunciona({
                       </div>
 
                       {/* Texto */}
-                      <div class="flex flex-col items-center w-full gap-2">
+                      <div class="flex flex-col items-center w-full gap-1">
                         <h3
-                          class="text-center text-base font-semibold text-white"
+                          class="text-center text-base font-semibold text-white lg:text-lg text-bold" 
                           style={{
                             fontFamily: "Quicksand, sans-serif",
                           }}
@@ -320,7 +320,7 @@ export default function ComoFunciona({
                           {step.title}
                         </h3>
                         <p
-                          class="text-center text-sm text-white/90"
+                          class="text-center text-sm text-white/90 "
                           style={{
                             fontFamily: "Quicksand, sans-serif",
                           }}

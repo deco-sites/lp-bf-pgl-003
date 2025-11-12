@@ -80,7 +80,6 @@ export default function ProductGrid({
             class="text-[#FCFCFC] text-sm md:text-2xl text-center max-w-[343px] md:max-w-none"
             style={{ 
               fontFamily: 'Quicksand, sans-serif', 
-              fontWeight: 500, 
               lineHeight: '17.5px',
             }}
           >
@@ -129,7 +128,7 @@ export default function ProductGrid({
                   {product.category && (
                     <div class="flex items-center gap-1 md:gap-2">
                       <div 
-                        class="px-2 py-0.5 rounded-lg"
+                        class="px-2 rounded-lg"
                         style={{ border: '0.5px solid #1A2B38' }}
                       >
                         <span 

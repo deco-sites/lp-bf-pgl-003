@@ -127,7 +127,6 @@ export default function BlackFridayHero({
           font-weight: 600;
           color: #FFFFFF;
           text-align: center;
-          text-transform: uppercase;
         }
         
         .bf-countdown-separator {
