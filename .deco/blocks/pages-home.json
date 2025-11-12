@@ -590,10 +590,8 @@
           "buttonLink": "#",
           "link": "https://www.farmrio.com.br/top-estampado-borbolina-borbolina_bege-ambrosia-344429-50385/p?brand=farm&utm_source=rakuten&utm_medium=afiliados&utm_campaign=rakuten&utm_term=Pagaleve&utm_content=Fm6xynLNJdQ-9Cs3xQNLmm5CEIWUuUz_HQ&ranMID=46760&ranEAID=Fm6xynLNJdQ&ranSiteID=Fm6xynLNJdQ-9Cs3xQNLmm5CEIWUuUz_HQ",
           "category": "Moda",
-          "badgeDiscount": "-30%",
           "rating": 5,
-          "ratingCount": 16,
-          "installmentText": "12x de 5,24 no pix parcelado"
+          "ratingCount": 16
         },
         {
           "name": "Tênis Adidas Campus 00s",
@@ -608,13 +606,13 @@
           "ratingCount": 78
         },
         {
-          "name": "Neostrata Minesol Protetor Solar Facial",
+          "name": "Hidratante facial Neutrogena Face Care",
           "image": "https://assets.decocache.com/lp-bf-pgl-003/9ea121d7-6a3a-4c43-9a64-c32f1c750934/produto3.png",
-          "originalPrice": "R$ 105,99",
-          "discountPrice": "R$ 68,49",
+          "originalPrice": "R$ 47,99",
+          "discountPrice": "R$ 19,90",
           "buttonText": "Conferir Oferta",
           "buttonLink": "#",
-          "link": "https://www.paguemenos.com.br/neostrata-minesol-protetor-solar-facial-oil-control-fps70-toque-seco-40g/p?utm_source=awin&utm_id=1340039_&utm_campaign=affiliate&sv1=affiliate&sv_campaign_id=1340039&awc=64086_1762288300_2614ca91f3dd5eef7ffce316307691af",
+          "link": "https://www.paguemenos.com.br/hidratante-facial-neutrogena-face-care-intensive-antissinais-reparador-100g/p?utm_source=awin&utm_id=1340039_&utm_campaign=affiliate&sv1=affiliate&sv_campaign_id=1340039&awc=64086_1762975964_8820ae6fab91687629d212f71e86cae2",
           "category": "Cosméticos",
           "rating": 5,
           "ratingCount": 65
@@ -690,11 +688,11 @@
             "testimonial": "Excelente! Gostei muito. Uma opção alternativa àquelas opções que já estamos com pouco limite, ou o vencimento do cartão muito próximo."
           },
           {
-            "name": "Lucas Rodrigues",
-            "initials": "LR",
+            "name": "Roniel Monteiro",
             "badge": "Embaixador",
             "rating": 5,
-            "testimonial": "Muito Prático e com Juros justo. Facilita demais quem precisa comprar com pix parcelado com pagamento de 15/15 dias. O limite vai sobre na medida que vai usando o serviço."
+            "testimonial": "O aplicativo é excelente! Tem uma grande variedade de parceiros e é super intuitivo de usar.\n",
+            "initials": "RM"
           },
           {
             "name": "Anderson Lima",
@@ -718,11 +716,11 @@
       "items": [
         {
           "question": "O que é a Pagaleve?",
-          "answer": "<p><span style=\"color: #ffffff; font-size: 11pt\">Somos uma nova forma de parcelamento via Pix. Você parcela a sua compra só com o Pix, sem a necessidade de um cartão de crédito. Há duas modalidades de parcelamento: a quinzenal </span><strong><span style=\"color: #ffffff; font-size: 11pt\">que não tem juros</span></strong><span style=\"color: #ffffff; font-size: 11pt\"> e a mensal, </span><strong><span style=\"color: #ffffff; font-size: 11pt\">que tem acréscimo de juros</span></strong><span style=\"color: #ffffff; font-size: 11pt\">. Parcelar com a Pagaleve é rápido e fácil! </span></p>"
+          "answer": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Somos uma nova forma de parcelamento via Pix. Você parcela a sua compra só com o Pix, sem a necessidade de um cartão de crédito. Há duas modalidades de parcelamento: a quinzenal </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">que não tem juros</span></strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\"> e a mensal, </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">que tem acréscimo de juros</span></strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">. Parcelar com a Pagaleve é rápido e fácil!</span></p>"
         },
         {
           "question": "Quais são as lojas parceiras?",
-          "answer": "<p><span style=\"color: #ffffff; font-size: 11pt\">São mais de 10.000 lojas que já aceitam o Pix Parcelado direto em seus e-commerces e milhares de lojas exclusivas no nosso App! Você pode consultar toda a relação de sites parceiros </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.pagaleve.com.br/lojas-parceiras/\"><strong><u><span style=\"color: #ffffff; font-size: 11pt\">clicando aqui</span></u></strong></a><span style=\"color: #ffffff; font-size: 11pt\">.</span></p>"
+          "answer": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">São mais de 10.000 lojas que já aceitam o Pix Parcelado direto em seus e-commerces e milhares de lojas exclusivas no nosso App! Você pode consultar toda a relação de sites parceiros </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.pagaleve.com.br/lojas-parceiras/\"><strong><u><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">clicando aqui</span></u></strong></a><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">.</span></p>"
         },
         {
           "question": "Quais são as lojas disponíveis no Aplicativo?",
@@ -730,15 +728,15 @@
         },
         {
           "question": "Como eu faço o pagamento via Pix?",
-          "answer": "<p><span style=\"color: #ffffff; font-size: 11pt\">É super fácil! Assim que a sua compra for aprovada (leva menos de 3 segundos!), você precisa pagar a </span><strong><span style=\"color: #ffffff; font-size: 11pt\">primeira parcela na hora para a sua compra ser confirmada</span></strong><span style=\"color: #ffffff; font-size: 11pt\">. As demais parcelas você pode acessar no App da Pagaleve - também te mandaremos lembretes quando as parcelas estiverem próximas ao vencimento.&nbsp;&nbsp;</span></p><p><span style=\"color: #ffffff; font-size: 11pt\">Para pagar via Pix, você pode escolher:</span></p><ul><li><p><strong><span style=\"color: #ffffff; font-size: 11pt\">QR Code</span></strong><span style=\"color: #ffffff; font-size: 11pt\">: Abra o aplicativo do seu banco, vá em “Área Pix” → “Ler/Pagar QR Code” → aponte para o QR Code gerado → confirme o valor e a instituição </span><strong><span style=\"color: #ffffff; font-size: 11pt\">PAGALEVE TECNOLOGIA FINANCEIRA LTDA</span></strong><span style=\"color: #ffffff; font-size: 11pt\"> → conclua a transação.<br><br></span></p></li></ul><p><strong><span style=\"color: #ffffff; font-size: 11pt\">Pix Copia e Cola</span></strong><span style=\"color: #ffffff; font-size: 11pt\">: Copie a chave Pix disponível na wallet ou no app Pagaleve → vá em “Área Pix” no app do seu banco → selecione “Pix Copia e Cola” → cole a chave → confirme o valor e a instituição </span><strong><span style=\"color: #ffffff; font-size: 11pt\">PAGALEVE TECNOLOGIA FINANCEIRA LTDA</span></strong><span style=\"color: #ffffff; font-size: 11pt\"> → conclua a transação. <br><br>Fique de olho: </span><strong><span style=\"color: #ffffff; font-size: 11pt\">as parcelas não são debitadas automaticamente! </span></strong><span style=\"color: #ffffff; font-size: 11pt\">A Pagaleve não tem responsabilidade de um agendamento realizado sem a efetivação do pagamento.</span></p>"
+          "answer": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">É super fácil! Assim que a sua compra for aprovada (leva menos de 3 segundos!), você precisa pagar a primeira parcela na hora para a sua compra ser confirmada. As demais parcelas você pode acessar no App da Pagaleve - também te mandaremos lembretes quando as parcelas estiverem próximas ao vencimento.</span></p><p></p><p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Fique de olho: as parcelas não são debitadas automaticamente! A Pagaleve não tem responsabilidade de um agendamento realizado sem a efetivação do pagamento.</span></p>"
         },
         {
           "question": "Como funciona para usar os cupons disponíveis nesta página? ",
-          "answer": "<p><span style=\"color: #ffffff; font-size: 11pt\">- Copie o cupom desejado.<br>- Acesse o site da loja parceira.<br>- No carrinho de compras, cole o código de desconto no campo indicado.</span></p><p><span style=\"color: #ffffff; font-size: 11pt\">- Conclua a sua compra escolhendo Pix Parcelado da Pagaleve para pagar ou utilizando o nosso Aplicativo <br><br></span><strong><span style=\"color: #ffffff; font-size: 11pt\">Você também encontra o passo a passo em nossa página de como utilizar! </span></strong><span style=\"color: #ffffff; font-size: 11pt\"><br><br></span><strong><span style=\"color: #ffffff; font-size: 11pt\">Fique de olho</span></strong><span style=\"color: #ffffff; font-size: 11pt\">: Cada cupom possui regras específicas para sua utilização e só irá funcionar corretamente se aplicadas corretamente. Os cupons podem ser válidos apenas para um tipo de produto ou para algumas marcas. Caso o cupom esteja inválido, verifique as regras novamente e veja se os produtos selecionados se encaixam nas regras. As lojas podem desativar o cupom a qualquer momento e sem aviso prévio.<br></span></p>"
+          "answer": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">- Copie o cupom desejado.<br>- Acesse o site da loja parceira.<br>- No carrinho de compras, cole o código de desconto no campo indicado.</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">- </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Finalize sua compra pagando com o Pix Parcelado da Pagaleve ou direto pelo nosso aplicativo.</span></strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\"><br><br></span><strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Você também encontra o passo a passo em nossa página de como utilizar! </span></strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\"><br><br></span><strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Fique de olho</span></strong><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">: Cada cupom possui regras específicas para sua utilização e só irá funcionar corretamente se aplicadas corretamente. Os cupons podem ser válidos apenas para um tipo de produto ou para algumas marcas. Caso o cupom esteja inválido, verifique as regras novamente e veja se os produtos selecionados se encaixam nas regras. As lojas podem desativar o cupom a qualquer momento e sem aviso prévio.<br></span></p>"
         },
         {
           "question": "Os descontos da Black Friday são verdadeiros?",
-          "answer": "<p><span style=\"color: #ffffff; font-size: 11pt\">Sim! As lojas aproveitam a data para fazer promoções que realmente valem a pena.&nbsp;</span></p><p><span style=\"color: #ffffff\"><br></span></p><p><span style=\"color: #ffffff; font-size: 11pt\">Muitas lojas já começam com ofertas na pré-Black e algumas oferecem promoções até a Cyber Monday.&nbsp; Aproveite e também acompanhe as promoções no nosso Canal de Instagram e no nosso canal de WhatsApp.</span></p><p><br></p>"
+          "answer": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Sim! As lojas aproveitam a data para fazer promoções que realmente valem a pena.&nbsp;</span></p><p><span style=\"color: rgb(255, 255, 255)\"><br></span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Muitas lojas já começam com ofertas na pré-Black e algumas oferecem promoções até a Cyber Monday.&nbsp; Aproveite e também acompanhe as promoções no nosso Canal de </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.instagram.com/pagaleve/\"><strong><u><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Instagram</span></u></strong></a><span style=\"color: rgb(255, 255, 255); font-size: 11pt\"> e no nosso canal de </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.whatsapp.com/channel/0029VbBrOZf1NCrdHpOvGo1h\"><strong><u><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">WhatsApp</span></u></strong></a><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">.</span></p><p><br></p>"
         },
         {
           "answer": "<p><span style=\"color: #ffffff; font-size: 11pt\">Sim! E com o Pix Parcelado da Pagaleve você consegue parcelar no Pix sem juros - no plano quinzenal -&nbsp; e sem precisar de cartão de crédito.</span></p>",
@@ -750,7 +748,7 @@
         },
         {
           "answer": "<p><span style=\"color: #ffffff; font-size: 11pt\">Há dois tipo de publicações na nossa página: cupons e ofertas.</span></p><p><span style=\"color: #ffffff; font-size: 11pt\">As ofertas não possuem código. Clique na oferta que achou mais interessante e aproveite!</span></p><p><span style=\"color: #ffffff\"><br></span></p>",
-          "question": "Por que alguns cupons não tem código?"
+          "question": "Por que alguns cupons não têm código?"
         },
         {
           "question": "Por que o cupom não funciona? ",
@@ -758,7 +756,7 @@
         },
         {
           "question": "Minha dúvida não foi respondida. O que eu faço?",
-          "answer": "<p><span style=\"color: #ffffff; font-size: 11pt\">Acesse a nossa seção de </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.pagaleve.com.br/ajuda/\"><strong><u><span style=\"color: #ffffff; font-size: 11pt\">Perguntas Frequentes</span></u></strong></a><span style=\"color: #ffffff; font-size: 11pt\"> no site para mais informações sobre reembolso, taxas e outros temas.<br><br>Fique de olho: Aqui na Pagaleve, intermediamos apenas o processo de pagamento entre você e a loja que gerou o seu pedido, ou seja, o pedido não é responsabilidade da Pagaleve. A Pagaleve somente se responsabiliza pela etapa de pagamento da compra. Por isso, em caso de problemas de entrega ou demais problemas relacionados ao produto, recomendamos que você acione diretamente a loja em que realizou a compra.<br><br>É importante também se atentar à Política de Cancelamento de cada loja. Caso tenha algum problema com a entrega ou com a loja, é importante manter o pagamento em dia até que a situação seja regularizada.</span></p>"
+          "answer": "<p><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Acesse a nossa seção de </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.pagaleve.com.br/ajuda/\"><strong><u><span style=\"color: rgb(255, 255, 255); font-size: 11pt\">Perguntas Frequentes</span></u></strong></a><span style=\"color: rgb(255, 255, 255); font-size: 11pt\"> no site para mais informações sobre reembolso, taxas e outros temas.<br><br>Fique de olho: Aqui na Pagaleve, intermediamos apenas o processo de pagamento entre você e a loja que gerou o seu pedido, ou seja, o pedido não é responsabilidade da Pagaleve. A Pagaleve somente se responsabiliza pela etapa de pagamento da compra. Por isso, em caso de problemas de entrega ou demais problemas relacionados ao produto, recomendamos que você acione diretamente a loja em que realizou a compra.<br><br>É importante também se atentar à Política de Cancelamento de cada loja. Caso tenha algum problema com a entrega ou com a loja, é importante manter o pagamento em dia até que a situação seja regularizada.</span></p>"
         }
       ]
     },
