@@ -214,8 +214,9 @@ export default function ComoFunciona({
                               width={40}
                               height={40}
                               src={step.iconImage}
+                            style="min-height:40px;"
                               alt={step.title}
-                              class="w-full h-auto object-contain max-w-[35px]"
+                              class="w-full h-auto min-h-[10px] object-contain max-w-[35px]"
                             />
                           ) : step.icon ? (
                             <i class={`fa-regular fa-${step.icon} text-white text-2xl`} />
@@ -301,8 +302,9 @@ export default function ComoFunciona({
                             width={40}
                             height={40}
                             src={step.iconImage}
+                            style="min-height:40px;"
                             alt={step.title}
-                            class="w-full h-auto object-contain max-w-[35px]"
+                            class="w-full h-auto min-h-[10px] object-contain max-w-[35px]"
                           />
                         ) : step.icon ? (
                           <i class={`fa-regular fa-${step.icon} text-white text-3xl`} />

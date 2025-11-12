@@ -23,14 +23,14 @@
             "icon": "copy",
             "title": "Copie o cupom",
             "description": "Copie o cupom exclusivo da sua escolha.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/1eb36850-4dc3-49e9-ab89-fa862dcc6aa5/Frame-427322673-(5).svg"
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/8f3d2a38-f606-4247-baf9-691a81d44494/Component-4-(4).svg"
           },
           {
             "number": "02",
             "icon": "",
             "title": "Entre no site",
             "description": "Entre direto no site da loja parceira escolhida.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/3e9d54ba-103b-463b-afa5-2c56048b85f6/Component-4-(1).svg"
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/74e701d5-6689-4e7a-94d1-3aff46f62a0e/Component-4-(5).svg"
           },
           {
             "number": "03",
@@ -230,14 +230,14 @@
             "icon": "copy",
             "title": "Copie o cupom",
             "description": "Copie o cupom exclusivo da sua escolha.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/0b420ced-b98a-48ae-9daa-9cf3786e41b2/card-01.svg"
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/90bb2dbc-fc1d-48bf-b151-16baa386f9b2/Component-4-(4).svg"
           },
           {
             "number": "02",
             "icon": "",
             "title": "App da Pagaleve",
             "description": "Acesse o site da loja através do App da Pagaleve e siga as instruções.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/0d94d464-e5d8-41ff-b8c1-2e3786637bf5/Component-4-(2).svg"
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/48bcae68-8737-479c-9da1-09ed02699e53/Component-4-(7).svg"
           },
           {
             "number": "03",
@@ -251,21 +251,21 @@
             "icon": "percent",
             "title": "Aplique o cupom",
             "description": "Aplique o código de desconto no site da loja no campo de cupom.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/a73438cf-3379-4c7d-9ae7-2656c404b5f8/card-04.svg"
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/c0ab8965-15aa-4e4c-a275-29d40986438a/Component-4-(9).svg"
           },
           {
             "number": "05",
             "icon": "",
             "title": "Pagar com Pix",
             "description": "Selecione Pix como forma de pagamento.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/497bbe50-4168-4d2f-b2a9-6ae313314d17/PIX.svg"
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/14446190-9f9c-47cc-a058-4d5e4170b899/Component-4-(10).svg"
           },
           {
             "number": "06",
             "icon": "check",
             "title": "Parcelar no Pix!",
             "description": "Copie o código Pix ou ative o botão \"Parcelar no Pix\" para ter sua compra parcelada no App.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/7ede487e-2f79-401c-a685-5e9dfb39b28c/card-06.svg"
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/43ee2ff7-6437-4982-a93b-162772b41dd3/Component-4-(11).svg"
           }
         ],
         "badgeColor": "#00e16c",
@@ -591,7 +591,8 @@
           "link": "https://www.farmrio.com.br/top-estampado-borbolina-borbolina_bege-ambrosia-344429-50385/p?brand=farm&utm_source=rakuten&utm_medium=afiliados&utm_campaign=rakuten&utm_term=Pagaleve&utm_content=Fm6xynLNJdQ-9Cs3xQNLmm5CEIWUuUz_HQ&ranMID=46760&ranEAID=Fm6xynLNJdQ&ranSiteID=Fm6xynLNJdQ-9Cs3xQNLmm5CEIWUuUz_HQ",
           "category": "Moda",
           "rating": 5,
-          "ratingCount": 16
+          "ratingCount": 16,
+          "logo": "https://assets.decocache.com/lp-bf-pgl-003/95894e4a-7823-4bfa-95d9-b7f364f7b236/farm-rio.png"
         },
         {
           "name": "Tênis Adidas Campus 00s",
@@ -603,11 +604,12 @@
           "link": "https://www.artwalk.com.br/tenis-adidas-campus-00s-masculino-id143-7-300/p?utm_source=awin&utm_campaign=PAGALEVE&utm_term=1340039_&utm_medium=afiliados&aw_affid=1340039&awc=28773_1762284080_ddfb96fb97be39870331fc533d35c2fd",
           "category": "Moda",
           "rating": 5,
-          "ratingCount": 78
+          "ratingCount": 78,
+          "logo": "https://assets.decocache.com/lp-bf-pgl-003/d80f834c-146c-4e84-996c-14eaef2eec44/artwalk.png"
         },
         {
-          "name": "Hidratante facial Neutrogena Face Care",
-          "image": "https://assets.decocache.com/lp-bf-pgl-003/9ea121d7-6a3a-4c43-9a64-c32f1c750934/produto3.png",
+          "name": "Hidratante Facial Neutrogena Face Care",
+          "image": "https://assets.decocache.com/lp-bf-pgl-003/ac880179-0560-4682-a3d1-621b27b41bcc/produto3novo.png",
           "originalPrice": "R$ 47,99",
           "discountPrice": "R$ 19,90",
           "buttonText": "Conferir Oferta",
@@ -615,7 +617,8 @@
           "link": "https://www.paguemenos.com.br/hidratante-facial-neutrogena-face-care-intensive-antissinais-reparador-100g/p?utm_source=awin&utm_id=1340039_&utm_campaign=affiliate&sv1=affiliate&sv_campaign_id=1340039&awc=64086_1762975964_8820ae6fab91687629d212f71e86cae2",
           "category": "Cosméticos",
           "rating": 5,
-          "ratingCount": 65
+          "ratingCount": 65,
+          "logo": "https://assets.decocache.com/lp-bf-pgl-003/4303441d-5a1e-484c-a4ed-0e2f5c036745/pague-menos-logo-1-1.png"
         },
         {
           "name": "Arranhador Abóbora com Catnip Savana",
@@ -627,7 +630,8 @@
           "link": "https://www.cobasi.com.br/arranhador-abobora-com-catnip-savana-31177621/p?idsku=1177621&aw_affid=1340039&awc=17870_1762288482_6da9917df76fb0bf0e1aabe51dee791e&utm_source=zanox&utm_campaign=1340039+&utm_medium=afiliados",
           "category": "Pet",
           "rating": 5,
-          "ratingCount": 23
+          "ratingCount": 23,
+          "logo": "https://assets.decocache.com/lp-bf-pgl-003/387c271b-f9f4-430c-b18b-022b14861593/cobasi1.png"
         }
       ]
     },
