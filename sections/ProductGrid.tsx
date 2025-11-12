@@ -92,7 +92,7 @@ export default function ProductGrid({
           {products.map((product, index) => (
             <div 
               key={index}
-              class="bg-[#FCFCFC] rounded-lg md:rounded-2xl overflow-hidden"
+              class="bg-[#FCFCFC] rounded-lg md:rounded-2xl overflow-hidden flex flex-col justify-between"
               style={{ 
                 border: '1px solid rgba(0, 0, 0, 0.12)',
               }}
