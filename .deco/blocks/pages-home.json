@@ -57,7 +57,7 @@
             "number": "06",
             "icon": "check",
             "title": "Pague a 1ª parcela",
-            "description": "Aguarde a aprovação e pague na hora a 1ª parcela para confirmar o pedido",
+            "description": "Aguarde a aprovação e pague na hora a 1ª parcela para confirmar o pedido.",
             "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/2642a2ba-e835-48ec-8ce6-e3ab00099bfe/Frame-427322673-(9).svg"
           }
         ]
@@ -109,19 +109,19 @@
         {
           "discount": "50% OFF",
           "description": "Cole este código no campo de cupom do site da loja",
-          "couponCode": "PAGALEVEA",
+          "couponCode": "PAGALEVE",
           "buttonText": "Usar Cupom",
-          "buttonLink": "https://best.aliexpress.com/?af=4109468&cn=44914&cv=1&dp=Fm6xynLNJdQ-O..59hhc6Xob8DLYWnhQqw&aff_fcid=2977d9b820e9408db00b1c06e29d1bb4-1762516507764-09175-cZl1mOz2&aff_fsk=cZl1mOz2&aff_platform=promotion&sk=cZl1mOz2&aff_trace_key=2977d9b820e9408db00b1c06e29d1bb4-1762516507764-09175-cZl1mOz2&terminal_id=3ff152df8f1d41368b8881a41c3761c7",
-          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/392fafa4-7adf-401c-98a9-b6ada7ffd5d1/aliexpress.png",
-          "discountBadge": "R$ 12 OFF",
-          "category": "Variedades",
+          "buttonLink": "https://lojakings.com.br/kings-snkrs/memorias/?utm_source=igoal&utm_medium=afiliados&utm_campaign=colecao+memorias_3175&transaction_id=102557739ed7cd4ef3a552848cc0e0",
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/39008b25-9d10-4356-b9f9-5b2bfb54e424/kings.png",
+          "discountBadge": "5% OFF",
+          "category": "Moda",
           "dropdownText": "Regras e informações",
           "helpText": "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!  Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra.",
-          "rulesContent": "R$12,00 de desconto em compras a partir de R$85,00",
+          "rulesContent": "5% de desconto aplicado em compras a partir de 100 reais no carrinho. Válido para a primeira compra no site.",
           "usageInfo": "52 usados hoje | Vencimento: 30/11/2025",
-          "brand": "AliExpress",
+          "brand": "Kings Sneakers",
           "usageLeft": "72 usados hoje",
-          "usageRight": "Vencimento: 07/11/2025"
+          "usageRight": "Vencimento: 30/12/2025"
         },
         {
           "brand": "Vivara",
@@ -179,14 +179,14 @@
           "discount": "50% OFF",
           "buttonText": "Conferir Oferta",
           "buttonLink": "https://www.insiderstore.com.br/?utm_source=rakuten&utm_medium=4109468&utm_content=Fm6xynLNJdQ-2T.ZJYQ8AfBfjF.A3_dahw&ranMID=50056&ranEAID=Fm6xynLNJdQ&ranSiteID=Fm6xynLNJdQ-2T.ZJYQ8AfBfjF.A3_dahw",
-          "brandLogo": "https://storage.googleapis.com/uploads-wordpress/insider.png",
+          "brandLogo": "https://assets.decocache.com/lp-bf-pgl-003/24ff1e1f-1c10-44ad-9ee9-dcca6b831f21/insider2.png",
           "discountBadge": "OFERTA",
           "category": "Moda",
           "dropdownText": "Regras e informações",
           "helpText": "Aproveite 10% de desconto em peças da Hering e facilite seu pagamento com o Pix Parcelado!  Regras do cupom: Válido para todo o site, cumulativo com outras ofertas e sem restrição por CPF/Primeira compra.",
           "rulesContent": "Disponível direto no site.",
           "usageInfo": "52 usados hoje | Vencimento: 30/11/2025",
-          "alternativeText": "Black November Insider! Descontos de até 50% OFF + brinde exclusivo em compras acima de R$399"
+          "alternativeText": "Black November Insider! Até 50% OFF em produtos selecionados. Preços que não voltam e ainda dá para parcelar no Pix!"
         },
         {
           "brand": "Temu",
