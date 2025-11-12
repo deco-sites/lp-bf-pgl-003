@@ -72,7 +72,7 @@ export default function AppExclusiveCard({
 
   return (
     <div
-      class="rounded-2xl p-3 flex flex-col relative overflow-hidden"
+      class="rounded-2xl p-3 flex flex-col relative overflow-hidden  h-fit"
       style={{
         backgroundColor: "#0D0F11",
         boxShadow: "0px 4px 4px rgba(222, 222, 224, 0.15)"
@@ -96,9 +96,9 @@ export default function AppExclusiveCard({
           </div>
         )}
       </div>
-      <div class="flex flex-col gap-5">
+      <div class="flex flex-col gap-5 justify-between h-full">
         <div class="flex items-center justify-between gap-3">
-          <div class="flex items-center gap-3 flex-1 min-w-0 flex-wrap">
+          <div class="flex items-center gap-3 flex-1 min-w-0 flex-wrap lg:flex-nowrap">
             {brandLogo && (
               <div class="bg-white rounded-lg p-2.5 flex items-center justify-center w-[92px] h-[60px] shrink-0">
                 <img
@@ -109,13 +109,12 @@ export default function AppExclusiveCard({
                 />
               </div>
             )}
-            <div class="flex flex-col gap-1 min-w-0">
+            <div class="flex flex-col min-w-0">
               <h3
-                class="text-white leading-tight text-lg lg:text-xl"
+                class="text-white  text-lg"
                 style={{
                   fontFamily: "Sora, sans-serif",
                   fontWeight: 600,
-                  lineHeight: "25.2px"
                 }}
               >
                 {brand}
@@ -259,19 +258,19 @@ export default function AppExclusiveCard({
                 </svg>
               </button>
 
-              {isOpen && (
-                <div
-                  class="mt-3 text-[#999] leading-relaxed text-left"
-                  style={{
-                    fontFamily: "Quicksand, sans-serif",
-                    fontWeight: 400,
-                    fontSize: "12px",
-                    lineHeight: "15px"
-                  }}
-                >
-                  {rulesContent}
-                </div>
-              )}
+              <div
+                class={`mt-3 text-[#999] leading-relaxed text-left overflow-hidden transition-all duration-300 ease-out ${
+                  isOpen ? 'opacity-100 max-h-[1000px] translate-y-0' : 'opacity-0 max-h-0 -translate-y-2'
+                }`}
+                style={{
+                  fontFamily: "Quicksand, sans-serif",
+                  fontWeight: 400,
+                  fontSize: "12px",
+                  lineHeight: "15px"
+                }}
+              >
+                {rulesContent}
+              </div>
             </div>
           )}
 

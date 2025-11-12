@@ -2879,6 +2879,10 @@ input.tab:checked + .tab-content,
 .h-auto {
   height: auto;
 }
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
 .h-full {
   height: 100%;
 }
@@ -2887,6 +2891,12 @@ input.tab:checked + .tab-content,
 }
 .h-screen {
   height: 100vh;
+}
+.max-h-0 {
+  max-height: 0px;
+}
+.max-h-\[1000px\] {
+  max-height: 1000px;
 }
 .max-h-\[110px\] {
   max-height: 110px;
@@ -3145,6 +3155,10 @@ input.tab:checked + .tab-content,
 }
 .-translate-y-2 {
   --tw-translate-y: -0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.translate-y-0 {
+  --tw-translate-y: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .rotate-180 {
@@ -3991,6 +4005,9 @@ input.tab:checked + .tab-content,
 .opacity-10 {
   opacity: 0.1;
 }
+.opacity-100 {
+  opacity: 1;
+}
 .opacity-20 {
   opacity: 0.2;
 }
@@ -4505,6 +4522,10 @@ input.tab:checked + .tab-content,
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 
   .lg\:justify-end {

@@ -45,7 +45,7 @@ export default function CouponCard({
 
   return (
     <div 
-      class="rounded-2xl p-3 flex flex-col gap-[18px]"
+      class="rounded-2xl p-3 flex flex-col gap-[18px] h-fit "
       style={{ 
         backgroundColor: "#171A1E",
         boxShadow: "0px 4px 4px rgba(222, 222, 224, 0.15)"
@@ -66,11 +66,10 @@ export default function CouponCard({
           )}
           <div class="flex flex-col gap-1">
             <h3 
-              class="text-white leading-tight text-lg lg:text-xl"
+              class="text-white text-lg"
               style={{ 
                 fontFamily: "Sora, sans-serif",
                 fontWeight: 600,
-                lineHeight: "25.2px"
               }}
             >
               {brand}
@@ -217,19 +216,19 @@ export default function CouponCard({
             </svg>
           </button>
           
-          {isOpen && rulesContent && (
-            <div 
-              class="mt-3 text-[#999] leading-relaxed"
-              style={{ 
-                fontFamily: "Quicksand, sans-serif",
-                fontWeight: 600,
-                fontSize: "12px",
-                lineHeight: "15px"
-              }}
-            >
-              {rulesContent}
-            </div>
-          )}
+          <div
+                class={`mt-3 text-[#999] leading-relaxed text-left overflow-hidden transition-all duration-300 ease-out ${
+                  isOpen ? 'opacity-100 max-h-[1000px] translate-y-0' : 'opacity-0 max-h-0 -translate-y-2'
+                }`}
+                style={{
+                  fontFamily: "Quicksand, sans-serif",
+                  fontWeight: 400,
+                  fontSize: "12px",
+                  lineHeight: "15px"
+                }}
+              >
+                {rulesContent}
+              </div>
         </div>
         
         {/* Informações de Uso com linha divisória */}
