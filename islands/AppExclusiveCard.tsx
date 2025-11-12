@@ -111,7 +111,7 @@ export default function AppExclusiveCard({
             )}
             <div class="flex flex-col min-w-0">
               <h3
-                class="text-white  text-lg"
+                class="text-[#FCFCFC]  text-lg"
                 style={{
                   fontFamily: "Sora, sans-serif",
                   fontWeight: 600,
@@ -121,7 +121,7 @@ export default function AppExclusiveCard({
               </h3>
               {category && (
                 <p
-                  class="text-[#999999] leading-tight text-base"
+                  class="text-[#FCFCFC] leading-tight text-base"
                   style={{
                     fontFamily: "Quicksand, sans-serif",
                     fontWeight: 500,
@@ -167,10 +167,10 @@ export default function AppExclusiveCard({
             }}
           >
             <div class="flex items-center justify-between gap-2">
-              <div class="flex flex-col gap-4 text-[10px]">
+              <div class="flex flex-col gap-3">
                 {description && (
                   <p
-                    class="text-[#999]"
+                    class="text-[#DEDEE0] text-xs"
                     style={{
                       fontFamily: "Quicksand, sans-serif",
                       fontWeight: 400,
@@ -181,7 +181,7 @@ export default function AppExclusiveCard({
                   </p>
                 )}
                 <span
-                  class="text-white"
+                  class="text-white min-h-9"
                   style={{
                     fontFamily: "Quicksand, sans-serif",
                     fontWeight: 700,
@@ -219,7 +219,7 @@ export default function AppExclusiveCard({
         ) : (
           <div>
             <p
-              class="text-white"
+              class="text-white min-h-9"
               style={{
                 fontFamily: "Quicksand, sans-serif",
                 fontWeight: 400,
@@ -232,7 +232,7 @@ export default function AppExclusiveCard({
           </div>
         )}
 
-        <div class="flex flex-col gap-[18px]">
+        <div class="flex flex-col gap-3">
           {rulesContent && (
             <div>
               <button
@@ -259,8 +259,8 @@ export default function AppExclusiveCard({
               </button>
 
               <div
-                class={`mt-3 text-[#999] leading-relaxed text-left overflow-hidden transition-all duration-300 ease-out ${
-                  isOpen ? 'opacity-100 max-h-[1000px] translate-y-0' : 'opacity-0 max-h-0 -translate-y-2'
+                class={` text-[#999] leading-relaxed text-left overflow-hidden transition-all duration-300 ease-out ${
+                  isOpen ? 'mt-3 opacity-100 max-h-[1000px] translate-y-0' : 'opacity-0 max-h-0 -translate-y-2'
                 }`}
                 style={{
                   fontFamily: "Quicksand, sans-serif",
@@ -278,7 +278,7 @@ export default function AppExclusiveCard({
             <div class="flex items-center gap-3 flex-wrap">
               {usageLeft && (
                 <span
-                  class="text-[#DEDEE0]"
+                  class="text-[#FCFCFC]"
                   style={{
                     fontFamily: "Quicksand, sans-serif",
                     fontWeight: 400,
@@ -290,11 +290,11 @@ export default function AppExclusiveCard({
                 </span>
               )}
               {usageLeft && usageRight && (
-                <div class="w-px h-4 bg-[#DEDEE0]"></div>
+                <div class="w-px h-4 bg-[#FCFCFC]"></div>
               )}
               {usageRight && (
                 <span
-                  class="text-[#DEDEE0]"
+                  class="text-[#FCFCFC]"
                   style={{
                     fontFamily: "Quicksand, sans-serif",
                     fontWeight: 600,
@@ -310,7 +310,7 @@ export default function AppExclusiveCard({
 
           <a
             href={buttonLink}
-            class="block text-center rounded-2xl transition-all hover:opacity-90 px-3 py-3"
+            class="block text-center rounded-2xl transition-all hover:opacity-90 px-3 py-2 text-base lg:text-lg lg:mb-5 font-semibold"
             style={{
               backgroundColor: buttonColor,
               fontFamily: "Quicksand, sans-serif",

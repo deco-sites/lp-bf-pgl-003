@@ -45,7 +45,7 @@ export default function CouponCard({
 
   return (
     <div 
-      class="rounded-2xl p-3 flex flex-col gap-[18px] h-fit "
+      class="rounded-2xl p-3 flex flex-col gap-4 h-fit "
       style={{ 
         backgroundColor: "#171A1E",
         boxShadow: "0px 4px 4px rgba(222, 222, 224, 0.15)"
@@ -123,10 +123,10 @@ export default function CouponCard({
         >
           {/* Descrição e Código */}
           <div class="flex items-center justify-between gap-2">
-            <div class="flex flex-col gap-4 text-[10px]">
+            <div class="flex flex-col gap-3">
               {description && (
                 <p 
-                  class="text-[#999]"
+                  class="text-[#DEDEE0] text-xs"
                   style={{ 
                     fontFamily: "Quicksand, sans-serif",
                     fontWeight: 400,
@@ -137,7 +137,7 @@ export default function CouponCard({
                 </p>
               )}
               <span 
-                class="text-white"
+                class="text-white min-h-9"
                 style={{ 
                   fontFamily: "Quicksand, sans-serif",
                   fontWeight: 700,
@@ -177,7 +177,7 @@ export default function CouponCard({
         /* Texto alternativo quando não há cupom */
         <div>
           <p 
-            class="text-white"
+            class="text-white min-h-9"
             style={{ 
               fontFamily: "Quicksand, sans-serif",
               fontWeight: 400,
@@ -191,12 +191,12 @@ export default function CouponCard({
       ) : null}
       
       {/* Dropdown e Info de Uso */}
-      <div class="flex flex-col gap-[18px]">
+      <div class="flex flex-col gap-3">
         {/* Dropdown Funcional */}
         <div>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            class="flex items-center justify-center gap-2 text-[#DEDEE0] transition-all hover:opacity-80 text-xs"
+            class="flex items-center justify-center gap-2 text-[#FCFCFC] transition-all hover:opacity-80 text-xs lg:text-sm"
             style={{ 
               fontFamily: "Quicksand, sans-serif",
               fontWeight: 400,
@@ -217,8 +217,8 @@ export default function CouponCard({
           </button>
           
           <div
-                class={`mt-3 text-[#999] leading-relaxed text-left overflow-hidden transition-all duration-300 ease-out ${
-                  isOpen ? 'opacity-100 max-h-[1000px] translate-y-0' : 'opacity-0 max-h-0 -translate-y-2'
+                class={`text-[#999] leading-relaxed text-left overflow-hidden transition-all duration-300 ease-out ${
+                  isOpen ? 'mt-3 opacity-100 max-h-[1000px] translate-y-0' : 'opacity-0 max-h-0 -translate-y-2'
                 }`}
                 style={{
                   fontFamily: "Quicksand, sans-serif",
@@ -236,7 +236,7 @@ export default function CouponCard({
           <div class="flex items-center gap-3">
             {usageLeft && (
               <span 
-                class="text-[#DEDEE0]"
+                class="text-[#FCFCFC]"
                 style={{ 
                   fontFamily: "Quicksand, sans-serif",
                   fontWeight: 400,
@@ -248,11 +248,11 @@ export default function CouponCard({
               </span>
             )}
             {usageLeft && usageRight && (
-              <div class="w-px h-4 bg-[#DEDEE0]"></div>
+              <div class="w-px h-4 bg-[#FCFCFC]"></div>
             )}
             {usageRight && (
               <span 
-                class="text-[#DEDEE0]"
+                class="text-[#FCFCFC]"
                 style={{ 
                   fontFamily: "Quicksand, sans-serif",
                   fontWeight: 400,
@@ -269,7 +269,7 @@ export default function CouponCard({
         {/* Botão */}
         <a 
           href={buttonLink}
-          class="block text-center rounded-2xl transition-all hover:opacity-90 px-3 py-2 text-base"
+          class="block text-center rounded-2xl transition-all hover:opacity-90 px-3 py-2 text-base lg:text-lg lg:mb-5 font-semibold"
           style={{ 
             backgroundColor: "#FF009B",
             fontFamily: "Quicksand, sans-serif",

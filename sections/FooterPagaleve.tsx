@@ -230,7 +230,7 @@ export default function FooterPagaleve({
                   <a
                     key={link.label}
                     href={link.href}
-                    class="font-quicksand text-sm font-normal text-[#737373] hover:text-white transition-colors"
+                    class="font-quicksand text-sm font-normal text-white opacity-70 hover:text-white transition-colors"
                   >
                     {link.label}
                   </a>
@@ -248,7 +248,7 @@ export default function FooterPagaleve({
                   <a
                     key={link.label}
                     href={link.href}
-                    class="font-quicksand text-sm font-normal text-[#737373] hover:text-white transition-colors"
+                    class="font-quicksand text-sm font-normal text-white opacity-70 hover:text-white transition-colors"
                   >
                     {link.label}
                   </a>
@@ -266,7 +266,7 @@ export default function FooterPagaleve({
                   <a
                     key={link.label}
                     href={link.href}
-                    class="font-quicksand text-sm font-normal text-[#737373] hover:text-white transition-colors"
+                    class="font-quicksand text-sm font-normal text-white opacity-70 hover:text-white transition-colors"
                   >
                     {link.label}
                   </a>
@@ -277,22 +277,22 @@ export default function FooterPagaleve({
 
           {/* Section 4: Copyright & Info */}
           <div class="flex flex-col gap-4 mb-8 pb-8 border-b border-[#1F1F1F]">
-            <p class="font-quicksand text-xs font-normal text-[#737373] text-center">
+            <p class="font-quicksand text-xs font-normal text-white opacity-70 text-center">
               {copyright}
             </p>
-            <p class="font-quicksand text-xs font-normal text-[#737373] text-center">
+            <p class="font-quicksand text-xs font-normal text-white opacity-70 text-center">
               {additionalInfo}
             </p>
           </div>
 
           {/* Section 5: Desenvolvido por */}
           <div class="flex items-center justify-center gap-2 font-quicksand">
-            <span class="text-xs font-normal text-[#737373]">Desenvolvido por</span>
+            <span class="text-xs font-normal text-white opacity-70">Desenvolvido por</span>
             <a
               href="https://www.tec4udigital.com/?utm_source=pagaleve&utm_medium=rodape"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-xs font-normal text-[#737373] hover:text-white transition-colors underline"
+              class="text-xs font-normal text-white opacity-70 hover:text-white transition-colors underline"
             >
               TEC4U
             </a>
@@ -314,7 +314,7 @@ export default function FooterPagaleve({
             />
             <span class="w-full h-[1px] bg-[#1F1F1F]">
             </span>
-              <p class="font-quicksand text-sm font-normal text-[#737373] leading-relaxed max-w-[280px]">
+              <p class="font-quicksand text-sm font-normal text-white opacity-70 leading-relaxed max-w-[280px]">
                 {tagline}
               </p>
             </div>
@@ -330,7 +330,7 @@ export default function FooterPagaleve({
                   <a
                     key={link.label}
                     href={link.href}
-                    class="font-quicksand text-sm font-normal text-[#737373] hover:text-white transition-colors"
+                    class="font-quicksand text-sm font-normal text-white opacity-70 hover:text-white transition-colors"
                   >
                     {link.label}
                   </a>
@@ -349,7 +349,7 @@ export default function FooterPagaleve({
                   <a
                     key={link.label}
                     href={link.href}
-                    class="font-quicksand text-sm font-normal text-[#737373] hover:text-white transition-colors"
+                    class="font-quicksand text-sm font-normal text-white opacity-70 hover:text-white transition-colors"
                   >
                     {link.label}
                   </a>
@@ -368,7 +368,7 @@ export default function FooterPagaleve({
                   <a
                     key={link.label}
                     href={link.href}
-                    class="font-quicksand text-sm font-normal text-[#737373] hover:text-white transition-colors"
+                    class="font-quicksand text-sm font-normal text-white opacity-70 hover:text-white transition-colors"
                   >
                     {link.label}
                   </a>
@@ -378,7 +378,7 @@ export default function FooterPagaleve({
 
             {/* Column 5: App Download & Social Media */}
             <div class="flex flex-col items-center gap-6">
-              <p class="font-quicksand text-sm font-normal text-[#737373]">
+              <p class="font-quicksand text-sm font-normal text-white opacity-70">
                 {appStoreTitle}
               </p>
               
@@ -474,21 +474,21 @@ export default function FooterPagaleve({
           {/* Bottom Footer */}
           <div class="flex justify-between items-center">
             <div class="flex flex-col gap-2">
-              <p class="font-quicksand text-xs font-normal text-[#737373]">
+              <p class="font-quicksand text-xs font-normal text-white opacity-70">
                 {copyright}
               </p>
-              <p class="font-quicksand text-xs font-normal text-[#737373]">
+              <p class="font-quicksand text-xs font-normal text-white opacity-70">
                 {additionalInfo}
               </p>
             </div>
             
             <div class="flex items-center gap-2 font-quicksand">
-              <span class="text-xs font-normal text-[#737373]">Desenvolvido por</span>
+              <span class="text-xs font-normal text-white opacity-70">Desenvolvido por</span>
               <a
                 href="https://www.tec4udigital.com/?utm_source=pagaleve&utm_medium=rodape"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-xs font-normal text-[#737373] hover:text-white transition-colors"
+                class="text-xs font-normal text-white opacity-70 hover:text-white transition-colors"
               >
                 TEC4U
               </a>
