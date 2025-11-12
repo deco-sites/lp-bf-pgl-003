@@ -88,7 +88,7 @@ export default function ProductGrid({
           </p>
         </div>
         
-        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3  md:gap-[63px]">
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-9">
           {products.map((product, index) => (
             <div 
               key={index}

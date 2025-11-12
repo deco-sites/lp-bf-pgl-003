@@ -3928,6 +3928,10 @@ input.tab:checked + .tab-content,
   --tw-text-opacity: 1;
   color: rgb(222 222 224 / var(--tw-text-opacity));
 }
+.text-\[\#F5C2E6\] {
+  --tw-text-opacity: 1;
+  color: rgb(245 194 230 / var(--tw-text-opacity));
+}
 .text-\[\#FCFCFC\] {
   --tw-text-opacity: 1;
   color: rgb(252 252 252 / var(--tw-text-opacity));
@@ -4305,12 +4309,12 @@ input.tab:checked + .tab-content,
     gap: 1.5rem;
   }
 
-  .md\:gap-\[150px\] {
-    gap: 150px;
+  .md\:gap-9 {
+    gap: 2.25rem;
   }
 
-  .md\:gap-\[63px\] {
-    gap: 63px;
+  .md\:gap-\[150px\] {
+    gap: 150px;
   }
 
   .md\:rounded-2xl {

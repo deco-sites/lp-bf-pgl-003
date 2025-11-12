@@ -113,7 +113,7 @@ export default function CouponGrid({
       <div class="container mx-auto max-w-7xl">
         {/* Título */}
         <h2 
-          class="text-center mb-8 text-[22px]"
+          class="text-center mb-8 text-[22px] lg:text-4xl"
           style={{ 
             fontFamily: "Sora, sans-serif",
             fontWeight: 700,

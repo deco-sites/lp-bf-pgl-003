@@ -204,13 +204,12 @@ export default function AppExclusiveCoupons({
       style={{ backgroundColor }}
     >
       <div class="container mx-auto max-w-7xl">
-        <div class="flex flex-col items-center mb-12 gap-4">
+        <div class="flex flex-col items-center mb-12 gap-4 text-[22px] lg:text-4xl">
           <h2 
-            class="text-center"
+            class="text-center "
             style={{ 
               fontFamily: "Sora, sans-serif",
               fontWeight: 700,
-              fontSize: "clamp(28px, 4vw, 40px)",
               lineHeight: "1.2"
             }}
           >

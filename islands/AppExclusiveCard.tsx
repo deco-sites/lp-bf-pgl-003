@@ -111,7 +111,7 @@ export default function AppExclusiveCard({
             )}
             <div class="flex flex-col gap-1 min-w-0">
               <h3
-                class="text-white leading-tight text-lg"
+                class="text-white leading-tight text-lg lg:text-xl"
                 style={{
                   fontFamily: "Sora, sans-serif",
                   fontWeight: 600,

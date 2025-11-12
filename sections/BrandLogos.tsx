@@ -59,7 +59,7 @@ export default function BrandLogos({
   customIcon,
   iconSize = 24,
   logos = [],
-  backgroundColor = "#000000",
+  backgroundColor = "#131618",
   carouselSpeed = 30
 }: Props) {
   return (
