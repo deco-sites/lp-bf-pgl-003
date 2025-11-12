@@ -137,7 +137,7 @@ export default function CouponCard({
                 </p>
               )}
               <span 
-                class="text-white min-h-9"
+                class="text-white"
                 style={{ 
                   fontFamily: "Quicksand, sans-serif",
                   fontWeight: 700,
@@ -177,7 +177,7 @@ export default function CouponCard({
         /* Texto alternativo quando não há cupom */
         <div>
           <p 
-            class="text-white min-h-9"
+            class="text-white min-h-14"
             style={{ 
               fontFamily: "Quicksand, sans-serif",
               fontWeight: 400,
