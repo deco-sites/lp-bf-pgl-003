@@ -90,7 +90,7 @@ export default function CouponCard({
         
         {/* Badge de Desconto - estilo Figma */}
         <div 
-          class="rounded-lg px-2 py-2 whitespace-nowrap flex items-center justify-center"
+          class="rounded-[5px] px-[5px]  whitespace-nowrap flex items-center justify-center"
           style={{ 
             backgroundColor: "rgba(255, 0, 155, 0.1)",
             border: "1px solid #FF009B"

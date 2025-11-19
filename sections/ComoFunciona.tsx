@@ -196,9 +196,8 @@ export default function ComoFunciona({
 
                     {/* Card */}
                     <div
-                      class="w-full h-full flex items-center justify-center"
+                      class="w-full h-full flex items-center justify-start flex-col"
                       style={{
-                        height: "160px",
                         backgroundColor: "rgba(0, 0, 0, 0.05)",
                         border: `1px solid ${cardBorderColor}`,
                         borderRadius: "12px",

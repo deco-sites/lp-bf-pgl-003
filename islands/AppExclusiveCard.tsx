@@ -135,7 +135,7 @@ export default function AppExclusiveCard({
 
           <div class="flex flex-col gap-2 items-end shrink-0">
             <div
-              class="rounded-lg px-2 py-2 whitespace-nowrap flex items-center justify-center bg-opacity-10"
+              class="rounded-[5px] px-[5px]  whitespace-nowrap flex items-center justify-center bg-opacity-10"
               style={{
                 background: 'linear-gradient(0deg, rgba(0, 225, 108, 0.10) 0%, rgba(0, 225, 108, 0.10) 100%), rgba(10, 125, 71, 0.10)',
                 backgroundColor: discountBadgeColor,
