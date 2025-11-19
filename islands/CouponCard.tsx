@@ -55,12 +55,11 @@ export default function CouponCard({
       <div class="flex items-center justify-between gap-5">
         <div class="flex items-center gap-3 flex-wrap">
           {brandLogo && (
-            <div class="bg-white rounded-lg p-2.5 flex items-center justify-center w-[92px] h-[60px]">
+            <div class="bg-white rounded-lg flex items-center justify-center w-[92px] h-[60px]">
               <img 
                 src={brandLogo} 
                 alt={brand}
-                class="max-w-full max-h-full object-contain"
-                style={{ objectFit: "contain" }}
+                class="max-w-full max-h-full object-cover"
               />
             </div>
           )}
