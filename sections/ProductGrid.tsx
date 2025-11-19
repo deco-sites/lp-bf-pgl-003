@@ -132,7 +132,7 @@ export default function ProductGrid({
                     <div class="flex items-center gap-1 md:gap-2">
                       <div class="flex flex-row justify-between w-full items-center">
                         <div
-                          class="px-2 rounded-lg"
+                          class="px-2 rounded-lg flex justify-center items-center"
                           style={{ border: '0.5px solid #1A2B38' }}
                         >
                           <span
@@ -145,15 +145,15 @@ export default function ProductGrid({
                           >
                             {product.category}
                           </span>
-                          <Image
-                            width={42}
-                            height={22}
-                            loading={"lazy"}
-                            alt={"logo"}
-                            preload={false}
-                            src={product.logo}
-                          />
                         </div>
+                        <Image
+                          width={42}
+                          height={22}
+                          loading={"lazy"}
+                          alt={"logo"}
+                          preload={false}
+                          src={product.logo}
+                        />
                       </div>
                       {pagaleveLogo && (
                         <img
