@@ -230,42 +230,42 @@
             "icon": "copy",
             "title": "Copie o cupom",
             "description": "Copie o cupom exclusivo da sua escolha.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/07760878-f2c4-4eab-a608-0e2ee3ca7053/Component-4.png"
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/767940f8-a7c5-420a-af05-73268efeb2e9/Frame-427322676.svg"
           },
           {
             "number": "02",
             "icon": "",
             "title": "App da Pagaleve",
             "description": "Acesse o site da loja através do App da Pagaleve e siga as instruções.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/8f29380f-db0b-4942-bb65-6b41e26ff684/Component-5.png"
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/9235285d-cd26-472c-bff6-6d52ce880dc8/Frame-427322677.svg"
           },
           {
             "number": "03",
             "icon": "",
             "title": "Adicione ao carrinho",
             "description": "Coloque seus produtos favoritos no carrinho.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/717c2fd2-4cfb-4a68-9407-7cff78754475/Component-6.png"
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/c7f571ff-a798-4ec4-950d-b37614014b97/Frame-427322675-(1).svg"
           },
           {
             "number": "04",
             "icon": "percent",
             "title": "Aplique o cupom",
             "description": "Aplique o código de desconto no site da loja no campo de cupom.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/0eb760cf-e426-4b2e-92f1-b9e62ea4eea2/Component-7.png"
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/719f8bee-2951-4a14-911c-a2816309e5e9/Frame-427322678.svg"
           },
           {
             "number": "05",
             "icon": "",
             "title": "Pagar com Pix",
             "description": "Selecione Pix como forma de pagamento.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/63327ed4-5073-4081-87a8-43f916b37501/Component-8.png"
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/0d6aa2ec-24f8-4c3b-8e1a-0d0b53f28183/Frame-427322682.svg"
           },
           {
             "number": "06",
             "icon": "check",
             "title": "Parcelar no Pix!",
             "description": "Copie o código Pix ou ative o botão \"Parcelar no Pix\" para ter sua compra parcelada no App.",
-            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/654bd2fb-2ff0-4e45-8c90-807afc4b17d7/Component-9.png"
+            "iconImage": "https://assets.decocache.com/lp-bf-pgl-003/db6a39eb-9a19-45c0-b2c0-0256e8234d8a/Frame-427322680.svg"
           }
         ],
         "badgeColor": "#00e16c",
