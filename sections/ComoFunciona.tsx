@@ -133,7 +133,7 @@ export default function ComoFunciona({
         overflowX: "hidden",
       }}
     >
-      <div class="w-full max-w-[1140px] mx-auto flex flex-col items-center px-4 md:px-8 lg:px-[52px] py-6 md:py-12 lg:pb-6 lg:py-[52px]">
+      <div class="w-full max-w-[1140px] mx-auto flex flex-col items-center px-4 py-6 md:py-12 lg:pb-6 lg:py-[52px]">
         {/* Header */}
         <div class="w-full max-w-[1336px] flex flex-col items-center gap-4 md:gap-6">
           {/* Títulos */}
