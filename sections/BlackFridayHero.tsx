@@ -124,7 +124,7 @@ export default function BlackFridayHero({
           font-family: 'Quicksand', sans-serif;
           font-size: 9px;
           line-height: 11px;
-          font-weight: 600;
+          font-weight: 400;
           color: #FFFFFF;
           text-align: center;
         }

@@ -177,7 +177,7 @@ export default function CouponCard({
         /* Texto alternativo quando não há cupom */
         <div>
           <p 
-            class="text-white min-h-14"
+            class="text-[#999999] min-h-14"
             style={{ 
               fontFamily: "Quicksand, sans-serif",
               fontWeight: 400,

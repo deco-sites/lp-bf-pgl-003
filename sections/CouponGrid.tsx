@@ -113,11 +113,10 @@ export default function CouponGrid({
       <div class="container mx-auto max-w-7xl">
         {/* Título */}
         <h2 
-          class="text-center mb-8 text-[22px] lg:text-4xl"
+          class="text-center mb-8 text-[22px] lg:text-3xl lg:py-7"
           style={{ 
             fontFamily: "Sora, sans-serif",
             fontWeight: 700,
-            lineHeight: "1.2"
           }}
         >
           {sectionTitle}

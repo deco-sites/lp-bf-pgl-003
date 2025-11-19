@@ -75,7 +75,7 @@ export default function FAQ({
             {/* Título */}
             <div class="flex items-center justify-center gap-2">
               <h2 
-                class="font-semibold text-center text-[24px] md:text-[36px]"
+                class="font-semibold text-center text-[24px] md:text-3xl"
                 style={{
                   fontFamily: 'Sora, sans-serif',
                   lineHeight: '1.26',

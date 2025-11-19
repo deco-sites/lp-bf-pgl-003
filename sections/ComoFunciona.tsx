@@ -139,7 +139,7 @@ export default function ComoFunciona({
           {/* Títulos */}
           <div class="w-full flex flex-col items-center gap-2 md:gap-3">
             <h2
-              class="text-center text-[22px] md:text-2xl lg:text-4xl font-semibold text-white px-4"
+              class="text-center text-[22px] md:text-2xl lg:text-3xl font-semibold text-white px-4"
               style={{
                 fontFamily: "Sora, sans-serif",
               }}
@@ -147,7 +147,7 @@ export default function ComoFunciona({
               {mainTitle}
             </h2>
             <p
-              class="text-center text-sm md:text-base lg:text-2xl text-white/95 px-4"
+              class="text-center text-sm md:text-base lg:text-xl text-white/95 px-4"
               style={{
                 fontFamily: "Quicksand, sans-serif",
               }}
@@ -159,7 +159,7 @@ export default function ComoFunciona({
           {/* Steps Grid */}
           <div class="w-full">
             {/* Container com scroll horizontal no mobile */}
-            <div class="lg:hidden w-full overflow-x-auto overflow-y-visible pb-4" style={{
+            <div class="lg:hidden w-full overflow-x-auto overflow-y-visible pb-4 " style={{
               scrollbarWidth: "thin",
               WebkitOverflowScrolling: "touch"
             }}>
@@ -216,7 +216,7 @@ export default function ComoFunciona({
                               src={step.iconImage}
                             style="min-height:40px;"
                               alt={step.title}
-                              class="w-full h-auto min-h-[10px] object-contain max-w-[35px]"
+                              class="w-full h-auto object-contain max-w-[40px]"
                             />
                           ) : step.icon ? (
                             <i class={`fa-regular fa-${step.icon} text-white text-2xl`} />
@@ -224,7 +224,7 @@ export default function ComoFunciona({
                         </div>
 
                         {/* Texto */}
-                        <div class="flex flex-col items-center w-full gap-1">
+                        <div class="flex flex-col items-center w-full gap-2">
                           <h3
                             class="text-center text-lg font-semibold text-white"
                             style={{
@@ -250,7 +250,7 @@ export default function ComoFunciona({
             </div>
 
             {/* Grid para desktop */}
-            <div class="hidden lg:grid lg:grid-cols-6 gap-6 pt-4">
+            <div class="hidden lg:grid lg:grid-cols-6 gap-4 pt-4 max-w-[1140px] mx-auto">
               {steps.map((step) => (
                 <div
                   key={step.number}
@@ -264,16 +264,16 @@ export default function ComoFunciona({
                     class="absolute flex items-center justify-center"
                     style={{
                       width: "36px",
-                      height: "33px",
+                      height: "36px",
                       backgroundColor: badgeColor,
-                      borderRadius: "23px",
+                      borderRadius: "36px",
                       top: "0px",
                       left: "0px",
                       zIndex: 10,
                     }}
                   >
                     <span
-                      class="text-base font-semibold lg:text-xl"
+                      class="text-sm font-semibold"
                       style={{
                         fontFamily: "Quicksand, sans-serif",
                         color: badgeTextColor,
@@ -285,16 +285,15 @@ export default function ComoFunciona({
 
                   {/* Card */}
                   <div
-                    class="w-full h-full flex flex-col"
+                    class="w-full h-full flex flex-col py-4 px-3"
                     style={{
                       backgroundColor: "rgba(0, 0, 0, 0.05)",
-                      border: `1px solid ${cardBorderColor}`,
+                      border: `1px solid #3B4A54`,
                       borderRadius: "12px",
-                      padding: "16px",
                       marginTop: "4px",
                     }}
                   >
-                    <div class="flex flex-col items-center justify-start pt-2 flex-1 w-full gap-1">
+                    <div class="flex flex-col items-center justify-start pt-2 flex-1 w-full gap-2">
                       {/* Ícone */}
                       <div class="flex items-center justify-center">
                         {step.iconImage ? (
@@ -304,7 +303,7 @@ export default function ComoFunciona({
                             src={step.iconImage}
                             style="min-height:40px;"
                             alt={step.title}
-                            class="w-full h-auto min-h-[10px] object-contain max-w-[35px]"
+                            class="w-full h-auto object-contain max-w-[40px]"
                           />
                         ) : step.icon ? (
                           <i class={`fa-regular fa-${step.icon} text-white text-3xl`} />
@@ -312,9 +311,9 @@ export default function ComoFunciona({
                       </div>
 
                       {/* Texto */}
-                      <div class="flex flex-col items-center w-full gap-1">
+                      <div class="flex flex-col items-center w-full gap-2">
                         <h3
-                          class="text-center text-base font-semibold text-white lg:text-lg text-bold" 
+                          class="text-center text-base font-semibold text-white text-bold" 
                           style={{
                             fontFamily: "Quicksand, sans-serif",
                           }}
@@ -322,7 +321,7 @@ export default function ComoFunciona({
                           {step.title}
                         </h3>
                         <p
-                          class="text-center text-sm text-white/90 "
+                          class="text-center text-xs text-white/90 "
                           style={{
                             fontFamily: "Quicksand, sans-serif",
                           }}

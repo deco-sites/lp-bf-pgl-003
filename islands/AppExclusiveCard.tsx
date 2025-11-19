@@ -100,12 +100,11 @@ export default function AppExclusiveCard({
         <div class="flex items-center justify-between gap-3">
           <div class="flex items-center gap-3 flex-1 min-w-0 flex-wrap lg:flex-nowrap">
             {brandLogo && (
-              <div class="bg-white rounded-lg p-2.5 flex items-center justify-center w-[92px] h-[60px] shrink-0">
+              <div class="bg-white rounded-lg flex items-center justify-center w-[92px] h-[60px] shrink-0">
                 <img
                   src={brandLogo}
                   alt={brand}
-                  class="max-w-full max-h-full object-contain"
-                  style={{ objectFit: "contain" }}
+                  class="max-w-full max-h-full object-cover"
                 />
               </div>
             )}
@@ -121,7 +120,7 @@ export default function AppExclusiveCard({
               </h3>
               {category && (
                 <p
-                  class="text-[#FCFCFC] leading-tight text-base"
+                  class="text-[#999999] leading-tight text-base"
                   style={{
                     fontFamily: "Quicksand, sans-serif",
                     fontWeight: 500,
@@ -219,7 +218,7 @@ export default function AppExclusiveCard({
         ) : (
           <div>
             <p
-              class="text-white min-h-14"
+              class="text-[#999999] min-h-14"
               style={{
                 fontFamily: "Quicksand, sans-serif",
                 fontWeight: 400,
@@ -297,7 +296,7 @@ export default function AppExclusiveCard({
                   class="text-[#FCFCFC]"
                   style={{
                     fontFamily: "Quicksand, sans-serif",
-                    fontWeight: 600,
+                    fontWeight: 400,
                     fontSize: "12px",
                     lineHeight: "15px"
                   }}

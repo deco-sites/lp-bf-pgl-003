@@ -204,7 +204,7 @@ export default function AppExclusiveCoupons({
       style={{ backgroundColor }}
     >
       <div class="container mx-auto max-w-7xl">
-        <div class="flex flex-col items-center mb-12 gap-4 text-[22px] lg:text-4xl">
+        <div class="flex flex-col items-center mb-8 lg:py-7 gap-4 text-[22px] lg:text-3xl">
           <h2 
             class="text-center "
             style={{ 

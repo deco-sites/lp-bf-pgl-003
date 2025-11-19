@@ -3061,6 +3061,9 @@ input.tab:checked + .tab-content,
 .max-w-7xl {
   max-width: 80rem;
 }
+.max-w-\[1140px\] {
+  max-width: 1140px;
+}
 .max-w-\[1336px\] {
   max-width: 1336px;
 }
@@ -3097,9 +3100,6 @@ input.tab:checked + .tab-content,
 .max-w-\[350px\] {
   max-width: 350px;
 }
-.max-w-\[35px\] {
-  max-width: 35px;
-}
 .max-w-\[360px\] {
   max-width: 360px;
 }
@@ -3111,6 +3111,9 @@ input.tab:checked + .tab-content,
 }
 .max-w-\[400px\] {
   max-width: 400px;
+}
+.max-w-\[40px\] {
+  max-width: 40px;
 }
 .max-w-\[420px\] {
   max-width: 420px;
@@ -4425,10 +4428,6 @@ input.tab:checked + .tab-content,
     font-size: 22px;
   }
 
-  .md\:text-\[36px\] {
-    font-size: 36px;
-  }
-
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -4575,6 +4574,11 @@ input.tab:checked + .tab-content,
     padding-bottom: 1.5rem;
   }
 
+  .lg\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
   .lg\:py-\[52px\] {
     padding-top: 52px;
     padding-bottom: 52px;
@@ -4595,6 +4599,11 @@ input.tab:checked + .tab-content,
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .lg\:text-4xl {
