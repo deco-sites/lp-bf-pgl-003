@@ -71,26 +71,25 @@ export default function ProductGrid({
       class="py-8 px-4 md:py-[52px] md:px-[52px]"
       style={{ backgroundColor }}
     >
-      <div class="max-w-[1440px] mx-auto">
+      <div class="max-w-[1140px] mx-auto">
         <div class="flex flex-col items-center mb-8 md:mb-9">
           <h2
-            class="text-white font-bold text-2xl leading-[30.24px] md:text-4xl md:leading-[45.36px] mb-2.5 text-center"
+            class="text-white font-bold text-2xl leading-[30.24px] md:text-3xl md:leading-[45.36px] mb-2.5 text-center"
             style={{ fontFamily: 'Sora, sans-serif' }}
           >
             {sectionTitle}
           </h2>
           <p
-            class="text-[#FCFCFC] text-sm md:text-2xl text-center max-w-[343px] md:max-w-none"
+            class="text-[#FCFCFC] text-sm md:text-xl text-center max-w-[343px] md:max-w-none"
             style={{
               fontFamily: 'Quicksand, sans-serif',
-              lineHeight: '17.5px',
             }}
           >
             {sectionSubtitle}
           </p>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-9">
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5">
           {products.map((product, index) => (
             <div
               key={index}
@@ -99,7 +98,7 @@ export default function ProductGrid({
                 border: '1px solid rgba(0, 0, 0, 0.12)',
               }}
             >
-              <div class="p-2 md:p-6 flex flex-col gap-3 md:gap-4">
+              <div class="p-2 md:p-3 flex flex-col gap-3 md:gap-4">
                 <div class="relative w-full aspect-square rounded-md overflow-hidden">
                   <img
                     src={product.image}
@@ -166,7 +165,7 @@ export default function ProductGrid({
                   )}
 
                   <h3
-                    class="text-black capitalize font-medium text-sm md:text-base leading-[17.5px] md:leading-[20px]"
+                    class="text-black capitalize font-medium text-sm md:text-base line-clamp-2 min-h-[40px]"
                     style={{
                       fontFamily: 'Quicksand, sans-serif',
                       fontWeight: 500,
@@ -247,10 +246,10 @@ export default function ProductGrid({
               </div>
 
               {product.link && (
-                <div class="px-2 pb-2 md:px-6 md:pb-6">
+                <div class="px-2 pb-2 ">
                   <a
                     href={product.link}
-                    class="w-full flex items-center justify-center py-2 px-4 md:py-3 md:px-5 rounded-2xl font-bold text-white transition-transform hover:scale-[1.02] text-xs md:text-xl"
+                    class="w-full flex items-center justify-center py-2 px-4 md:py-3 md:px-5 rounded-xl font-bold text-white transition-transform hover:scale-[1.02] text-xs md:text-base"
                     style={{
                       backgroundColor: '#14242E',
                       fontFamily: 'Quicksand, sans-serif',

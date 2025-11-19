@@ -63,9 +63,9 @@ export default function DownloadAppCTA({
             </svg>
             
             <h2 
-              class="text-lg lg:text-2xl"
+              class="text-lg lg:text-3xl"
               style={{ 
-                fontFamily: "Quicksand, sans-serif",
+                fontFamily: "Spra, sans-serif",
                 lineHeight: "18px",
                 fontWeight: 600,
                 color: titleColor
@@ -77,9 +77,9 @@ export default function DownloadAppCTA({
           
           {description && (
             <p 
-              class="max-w-[739px] text-sm lg:text-xl mb-2" 
+              class=" text-sm lg:text-xl mb-2" 
               style={{ 
-                fontFamily: "Quicksand, sans-serif",
+                fontFamily: "Sora, sans-serif",
                 color: descriptionColor
               }}
             >

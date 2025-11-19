@@ -133,7 +133,7 @@ export default function ComoFunciona({
         overflowX: "hidden",
       }}
     >
-      <div class="w-full max-w-[1440px] mx-auto flex flex-col items-center px-4 md:px-8 lg:px-[52px] py-6 md:py-12 lg:pb-6 lg:py-[52px]">
+      <div class="w-full max-w-[1140px] mx-auto flex flex-col items-center px-4 md:px-8 lg:px-[52px] py-6 md:py-12 lg:pb-6 lg:py-[52px]">
         {/* Header */}
         <div class="w-full max-w-[1336px] flex flex-col items-center gap-4 md:gap-6">
           {/* Títulos */}
@@ -149,7 +149,7 @@ export default function ComoFunciona({
             <p
               class="text-center text-sm md:text-base lg:text-xl text-white/95 px-4"
               style={{
-                fontFamily: "Quicksand, sans-serif",
+                fontFamily: "Sora, sans-serif",
               }}
             >
               {subtitle}
@@ -178,8 +178,8 @@ export default function ComoFunciona({
                       style={{
                         backgroundColor: badgeColor,
                         borderRadius: "20px",
-                        top: "0px",
-                        left: "0px",
+                        top: "-10px",
+                        left: "-10px",
                         zIndex: 10,
                       }}
                     >
@@ -267,8 +267,8 @@ export default function ComoFunciona({
                       height: "36px",
                       backgroundColor: badgeColor,
                       borderRadius: "36px",
-                      top: "0px",
-                      left: "0px",
+                      top: "-10px",
+                      left: "-10px",
                       zIndex: 10,
                     }}
                   >
@@ -289,7 +289,7 @@ export default function ComoFunciona({
                     style={{
                       backgroundColor: "rgba(0, 0, 0, 0.05)",
                       border: `1px solid #3B4A54`,
-                      borderRadius: "12px",
+                      borderRadius: "5px",
                       marginTop: "4px",
                     }}
                   >

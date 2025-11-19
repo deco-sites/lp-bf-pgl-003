@@ -2792,6 +2792,12 @@ input.tab:checked + .tab-content,
 .box-border {
   box-sizing: border-box;
 }
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
 .block {
   display: block;
 }
@@ -3070,9 +3076,6 @@ input.tab:checked + .tab-content,
 .max-w-\[140px\] {
   max-width: 140px;
 }
-.max-w-\[1440px\] {
-  max-width: 1440px;
-}
 .max-w-\[200px\] {
   max-width: 200px;
 }
@@ -3120,9 +3123,6 @@ input.tab:checked + .tab-content,
 }
 .max-w-\[522px\] {
   max-width: 522px;
-}
-.max-w-\[739px\] {
-  max-width: 739px;
 }
 .max-w-\[80px\] {
   max-width: 80px;
@@ -3428,6 +3428,10 @@ input.tab:checked + .tab-content,
 .bg-\[\#1F1F1F\] {
   --tw-bg-opacity: 1;
   background-color: rgb(31 31 31 / var(--tw-bg-opacity));
+}
+.bg-\[\#999999\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 153 153 / var(--tw-bg-opacity));
 }
 .bg-\[\#C9CFCF\] {
   --tw-bg-opacity: 1;
@@ -3883,9 +3887,6 @@ input.tab:checked + .tab-content,
 .leading-\[16px\] {
   line-height: 16px;
 }
-.leading-\[17\.5px\] {
-  line-height: 17.5px;
-}
 .leading-\[18px\] {
   line-height: 18px;
 }
@@ -3931,10 +3932,6 @@ input.tab:checked + .tab-content,
 .text-\[\#999\] {
   --tw-text-opacity: 1;
   color: rgb(153 153 153 / var(--tw-text-opacity));
-}
-.text-\[\#DEDEE0\] {
-  --tw-text-opacity: 1;
-  color: rgb(222 222 224 / var(--tw-text-opacity));
 }
 .text-\[\#F5C2E6\] {
   --tw-text-opacity: 1;
@@ -4316,12 +4313,12 @@ input.tab:checked + .tab-content,
     gap: 1rem;
   }
 
-  .md\:gap-6 {
-    gap: 1.5rem;
+  .md\:gap-5 {
+    gap: 1.25rem;
   }
 
-  .md\:gap-9 {
-    gap: 2.25rem;
+  .md\:gap-6 {
+    gap: 1.5rem;
   }
 
   .md\:gap-\[150px\] {
@@ -4332,8 +4329,8 @@ input.tab:checked + .tab-content,
     border-radius: 1rem;
   }
 
-  .md\:p-6 {
-    padding: 1.5rem;
+  .md\:p-3 {
+    padding: 0.75rem;
   }
 
   .md\:p-8 {
@@ -4348,11 +4345,6 @@ input.tab:checked + .tab-content,
   .md\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-  }
-
-  .md\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
   }
 
   .md\:px-8 {
@@ -4378,10 +4370,6 @@ input.tab:checked + .tab-content,
   .md\:py-\[52px\] {
     padding-top: 52px;
     padding-bottom: 52px;
-  }
-
-  .md\:pb-6 {
-    padding-bottom: 1.5rem;
   }
 
   .md\:pb-8 {
@@ -4438,10 +4426,6 @@ input.tab:checked + .tab-content,
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:leading-\[20px\] {
-    line-height: 20px;
   }
 
   .md\:leading-\[45\.36px\] {
@@ -4618,14 +4602,14 @@ input.tab:checked + .tab-content,
     line-height: 1;
   }
 
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   .lg\:text-xl {

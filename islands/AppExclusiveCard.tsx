@@ -169,7 +169,7 @@ export default function AppExclusiveCard({
               <div class="flex flex-col gap-3">
                 {description && (
                   <p
-                    class="text-[#DEDEE0] text-xs"
+                    class="text-[#999999] text-xs"
                     style={{
                       fontFamily: "Quicksand, sans-serif",
                       fontWeight: 400,
@@ -222,7 +222,7 @@ export default function AppExclusiveCard({
               style={{
                 fontFamily: "Quicksand, sans-serif",
                 fontWeight: 400,
-                fontSize: "14px",
+                fontSize: "12px",
                 lineHeight: "17.5px"
               }}
             >
@@ -277,7 +277,7 @@ export default function AppExclusiveCard({
             <div class="flex items-center gap-3 flex-wrap">
               {usageLeft && (
                 <span
-                  class="text-[#FCFCFC]"
+                  class="text-[#999999]"
                   style={{
                     fontFamily: "Quicksand, sans-serif",
                     fontWeight: 400,
@@ -289,11 +289,11 @@ export default function AppExclusiveCard({
                 </span>
               )}
               {usageLeft && usageRight && (
-                <div class="w-px h-4 bg-[#FCFCFC]"></div>
+                <div class="w-px h-4 bg-[#999999]"></div>
               )}
               {usageRight && (
                 <span
-                  class="text-[#FCFCFC]"
+                  class="text-[#999999]"
                   style={{
                     fontFamily: "Quicksand, sans-serif",
                     fontWeight: 400,

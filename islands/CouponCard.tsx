@@ -126,7 +126,7 @@ export default function CouponCard({
             <div class="flex flex-col gap-3">
               {description && (
                 <p 
-                  class="text-[#DEDEE0] text-xs"
+                  class="text-[#999999] text-xs"
                   style={{ 
                     fontFamily: "Quicksand, sans-serif",
                     fontWeight: 400,
@@ -181,7 +181,7 @@ export default function CouponCard({
             style={{ 
               fontFamily: "Quicksand, sans-serif",
               fontWeight: 400,
-              fontSize: "14px",
+              fontSize: "12px",
               lineHeight: "17.5px"
             }}
           >
@@ -196,10 +196,10 @@ export default function CouponCard({
         <div>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            class="flex items-center justify-center gap-2 text-[#FCFCFC] transition-all hover:opacity-80 text-xs lg:text-sm"
+            class="flex items-center justify-center gap-2 text-[#FCFCFC] transition-all hover:opacity-80 text-xs lg:text-base"
             style={{ 
               fontFamily: "Quicksand, sans-serif",
-              fontWeight: 400,
+              fontWeight: 700,
               lineHeight: "17.5px"
             }}
           >
@@ -236,7 +236,7 @@ export default function CouponCard({
           <div class="flex items-center gap-3">
             {usageLeft && (
               <span 
-                class="text-[#FCFCFC]"
+                class="text-[#999999]"
                 style={{ 
                   fontFamily: "Quicksand, sans-serif",
                   fontWeight: 400,
@@ -248,11 +248,11 @@ export default function CouponCard({
               </span>
             )}
             {usageLeft && usageRight && (
-              <div class="w-px h-4 bg-[#FCFCFC]"></div>
+              <div class="w-px h-4 bg-[#999999]"></div>
             )}
             {usageRight && (
               <span 
-                class="text-[#FCFCFC]"
+                class="text-[#999999]"
                 style={{ 
                   fontFamily: "Quicksand, sans-serif",
                   fontWeight: 400,

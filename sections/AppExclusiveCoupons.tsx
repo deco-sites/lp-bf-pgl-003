@@ -218,11 +218,10 @@ export default function AppExclusiveCoupons({
           
           {subtitle && (
             <p 
-              class="text-center max-w-3xl text-sm lg:text-lg"
+              class="text-center max-w-3xl text-sm lg:text-xl"
               style={{ 
-                fontFamily: "Quicksand, sans-serif",
+                fontFamily: "Sora, sans-serif",
                 fontWeight: 400,
-                lineHeight: "1.5",
                 color: "#DEDEE0"
               }}
             >
@@ -231,7 +230,7 @@ export default function AppExclusiveCoupons({
           )}
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {coupons.map((coupon, index) => (
             <AppExclusiveCard 
               key={index} 
