@@ -211,12 +211,11 @@ export default function ComoFunciona({
                         <div class="flex items-center justify-center">
                           {step.iconImage ? (
                             <Image
-                              width={40}
-                              height={40}
+                              width={55}
+                              height={48}
                               src={step.iconImage}
-                            style="min-height:40px;"
                               alt={step.title}
-                              class="w-full h-auto object-contain max-w-[40px]"
+                              class="w-full h-auto object-contain max-w-[55px]"
                             />
                           ) : step.icon ? (
                             <i class={`fa-regular fa-${step.icon} text-white text-2xl`} />
@@ -298,12 +297,11 @@ export default function ComoFunciona({
                       <div class="flex items-center justify-center">
                         {step.iconImage ? (
                           <Image
-                            width={40}
-                            height={40}
+                            width={55}
+                            height={48}
                             src={step.iconImage}
-                            style="min-height:40px;"
                             alt={step.title}
-                            class="w-full h-auto object-contain max-w-[40px]"
+                            class="w-full h-auto object-contain max-w-[55px]"
                           />
                         ) : step.icon ? (
                           <i class={`fa-regular fa-${step.icon} text-white text-3xl`} />

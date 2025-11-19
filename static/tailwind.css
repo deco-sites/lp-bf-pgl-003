@@ -3112,9 +3112,6 @@ input.tab:checked + .tab-content,
 .max-w-\[400px\] {
   max-width: 400px;
 }
-.max-w-\[40px\] {
-  max-width: 40px;
-}
 .max-w-\[420px\] {
   max-width: 420px;
 }
@@ -3123,6 +3120,9 @@ input.tab:checked + .tab-content,
 }
 .max-w-\[522px\] {
   max-width: 522px;
+}
+.max-w-\[55px\] {
+  max-width: 55px;
 }
 .max-w-\[80px\] {
   max-width: 80px;
