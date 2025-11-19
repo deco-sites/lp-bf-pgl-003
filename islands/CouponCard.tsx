@@ -101,7 +101,7 @@ export default function CouponCard({
             style={{ 
               fontFamily: "Sora, sans-serif",
               fontWeight: 500,
-              fontSize: "16px",
+              fontSize: "12px",
               lineHeight: "20.16px"
             }}
           >

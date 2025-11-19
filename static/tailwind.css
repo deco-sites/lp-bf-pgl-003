@@ -4514,6 +4514,10 @@ input.tab:checked + .tab-content,
     justify-content: center;
   }
 
+  .lg\:gap-5 {
+    gap: 1.25rem;
+  }
+
   .lg\:gap-6 {
     gap: 1.5rem;
   }
